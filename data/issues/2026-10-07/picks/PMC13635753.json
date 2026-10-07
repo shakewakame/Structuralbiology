@@ -1,0 +1,91 @@
+{
+  "pmcid": "PMC13635753",
+  "rank": 2,
+  "headline": "肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む",
+  "takeaway": "代謝物ManNAc-6-Pが3分子をまたいで四量体を固定し、DNA結合力は変えない",
+  "target_label": "SpNanR（肺炎球菌）",
+  "summary": {
+    "background": "肺炎球菌はシアル酸を感知してnan・siaAオペロンを活性化するが、RpiR型転写因子NanRによる活性化の分子機構は分かっていなかった。",
+    "approach": "エフェクター探索（DSF・ITC）、超遠心・native MS・SAXSによる会合状態の解析に加え、apo、エフェクター結合型、DNA複合体のX線結晶構造を決定した。",
+    "findings": "N-アセチルマンノサミン-6-リン酸（ManNAc-6-P）が二量体–四量体平衡を四量体側へ2000倍以上傾ける一方、DNAへの親和性は変えない。DNA結合ドメインが異性化酵素ドメインと構造的に連動しないためと説明できる。"
+  },
+  "highlights": [
+    {
+      "tag": "初構造",
+      "text": "RpiRファミリー転写因子で、エフェクターなし（apo）とDNA複合体の全長構造は初めて。これまで全長のRpiR構造は2例しかなく、いずれもこの2状態ではなかった。",
+      "evidence": [
+        {
+          "quote": "To date, no crystal structures of full-length RpiR bound to DNA or in the apo form (i.e. without effector) have been reported, representing a key knowledge gap in understanding the molecular mechanism of RpiR transcriptional regulators.",
+          "section": "Introduction"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "ManNAc-6-Pは1分子で3つのプロトマーにまたがって結合し（リン酸基はSer135・Ser179・Ser181・Thr184、糖部分はArg148・Tyr229と隣の二量体のAsp160）、界面を組み替えずに四量体を「橋渡し」して安定化する。R148A変異体はエフェクターがあっても二量体のまま。",
+      "evidence": [
+        {
+          "quote": "Instead, each N-acetylmannosamine-6-phosphate molecule bridges three monomers across the tetrameric interface, thereby stabilizing the tetrameric state",
+          "section": "Results"
+        },
+        {
+          "quote": "In contrast, SpNanRR148A is exclusively dimeric at the same concentration as wild type even in the presence of N-acetylmannosamine-6-phosphate",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "各サブユニットのArg67がDNAの副溝に入り込み、2つのグアニジノ基が約3.6 Åの距離でπスタックする珍しい配置をとる。塩基との直接の接触は少なく、TpAステップでの副溝の歪みを読む「間接読み取り」で配列特異性を出していると考えられる。",
+      "evidence": [
+        {
+          "quote": "The guanidinium groups π-stack ∼3.6 Å apart (averaged across the two dimers) and each forms a weak hydrogen bond with the N3 nitrogen of adenine at position 10",
+          "section": "Results"
+        },
+        {
+          "quote": "These observations suggest that specificity is achieved through recognition of a sequence-dependent distorted B-DNA structure—the “indirect read-out” mechanism—while affinity is primarily driven by interactions between the DNA-binding domain and the phosphate backbone.",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "pET30ΔSEでE. coli BL21(DE3)。1 mM IPTGで誘導し、25°Cで一晩（14–16時間）。",
+    "construct": "全長SpNanR（WP_000360349.1）を親和性タグなしで発現。",
+    "purification": "硫安沈殿（50%飽和）→ 陰イオン交換 → ヘパリン → Superdex 200 Increase。タグを使わず電荷とDNA結合性で精製。",
+    "sample_prep": "タンパク質1 µL＋リザーバー1 µLで、結晶は4–16週かけて成長。初期位相は三ヨウ化物ソーキング（1–5分、それ以上は結晶が割れる）によるSAD。",
+    "data_collection": "Australian Synchrotron MX2（EIGER 16M）。弱い異常分散シグナルを補うため7データセットを統合。",
+    "evidence": [
+      {
+        "quote": "The pET30ΔSE-SpNanR and mutated constructs were transformed into Escherichia coli BL21(DE3) competent cells",
+        "section": "Methods"
+      },
+      {
+        "quote": "purified without an affinity tag, instead utilizing charge-based (ion exchange) and DNA-binding (heparin) characteristics",
+        "section": "Results"
+      },
+      {
+        "quote": "Briefly, 1 μL protein solution was mixed with 1 μL reservoir solution. The drops were incubated for 4–16 weeks before harvest.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Protein crystals of SpNanR + N-acetylmannosamine-6-phosphate were added to mother liquor that had been supplemented with triiodide (10 mM) and soaked for 1–5 min; the crystals cracked if soaked longer.",
+        "section": "Methods"
+      },
+      {
+        "quote": "To enhance the weak anomalous signal, seven data sets were merged",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "NanR",
+    "RpiR",
+    "肺炎球菌",
+    "シアル酸",
+    "転写因子",
+    "副溝認識"
+  ],
+  "ligand_label": "ManNAc-6-P（BMX）",
+  "editor_notes": "PDB エントリーは 2024–2025 年に公開済みで、論文の引用情報はまだ PDB に反映されていない（データ可用性の記載から本論文の寄託と判定）。"
+}

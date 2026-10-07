@@ -1,0 +1,1197 @@
+{
+  "issue_date": "2026-10-07",
+  "index_date": "2026-10-06",
+  "generated_at": "2026-10-07T17:23:58+00:00",
+  "query": "(\"cryo-EM\" OR \"cryoEM\" OR \"cryo-electron microscopy\" OR \"cryo-electron tomography\" OR \"subtomogram\" OR \"crystal structure\" OR \"X-ray crystallography\" OR \"crystallographic\" OR \"NMR structure\" OR \"solution structure\") AND (\"Protein Data Bank\" OR \"PDB\" OR \"wwPDB\" OR \"EMDB\" OR \"accession code\" OR \"accession codes\") AND OPEN_ACCESS:y AND NOT SRC:PPR AND FIRST_IDATE:[2026-10-06 TO 2026-10-06]",
+  "counts": {
+    "hits": 25,
+    "excluded_types": 0,
+    "parsed": 25,
+    "new_structure": 3,
+    "new_structure_ids_unlisted": 1,
+    "new_map_only": 0,
+    "uses_existing": 17,
+    "no_ids": 4
+  },
+  "candidates": [
+    {
+      "pmcid": "PMC13635753",
+      "pmid": "42831430",
+      "doi": "10.1093/nar/gkag953",
+      "title": "Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-05",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractIn Streptococcus pneumoniae, the RpiR transcriptional regulator NanR (SpNanR) senses sialic acid in the environment and upregulates transcription of the nan and sia A operons to increase uptake and metabolism of sialic acid. The molecular basis of this activation is unknown. Here, we demonstrate that SpNanR binds N-acetylmannosamine-6-phosphate, a metabolite of sialic acid catabolism. SpNanR exists in a dimer–tetramer equilibrium, and N-acetylmannosamine-6-phosphate binding strongly stabilizes the tetramer. Crystal structures and site-specific substitutions demonstrate that N-acetylmannosamine-6-phosphate bridges and stabilizes the SpNanR tetramer. SpNanR binds its DNA recognition sequence with nanomolar affinity. Notably, the effector N-acetylmannosamine-6-phosphate does not affect the affinity of SpNanR for DNA. The DNA-binding domains are not structurally coupled to the sugar isomerase domains, explaining why N-acetylmannosamine-6-phosphate binding does not affect DNA binding. Structural analysis reveals that sequence specificity arises through distortion of B-DNA and an unusual π-stack formed by two arginine residues in the minor groove, while affinity is driven by backbone contacts. We propose a mechanism by which S. pneumoniae regulates sialic acid metabolism, consistent with our biophysical experiments and in vivo regulatory behavior. These findings define a unique activation mechanism for an RpiR regulator and provide new insights into carbohydrate-responsive gene regulation in pneumococci.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "8V5F",
+          "status": "released",
+          "title": "Nan Regulatory Protein Full-length from Streptococcus pneumoniae",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.55,
+          "release_date": "2024-12-04",
+          "deposit_date": "2023-11-30",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Structure of full-length nan-regulatory protein (NanR) from Streptococcus pneumoniae",
+          "polymers": [
+            {
+              "description": "Phosphosugar-binding transcriptional regulator",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A0H2ZPE9"
+              ],
+              "organisms": [
+                "Streptococcus pneumoniae"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "8TX9",
+          "status": "released",
+          "title": "Nan Regulatory Protein (core isomerase domain) from Streptococcus pneumoniae",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.01,
+          "release_date": "2024-09-11",
+          "deposit_date": "2023-08-23",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Structure of isomerase domain of the nan-regulatory protein (NanR) from Streptococcus pneumoniae",
+          "polymers": [
+            {
+              "description": "MurR/RpiR family transcriptional regulator",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A064C3N8"
+              ],
+              "organisms": [
+                "Streptococcus pneumoniae"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "BMX",
+              "name": "2-acetamido-2-deoxy-6-O-phosphono-alpha-D-mannopyranose"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "8V4V",
+          "status": "released",
+          "title": "Nan Regulatory Protein Full-length from Streptococcus pneumoniae",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.95,
+          "release_date": "2024-12-04",
+          "deposit_date": "2023-11-29",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Structure of full-length nan-regulatory protein (NanR) from Streptococcus pneumoniae",
+          "polymers": [
+            {
+              "description": "Phosphosugar-binding transcriptional regulator",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A0H2ZPE9"
+              ],
+              "organisms": [
+                "Streptococcus pneumoniae"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "BMX",
+              "name": "2-acetamido-2-deoxy-6-O-phosphono-alpha-D-mannopyranose"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9DQN",
+          "status": "released",
+          "title": "Nan Regulatory Protein (NanR) - DNA complex from Streptococcus pneumoniae",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.99,
+          "release_date": "2025-08-20",
+          "deposit_date": "2024-09-24",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Nan Regulatory Protein (NanR) - DNA complex from Streptococcus pneumoniae (CASP target)",
+          "polymers": [
+            {
+              "description": "Phosphosugar-binding transcriptional regulator",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A0H2ZPE9"
+              ],
+              "organisms": [
+                "Streptococcus pneumoniae"
+              ]
+            },
+            {
+              "description": "DNA (5'-D(P*TP*CP*TP*GP*AP*AP*AP*GP*TP*AP*CP*TP*TP*TP*TP*AP*GP*A)-3')",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "DNA (5'-D(P*TP*CP*TP*GP*AP*AP*AP*GP*TP*AP*CP*TP*TP*TP*TP*AP*GP*A)-3')",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "3IWF",
+        "3SHO",
+        "4IVN",
+        "8JU9",
+        "1MOR"
+      ],
+      "emdb_ids": [],
+      "proteins": [
+        {
+          "uniprot": "A0A064C3N8",
+          "gene": "ybbH",
+          "synonyms": [
+            "ybbH_1",
+            "ybbH_2"
+          ],
+          "name": "MurR/RpiR family transcriptional regulator",
+          "organism": "Streptococcus pneumoniae",
+          "prior_pdb_count": 0,
+          "first_structure": true
+        },
+        {
+          "uniprot": "A0A0H2ZPE9",
+          "gene": null,
+          "synonyms": [],
+          "name": "Phosphosugar-binding transcriptional regulator, putative",
+          "organism": "Streptococcus pneumoniae serotype 2 (strain D39 / NCTC 7466)",
+          "prior_pdb_count": 0,
+          "first_structure": true
+        }
+      ],
+      "score": 94
+    },
+    {
+      "pmcid": "PMC13635403",
+      "pmid": "42835520",
+      "doi": "10.1016/j.isci.2026.117657",
+      "title": "Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli",
+      "journal": "iScience",
+      "journal_abbrev": "iScience",
+      "authors": "Li J, Hong S, Hao R, Zhang K, Gennis R, Zhu J.",
+      "pub_date": "2026-09-24",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SummaryNicotinamide nucleotide transhydrogenase couples hydride transfer between NAD(H) and NADP(H) to proton translocation, supporting cellular NADPH production. Here we present cryo-EM structures of full-length Escherichia coli transhydrogenase in apo, substrate-bound, and inhibitor-bound states. In the apo state, both copies of the NADP(H)-binding domain (dIII) adopt a face-down configuration, with the binding pocket partially embedded in transmembrane domain dII, plugging the cytoplasmic side of the proton channel. NADP+ or NADPH binding to dIII is accompanied by detachment of one or both dIII copies from dII and increased orientational dynamics. Detachment of dIII from dII allows a conformation compatible with hydride transfer between NADP(H) in dIII and NAD(H) in dI, and is accompanied by conformational changes in the dII proton channel that close periplasmic access and open cytoplasmic access. Palmitoyl-CoA stabilizes an apo-like conformation, trapping dIII in a face-down configuration. These results define the structural basis for transhydrogenase regulation through interdomain conformational coupling.Keywords: nicotinamide nucleotide transhydrogenase, hydride transfer, proton pump, conformational dynamics, NADPH production",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9UUY",
+          "status": "released",
+          "title": "Wild-type apo Escherichia coli nicotinamide nucleotide transhydrogenase",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.85,
+          "release_date": "2026-05-27",
+          "deposit_date": "2025-05-08",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Wild-type apo Escherichia coli nicotinamide nucleotide transhydrogenase",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9UV7",
+          "status": "released",
+          "title": "Single-subunit apo Escherichia coli nicotinamide nucleotide transhydrogenase",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.43,
+          "release_date": "2026-05-27",
+          "deposit_date": "2025-05-09",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Single-subunit apo Escherichia coli nicotinamide nucleotide transhydrogenase",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9UV2",
+          "status": "released",
+          "title": "Single-subunit apo Escherichia coli nicotinamide nucleotide transhydrogenase",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.83,
+          "release_date": "2026-05-27",
+          "deposit_date": "2025-05-08",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Single-subunit apo Escherichia coli nicotinamide nucleotide transhydrogenase",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9WWS",
+          "status": "released",
+          "title": "Wild-type Escherichia coli transhydrogenase double dIIIs attached to dII in the presence of both NADP+ and NAD+.",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.74,
+          "release_date": "2026-09-30",
+          "deposit_date": "2025-09-24",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Wild-type Escherichia coli transhydrogenase double dIIIs attached to dII in the presence of both NADP+ and NAD+.",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "NAP",
+              "name": "NADP NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9WWU",
+          "status": "released",
+          "title": "Wild-type Escherichia coli transhydrogenase single dIII attached to dII in the presence of both NADP+ and NAD+.",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.42,
+          "release_date": "2026-09-30",
+          "deposit_date": "2025-09-24",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Wild-type Escherichia coli transhydrogenase single dIII attached to dII in the presence of both NADP+ and NAD+.",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "NAP",
+              "name": "NADP NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9WWV",
+          "status": "released",
+          "title": "Wild-type Escherichia coli transhydrogenase the dissociated (dI)2 dimer in the presence of both NADP+ and NAD+.",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.38,
+          "release_date": "2026-09-30",
+          "deposit_date": "2025-09-24",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Wild-type Escherichia coli transhydrogenase the dissociated (dI)2 dimer in the presence of both NADP+ and NAD+.",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "NAD",
+              "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9UV3",
+          "status": "released",
+          "title": "Single-subunit Escherichia coli nicotinamide nucleotide transhydrogenase in the presence of palmitoyl-CoA",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.88,
+          "release_date": "2026-05-27",
+          "deposit_date": "2025-05-09",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Single-subunit Escherichia coli nicotinamide nucleotide transhydrogenase in the presence of palmitoyl-CoA",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "COA",
+              "name": "COENZYME A"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9UVB",
+          "status": "released",
+          "title": "Escherichia coli transhydrogenase the dissociated (dI)2 dimer in the presence of both NADPH and NADP+",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.23,
+          "release_date": "2026-05-27",
+          "deposit_date": "2025-05-09",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Escherichia coli transhydrogenase the dissociated (dI)2 dimer in the presence of both NADPH and NADP+",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9WWW",
+          "status": "released",
+          "title": "Escherichia coli nicotinamide nucleotide transhydrogenase double dIIIs attached to dIIs state in the presence of NADPH",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.81,
+          "release_date": "2026-09-30",
+          "deposit_date": "2025-09-24",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Escherichia coli nicotinamide nucleotide transhydrogenase double dIIIs attached to dIIs state in the presence of NADPH",
+          "polymers": [
+            {
+              "description": "NAD(P) transhydrogenase subunit beta",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0AB67"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "NDP",
+              "name": "NADPH DIHYDRO-NICOTINAMIDE-ADENINE-DINUCLEOTIDE PHOSPHATE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "1X13",
+        "2BRU"
+      ],
+      "emdb_ids": [
+        "EMD-64520",
+        "EMD-64527",
+        "EMD-64521",
+        "EMD-66319",
+        "EMD-66321",
+        "EMD-66322",
+        "EMD-64522",
+        "EMD-64533",
+        "EMD-64534",
+        "EMD-64530",
+        "EMD-64531",
+        "EMD-66323"
+      ],
+      "proteins": [
+        {
+          "uniprot": "P07001",
+          "gene": "pntA",
+          "synonyms": [],
+          "name": "NAD(P) transhydrogenase subunit alpha",
+          "organism": "Escherichia coli (strain K12)",
+          "prior_pdb_count": 6,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P0AB67",
+          "gene": "pntB",
+          "synonyms": [],
+          "name": "NAD(P) transhydrogenase subunit beta",
+          "organism": "Escherichia coli (strain K12)",
+          "prior_pdb_count": 3,
+          "first_structure": false
+        }
+      ],
+      "score": 60
+    },
+    {
+      "pmcid": "PMC13635745",
+      "pmid": "42831426",
+      "doi": "10.1093/nar/gkag934",
+      "title": "Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-05",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractCRISPR–Cas12a nucleases typically induce double-strand breaks (DSBs) to initiate genome editing. However, reliance on DSBs risks chromosomal rearrangements and unintended insertions or deletions at off-target sites. Therefore, engineering nickase variants that cleave only a single DNA strand might enable precise editing platforms. We describe an unbiased in vivo screen in Escherichia coli to identify LbCas12a nickase variants. We targeted the RuvC Lid domain for mutagenesis, hypothesizing that altering this region would disrupt the coordination of strand cleavage. While the screen produced many nickase variants with targeted point substitutions (Lid1), it also serendipitously yielded a variant (Lid2) with an unprecedented Lid domain in terms of size and sequence. Biochemical characterization confirms that Lid2 robustly nicks the non-target strand (NTS) with minor cleavage activity observed for the target strand (TS), accumulating predominantly nicked substrates. Cryo-electron microscopy (cryo-EM) at 2.5 Å resolution reveals that, in Lid2, the native α-helical Lid is replaced, uncoupling the concerted cleavage mechanism. Specifically, the remodeled Lid appears to stabilize the NTS in the active site, whereas it hampers the conformational transitions required for subsequent TS cleavage. This robust nickase-phenotype of this Cas12a variant expands the CRISPR–Cas toolbox and offers a new component for precise genome editing applications.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9WNE",
+          "status": "unreleased",
+          "evidence": "cited by the paper but not yet released (on hold until publication)"
+        }
+      ],
+      "cited_pdb_ids": [
+        "5XUU"
+      ],
+      "emdb_ids": [
+        "EMD-66115"
+      ],
+      "proteins": [],
+      "score": 51
+    },
+    {
+      "pmcid": "PMC13635751",
+      "pmid": "42831429",
+      "doi": "10.1093/nar/gkag939",
+      "title": "Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-05",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractSingle-strand DNA breaks are among the most frequent forms of DNA damage, yet how PARP2 recognizes these lesions within the constrained geometry of chromatin remains unclear. Here we use cryogenic electron microscopy (cryo-EM) to determine structures of PARP2 and HPF1 bound to nucleosomes containing a site-specific single-strand break (SSB) at superhelical location + 5.3. The structures reveal a multivalent binding mode in which the Trp-Gly-Arg (WGR) domain engages the break while the helical domain and HPF1 contact the opposing DNA gyre, spanning both DNA gyres of the nucleosome. This configuration explains the higher affinity of PARP2 for nucleosomal SSBs relative to free DNA. 3D classification resolves multiple PARP2-bound states with distinct WGR orientations and DNA backbone distortions, revealing structural plasticity during damage recognition. Comparative analysis shows that HPF1 constrains the conformational ensemble of PARP2 and promotes a defined catalytic domain architecture compatible with histone PARylation. PARP inhibitors (olaparib, talazoparib, EB-47) stabilize WGR–helical domain interfaces and make the ADP-ribosyltransferase–HPF1 catalytic module dynamic, consistent with reverse allosteric retention on damaged chromatin, while also promoting asymmetric nucleosomal DNA unwrapping. Together, these structures provide a chromatin-context framework for understanding PARP2 recognition of nucleosomal DNA breaks and how PARPis reshape these interactions to promote PARP retention and local chromatin remodeling.",
+      "kind": "new_structure_ids_unlisted",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7K61",
+        "7AEO",
+        "6X0N",
+        "6USJ"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 40
+    },
+    {
+      "pmcid": "PMC13635308",
+      "pmid": "42835125",
+      "doi": "10.3389/fimmu.2026.1956997",
+      "title": "BDE-47 and male infertility: integrated network toxicology, single-cell transcriptomics, and in vitro evidence of GSTM1 downregulation and ferroptosis-related molecular remodeling in Leydig cells",
+      "journal": "Frontiers in Immunology",
+      "journal_abbrev": "Front Immunol",
+      "authors": "Zhu X, Wang S, Li T, Li Y, Zhou T.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackgroundBDE-47 is a widely detected polybrominated diphenyl ether with potential male reproductive toxicity, but the key testicular cell populations and molecular basis remain unclear.MethodsWe integrated network toxicology, single-cell transcriptomic data from BDE-47-exposed mouse testes and human idiopathic non-obstructive azoospermia (NOA), and bulk transcriptomic data. High-dimensional weighted gene co-expression network analysis, exploratory metacell-based feature prioritization with SHapley Additive exPlanations analysis, ferroptosis-driver gene signature scoring, exploratory immune deconvolution, molecular docking, 100-ns molecular dynamics simulation, and TM3 cell experiments were performed.ResultsWe identified 113 shared candidate genes derived from BDE-47-related and NOA-associated gene sets, mainly enriched in xenobiotic metabolism, glutathione metabolism, oxidative stress, ferroptosis, and reproductive endocrine pathways. Mouse and human single-cell analyses localized the computational candidate signature to Leydig cells as one of the enriched somatic cell populations. GSTM1 was selected as an exploratory candidate based on multialgorithm screening, relative SHAP contribution, expression consistency across evidence layers, and redox-detoxification biological plausibility; it was expressed at lower levels in human NOA Leydig cells and bulk testicular tissue. At the cell level, lower GSTM1 expression was associated with a higher ferroptosis-driver gene signature score. Molecular simulations suggested potential structural compatibility between BDE-47 and GSTM1. In TM3 cells, BDE-47 reduced cellular metabolic activity and GSTM1 protein expression, decreased Gpx4 and Slc7a11 mRNA expression, and increased Acsl4 mRNA expression; ferrostatin-1 partially attenuated these transcriptional changes.ConclusionsBDE-47-related molecular evidence and human NOA-associated evidence showed molecular convergence around GSTM1 and ferroptosis-related molecular features in a Leydig-cell context. In TM3 cells, BDE-47 exposure was accompanied by GSTM1 downregulation and ferroptosis-related transcriptional remodeling. These observations are hypothesis-generating and do not establish direct binding, GSTM1-mediated effects, ferroptotic cell death, or a causal relationship between BDE-47 exposure and human NOA.Keywords: BDE-47, ferroptosis-related molecular remodeling, GSTM1, male infertility, non-obstructive azoospermia",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7BEU"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637942",
+      "pmid": "42836198",
+      "doi": "10.4103/rps.rps_159_25",
+      "title": "Discovery of PIM-1 kinase inhibitors from marine natural products through machine learning and structure-based screening",
+      "journal": "Research in Pharmaceutical Sciences",
+      "journal_abbrev": "Res Pharm Sci",
+      "authors": "Budha B, Acharya A, Khanal M, Muchlashi L, Hardani P, Salam R.",
+      "pub_date": "2026-09-08",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackground and purpose:PIM-1 kinase, a serine/threonine kinase implicated in several cancers, has emerged as a promising yet underexplored target for anticancer therapy. This study aimed to identify the potential of PIM-1 inhibitors from marine natural products by integrating machine learning (ML)-based quantitative structure-activity relationship (QSAR) modeling with structure-based virtual screening.Experimental approach:Eleven ML models were developed and evaluated using experimentally validated ChEMBL data. The best-performing model was used to screen the Chemical Marine Natural Product Database (CMNPD), yielding 15 candidate compounds. Molecular docking prioritized four hits based on similarity of binding interactions at the catalytic site to the co-crystallized reference ligand, rather than on docking score alone. These hits were further assessed using 100 ns molecular dynamics (MD) simulations and MM/GBSA binding free-energy calculations. ADMET profiling was also performed to evaluate pharmacokinetic and toxicity properties.Findings/Results:Among the screened compounds, Hit-1 (CMNPD11687) emerged as the lead candidate. It showed stable binding throughout MD simulations, with an average RMSD of 4.10 ± 1.67 Å, low atomic fluctuations (RMSF), and favorable binding free energy (ΔG-Total = -18.45 ± 2.70 kcal/mol). Hit-1 also maintained key protein-ligand interactions more consistently than the other hits. ADMET analysis predicted favorable drug-like and non-toxic properties.Conclusion and implications:These findings identified CMNPD11687 as a promising marine-derived scaffold for PIM-1 inhibition and demonstrated the value of combining ML-driven screening with molecular simulation to accelerate early-stage anticancer drug discovery.Keywords: ADMET, Cancer, Docking, Inhibitors, Machine Learning, MD Simulations, PIM1.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "6MT0"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13635553",
+      "pmid": "42835664",
+      "doi": "10.1016/j.toxrep.2026.102345",
+      "title": "Effects of lawsone and lawsone methyl ether on cyclooxygenase activity, redox balance, and organ-specific toxicity: An integrated computational and experimental study",
+      "journal": "Toxicology Reports",
+      "journal_abbrev": "Toxicol Rep",
+      "authors": "Khan M, Rahman A, Khemawoot P, Shah M, Ul-Haq Z, Ahmad N, Sohail T, Panichayupakaranant P.",
+      "pub_date": "2026-09-22",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractRedox imbalance contributes significantly to the initiation and progression of inflammatory responses. Although conventional anti-inflammatory drugs are widely used, their prolonged administration is associated with a number of adverse effects. Lawsone methyl ether (LME) and lawsone are plant-derived, redox-active naphthoquinones, exhibiting diverse pharmacological activities; however, their cyclooxygenase (COX)-inhibitory effects, redox-modulatory properties, and oral toxicity profiles remain insufficiently characterized. Therefore, this study investigated the COX-inhibitory activity, redox-modulatory effects, and oral toxicity profiles of LME and lawsone using integrated computational, enzyme-inhibitory, and in vivo approaches. Molecular docking analysis revealed favorable binding scores/interactions of LME against COX-1 (−5.9 kcal/mol), lipoxygenase (LOX; −6.6 kcal/mol), NAD(P)H oxidase (−5.6 kcal/mol), and myeloperoxidase (MPO; −4.7 kcal/mol), surpassing lawsone and reference inhibitors (aspirin, and zileuton). These results were further validated by molecular dynamics (MD) simulations. Additionally, LME exhibited higher in vitro inhibition of COX-1 (IC50: 8.1 µM) and COX-2 (IC50: 4.2 µM) than lawsone. Furthermore, acute (50/300 mg/kg) and subacute (50 mg/kg) oral administration of LME in Wistar rats significantly ameliorated glutathione (GSH), superoxide dismutase (SOD), catalase (CAT), and thiobarbituric acid-reactive substance (TBARS) levels, more effectively than lawsone. Following Karber’s method, oral LD50 values calculated for LME and lawsone were 542 and 175 mg/kg, respectively. However, in a 28-day repeated oral toxicity study, a no-observed-adverse-effect level (NOAEL) of at least 50 mg/kg was established for both the compounds, with no toxicity observed across various rat parameters. Overall, LME was better tolerated than lawsone, exhibiting COX inhibitory and redox-modulatory effects, but its therapeutic significance requires further validation.Keywords: Acute toxicity, COX-inhibition, Lawsone, Lawsone methyl ether, LD50, Redox-modulation, Subacute toxicity",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3KK6",
+        "1N8Q",
+        "2CDU",
+        "1DNU"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637745",
+      "pmid": "42835829",
+      "doi": "10.1039/d6ra07298d",
+      "title": "Evaluation of 6-substituted coumarins as SARS-CoV-2 main protease inhibitors: enzymatic, cellular, and computational insights",
+      "journal": "RSC Advances",
+      "journal_abbrev": "RSC Adv",
+      "authors": "El-Damasy A, Islam Mukim M, Jeon S, El Hassab M, Almahmoud S, Bang E, Eldehna W, Song D, Kim S, Keum G.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe SARS-CoV-2 main protease (Mpro) plays a crucial role in viral replication, making it an attractive target for antiviral drug development. This study evaluates the inhibitory potential of nineteen 6-substituted coumarin derivatives (1a–p and 2a–c) against Mpro using a FRET-based enzymatic assay. Among them, the chlorinated derivative 1f (AKE-9306) exhibited the highest potency with an IC50 value of 61.77 µM. Enzyme kinetics analysis through Michaelis–Menten and Lineweaver–Burk plots revealed that compound 1f may act through a mixed-type inhibition mechanism with a preference for the free enzyme. In cellular assays, 1f showed significant antiviral efficacy (IC50 = 16.02 µM, CC50 >50 µM, selectivity index >3.12). Molecular docking and dynamics simulations confirmed its stable interaction within the Mpro active site, supported by MM-PBSA calculations. These findings identify compound 1f as a hit coumarin-based scaffold for further optimization toward improved SARS-CoV-2 Mpro inhibition and antiviral activity.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7L0D"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13636076",
+      "pmid": "42835945",
+      "doi": "10.1016/j.yjsbx.2026.100161",
+      "title": "Evolutionary and structural pathways of antibody maturation reveal principles for engineering potent SARS-CoV-2 neutralizers",
+      "journal": "Journal of Structural Biology: X",
+      "journal_abbrev": "J Struct Biol X",
+      "authors": "Nasir M, Liang Q, Wang J, Sun Y, Zhang X, Liang R, He J, Rashid U, Wu J, Gao Y.",
+      "pub_date": "2026-09-18",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "The continual emergence of SARS-CoV-2 variants underscores the need to elucidate antibody maturation and apply rational design principles to optimize therapeutics. This study focused on vaccine-elicited 9C lineage, encoded by IGHV4–34, as a model for affinity maturation and structural refinement. Sequence analyses revealed strong framework conservation alongside focused diversification within CDRH3, where the invariant RWFD anchor and a recurrent SYTV block were consistently associated with potent neutralization. Phylogenetic reconstruction traced a trajectory from weakly neutralizing precursors, such as 9A91, to ultrapotent clones, like 9C2, showing nearly a 3000-fold improvement in IC₅₀ values. Computational modeling, molecular dynamics, and docking analyses demonstrated that potency arises from progressive stabilization of the CDRH3 apex, with the SYT motif at VH106–108 serving as a critical structural driver with improved IC50 = 5.52 μg/mL. Residues at positions 98, 102, and 105 further fine-tuned stability and binding geometry, while rigid versus flexible apex conformations revealed convergent solutions for high-affinity binding. Engineered variants of 9A91 recapitulated these principles, with SYT installation and flanking substituents improving stability, energetics, and antigen engagement. ELISA validation confirmed up to 64% enhanced binding and neutralization with IC50 = 0.76 μg/mL compared with the germline precursor. Collectively, these findings define a hierarchical mechanism of antibody maturation, where conserved anchoring motifs, apex stabilization, and secondary refinements synergize to achieve potency, establishing a framework for rational antibody design against SARS-CoV-2 and emerging viral threats.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "9UTF",
+        "9A91",
+        "9B65"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637072",
+      "pmid": null,
+      "doi": "10.1021/acs.jpclett.6c02620",
+      "title": "Impact of Inhibitor Size and Flexibility on the Binding Pathways to c‑Src Kinase",
+      "journal": "The Journal of Physical Chemistry Letters",
+      "journal_abbrev": "J Phys Chem Lett",
+      "authors": "Shinobu A, Re S, Oshima H, Sugita Y.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe conformational plasticity of protein kinases poses a challenge for inhibitor design, motivating the use of molecular dynamics (MD) simulations to study their dynamic binding processes. While conformational changes are increasingly discussed, the impact of drug compound flexibility remains underexplored because of experimental limitations. In this study, we employ two-dimensional replica-exchange MD simulations to investigate how c-Src kinase binds to PP1, a small inhibitor, and to dasatinib, a larger, more flexible inhibitor. Simulations totaling 600 μs revealed frequent binding and unbinding events, yielding statistically converged information about the binding pathways. While both inhibitors follow multiple binding pathways, a notable difference emerges in their binding mechanisms on the free-energy profiles: PP1 is rigid along the binding path, whereas dasatinib substantially changes its conformation at different stages in the pathway to the canonical pose. Conformational analysis reveals distinct conformers of dasatinib, including a hidden intermediate, which helps to avoid trapping at the salt-bridge pair linking the β3 strand and the αC-helix of the c-Src kinase. These results, distinct from previous computational studies, demonstrate that inhibitor size and flexibility affect binding mechanisms and have implications on kinetics.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1Y57",
+        "1QCF",
+        "3G5D"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13635329",
+      "pmid": "42835151",
+      "doi": "10.3389/fchem.2026.1912431",
+      "title": "Integrated AUF-UPLC-MS and fraction-activity correlation to identify COX-2-targeted constituents of Shaoyao Gancao decoction",
+      "journal": "Frontiers in Chemistry",
+      "journal_abbrev": "Front Chem",
+      "authors": "Li L, Chi J, Wan H, Hou Y, Ren B, Li Y, Dai L.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractShaoyao Gancao Decoction (SGD), a classical multi-ingredient herbal formula, exerts potent anti-inflammatory and anti-rheumatoid arthritis effects against rheumatoid arthritis (RA). Existing cellular experiments have proven that SGD can downregulate Cyclooxygenase-2 (COX-2) expression in inflammatory macrophages, implying a potential link between its anti-arthritic efficacy and COX-2 modulation. Nevertheless, its constituents with potential COX-2 binding capacity and corresponding anti-RA material basis are unclear, hindering its pharmaceutical exploitation. In this study, an integrated strategy combining affinity ultrafiltration-UPLC-MS screening, fraction-activity correlation modeling, molecular simulation and in vitro enzyme assays was constructed to characterize COX-2-interacting components from SGD. Nineteen COX-2-binding constituents were captured and characterized, mainly paeoniflorin, glycyrrhizic acid and licorice glycoside B. Derived from Bai Shao (BS) and Zhi Gancao (ZGC), these compounds cover monoterpenoid glycosides, triterpenoid saponins, flavonoids and fatty acids, embodying SGD’s multi-component feature. Molecular docking results predicted favorable binding interactions, and molecular dynamics simulations further demonstrated that core monomers could form stable COX-2 binding complexes. These core components stably bound COX-2 via persistent hydrogen bonds. In vitro enzyme tests confirmed paeoniflorin, albiflorin, glycyrrhizic acid and glycyrrhetinic acid strongly suppressed COX-2 with IC50 of 23.8, 53.2, 54.1 and 58.9 μM, respectively. Among serial gradient eluates (10%–70% gradient) of BS, the 30% ethanol fraction exhibited the most potent COX-2 inhibitory activity (IC50 = 27.63 μg/mL). Further enrichment via 40% ethanol macroporous separation yielded a refined BS fraction with superior activity (IC50 = 23.8 μg/mL). Cell assays on LPS-induced RAW264.7 macrophages indicated the reconstituted active fraction of Shaoyao Gancao Decoction (SGF) inhibited NO release more effectively than crude SGD extract. This study established a robust workflow coupling target screening, chemical identification, computational validation and active fraction enrichment for complex herbal extracts. This work screened potential COX-2-binding constituents from SGD using analytical chemistry workflows and verified the COX-2-inhibitory potency of four monomers via in-vitro enzyme assays. Prior cellular evidence supports that SGD suppresses COX-2 in LPS-stimulated macrophages, suggesting a link between its anti-inflammatory action and COX-2 modulation. However, systematic in vivo RA animal studies are needed to validate the COX-2-dependent anti-RA mechanism of SGD, which lies outside the analytical scope of the present investigation.Keywords: affinity ultrafiltration, bioactive fractions, fraction-activity correlation, in vitro COX-2 inhibition, molecular dynamics simulation, potential COX-2 binding constituents, Shaoyao Gancao decoction, UPLC-MS",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "5GMM"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637516",
+      "pmid": "42836098",
+      "doi": "10.2147/ndt.s628411",
+      "title": "Kaempferide Promotes Neuroprotection and Functional Recovery After Spinal Cord Injury and is Associated with Differential Regulation of ARG1, CA4, CYP1B1, and OAT",
+      "journal": "Neuropsychiatric Disease and Treatment",
+      "journal_abbrev": "Neuropsychiatr Dis Treat",
+      "authors": "Meng Z, Yu W, Ma A, Liu X, Li S, Liu Y.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "IntroductionSpinal cord injury (SCI) is a severe neurological disorder that often causes long-term motor dysfunction, and effective neuroprotective treatments remain limited. Kaempferide has anti-inflammatory and neuroprotective activities, but its effects and associated targets in SCI remain unclear.MethodsKaempferide-related targets were intersected with differentially expressed genes and SCI-associated modules from GSE151371. Three machine-learning algorithms identified candidate genes, which were evaluated in GSE151371 and GSE226238. Immune cell deconvolution analysis, gene set enrichment analysis, and molecular docking were performed. The effects of kaempferide were evaluated in glutamate-injured HT22 cells and primary cortical neurons and in a mouse spinal cord hemisection model. CYP1B1 overexpression and siRNA-ARG1 knockdown were used for functional evaluation.ResultsFour candidate hub genes—ARG1, CA4, CYP1B1, and OAT—were identified. In GSE151371, their areas under the receiver operating characteristic curves (AUCs) were 0.946, 0.892, 0.926, and 0.913, respectively. In GSE226238, the corresponding AUCs were 0.733, 0.745, 0.871, and 0.823. Molecular docking predicted docking scores of −7.1, −7.7, −10.6, and −8.2 kcal/mol for ARG1, CA4, CYP1B1, and OAT, respectively. Kaempferide increased neurite length and branching in glutamate-injured primary cortical neurons and reduced intracellular ROS accumulation in glutamate-injured HT22 cells. CYP1B1 overexpression and ARG1 knockdown each attenuated kaempferide-enhanced neurite outgrowth. In SCI mice, kaempferide treatment was associated with improved locomotor function, less histological tissue disorganization, and greater NeuN immunoreactivity at the lesion site. Western blotting showed further upregulation of ARG1 and downregulation of CA4, CYP1B1, and OAT after kaempferide treatment.ConclusionKaempferide showed neuroprotective effects in cellular and mouse SCI models. CYP1B1 overexpression and ARG1 knockdown experiments supported their potential involvement in kaempferide-enhanced neurite outgrowth, whereas the causal roles of CA4 and OAT remain to be established.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "2AEB",
+        "1ZNC",
+        "3PM0",
+        "1OAT"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13634789",
+      "pmid": "42834992",
+      "doi": "10.2147/dddt.s627223",
+      "title": "Novel Hybrid Scaffold of Pyrazole, Thiazole, and [1,2,3]triazole: Eco-Friendly Synthesis by DABCO, Anti-HIV-1 RT, and In Silico Studies",
+      "journal": "Drug Design, Development and Therapy",
+      "journal_abbrev": "Drug Des Devel Ther",
+      "authors": "Al-Saleem M, Elhenawy A, Al Sharif O, Riyadh S, Zaki M, Gomha S.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackgroundThe emergence of drug-resistant HIV-1 strains and limitations of current reverse transcriptase (RT) inhibitors support the development of structurally novel antiviral scaffolds. Hybrid azole systems may provide complementary interactions within the HIV-1 RT binding pocket.Purpose: To synthesize novel pyrazole–thiazole–[1,2,3]triazole hybrids using an eco-friendly DABCO-mediated approach and evaluate their anti-HIV-1 RT activity and structure–activity relationships using experimental and computational methods.MethodsFourteen hybrid compounds were synthesized from hydrazone-1-carbothioamide 3 through cyclo-condensation with hydrazonoyl chlorides 4a–j or 5a–d using DABCO, affording arylazo-thiazoles 6a–j and hydrazono-thiazol-4(5H)-ones 7a–d. Structures were characterized by IR, 1H-NMR, 13C-NMR, and mass spectrometry. Molecular docking against HIV-1 RT (PDB: 3V81) was used to prioritize candidates, and six compounds were evaluated using an ELISA-based RT inhibition assay with zidovudine as reference. DFT, molecular electrostatic potential, and intramolecular charge-transfer analyses were also performed.ResultsThe target compounds were obtained in 90–95% yields. The six tested derivatives showed IC50 values of 0.192–1.693 μg/mL. Compound 7a was the most active (IC50 = 0.192 ± 0.008 μg/mL), with activity comparable to zidovudine (0.201 ± 0.009 μg/mL; p = 0.74), and showed the most favorable docking energy (–6.37 kcal/mol) with a key Lys65 hydrogen bond. The hydrazono-thiazolone series 7 generally outperformed series 6. DFT analysis associated higher hardness and wider HOMO–LUMO gaps with improved activity.ConclusionCompound 7a represents a promising HIV-1 RT inhibitor lead, supported by consistent enzymatic, docking, and electronic-structure findings. Further cytotoxicity and cell-based antiviral studies are required to establish its selectivity and preclinical potential.Keywords: hydrazonoyl chlorides, hydrazone-1-carbothioamide, cyclo-condensation, molecular docking, DFT calculations",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3V81"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13635435",
+      "pmid": "42835570",
+      "doi": "10.1016/j.fochx.2026.104485",
+      "title": "Novel dual-taste umami and salty peptides from goat whey: Mechanism and interaction with taste receptors",
+      "journal": "Food Chemistry: X",
+      "journal_abbrev": "Food Chem X",
+      "authors": "Yang J, Yang X, Yu X, Li Q, Liu Q, Li H, Zheng W, Shi Y.",
+      "pub_date": "2026-09-19",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractGoat whey was analyzed using machine learning and peptidomics to identify umami and salty peptides. Of the 42 candidates tested, four peptides (AD-7, GA-8, PL-9 and GQ-10) exhibited both umami and salty characteristics with low taste thresholds (0.20–0.25 mmol/L). Molecular docking revealed that these peptides bind to the T1R1/T1R3 umami receptor via hydrogen bonds involving key residues such as ALA176, ASN150, LYS155, GLN222, Asp219 and LYS5, with acidic residues enhancing umami perception. For saltiness, they bind to TMC4 through electrostatic and hydrogen bonding networks and to TRPV1 through hydrophobic interactions involving Leu, Phe, and Met. Molecular dynamics simulations confirmed stable complex formation with all three receptors. Non-targeted metabolomics identified 199 metabolites, including betaine, contributing to savoury flavor. These findings establish goat whey as a sustainable source of natural taste-active compounds and provide a scientific basis for its utilisation in flavourings, thus reducing waste and the environmental impact of cheese production.Keywords: Goat whey, By-products, Umami and salty peptides, Peptidomics, Molecular docking",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1EWK",
+        "5IS0"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637498",
+      "pmid": "42836050",
+      "doi": "10.1016/j.xcrp.2026.103524",
+      "title": "Photosystem I structural fusion with IsiA enhances light-harvesting capabilities of filamentous cyanobacterium during iron deficiency",
+      "journal": "Cell reports. Physical science",
+      "journal_abbrev": "Cell Rep Phys Sci",
+      "authors": "Biswas S, Niedzwiedzki D, Chen K, Maqdisi R, Mazor Y, Pakrasi H.",
+      "pub_date": "2026-09-02",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SUMMARYDuring iron stress, cyanobacteria produce iron-stress-inducible protein A (IsiA), which associates with photosystem I (PSI) to support cell growth. In most cyanobacteria, the stress induces formation of large IsiA18-PSI3 complexes. However, some species, including Anabaena sp. PCC 7120, studied in this work, form an unusual, smaller PSI-monomer-based IsiA-PSI supercomplex containing a unique fusion of IsiA with the PSI subunit PsaL, IsiA-PsaL. In this study, genetically tagged IsiA-PsaL was used to isolate several IsiA-PsaL-containing supercomplexes composed of multiple IsiA homologs. A combination of static and time-resolved optical spectroscopies was used to evaluate the energetic properties of gel-embedded supercomplexes, including the excitation energy transfer efficiency from IsiA-PsaL to PSI. These analyses demonstrated that excitation energy transfer in the IsiA-PsaL complex is highly efficient. Enhanced efficiency may be a key factor underlying the downsizing of the IsiA-PSI assembly, which could compensate for the smaller size of the complex.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7Y3F",
+        "6NWA"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13636019",
+      "pmid": "42835489",
+      "doi": "10.3389/fonc.2026.1953079",
+      "title": "Preclinical identification of an oxadiazole-pyrazole lead targeting prostate cancer through integrated mechanistic evaluation",
+      "journal": "Frontiers in Oncology",
+      "journal_abbrev": "Front Oncol",
+      "authors": "Kumar V, Wadhwa P, Kumar S.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackgroundProstate cancer remains a major cause of cancer-related mortality among men, while resistance to androgen deprivation therapy emphasizes the need for new therapeutic strategies. Molecular hybridization of pharmacologically relevant heterocycles offers a rational approach for developing novel anticancer agents.MethodsTwenty oxadiazole–pyrazole hybrids (VS-01–VS-20) were designed, synthesized, and evaluated using molecular docking against the androgen receptor (PDB ID: 1Z95), followed by in vitro antiproliferative assessment against androgen-dependent LNCaP and androgen-independent PC-3 prostate cancer cells. The lead compound was further investigated for its effects on androgen receptor expression, intracellular reactive oxygen species (ROS), cell-cycle progression, and apoptosis using flow cytometry and fluorescence microscopy. ADMET properties were additionally predicted computationally.ResultsVS-04 demonstrated a favorable interaction profile within the androgen receptor ligand-binding pocket and exhibited potent antiproliferative activity, with IC50 values of 394.95 ± 3.03 nM against PC-3 and 464.85 ± 4.29 nM against LNCaP cells. Docking–activity correlation analysis revealed a moderate and significant association between docking affinity and PC-3 antiproliferative activity, whereas no significant correlation was observed for LNCaP cells. VS-04 treatment produced a concentration-dependent reduction in androgen receptor expression and increased intracellular ROS levels. Mechanistic studies further demonstrated pronounced S-phase accumulation and induction of apoptosis, with the total apoptotic population increasing from 7.45% in control cells to 47.83% following VS-04 treatment.ConclusionThe integrated computational and experimental evaluation identified VS-04 as a promising oxadiazole–pyrazole lead with potent antiproliferative activity against prostate cancer cells. Its activity was associated with AR modulation, oxidative stress, cell-cycle perturbation, and apoptotic cell death, supporting further structural optimization and preclinical investigation of this scaffold for prostate cancer therapy.Keywords: androgen receptor, cytotoxicity, molecular docking, oxadiazole, prostate cancer, pyrazole, reactive oxygen species",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1Z95"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13635992",
+      "pmid": "42835501",
+      "doi": "10.1039/d6md00502k",
+      "title": "Rhodanine and 2,4-dioxothiazolidine-based amides: synthesis and evaluation as dual-action cholinesterase inhibitors and antioxidants",
+      "journal": "RSC Medicinal Chemistry",
+      "journal_abbrev": "RSC Med Chem",
+      "authors": "Šikorová E, Kyslíková A, Švarcová M, Palarčík J, Štěpánková Š, Krátký M.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "This study presents the synthesis and biological evaluation of substituted 2-(2,4-dioxothiazolidin-3-yl)-N-phenylacetamides and their thioxo analogues as potential multitarget agents for neurodegenerative diseases. A diverse library of amides was designed to explore structure–activity relationships and synthesized using two complementary approaches: a carbodiimide-mediated coupling and a microwave-assisted procedure. The compounds were screened for acetylcholinesterase (AChE) and butyrylcholinesterase (BChE) inhibition and antioxidant activity. Several derivatives displayed micromolar dual inhibition, with 2-(4-oxo-2-thioxothiazolidin-3-yl)-N-(3,4,5-trichlorophenyl)acetamide (compound 1h) emerging as the most effective BChE inhibitor (IC50 = 2.91 μM), which is also one of the most potent AChE inhibitors in this series. It acts as a specific, reversible, and competitive inhibitor of both BChE and AChE. Polyhalogenated analogues consistently outperformed their mono- and di-substituted counterparts, highlighting the critical role of lipophilic electron-withdrawing substituents. Within this series, rhodanines were generally preferred over thiazolidine-2,4-diones. Our results have demonstrated that rational modifications of the rhodanine and thiazolidine-2,4-dione cores support further investigation of selected derivatives as multitarget cholinesterase inhibitors with complementary antioxidant properties.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "4PQE",
+        "1P0I"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637938",
+      "pmid": "42836184",
+      "doi": "10.4103/rps.rps_195_25",
+      "title": "Synthesis, in vitro and in silico evaluation of quinazoline and triazoloquinazoline derivatives as PDE7A inhibitors",
+      "journal": "Research in Pharmaceutical Sciences",
+      "journal_abbrev": "Res Pharm Sci",
+      "authors": "El-Malah A, Gineinah M, Khayat M, Neamatallah T, Sonousi A, Mahmoud Z, Hassan R.",
+      "pub_date": "2026-09-08",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackground and purpose:Phosphodiesterase 7A (PDE7A) is an attractive therapeutic target for the treatment of inflammatory, autoimmune, and neurodegenerative disorders through modulation of intracellular cAMP levels. However, the development of highly potent and selective PDE7A inhibitors remains challenging. This study aimed to design, synthesize, and evaluate 2-chloroquinazoline and fused 1,2,4-triazolo[4,3-c]quinazoline derivatives as potential PDE7A inhibitors, supported by molecular docking, molecular dynamics simulations, and in silico toxicity prediction.Experimental approach:A series of 2-chloroquinazoline derivatives 4a–f and their fused 1,2,4-triazolo[4,3-c]quinazoline counterparts 5a–d were synthesized as phosphodiesterase 7A (PDE7A) inhibitors. The synthesized compounds were evaluated for their in vitro inhibitory activity against phosphodiesterase 7A (PDE7A) and were compared with theophylline and BRL50481, a selective PDE7 inhibitor.Findings/Results:All compounds demonstrated enzyme inhibition ranging from 0.062 to 1.35 μM;. Derivatives 5c and 5d exhibited the most potent inhibitory effects, with IC50 values of 0.076 and 0.062 μM;, respectively, and were not significantly different from BRL50481 (IC50 = 0.034 μM;), while being significantly more potent than theophylline (IC50 = 0.539 μM;). These compounds, together with 4c and 5a, showed superior inhibitory activity compared with theophylline. Molecular docking and molecular dynamics studies were performed to investigate binding interactions and stability within the PDE7A active site.Conclusion and implications:Compounds 5c and 5d displayed high binding affinity and stability within the active site. Their interactions with key amino acid residues support their potential as effective PDE7A inhibitors. Predicted toxicity data indicated a favorable safety profile across 30 toxicity endpoints, supporting their further development.Keywords: Molecular docking; Molecular dynamics; Phosphodiesterase 7 inhibitors; Quinazoline; Triazolo[4,3-c] quinazoline.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3G3N"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637936",
+      "pmid": "42836202",
+      "doi": "10.4103/rps.rps_193_25",
+      "title": "Systems biology-driven drug repurposing in glioblastoma via antigen and pathway mapping",
+      "journal": "Research in Pharmaceutical Sciences",
+      "journal_abbrev": "Res Pharm Sci",
+      "authors": "Zaker E, Nouri N, Pashangeh P, Dizaji S, Asghari R, Davoodi A, Rahimmanesh I.",
+      "pub_date": "2026-09-08",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackground and purpose:Glioblastoma (GBM) is an aggressive brain tumor with limited treatment options and poor patient survival. This study aimed to identify key genes and altered pathways in GBM and to explore potential drug-repurposing candidates using a systems biology approach.Experimental approach:We analyzed gene expression data from two public datasets (GSE4290 and GSE50161) using Transcriptome Analysis Console. These datasets included 102 GBM samples and 23 non-tumor brain samples. We identified differentially expressed genes using statistical thresholds. A protein-protein interaction network was built using STRING and analyzed in Cytoscape based on degree, betweenness, and closeness metrics. Pathway analysis was carried out using KEGG. Survival analysis was performed with GEPIA2. Drug-gene interactions were screened using DGIdb, and molecular docking was carried out for selected targets.Findings/Results:A total of 1,704 upregulated and 1,345 downregulated genes were detected. Network analysis highlighted TP53, EGFR, CDC42, and STAT3 as central hub genes. Pathway analysis showed major changes in MAPK signaling, neuroactive ligand-receptor interaction, and extracellular matrix-receptor interaction. Higher expression of CDC42, EGFR, and TP53 was associated with shorter overall survival in GBM patients. Drug screening identified 28 approved compounds targeting six core genes. Docking analysis showed strong binding affinity for several candidates, with scores of -8.5 kcal/mol or lower.Conclusion and implications:This study identified important molecular targets and pathways in GBM and suggests several existing drugs with potential value for therapeutic repurposing. These findings may support future experimental and clinical studies in GBM treatment.Keywords: Biomarkers, Glioblastoma multiforme, Protein-protein interactions, Survival analysis, Systems biology.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "2OCJ",
+        "6NJS",
+        "1M17",
+        "1G3J"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13636085",
+      "pmid": "42835527",
+      "doi": "10.1016/j.yjsbx.2026.100164",
+      "title": "The protein-water H-bond network for bacterial response regulator REC domain activation",
+      "journal": "Journal of Structural Biology: X",
+      "journal_abbrev": "J Struct Biol X",
+      "authors": "Hamid M, Jabeen I, Chaudhary S, Khan S.",
+      "pub_date": "2026-09-19",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe bacterial response regulator (RR) superfamily is activated by aspartyl phosphorylation of the receiver (REC) domain for diverse functions. Crystal structures of the enteric CheY chemotaxis RRs (CheYes) have revealed water-residue hydrogen bonds (H-bonds) essential for activation. Here, we compared the H-bond networks, computed from MD simulations, of the basal and phosphorylated conformational landscapes in silico. Representative REC domains were selected by filtering the sequence and structure RR databases based on sequence information and fold variability. Residues bonded with water included the aspartate triad for divalent metal ion coordination and phosphoryl transfer, plus K109. The water-residue H-bond propensity of these residues was balanced by the impaired stability of adjacent residue contacts maintained by evolution. Upon phosphorylation, the CheYes aspartyl phosphate (D57-PO3−) became the major node, connected via the conserved switch residues K109, T87 to the distant target binding surface with H-bond and associated long-range couplings measured by mutual information. The communication was mediated by transient H-bonded chains that included internal water in the hydrophobic core. Study of two other RR representatives indicates that an increased D57-PO3− node strength in the REC protein-water H-bond network upon phosphorylation is a generic feature of RR allostery. There are subtle differences in the connectivity between D57 and an aromatic residue (CheYes Y106 or equivalent), diagnostic of interfacial dynamics. These differences, influenced by the water contribution, may reflect function-related spatiotemporal constraints useful for the design of RR subfamily-specific, allosteric inhibitors.Keywords: Protein allostery, Energy frustration, Switch residues, Phosphorylation site solvation",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3CHY",
+        "2CHE",
+        "1FQW"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13637940",
+      "pmid": "42836196",
+      "doi": "10.4103/rps.rps_187_25",
+      "title": "Thiolactomycin-based morpholino and piperidino conjugates: synthesis, antimalarial evaluation, and PfFAS-II inhibition",
+      "journal": "Research in Pharmaceutical Sciences",
+      "journal_abbrev": "Res Pharm Sci",
+      "authors": "Azeeza S, Malik M, Jamal Q, Mohammad M, Al-Rooqi M, Samman S, Basha S, Alsimaree A, Moussa Z, Ahmed S, Kamal A.",
+      "pub_date": "2026-09-08",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackground and purpose:Malaria remains a formidable global healthcare challenge due to emerging drug-resistant Plasmodium spp., underscoring the urgent need for novel antimalarial scaffolds. Thiolactomycin, a FAS-II inhibitor, is a promising lead for structural optimization. This study aims to design, synthesize, and evaluate a series of thiomorpholino and piperidino conjugates bearing a thiolactone moiety as target-specific antimalarial agents.Experimental approach:A series of thiolactomycin-based conjugates was synthesized, including intermediate 7b and conjugate 4g. Antimalarial activity was evaluated in vitro against the Plasmodium falciparum D10 strain. To elucidate the mechanism, multi-target docking studies of 7b and 4g were performed against key FAS-II enzymes, followed by 200 ns explicit-solvent MD simulations and MM-PBSA binding free energy calculations targeting PfFabI. In silico pharmacokinetics and drug-likeness profiling of potent molecules were also carried out.Findings/Results:Biological evaluation identified 7b and 4g as potent compounds with IC50 values of 0.2 and 1.81 μM, respectively. However, the higher phenotypic potency of 7b was accompanied by mutagenic liability (Ames positive) revealed by toxicological profiling. Conversely, 4g exhibited superior binding affinity (-7.2 kcal/mol) against PfFabI. MD simulations revealed an induced-fit stabilization of the 4g-PfFabI complex and the complex achieved superior binding free energy (ΔGTotal = -22.14 kcal/mol) compared to thiolactomycin.Conclusion and implications:Conjugate 4g was identified as a safer potent compound from the series. MD simulation of the 4g-PfFabI complex revealed an induced fit stabilization involving persistent H-bonds that were absent in docking. These findings suggest 4g as a promising molecule for further optimization.Keywords: Antimalarial, Binding free energy, MD simulations, Multitarget docking, PfFabI enzyme inhibition, Thiolactomycin conjugates.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1FJ4",
+        "1NHG",
+        "4IGE",
+        "3AZA"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13634998",
+      "pmid": "42834983",
+      "doi": "10.1016/j.jpha.2026.101610",
+      "title": "Bifidobacterium pseudolongum enriched by arctigenin ameliorates cough variant asthma via the acetate-aryl hydrocarbon receptor-interleukin-33 axis",
+      "journal": "Journal of Pharmaceutical Analysis",
+      "journal_abbrev": "J Pharm Anal",
+      "authors": "Jiang H, Wang Y, Tian Q, Sui Y, Sun J, Chen L, Liu X, Tan N.",
+      "pub_date": "2026-03-19",
+      "index_date": "2026-10-06",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractGut microbiota dysbiosis is significantly associated with the onset and progression of cough variant asthma (CVA). Targeting and improving gut microbiota dysbiosis may serve as a promising strategy for CVA. Suhuang antitussive capsule (SH) is the sole clinically approved traditional Chinese patent medicine specifically indicated for managing CVA. Herein, we initially identified arctigenin (AG) as one of the effective components detected and preliminarily screened from SH for its potential in treating CVA. AG significantly ameliorates ovalbumin (OVA)-induced CVA symptoms, alleviates gut dysbiosis, and improves intestinal barrier function. Specifically, AG alleviates CVA symptoms in a gut microbiota-dependent manner, as demonstrated by antibiotic treatment and fecal microbiota transplantation (FMT). 16S rDNA sequencing revealed that AG treatment could notably enrich the commensal bacterium Bifidobacterium pseudolongum (B. pseudolongum), which is typically reduced in CVA. The mono-colonization with B. pseudolongum also showed a reduction in CVA severity. Gas chromatography-mass spectrometry (GC-MS) metabolomic analysis identified acetate as the key and main serum metabolite induced by B. pseudolongum. We demonstrated that acetate enters pulmonary circulation and activates the aryl hydrocarbon receptor (AHR). Validation using AHR antagonists, siRNA knockdown, chromatin immunoprecipitation (ChIP) assays, luciferase reporter experiments, and molecular docking confirmed that acetate-mediated AHR activation suppresses interleukin-33 (IL-33) secretion from lung epithelial cells, thereby preventing CVA progression. These findings suggest AG, one of the effective components in SH, exhibits prebiotic-like effects to alleviate CVA and highlight the potential of targeting specific gut microbiota species for CVA treatment.Keywords: Arctigenin, Cough variant asthma, Bifidobacterium pseudolongum, Short-chain fatty acids, Interleukin-33, Suhuang antitussive capsule",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13635172",
+      "pmid": "42835099",
+      "doi": "10.3389/fphar.2026.1913548",
+      "title": "Isobavachalcone attenuates experimental periodontitis by suppressing PTGS2-associated macrophage ferroptosis and restoring periodontal immune homeostasis",
+      "journal": "Frontiers in Pharmacology",
+      "journal_abbrev": "Front Pharmacol",
+      "authors": "Yang R, Jin Y, Wang Z, Peng Z, Yang L, Qi Z, Shen J.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackgroundPeriodontitis (PD) is a destructive inflammatory disease driven by the collapse of immune homeostasis and alveolar bone resorption. Isobavachalcone (IBC) is a naturally occurring prenylated chalcone belonging to the plant flavonoid family, mainly enriched in the mature seeds of Cullen corylifolium, with reported anti-inflammatory, antioxidant, and osteoprotective activities. However, the molecular mechanisms by which IBC modulates the macrophage-mediated immune response and cellular survival within the chronic inflammatory microenvironment of periodontitis remain poorly understood. This study aimed to investigate the therapeutic efficacy of IBC on periodontitis and elucidate its potential molecular targets, with a specific focus on macrophage ferroptosis and immunometabolic regulation.MethodsExperimental periodontitis was induced in rats by ligation combined with Porphyromonas gingivalis LPS topical application. Alveolar bone parameters were analyzed via micro-CT and histology. Network pharmacology, molecular dynamics (MD) simulations, cellular thermal shift assays (CETSA) and microscale thermophoresis (MST) assays were integrated to screen and validate the physical binding targets of IBC. Single-cell RNA sequencing (scRNA-seq) analysis and clinical samples were utilized to confirm translational relevance, and in vitro RAW264.7 macrophage models were employed for mechanistic verification.Results In vivo, subgingival administration of IBC significantly reduced alveolar bone loss, suppressed inflammatory infiltration, and promoted macrophage M2 polarization. Bioinformatic screening combined with MD simulations and CETSA validated PTGS2 as the direct functional target of IBC. Human scRNA-seq and clinical specimen analyses confirmed that PTGS2 expression is predominantly enriched in periodontal macrophages and inversely correlates with the expression of glutathione peroxidase 4 (GPX4). Mechanistically, IBC physically bound and antagonized PTGS2, thereby blocking the downstream JNK/p38 MAPK phosphorylation cascade and breaking the noxious reactive oxygen species (ROS) amplification loop. Consequently, IBC restored mitochondrial iron transport homeostasis (downregulating TFR1/MFRN1 and upregulating CISD1), stabilized GPX4, and prevented macrophage ferroptosis, which collectively drove the transition to a reparative M2 phenotype. Crucially, genetic overexpression of PTGS2 abolished these protective effects against ferroptosis in vitro.ConclusionIBC acts as a potent protective agent against periodontitis by directly targeting the PTGS2–MAPK–ROS–GPX4 axis, thereby inhibiting macrophage ferroptosis and restoring periodontal immune homeostasis.Keywords: ferroptosis, isobavachalcone, macrophage polarization, periodontitis, PTGS2",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13636031",
+      "pmid": "42835928",
+      "doi": "10.1107/s1600576726007727",
+      "title": "PolarEyes with enhanced digital imaging, a high-throughput solution for locating and grading crystals",
+      "journal": "Journal of Applied Crystallography",
+      "journal_abbrev": "J Appl Crystallogr",
+      "authors": "Smith T, Longcake A, Hall M, Probert M.",
+      "pub_date": "2026-09-25",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "An open-source program for the calculation and visualization of polarization-derived properties of crystalline material is described, alongside the integration of a polarizing image sensor into a home-built high-throughput imaging setup.Keywords: crystallization, high-throughput experiments, automation, robotics, software",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13636032",
+      "pmid": "42835920",
+      "doi": "10.1107/s1600576726008289",
+      "title": "QuickProcess2: an integrated package for crystallography data visualization, processing and management at the GM/CA Structural Biology Facility",
+      "journal": "Journal of Applied Crystallography",
+      "journal_abbrev": "J Appl Crystallogr",
+      "authors": "Xu Q, Hilgart M, Venugopalan N, Kissick D, Becker M, Xu S, Makarov O, Stepanov S, Smith J, Fischetti R.",
+      "pub_date": "2026-09-30",
+      "index_date": "2026-10-06",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "QuickProcess2 (QP2) unifies real-time image visualization, automated multi-pipeline data processing and experiment management into a single open-source platform for synchrotron macromolecular crystallography beamlines, enabling live quality assessment and concurrent data reduction for both standard rotation and serial crystallography experiments.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    }
+  ]
+}

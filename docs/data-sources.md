@@ -32,6 +32,32 @@
 
 構造キーワード＋「Protein Data Bank / PDB ID / accession code / EMDB」を含む論文は **1日あたり 0〜95 件、多くの日は 10〜40 件**。ピックアップ 3 本には十分な母数がある。
 
+## 新しい構造かどうかの判定（`pipeline/collect.py`）
+
+本文中の PDB ID を RCSB で照合し、論文自身が寄託した構造（own）と、引用しただけの構造（cited）に分ける。
+
+| 判定 | 条件 |
+|---|---|
+| own | PDB の一次引用の DOI / PMID が論文と一致 |
+| own | PDB がこの論文のプレプリント（bioRxiv・ChemRxiv・Research Square など）を引用し、寄託の記述に記載 |
+| own | PDB に一次引用がまだなく（to be published）、寄託の記述に記載、寄託が出版の 4 年以内 |
+| own | ID が PDB に存在するがまだ公開されていない（出版待ち） |
+| cited | 上記以外 |
+
+「寄託の記述」＝データ可用性の欄（PLOS の custom-meta を含む）と、本文中の「〜 have been deposited in the PDB」
+のような文（とその次の文）。助動詞を必須にして、他人の構造に言及しただけの文（"structures deposited in the PDB include"）を除く。
+
+論文の分類：own が 1 つ以上 → `new_structure`。own がなくても「PDB / EMDB に寄託した」という記述があれば
+`new_structure_ids_unlisted`（ID が補足資料にしかない）または `new_map_only`（EMDB のみ）。
+それ以外は `uses_existing`（ドッキング研究など）または `no_ids`。
+
+初構造の判定：own 構造の UniProt ごとに PDBe（SIFTS）の対応表を引き、この論文以外の構造が 0 件なら `first_structure`。
+
+### 2026-10-06 索引分での結果
+
+25 本 → 新しい構造 4 本（own あり 3、ID が補足資料のみ 1）、既存構造の利用 17 本、ID なし 4 本。
+既存構造の利用の多くは、ドッキングやネットワーク薬理の研究だった。
+
 ## 運用上の注意点（実測から分かったこと）
 
 1. **Europe PMC の PDB ID 自動抽出は数週間遅れる。** 直近数日の論文は抽出結果が空なので、毎日の処理では本文 XML から自前で PDB / EMDB ID を抜き出す。

@@ -1,0 +1,95 @@
+{
+  "pmcid": "PMC13635403",
+  "rank": 3,
+  "headline": "大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる",
+  "takeaway": "NADP(H)が結合するとdIIIが膜ドメインから外れ、プロトン通路の開く向きが反転する",
+  "target_label": "大腸菌NNT（PntA/PntB）",
+  "summary": {
+    "background": "NNTはNADHからNADP+へのヒドリド転移をプロトン輸送と共役させ、大腸菌ではNADPHの約4割を供給する。全長の大腸菌酵素の構造と状態変化は分かっていなかった。",
+    "approach": "αとβサブユニットを逆順に融合した一本鎖変異体も作り、apo、NADP+/NAD+、NADPH/NADP+、NADPH単独、阻害剤パルミトイルCoA存在下の構造をクライオ電顕で解析した。",
+    "findings": "apoでは2つのdIIIが膜ドメインdIIに下向きに張り付き、通路に栓をする。NADP(H)が結合するとdIIIが外れて向きを変え、通路は細胞質側に開いてペリプラズム側が閉じる。パルミトイルCoAはapoに近い状態で固定する。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "dIIIの着脱がプロトン通路の開閉と連動する。さらに外れた2つのdIIIは同時には(dI)2と組まず、片方だけが上向きで寄り添う。二量体の左右で交互にヒドリド転移が進むという触媒サイクルのモデルを提示した。",
+      "evidence": [
+        {
+          "quote": "Detachment of dIII is associated with rearrangements in the transmembrane helices that form the proton channel, opening toward the cytoplasmic side and closing it on the periplasmic side.",
+          "section": "Discussion"
+        },
+        {
+          "quote": "The structures further indicate that two detached dIII domains do not engage (dI)2 simultaneously; only one adopts a (dI)2-associated orientation while the second dIII remains distal.",
+          "section": "Discussion"
+        }
+      ]
+    },
+    {
+      "tag": "創薬・モダリティ",
+      "text": "阻害剤パルミトイルCoAはdIIIのNADP(H)結合ポケットに入り込み（アデニンのN6がAsp450と水素結合）、dIIIを下向き・膜付着のapo様状態に固定する。生化学で知られていた競合阻害の構造的な根拠になる。",
+      "evidence": [
+        {
+          "quote": "The N6 atom of the purine ring in palmitoyl-CoA forms a hydrogen bond with the OD1 atom of Asp450, located near the NADP(H)-binding site of dIII",
+          "section": "Results"
+        },
+        {
+          "quote": "Palmitoyl-CoA is buried within the pocket, partially occupying the position normally taken by NADP(H).",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "手法の工夫",
+      "text": "柔軟で見えにくいdIを捉えるため、βのC末端とαのN末端を原生生物Paratrimastix pyriformis由来のリンカーでつないだ一本鎖変異体を設計。活性は野生型の約1/3を保ち、apoでdIまで含めてモデル化できた。著者はリンカーが動きを制約しうる点も注意している。",
+      "evidence": [
+        {
+          "quote": "a single-subunit variant was genetically engineered by fusing the two native subunits, α (PntA) and β (PntB), with a linker joining the C-terminus of β to the N-terminus of α",
+          "section": "Results"
+        },
+        {
+          "quote": "its steady-state turnover rate (kcat) was reduced to 14.3 s−1, approximately 3-fold lower than that of WT EcTH (42 s−1; Figure 1D)",
+          "section": "Results"
+        },
+        {
+          "quote": "the linker could potentially restrict or bias the movements of dIII relative to dI",
+          "section": "Discussion"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "pntAB欠損株 C43(DE3) Δcyo ΔpntAB（THO株）にpET16b-EcTHを導入して発現。",
+    "construct": "N末端Hisタグ付き。野生型と、β–リンカー–αの一本鎖融合体（102 kDa）。",
+    "purification": "LMNGで可溶化し、IMAC → サイズ排除クロマトグラフィー。",
+    "sample_prep": "Quantifoil R 2/1 金グリッド（300メッシュ）、Vitrobot Mark IV 8°C・湿度100%、ブロット2.5–4秒。阻害剤は1 mMで事前に添加。",
+    "data_collection": "Titan Krios＋Gatan K3（カウンティングモード）。",
+    "evidence": [
+      {
+        "quote": "The pntAB knockout strain (THO, C43(DE3) Δcyo ΔpntAB), in which the pnt genes were replaced by a chloramphenicol resistance gene, was transformed with the pET16b-EcTH plasmid",
+        "section": "Methods"
+      },
+      {
+        "quote": "Recombinant proteins with N-terminal His-tags were purified in LMNG detergent using immobilized metal-affinity chromatography followed by size-exclusion chromatography.",
+        "section": "Results"
+      },
+      {
+        "quote": "For each sample, 3 μl was applied to a freshly glow-discharged 300-mesh Quantifoil R 2/1 gold grid and blotted for 2.5–4 s with a blotting force of −4 at 8°C and 100% humidity in a FEI Vitrobot Mark IV (Thermo Fisher).",
+        "section": "Methods"
+      },
+      {
+        "quote": "the single-subunit EcTH was incubated with 1 mM palmitoyl-CoA prior to cryo-EM grid preparation",
+        "section": "Results"
+      }
+    ]
+  },
+  "keywords": [
+    "トランスヒドロゲナーゼ",
+    "NNT",
+    "NADPH",
+    "プロトンポンプ",
+    "膜タンパク質",
+    "パルミトイルCoA"
+  ],
+  "ligand_label": "NADP(H)、NAD+、パルミトイルCoA",
+  "editor_notes": "大腸菌の dI2 と dI2–dIII の構造は既報で、本論文の新規性は全長酵素の状態変化。UniProt 上は既存の PDB 構造がある（初構造ではない）。"
+}

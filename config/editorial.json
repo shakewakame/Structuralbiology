@@ -1,0 +1,7 @@
+{
+  "site_name": "構造生物学デイリー（仮）",
+  "review_required": true,
+  "picks_per_day": 3,
+  "max_picks_per_day": 5,
+  "note": "review_required が true の間は、毎日の号を Pull Request として出し、編集者（オーナー）の確認後にマージする。false にすると検証が通った号を自動でマージする。"
+}
