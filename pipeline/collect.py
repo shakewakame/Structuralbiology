@@ -1,6 +1,6 @@
 """Collect one day's candidate papers and the facts the article writer needs.
 
-    python3 -m pipeline.collect                      # index date = yesterday (UTC), issue date = today (JST)
+    python3 -m pipeline.collect                      # index date = yesterday (UTC), issue date = index date + 1
     python3 -m pipeline.collect --index-date 2026-10-06 --issue-date 2026-10-07
 
 Writes:
@@ -17,7 +17,7 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 from . import europepmc, jats, pdb, uniprot
-from .common import cached, default_index_date, issue_dir, today_jst, write_json
+from .common import cached, default_index_date, issue_date_for, issue_dir, write_json
 
 MAX_FULLTEXT = 120  # cap on papers whose full text is fetched on a busy day
 KINDS = ("new_structure", "new_structure_ids_unlisted", "new_map_only", "uses_existing", "no_ids")
@@ -203,9 +203,10 @@ def overview_md(out: dict) -> str:
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--index-date", default=str(default_index_date()))
-    ap.add_argument("--issue-date", default=str(today_jst()))
+    ap.add_argument("--issue-date", help="default: index date + 1")
     a = ap.parse_args(argv)
-    run(a.index_date, a.issue_date)
+    issue = a.issue_date or str(issue_date_for(dt.date.fromisoformat(a.index_date)))
+    run(a.index_date, issue)
 
 
 if __name__ == "__main__":

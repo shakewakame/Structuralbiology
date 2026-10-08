@@ -17,16 +17,21 @@ ISSUES_DIR = ROOT / "data" / "issues"
 CACHE_DIR = ROOT / ".cache"
 
 USER_AGENT = "structbio-daily/0.1 (+https://github.com/shakewakame/Structuralbiology)"
-JST = dt.timezone(dt.timedelta(hours=9))
-
-
-def today_jst() -> dt.date:
-    return dt.datetime.now(JST).date()
 
 
 def default_index_date() -> dt.date:
     """The last full UTC day. Europe PMC's first-index date for it is complete by now."""
     return dt.datetime.now(dt.timezone.utc).date() - dt.timedelta(days=1)
+
+
+def issue_date_for(index_date: dt.date) -> dt.date:
+    """Each issue covers the papers indexed the day before. Run at 9:07 JST this is today's JST date,
+    and a manual run at any other hour gets the same label for the same papers."""
+    return index_date + dt.timedelta(days=1)
+
+
+def default_issue_date() -> dt.date:
+    return issue_date_for(default_index_date())
 
 
 def issue_dir(issue_date: str) -> Path:

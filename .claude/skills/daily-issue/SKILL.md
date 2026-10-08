@@ -13,17 +13,22 @@ AI が書く文章の主張には、論文本文からの逐語引用を必ず�
 
 ## 手順
 
-日付は特に指定がなければ、号の日付＝今日（日本時間）、対象＝昨日（UTC）に Europe PMC に登録された論文。
+日付は特に指定がなければ、対象＝昨日（UTC）に Europe PMC に登録された論文、号の日付＝その翌日。
+毎朝 9:07（日本時間）に実行すると、号の日付は今日（日本時間）になる。何時に実行しても同じ論文には同じ日付が付く。
 
 1. **ブランチを作る**
    ```bash
-   ISSUE=$(TZ=Asia/Tokyo date +%F)
-   git checkout -b claude/issue-$ISSUE
+   ISSUE=$(python3 -c 'from pipeline.common import default_issue_date; print(default_issue_date())')
+   BRANCH=claude/issue-$ISSUE
+   n=2; while git ls-remote --exit-code origin "refs/heads/$BRANCH" >/dev/null 2>&1; do BRANCH=claude/issue-$ISSUE-$n; n=$((n+1)); done
+   git checkout -b $BRANCH
    ```
+   同じ日付のブランチがすでにある（手動のテスト実行などで先に作られた）場合は `-2` などを付ける。
+   その場合は PR の本文で、先にある PR と内容が重なっていないか（`candidates.json` の `index_date`）に触れる。
 
 2. **候補を集める**（2〜5 分）
    ```bash
-   python3 -m pipeline.collect            # 日付を指定する場合: --index-date 2026-10-06 --issue-date 2026-10-07
+   python3 -m pipeline.collect            # 日付を指定する場合: --index-date 2026-10-06（号の日付は自動で翌日）
    ```
    `data/issues/$ISSUE/candidates.md` に候補一覧、`.cache/packets/<PMCID>.md` に各論文の本文ができる。
 
@@ -57,7 +62,7 @@ AI が書く文章の主張には、論文本文からの逐語引用を必ず�
    ```bash
    git add data/issues/$ISSUE docs/style-notes.md
    git commit -m "Add issue $ISSUE"
-   git push -u origin claude/issue-$ISSUE
+   git push -u origin $BRANCH
    ```
    PR はリポジトリのデフォルトブランチに向けて作る。タイトル：`構造生物学デイリー $ISSUE 号`。
    本文には、選んだ論文の見出し、号のページへのリンク、候補数（`candidates.json` の `counts`）、
