@@ -1,0 +1,87 @@
+{
+  "pmcid": "PMC13638461",
+  "rank": 3,
+  "headline": "ダルナビル耐性HIVプロテアーゼ（14置換）の複合体構造：離れた置換も活性部位の拡張に寄与する",
+  "takeaway": "活性部位から離れた置換も、ダルナビルに対する活性部位の拡張に関わる",
+  "target_label": "HIV-1プロテアーゼ PRp51",
+  "summary": {
+    "background": "耐性置換は活性部位近傍の主要置換と離れた副次置換に分けられるが、離れた置換が阻害剤結合にどう効くかは不明確だった。",
+    "approach": "ダルナビル耐性株由来の14置換プロテアーゼ（PRp51）とダルナビルの複合体を1.55 Åで結晶構造解析し、GRL142との比較を1500 nsの分子動力学（MD）計算で行った。",
+    "findings": "結晶構造では相互作用に大きな差はなかった。MDではダルナビル複合体でフラップが開く集団と活性部位の拡張が大きく、GRL142では小さかった。主要・副次の二分類は単純すぎる可能性がある。"
+  },
+  "highlights": [
+    {
+      "tag": "創薬・モダリティ",
+      "text": "PRp51はダルナビルに対しKiで大きく低下するが、GRL142では低下が小さい。抗ウイルス活性（EC50）の低下はダルナビルが353倍、GRL142が88倍だった。構造に基づく設計で耐性変異に強い阻害剤を作れる余地を示す。",
+      "evidence": [
+        {
+          "quote": "In summary, DRV had significant reductions in enzymatic and antiviral activities against PRp51 and HIVp51, respectively.",
+          "section": "Results"
+        },
+        {
+          "quote": "GRL142 maintained good potency and had much smaller fold reductions in its Ki and EC50 values",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "結晶構造だけでは耐性を説明できなかった。14置換のうち活性部位に直接接するのは主にVal82とIle84で、残り11個は直接結合しない。MDで初めて、フラップの開閉と活性部位容積の差として違いが現れた。",
+      "evidence": [
+        {
+          "quote": "in their respective crystal structures, there were no noteworthy differences in polar and van der Waals interactions of DRV-PRwt over DRV-PRp51.",
+          "section": "Results"
+        },
+        {
+          "quote": "The other eleven residues that underwent substitutions did not have a direct binding interaction with DRV.",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "MDでは、活性部位容積が結晶構造の値から100 Å3以内に収まる集団がダルナビル–PRwtで61%、ダルナビル–PRp51で29%だった。GRL142では84%と61%。著者は離れた置換が拡張に寄与すると解釈している。",
+      "evidence": [
+        {
+          "quote": "only 29% of the DRV-PRp51 population has an active site volume within 100 Å3 of the DRV- PRwt active site volume",
+          "section": "Results"
+        },
+        {
+          "quote": "The results suggest that the minor substitutions have a more direct impact on the loss of binding of DRV and in causing HIV’s drug resistance against DRV.",
+          "section": "Discussion"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "大腸菌Rosetta (DE3) pLysS、ZYM-5052系の自己誘導培地、37 ℃で20〜22時間。封入体として回収",
+    "construct": null,
+    "purification": "封入体を尿素で洗浄後、ギ酸で変性。逆相クロマトグラフィー（RESOURCE RPC）後に脱塩し、中和バッファーでリフォールド",
+    "sample_prep": "ハンギングドロップ蒸気拡散。ダルナビル複合体は0.15 M 硫酸アンモニウム、0.1 M HEPES pH 7.0、20% PEG 4000。30%グリセロールで凍結保護",
+    "data_collection": "ダルナビル複合体はSPring-8 BL44XU（0.9 Å）。既報の別のプロテアーゼ構造を探索モデルに分子置換、Refmacで精密化",
+    "evidence": [
+      {
+        "quote": "Rosetta (DE3) pLysS strain (Novagen) was transformed with PRDRVRp51 expression vector",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "The unfolded PRDRVRp51 was refolded with the addition of a neutralizing buffer A",
+        "section": "Crystallization of Darunavir-PRp51 and GRL142-PRp51 complexes"
+      },
+      {
+        "quote": "PRDRVRp51-DRV complexes were formed in 0.15 M (NH4)2SO4, 0.1 M HEPES pH 7.0, 20% (w/v) PEG 4000.",
+        "section": "Crystallization of Darunavir-PRp51 and GRL142-PRp51 complexes"
+      },
+      {
+        "quote": "were collected under cryogenic temperatures at SPring-8 BL44XU using X-rays of 0.9 Å wavelength",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "the structure 6OGL was used as the search model for molecular replacement using Molrep",
+        "section": "Materials and methods"
+      }
+    ]
+  },
+  "keywords": ["HIV-1プロテアーゼ", "ダルナビル", "薬剤耐性", "GRL142", "分子動力学"],
+  "editor_notes": "GRL142複合体(6MKL)も本論文の構造だが、今回の候補一覧にはダルナビル複合体9CTXのみが載る。結論の多くは著者のMD解析に基づく。本文中でKi倍率が1,432倍（本文）と1,438（表）で食い違うため数値は引用していない。"
+}
