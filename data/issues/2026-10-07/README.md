@@ -1,23 +1,36 @@
-# 構造生物学デイリー（仮） 2026-10-07
+<p align="center"><img src="../../../assets/logo.svg" alt="構造生物学デイリー" height="56"></p>
 
-Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 本のうち、新しい構造を報告した論文は 4 本。そこから 3 本を紹介する。
+# 2026-10-07 号
+
+**今日の新しい構造：4 本**　Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 本のうち、新しい構造を報告した論文は 4 本。すべて紹介する。
+
+| # | 標的 | 手法・分解能 | 見出し |
+|---|---|---|---|
+| 1 | ヒトPARP2–HPF1／ヌクレオソーム | クライオ電顕・全体 2.8 Å | PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた `機構の解明` `創薬・モダリティ` `実験Tips` |
+| 2 | SpNanR（肺炎球菌） | X線結晶構造解析・2.01–2.99 Å（4 構造） | 肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む `初構造` `機構の解明` `機構の解明` |
+| 3 | LbCas12a Lid2変異体 | PDB 公開待ち | ニッカーゼ型LbCas12a変異体のクライオ電顕構造：RuvCのLidがループ化し二本鎖切断が一本鎖切断に `機構の解明` `新しい結合部位` `手法の工夫` |
+| 4 | 大腸菌NNT（PntA/PntB） | クライオ電顕・2.74–3.85 Å（9 構造） | 大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる `機構の解明` `創薬・モダリティ` `手法の工夫` |
 
 > この号は AI が論文本文から作成した**レビュー用の下書き**です。数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。
 
-## 1. PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた
+---
 
-![グラフィカルアブストラクト](ga/PMC13635751.svg)
+## 1｜ヒトPARP2–HPF1／ヌクレオソーム
 
-**Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping**  
-*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag939) · ライセンス: cc by
+![グラフィカルアブストラクト：Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping](ga/PMC13635751.svg)
 
-### 3行要約
+### PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた
+
+*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag939) · ライセンス: cc by  
+原題：Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping
+
+#### 3行要約
 
 - **背景**：一本鎖切断（SSB）は最も頻繁なDNA損傷だが、クロマチンの制約された形の中でPARP2がそれをどう認識するかは分かっていなかった。
 - **やったこと**：SHL +5.3に一本鎖切断を入れたヌクレオソームとPARP2・HPF1の複合体をクライオ電顕で解析（全体2.8 Å）。オラパリブなど阻害剤3種の存在下でも構造を決めた。
 - **分かったこと**：WGRドメインが切断部位を、HDとHPF1が反対側のDNAジャイアを掴む多価結合を形成。阻害剤はDNA結合側の界面を安定化する一方、触媒モジュールを動的にし、DNAの非対称なほどけを促した。
 
-### ここが面白い
+#### ここが面白い
 
 **［機構の解明］** WGRドメインが上側のDNAジャイアで切断を認識し、HDのArg296とHPF1の塩基性残基が下側のジャイアに接触。ヌクレオソームDNAの2周分をまたぐ結合が、裸のDNA（Kd 653 nM）よりヌクレオソーム上の切断（Kd 約55 nM）を強く好む理由を説明する。
 
@@ -55,11 +68,11 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 
 </details>
 
-### 構造データ
+#### 構造データ
 
 寄託の記載はあるが、ID は補足資料にのみ記載されている。
 
-### 実験メモ
+#### 実験メモ
 
 - **発現系**：PARP2はpET-SUMOでE. coli Rosetta 2 pLysS、20°Cで一晩誘導。HPF1はBL21(DE3)-CodonPlus（RIPL）、16°Cで一晩。
 - **コンストラクト**：ヒトPARP2 isoform 1の90–583（最初の89残基を除去）。全長はグリッド上で凝集した。WGRドメインのみ（90–212）も使用。
@@ -87,20 +100,22 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 
 ---
 
-## 2. 肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む
+## 2｜SpNanR（肺炎球菌）
 
-![グラフィカルアブストラクト](ga/PMC13635753.svg)
+![グラフィカルアブストラクト：Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae](ga/PMC13635753.svg)
 
-**Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae**  
-*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag953) · ライセンス: cc by
+### 肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む
 
-### 3行要約
+*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag953) · ライセンス: cc by  
+原題：Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae
+
+#### 3行要約
 
 - **背景**：肺炎球菌はシアル酸を感知してnan・siaAオペロンを活性化するが、RpiR型転写因子NanRによる活性化の分子機構は分かっていなかった。
 - **やったこと**：エフェクター探索（DSF・ITC）、超遠心・native MS・SAXSによる会合状態の解析に加え、apo、エフェクター結合型、DNA複合体のX線結晶構造を決定した。
 - **分かったこと**：N-アセチルマンノサミン-6-リン酸（ManNAc-6-P）が二量体–四量体平衡を四量体側へ2000倍以上傾ける一方、DNAへの親和性は変えない。DNA結合ドメインが異性化酵素ドメインと構造的に連動しないためと説明できる。
 
-### ここが面白い
+#### ここが面白い
 
 **［初構造］** RpiRファミリー転写因子で、エフェクターなし（apo）とDNA複合体の全長構造は初めて。これまで全長のRpiR構造は2例しかなく、いずれもこの2状態ではなかった。
 
@@ -135,7 +150,7 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 
 </details>
 
-### 構造データ
+#### 構造データ
 
 | PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |
 |---|---|---|---|---|---|
@@ -147,7 +162,7 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 - [A0A064C3N8](https://www.uniprot.org/uniprotkb/A0A064C3N8) ybbH MurR/RpiR family transcriptional regulator — *Streptococcus pneumoniae* （PDB で初めての構造）
 - [A0A0H2ZPE9](https://www.uniprot.org/uniprotkb/A0A0H2ZPE9)  Phosphosugar-binding transcriptional regulator, putative — *Streptococcus pneumoniae serotype 2 (strain D39 / NCTC 7466)* （PDB で初めての構造）
 
-### 実験メモ
+#### 実験メモ
 
 - **発現系**：pET30ΔSEでE. coli BL21(DE3)。1 mM IPTGで誘導し、25°Cで一晩（14–16時間）。
 - **コンストラクト**：全長SpNanR（WP_000360349.1）を親和性タグなしで発現。
@@ -178,20 +193,109 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 
 ---
 
-## 3. 大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる
+## 3｜LbCas12a Lid2変異体
 
-![グラフィカルアブストラクト](ga/PMC13635403.svg)
+![グラフィカルアブストラクト：Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype](ga/PMC13635745.svg)
 
-**Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli**  
-*iScience*（2026-09-24） · [論文](https://doi.org/10.1016/j.isci.2026.117657) · ライセンス: cc by
+### ニッカーゼ型LbCas12a変異体のクライオ電顕構造：RuvCのLidがループ化し二本鎖切断が一本鎖切断に
 
-### 3行要約
+*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag934) · ライセンス: cc by  
+原題：Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype
+
+#### 3行要約
+
+- **背景**：Cas12aは1つのRuvC活性部位で非標的鎖と標的鎖を順に切り、二本鎖切断を作る。片方の鎖だけ切るニッカーゼはゲノム編集の精度向上に役立つが、Lid構造がこの切り替えをどう制御するかは不明だった。
+- **やったこと**：大腸菌でGFP/RFPレポーターを使うin vivoスクリーニングでLbCas12aのLid領域変異体を探索。得られたLid2変異体をガイドRNA・標的DNAと複合体にし、クライオ電顕で2.5 Å構造を決定した。
+- **分かったこと**：Lid2ではαヘリックス状のLidがループに置き換わり、非標的鎖はRuvC活性部位に保持されるが、標的鎖切断に必要な構造変化が妨げられる。結果として非標的鎖だけを切るニッカーゼになる。
+
+#### ここが面白い
+
+**［機構の解明］** 野生型LbCas12aではαヘリックス状のLidがガイド–標的ヘテロ二重鎖やブリッジヘリックスと接触して開いた状態を保つ。Lid2ではこの接触が失われ、REC2ドメインのW355が外側へ約3.4 Å動く。Lid–REC2–TNBドメイン間のアロステリックな連携が崩れ、標的鎖の活性部位への装填が妨げられる。
+
+<details><summary>根拠（論文本文）</summary>
+
+> the absence of the α-helical Lid interactions in LbCas12a–Lid2 does disturb the allosteric regulation among the Lid, REC2, and TNB domains that is required for TS loading into the active site, thereby explaining its nickase phenotype  
+> — Results
+
+> W355 undergoes a 3.4-Å outward movement from the terminus of the heteroduplex  
+> — Results
+
+</details>
+
+**［新しい結合部位］** 野生型の結晶構造にはなかった一本鎖DNA（非標的鎖）の密度が、Lid2のRuvC活性部位に見えた。切断されるリン酸がマグネシウム2個（D832・E925・D1172が配位）とともに切断可能な位置にあり、Sanger配列解析で決めたPAMの14塩基下流という切断位置と一致する。変異したYCSSモチーフのY930が糖部分と疎水結合して非標的鎖をつなぎとめる。
+
+<details><summary>根拠（論文本文）</summary>
+
+> we observed a density corresponding to a single-stranded DNA (ssDNA) substrate within the RuvC active site of the LbCas12a variant, that is not observed in the crystal structure of the wild-type LbCas12a  
+> — Results
+
+> Y930 in the YCSS motif forms a hydrophobic interaction with the ribose moiety of dG15*, facilitating the stable binding of the NTS within the RuvC active site  
+> — Results
+
+</details>
+
+**［手法の工夫］** 狙った点変異（Lid1）だけでなく、設計が思いつかないような解も拾えたのがこのスクリーニングの強み。12アミノ酸のLidコアが全く別の4アミノ酸ペプチド（YCSS、8残基の欠失を伴う）に置き換わったLid2が偶然得られた。順序立った設計では見落とすタイプの変異だと著者は述べる。
+
+<details><summary>根拠（論文本文）</summary>
+
+> This discovery highlights the power of the developed unbiased screening system to identify semi-rationally designed (Lid1) as well as non-intuitive (Lid2) structural solutions.  
+> — Discussion
+
+> the ordered α-helical Lid structure is replaced by a flexible loop, a solution that rational design would most likely have overlooked  
+> — Discussion
+
+</details>
+
+#### 構造データ
+
+| PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |
+|---|---|---|---|---|---|
+| 9WNE | — | — | 公開待ち | — | — |
+
+#### 実験メモ
+
+- **発現系**：N末端His6タグ付きLbCas12a-Lid2をE. coli Rosetta2 (DE3)で発現。37°CでOD600 0.8まで培養し、0.1 mM IPTGで誘導、20°Cで18時間。
+- **コンストラクト**：LbCas12a-Lid2（930–941のGFKNSRVKVEKQを YCSS に置換、8残基欠失）。
+- **精製**：Ni-NTA → HiTrap Heparin HP（0.3–2 M NaCl勾配）。40-nt crRNA・39-bp標的DNAと1:1.2:1.2:1.2で再構成し、Superdex 200 Increaseでゲルろ過。
+- **結晶化／グリッド作製**：アミルアミン処理したAu 300メッシュ R1.2/1.3グリッド、Vitrobot Mark IV 4°C・湿度100%、待機10秒・ブロット4秒。A260が4.0になるまで濃縮。
+- **データ収集・解析**：Titan Krios G3i（300 kV）＋GIF＋Gatan K3（カウンティング、東京大学）。cryoSPARC v4.4.0で処理。
+
+<details><summary>根拠（論文本文）</summary>
+
+> N-terminally His₆-tagged LbCas12a–Lid2 was expressed in E. coli Rosetta2 (DE3).  
+> — Methods
+
+> the purified LbCas12a–Lid2, the 40-nt crRNA, the 39-nt target DNA, and the 39-nt non-target DNA at a molar ratio of 1:1.2:1.2:1.2  
+> — Methods
+
+> applied to amylamine-treated Au 300-mesh R1.2/1.3 grids (Quantifoil) that were glow-discharged in a Vitrobot Mark IV (FEI) at 4°C, with a waiting time of 10 s and a blotting time of 4 s under 100% humidity conditions  
+> — Methods
+
+> Micrographs for all datasets were collected with a Titan Krios G3i microscope (Thermo Fisher Scientific) running at 300 kV  
+> — Methods
+
+</details>
+
+> 📝 編集者への確認事項：ゲノム編集ツールの基礎構造研究。Lid2 は人工の変異体なので初構造タグは付けていない。標的鎖もごく一部は切れる（完全な一本鎖切断ではない）点は本文どおり記述。
+
+---
+
+## 4｜大腸菌NNT（PntA/PntB）
+
+![グラフィカルアブストラクト：Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli](ga/PMC13635403.svg)
+
+### 大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる
+
+*iScience*（2026-09-24） · [論文](https://doi.org/10.1016/j.isci.2026.117657) · ライセンス: cc by  
+原題：Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli
+
+#### 3行要約
 
 - **背景**：NNTはNADHからNADP+へのヒドリド転移をプロトン輸送と共役させ、大腸菌ではNADPHの約4割を供給する。全長の大腸菌酵素の構造と状態変化は分かっていなかった。
 - **やったこと**：αとβサブユニットを逆順に融合した一本鎖変異体も作り、apo、NADP+/NAD+、NADPH/NADP+、NADPH単独、阻害剤パルミトイルCoA存在下の構造をクライオ電顕で解析した。
 - **分かったこと**：apoでは2つのdIIIが膜ドメインdIIに下向きに張り付き、通路に栓をする。NADP(H)が結合するとdIIIが外れて向きを変え、通路は細胞質側に開いてペリプラズム側が閉じる。パルミトイルCoAはapoに近い状態で固定する。
 
-### ここが面白い
+#### ここが面白い
 
 **［機構の解明］** dIIIの着脱がプロトン通路の開閉と連動する。さらに外れた2つのdIIIは同時には(dI)2と組まず、片方だけが上向きで寄り添う。二量体の左右で交互にヒドリド転移が進むという触媒サイクルのモデルを提示した。
 
@@ -232,7 +336,7 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 
 </details>
 
-### 構造データ
+#### 構造データ
 
 | PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |
 |---|---|---|---|---|---|
@@ -249,7 +353,7 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 - [P07001](https://www.uniprot.org/uniprotkb/P07001) pntA NAD(P) transhydrogenase subunit alpha — *Escherichia coli (strain K12)* （既存の PDB 構造 6 件）
 - [P0AB67](https://www.uniprot.org/uniprotkb/P0AB67) pntB NAD(P) transhydrogenase subunit beta — *Escherichia coli (strain K12)* （既存の PDB 構造 3 件）
 
-### 実験メモ
+#### 実験メモ
 
 - **発現系**：pntAB欠損株 C43(DE3) Δcyo ΔpntAB（THO株）にpET16b-EcTHを導入して発現。
 - **コンストラクト**：N末端Hisタグ付き。野生型と、β–リンカー–αの一本鎖融合体（102 kDa）。
@@ -276,7 +380,3 @@ Europe PMC に 2026-10-06 に登録されたオープンアクセス論文 25 �
 > 📝 編集者への確認事項：大腸菌の dI2 と dI2–dIII の構造は既報で、本論文の新規性は全長酵素の状態変化。UniProt 上は既存の PDB 構造がある（初構造ではない）。
 
 ---
-
-## その他の新着
-
-- [Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype](https://doi.org/10.1093/nar/gkag934) — *Nucleic Acids Res*（新しい構造：9WNE）

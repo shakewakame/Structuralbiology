@@ -1,7 +1,7 @@
 {
   "issue_date": "2026-10-07",
   "index_date": "2026-10-06",
-  "generated_at": "2026-10-07T17:23:58+00:00",
+  "generated_at": "2026-10-08T17:42:00+00:00",
   "query": "(\"cryo-EM\" OR \"cryoEM\" OR \"cryo-electron microscopy\" OR \"cryo-electron tomography\" OR \"subtomogram\" OR \"crystal structure\" OR \"X-ray crystallography\" OR \"crystallographic\" OR \"NMR structure\" OR \"solution structure\") AND (\"Protein Data Bank\" OR \"PDB\" OR \"wwPDB\" OR \"EMDB\" OR \"accession code\" OR \"accession codes\") AND OPEN_ACCESS:y AND NOT SRC:PPR AND FIRST_IDATE:[2026-10-06 TO 2026-10-06]",
   "counts": {
     "hits": 25,
@@ -133,6 +133,22 @@
           "citation_title": "Nan Regulatory Protein (NanR) - DNA complex from Streptococcus pneumoniae (CASP target)",
           "polymers": [
             {
+              "description": "DNA (5'-D(P*TP*CP*TP*GP*AP*AP*AP*GP*TP*AP*CP*TP*TP*TP*TP*AP*GP*A)-3')",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "DNA (5'-D(P*TP*CP*TP*GP*AP*AP*AP*GP*TP*AP*CP*TP*TP*TP*TP*AP*GP*A)-3')",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
               "description": "Phosphosugar-binding transcriptional regulator",
               "type": "Protein",
               "uniprot_ids": [
@@ -140,22 +156,6 @@
               ],
               "organisms": [
                 "Streptococcus pneumoniae"
-              ]
-            },
-            {
-              "description": "DNA (5'-D(P*TP*CP*TP*GP*AP*AP*AP*GP*TP*AP*CP*TP*TP*TP*TP*AP*GP*A)-3')",
-              "type": "DNA",
-              "uniprot_ids": [],
-              "organisms": [
-                "synthetic construct"
-              ]
-            },
-            {
-              "description": "DNA (5'-D(P*TP*CP*TP*GP*AP*AP*AP*GP*TP*AP*CP*TP*TP*TP*TP*AP*GP*A)-3')",
-              "type": "DNA",
-              "uniprot_ids": [],
-              "organisms": [
-                "synthetic construct"
               ]
             }
           ],
@@ -227,20 +227,20 @@
           "citation_title": "Wild-type apo Escherichia coli nicotinamide nucleotide transhydrogenase",
           "polymers": [
             {
-              "description": "NAD(P) transhydrogenase subunit beta",
+              "description": "NAD(P) transhydrogenase subunit alpha",
               "type": "Protein",
               "uniprot_ids": [
-                "P0AB67"
+                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
               ]
             },
             {
-              "description": "NAD(P) transhydrogenase subunit alpha",
+              "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
-                "P07001"
+                "P0AB67"
               ],
               "organisms": [
                 "Escherichia coli K-12"
@@ -263,30 +263,30 @@
           "citation_title": "Single-subunit apo Escherichia coli nicotinamide nucleotide transhydrogenase",
           "polymers": [
             {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
+              "description": "NAD(P) transhydrogenase subunit alpha",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P07001"
+              ],
+              "organisms": [
+                "Escherichia coli K-12"
+              ]
+            },
+            {
               "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
                 "P0AB67"
-              ],
-              "organisms": [
-                "Escherichia coli K-12"
-              ]
-            },
-            {
-              "description": "NAD(P) transhydrogenase subunit alpha",
-              "type": "Protein",
-              "uniprot_ids": [
-                "P07001"
-              ],
-              "organisms": [
-                "Escherichia coli K-12"
-              ]
-            },
-            {
-              "description": "NAD(P) transhydrogenase subunit alpha",
-              "type": "Protein",
-              "uniprot_ids": [
-                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
@@ -309,20 +309,20 @@
           "citation_title": "Single-subunit apo Escherichia coli nicotinamide nucleotide transhydrogenase",
           "polymers": [
             {
-              "description": "NAD(P) transhydrogenase subunit beta",
+              "description": "NAD(P) transhydrogenase subunit alpha",
               "type": "Protein",
               "uniprot_ids": [
-                "P0AB67"
+                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
               ]
             },
             {
-              "description": "NAD(P) transhydrogenase subunit alpha",
+              "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
-                "P07001"
+                "P0AB67"
               ],
               "organisms": [
                 "Escherichia coli K-12"
@@ -345,20 +345,20 @@
           "citation_title": "Wild-type Escherichia coli transhydrogenase double dIIIs attached to dII in the presence of both NADP+ and NAD+.",
           "polymers": [
             {
-              "description": "NAD(P) transhydrogenase subunit alpha",
+              "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
-                "P07001"
+                "P0AB67"
               ],
               "organisms": [
                 "Escherichia coli K-12"
               ]
             },
             {
-              "description": "NAD(P) transhydrogenase subunit beta",
+              "description": "NAD(P) transhydrogenase subunit alpha",
               "type": "Protein",
               "uniprot_ids": [
-                "P0AB67"
+                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
@@ -386,20 +386,20 @@
           "citation_title": "Wild-type Escherichia coli transhydrogenase single dIII attached to dII in the presence of both NADP+ and NAD+.",
           "polymers": [
             {
-              "description": "NAD(P) transhydrogenase subunit alpha",
+              "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
-                "P07001"
+                "P0AB67"
               ],
               "organisms": [
                 "Escherichia coli K-12"
               ]
             },
             {
-              "description": "NAD(P) transhydrogenase subunit beta",
+              "description": "NAD(P) transhydrogenase subunit alpha",
               "type": "Protein",
               "uniprot_ids": [
-                "P0AB67"
+                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
@@ -458,20 +458,20 @@
           "citation_title": "Single-subunit Escherichia coli nicotinamide nucleotide transhydrogenase in the presence of palmitoyl-CoA",
           "polymers": [
             {
-              "description": "NAD(P) transhydrogenase subunit alpha",
+              "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
-                "P07001"
+                "P0AB67"
               ],
               "organisms": [
                 "Escherichia coli K-12"
               ]
             },
             {
-              "description": "NAD(P) transhydrogenase subunit beta",
+              "description": "NAD(P) transhydrogenase subunit alpha",
               "type": "Protein",
               "uniprot_ids": [
-                "P0AB67"
+                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
@@ -525,20 +525,20 @@
           "citation_title": "Escherichia coli nicotinamide nucleotide transhydrogenase double dIIIs attached to dIIs state in the presence of NADPH",
           "polymers": [
             {
-              "description": "NAD(P) transhydrogenase subunit beta",
+              "description": "NAD(P) transhydrogenase subunit alpha",
               "type": "Protein",
               "uniprot_ids": [
-                "P0AB67"
+                "P07001"
               ],
               "organisms": [
                 "Escherichia coli K-12"
               ]
             },
             {
-              "description": "NAD(P) transhydrogenase subunit alpha",
+              "description": "NAD(P) transhydrogenase subunit beta",
               "type": "Protein",
               "uniprot_ids": [
-                "P07001"
+                "P0AB67"
               ],
               "organisms": [
                 "Escherichia coli K-12"

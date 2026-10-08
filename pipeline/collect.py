@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import html
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
@@ -129,6 +130,7 @@ def run(index_date: str, issue_date: str) -> dict:
         m["doi"] = m["doi"] or p["doi"]
         m["pmid"] = m["pmid"] or p["pmid"]
         m["journal"] = p["journal"] or m["journal"]  # publisher's capitalisation
+        m["title"] = p["title"] or html.unescape(m["title"])  # Europe PMC titles carry escaped markup
         c = {**m, **classify(m, p, released, holdings),
              "emdb_ids": p["emdb_ids"], "abstract": p["abstract"] or m["abstract"]}
         candidates.append(c)
