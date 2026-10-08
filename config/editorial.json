@@ -1,7 +1,7 @@
 {
   "site_name": "構造生物学デイリー（仮）",
   "review_required": true,
-  "picks_per_day": 3,
-  "max_picks_per_day": 5,
-  "note": "review_required が true の間は、毎日の号を Pull Request として出し、編集者（オーナー）の確認後にマージする。false にすると検証が通った号を自動でマージする。"
+  "cover_all_new_structures": true,
+  "max_articles_per_day": 15,
+  "note": "新しい構造を報告した論文はすべて記事にする。15 本を超える日だけ、優先度の高い 15 本を記事にして残りは一覧にする。review_required が true の間は、毎日の号を Pull Request として出し、編集者（オーナー）の確認後にマージする。"
 }

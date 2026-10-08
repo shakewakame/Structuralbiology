@@ -10,12 +10,12 @@ import re
 import sys
 import unicodedata
 
-from . import pdb, structure_svg
+from . import brand, pdb, structure_svg
 from .common import issue_dir, read_json
 from .schema import LAB_NOTE_FIELDS
 
-SITE_NAME = "構造生物学デイリー（仮）"
-FONT = "'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic',Meiryo,sans-serif"
+SITE_NAME = brand.SITE_NAME
+FONT = brand.FONT
 INK, MUTED, PANEL, ACCENT = "#1F2A44", "#5A6478", "#F3F5F9", "#E4572E"
 W, H = 1200, 630
 
@@ -116,8 +116,19 @@ def ligand_line(cand: dict) -> str:
     return ", ".join(names) + (" ほか" if len(seen) > 4 else "")
 
 
+def _placeholder(cand: dict, s: dict | None) -> tuple[str, str]:
+    if s:
+        return "構造図は省略", f"PDB {s['pdb_id']}（座標ファイルが大きすぎるため）"
+    if cand["own_structures"]:
+        return "構造データは PDB 公開待ち", ", ".join(x["pdb_id"] for x in cand["own_structures"][:4])
+    if cand["kind"] == "new_map_only":
+        return "EMDB マップのみ（原子モデルなし）", ", ".join(cand.get("emdb_ids", [])[:4])
+    return "PDB ID は論文の補足資料に記載", "（座標を自動取得できないため構造図なし）"
+
+
 def graphical_abstract(cand: dict, pick: dict, issue_date: str) -> str:
-    px, py, pw, ph = 24, 24, 600, 582
+    bar = 56
+    px, py, pw, ph = 24, bar + 20, 600, H - bar - 44
     s = pick_structure(cand, pick)
     body, legend, caption = "", [], ""
     if s:
@@ -125,7 +136,7 @@ def graphical_abstract(cand: dict, pick: dict, issue_date: str) -> str:
         if coords:
             lig_ids = {l["id"] for l in s.get("ligands") or []}
             genes = {p["uniprot"]: p["gene"] for p in cand.get("proteins", []) if p.get("gene")}
-            body, legend = structure_svg.render(coords, lig_ids, px, py + 10, pw, ph - 90, genes)
+            body, legend = structure_svg.render(coords, lig_ids, px, py + 8, pw, ph - 80, genes)
             if pick.get("legend_labels"):
                 legend = [(col, lab) for (col, _), lab in zip(legend, pick["legend_labels"])]
             if len(legend) < 2:  # a single colour needs no key
@@ -133,18 +144,13 @@ def graphical_abstract(cand: dict, pick: dict, issue_date: str) -> str:
             res = f" {s['resolution']:.2f} Å" if s.get("resolution") else ""
             caption = f"PDB {s['pdb_id']} · {method_ja(s['method'])}{res}"
     if not body:
-        if s:
-            msg, sub = "構造図は省略", f"PDB {s['pdb_id']}（座標ファイルが大きすぎるため）"
-        elif cand["own_structures"]:
-            msg, sub = "構造データは PDB 公開待ち", ", ".join(x["pdb_id"] for x in cand["own_structures"][:4])
-        else:
-            msg, sub = "PDB ID は論文の補足資料に記載", "（座標を自動取得できないため構造図なし）"
+        msg, sub = _placeholder(cand, s)
         body = "".join(text_block([t], px + pw / 2, py + ph / 2 + dy, size, MUTED, wt)
                        .replace("<text ", '<text text-anchor="middle" ', 1)
-                       for t, dy, size, wt in ((msg, -10, 26, 600), (sub, 30, 18, 400)))
+                       for t, dy, size, wt in ((msg, -10, 26, 600), (sub, 30, 18, 400)) if t)
 
     leg = []
-    lx, ly = px + 20, py + ph - 54
+    lx, ly = px + 20, py + ph - 46
     for i, (col, desc) in enumerate(legend[:3]):
         label = wrap(desc, 15, 170, 1)[0] if desc else ""
         x = lx + i * 190
@@ -155,35 +161,54 @@ def graphical_abstract(cand: dict, pick: dict, issue_date: str) -> str:
         if x < px + pw - 120:
             leg.append(f'<circle cx="{x + 6}" cy="{ly - 5}" r="6" fill="{ACCENT}"/>'
                        f'<text x="{x + 18}" y="{ly}" font-size="15" fill="{MUTED}">リガンド</text>')
-    cap = f'<text x="{lx}" y="{py + ph - 22}" font-size="15" fill="{MUTED}">{esc(caption)}</text>' if caption else ""
+    cap = f'<text x="{lx}" y="{py + ph - 18}" font-size="15" fill="{MUTED}">{esc(caption)}</text>' if caption else ""
 
+    # Brand bar.
+    head = (f'<rect width="{W}" height="{bar}" fill="{INK}"/>'
+            f'{brand.logo_mark(24, 10, 36, bg="#33456E")}'
+            f'<text x="72" y="36" font-size="21" font-weight="700" fill="#FFFFFF">{esc(brand.SITE_NAME)}</text>'
+            f'<text x="{72 + 21 * 9 + 10}" y="36" font-size="12" letter-spacing="2" fill="#AFC0DD">'
+            f'{esc(brand.SITE_NAME_EN)} · β</text>'
+            f'<text x="{W - 24}" y="36" font-size="17" fill="#D5DDEB" text-anchor="end">{esc(issue_date)}</text>')
+
+    # Right column: journal, the paper's own title, then the facts.
     rx, rw = 664, 512
-    right = [text_block([f"{SITE_NAME}  {issue_date}"], rx, 64, 17, MUTED)]
-    take = wrap(pick["takeaway"], 36, rw, 4)
-    right.append(text_block(take, rx, 128, 36, INK, 700, 1.32))
-    y = 128 + len(take) * 36 * 1.32 + 28
     method = method_line(cand)
-    if pick.get("method_label") and not any(s["status"] == "released" for s in cand["own_structures"]):
+    if pick.get("method_label") and not any(x["status"] == "released" for x in cand["own_structures"]):
         method = pick["method_label"]
     rows = [("標的", pick["target_label"]), ("手法・分解能", method),
-            ("結合分子", pick.get("ligand_label") or ligand_line(cand)),
-            ("掲載誌", f"{cand['journal_abbrev'] or cand['journal']}（{cand['pub_date']}）")]
-    for label, value in rows:
-        right.append(text_block([label], rx, y, 15, MUTED))
-        vl = wrap(value, 21, rw, 2)
-        right.append(text_block(vl, rx, y + 27, 21, INK, 500, 1.3))
-        y += 27 + len(vl) * 21 * 1.3 + 14
+            ("結合分子", pick.get("ligand_label") or ligand_line(cand))]
+    row_lines = [wrap(v, 19, rw, 2) for _, v in rows]
+    rows_h = sum(22 + len(v) * 19 * 1.3 + 12 for v in row_lines)
+    tags_y = H - 60
+    title_top = bar + 66
+    title = cand["title"]
+    for size in (32, 29, 26, 23, 21):
+        tl = wrap(title, size, rw, 8)
+        title_h = len(tl) * size * 1.28
+        if title_top + title_h + 40 + rows_h <= tags_y - 10:
+            break
+    right = [text_block([f"{cand['journal'] or cand['journal_abbrev']}  ·  {cand['pub_date']}"],
+                        rx, bar + 44, 16, MUTED),
+             text_block(tl, rx, title_top + size * 0.95, size, INK, 700, 1.28)]
+    rule_y = title_top + title_h + 6
+    right.append(f'<line x1="{rx}" y1="{rule_y:.1f}" x2="{rx + 56}" y2="{rule_y:.1f}" stroke="{ACCENT}" stroke-width="3"/>')
+    y = title_top + title_h + 40
+    for (label, _), vl in zip(rows, row_lines):
+        right.append(text_block([label], rx, y, 14, MUTED))
+        right.append(text_block(vl, rx, y + 24, 19, INK, 500, 1.3))
+        y += 22 + len(vl) * 19 * 1.3 + 12
     cx = rx
     for h in pick["highlights"][:3]:
         tag = h["tag"]
         tw = sum(char_width(c) for c in tag) * 16 + 24
-        right.append(f'<rect x="{cx}" y="{H - 64}" width="{tw:.0f}" height="32" rx="16" fill="{INK}"/>'
-                     f'<text x="{cx + 12}" y="{H - 42}" font-size="16" fill="#FFFFFF">{esc(tag)}</text>')
+        right.append(f'<rect x="{cx}" y="{tags_y}" width="{tw:.0f}" height="30" rx="15" fill="{INK}"/>'
+                     f'<text x="{cx + 12}" y="{tags_y + 21}" font-size="16" fill="#FFFFFF">{esc(tag)}</text>')
         cx += tw + 10
 
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
             f'font-family="{FONT}">'
-            f'<rect width="{W}" height="{H}" fill="#FFFFFF"/>'
+            f'<rect width="{W}" height="{H}" fill="#FFFFFF"/>{head}'
             f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="18" fill="{PANEL}"/>'
             f'{body}{"".join(leg)}{cap}{"".join(right)}</svg>\n')
 
@@ -228,22 +253,23 @@ def quote_block(evidence: list) -> list[str]:
 def article_md(cand: dict, pick: dict, n: int) -> list[str]:
     doi = f"https://doi.org/{cand['doi']}" if cand.get("doi") else f"https://europepmc.org/article/PMC/{cand['pmcid']}"
     s = pick["summary"]
-    out = [f"## {n}. {pick['headline']}", "",
-           f"![グラフィカルアブストラクト](ga/{cand['pmcid']}.svg)", "",
-           f"**{cand['title']}**  ",
-           f"*{cand['journal']}*（{cand['pub_date']}） · [論文]({doi}) · ライセンス: {cand.get('license') or '不明'}", "",
-           "### 3行要約", "",
+    out = [f"## {n}｜{pick['target_label']}", "",
+           f"![グラフィカルアブストラクト：{cand['title']}](ga/{cand['pmcid']}.svg)", "",
+           f"### {pick['headline']}", "",
+           f"*{cand['journal']}*（{cand['pub_date']}） · [論文]({doi}) · ライセンス: {cand.get('license') or '不明'}  ",
+           f"原題：{cand['title']}", "",
+           "#### 3行要約", "",
            f"- **背景**：{s['background']}",
            f"- **やったこと**：{s['approach']}",
            f"- **分かったこと**：{s['findings']}", "",
-           "### ここが面白い", ""]
+           "#### ここが面白い", ""]
     for h in pick["highlights"]:
         out += [f"**［{h['tag']}］** {h['text']}", ""] + quote_block(h.get("evidence", []))
-    out += ["### 構造データ", ""] + structure_table(cand) + protein_lines(cand)
+    out += ["#### 構造データ", ""] + structure_table(cand) + protein_lines(cand)
     notes = pick.get("lab_notes") or {}
     filled = [(LAB_NOTE_FIELDS[k], notes[k]) for k in LAB_NOTE_FIELDS if notes.get(k)]
     if filled:
-        out += ["### 実験メモ", ""] + [f"- **{label}**：{v}" for label, v in filled] + [""]
+        out += ["#### 実験メモ", ""] + [f"- **{label}**：{v}" for label, v in filled] + [""]
         if notes.get("evidence"):
             out += quote_block(notes["evidence"])
     if pick.get("editor_notes"):
@@ -251,20 +277,35 @@ def article_md(cand: dict, pick: dict, n: int) -> list[str]:
     return out + ["---", ""]
 
 
+def contents_table(picks: list[tuple[dict, dict]]) -> list[str]:
+    rows = ["| # | 標的 | 手法・分解能 | 見出し |", "|---|---|---|---|"]
+    for n, (cand, pick) in enumerate(picks, 1):
+        method = method_line(cand)
+        if pick.get("method_label") and not any(x["status"] == "released" for x in cand["own_structures"]):
+            method = pick["method_label"]
+        tags = " ".join(f"`{h['tag']}`" for h in pick["highlights"])
+        rows.append(f"| {n} | {pick['target_label']} | {method} | {pick['headline']} {tags} |")
+    return rows + [""]
+
+
 def issue_md(meta: dict, picks: list[tuple[dict, dict]]) -> str:
     c = meta["counts"]
     new_total = c["new_structure"] + c.get("new_structure_ids_unlisted", 0) + c.get("new_map_only", 0)
-    out = [f"# {SITE_NAME} {meta['issue_date']}", "",
-           f"Europe PMC に {meta['index_date']} に登録されたオープンアクセス論文 {c['parsed']} 本のうち、"
-           f"新しい構造を報告した論文は {new_total} 本。そこから {len(picks)} 本を紹介する。", "",
-           "> この号は AI が論文本文から作成した**レビュー用の下書き**です。"
-           "数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。", ""]
-    for n, (cand, pick) in enumerate(picks, 1):
-        out += article_md(cand, pick, n)
     picked = {p["pmcid"] for _, p in picks}
     rest = [x for x in meta["candidates"] if x["kind"] in KIND_JA and x["pmcid"] not in picked]
+    covered = "すべて紹介する。" if not rest else f"うち {len(picks)} 本を紹介する（残りは末尾に一覧）。"
+    out = ['<p align="center"><img src="../../../assets/logo.svg" alt="構造生物学デイリー" height="56"></p>', "",
+           f"# {meta['issue_date']} 号", "",
+           f"**今日の新しい構造：{new_total} 本**　Europe PMC に {meta['index_date']} に登録された"
+           f"オープンアクセス論文 {c['parsed']} 本のうち、新しい構造を報告した論文は {new_total} 本。{covered}", ""]
+    if picks:
+        out += contents_table(picks)
+    out += ["> この号は AI が論文本文から作成した**レビュー用の下書き**です。"
+            "数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。", "", "---", ""]
+    for n, (cand, pick) in enumerate(picks, 1):
+        out += article_md(cand, pick, n)
     if rest:
-        out += ["## その他の新着", ""]
+        out += ["## 記事にしていない新しい構造", ""]
         for x in rest:
             doi = f"https://doi.org/{x['doi']}" if x.get("doi") else f"https://europepmc.org/article/PMC/{x['pmcid']}"
             ids = ", ".join(s["pdb_id"] for s in x["own_structures"][:4])
@@ -292,7 +333,7 @@ def main(argv=None) -> int:
         (d / "ga" / f"{cand['pmcid']}.svg").write_text(graphical_abstract(cand, pick, meta["issue_date"]),
                                                        encoding="utf-8")
     (d / "README.md").write_text(issue_md(meta, picks), encoding="utf-8")
-    print(f"Rendered {len(picks)} picks to {d / 'README.md'}")
+    print(f"Rendered {len(picks)} articles to {d / 'README.md'}")
     return 0
 
 

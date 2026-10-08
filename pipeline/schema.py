@@ -17,7 +17,6 @@ LAB_NOTE_FIELDS = {
 # field: (required, max characters)
 LIMITS = {
     "headline": (True, 60),
-    "takeaway": (True, 48),
     "target_label": (True, 30),
     "summary.background": (True, 140),
     "summary.approach": (True, 140),
@@ -29,8 +28,7 @@ LIMITS = {
 EXAMPLE = {
     "pmcid": "PMC00000000",
     "rank": 1,
-    "headline": "見出し：何の構造が出て、何が分かったか（60字以内）",
-    "takeaway": "グラフィカルアブストラクトに載せる一番の発見（48字以内）",
+    "headline": "見出し：何の構造が出て、何が分かったか（60字以内）。グラフィカルアブストラクトの直後に出る",
     "target_label": "標的の短い表記（例：RyR1（ウサギ骨格筋））",
     "summary": {
         "background": "背景：何が分かっていなかったか",

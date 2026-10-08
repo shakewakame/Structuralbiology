@@ -54,7 +54,7 @@ def check_pick(pick: dict, cand: dict | None, corpus: str | None) -> tuple[list[
         if len(value) > limit:
             errors.append(f"{name} is {len(value)} characters (limit {limit})")
 
-    for f in ("headline", "takeaway", "target_label"):
+    for f in ("headline", "target_label"):
         length(f, pick.get(f), f)
     for f in ("background", "approach", "findings"):
         length(f"summary.{f}", (pick.get("summary") or {}).get(f), f"summary.{f}")
@@ -132,6 +132,13 @@ def main(argv=None) -> int:
         for w in warnings:
             print(f"   warning: {w}")
         failed |= bool(errors)
+    written = {read_json(p).get("pmcid") for p in picks}
+    missing = [c for c in cands.values()
+               if c["kind"] in ("new_structure", "new_structure_ids_unlisted", "new_map_only") and c["pmcid"] not in written]
+    if missing:
+        print(f"note: {len(missing)} new-structure paper(s) have no article (explain why in the PR):")
+        for c in missing:
+            print(f"   {c['pmcid']} [{c['kind']}] {c['title'][:90]}")
     return 1 if failed else 0
 
 
