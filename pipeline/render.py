@@ -16,7 +16,7 @@ from .schema import LAB_NOTE_FIELDS
 
 SITE_NAME = brand.SITE_NAME
 FONT = brand.FONT
-INK, MUTED, PANEL, ACCENT = "#1F2A44", "#5A6478", "#F3F5F9", "#E4572E"
+INK, MUTED, PANEL, ACCENT = brand.INK, brand.MUTED, brand.PANEL, brand.EMERALD
 W, H = 1200, 630
 
 METHOD_JA = {

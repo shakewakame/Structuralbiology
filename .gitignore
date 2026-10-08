@@ -1,3 +1,6 @@
 .cache/
 __pycache__/
 *.pyc
+
+# built static site (regenerate with: python3 -m pipeline.site)
+site/

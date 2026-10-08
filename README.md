@@ -16,7 +16,10 @@ python3 -m pipeline.collect                 # 候補を集める（前日に Eur
 # data/issues/<日付>/picks/<PMCID>.json を書く
 python3 -m pipeline.verify 2026-10-07       # 引用・数値・文字数を検証する
 python3 -m pipeline.render 2026-10-07       # 号のページとグラフィカルアブストラクトを作る
+python3 -m pipeline.site                    # 全号から静的サイト site/ を生成（Qiita 風レイアウト）
 ```
+
+ロゴと配色は `pipeline/brand.py`（紺＋エメラルド）。`python3 -m pipeline.brand` で `assets/logo*.svg` を再生成する。
 
 Python 3.11 以上、標準ライブラリのみ。外部 API：Europe PMC、RCSB PDB、PDBe、UniProt。
 
