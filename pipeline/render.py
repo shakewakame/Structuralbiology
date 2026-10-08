@@ -218,6 +218,9 @@ def graphical_abstract(cand: dict, pick: dict, issue_date: str) -> str:
 def structure_table(cand: dict) -> list[str]:
     own = cand["own_structures"]
     if not own:
+        if cand["kind"] == "new_map_only" and cand.get("emdb_ids"):
+            links = ", ".join(f"[{e}](https://www.ebi.ac.uk/emdb/{e})" for e in cand["emdb_ids"][:12])
+            return [f"原子モデルのない cryo-EM マップ（EMDB）：{links}", ""]
         return ["寄託の記載はあるが、ID は補足資料にのみ記載されている。", ""]
     rows = ["| PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |", "|---|---|---|---|---|---|"]
     for s in own:

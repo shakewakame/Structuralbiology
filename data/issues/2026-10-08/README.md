@@ -1,23 +1,36 @@
-# 構造生物学デイリー（仮） 2026-10-08
+<p align="center"><img src="../../../assets/logo.svg" alt="構造生物学デイリー" height="56"></p>
 
-Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 本のうち、新しい構造を報告した論文は 4 本。そこから 3 本を紹介する。
+# 2026-10-08 号
+
+**今日の新しい構造：4 本**　Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 本のうち、新しい構造を報告した論文は 4 本。すべて紹介する。
+
+| # | 標的 | 手法・分解能 | 見出し |
+|---|---|---|---|
+| 1 | QatBC（大腸菌 QatABCD） | X線結晶構造解析・2.09–2.66 Å（2 構造） | 抗ファージ防御系QatBCの結晶構造：QatBのN末端がQatC活性部位に挿入され、防御に必須だった `機構の解明` `機構の解明` `手法の工夫` |
+| 2 | FlhAC A489E（サルモネラ） | X線結晶構造解析・2.90–3.28 Å（2 構造） | FlhA(A489E)抑制変異体の結晶構造：Arg-386周辺の塩橋網の組み換えが鞭毛輸送装置の基質切り替えを助ける `機構の解明` `機構の解明` `実験Tips` |
+| 3 | HIV-1プロテアーゼ PRp51 | X線結晶構造解析・1.55 Å | ダルナビル耐性HIVプロテアーゼ（14置換）の複合体構造：離れた置換も活性部位の拡張に寄与する `創薬・モダリティ` `機構の解明` `機構の解明` |
+| 4 | ホタルルシフェラーゼ（翻訳中） | クライオ電顕・平均 2.3 Å（リボソーム–新生鎖複合体） | ホタルルシフェラーゼの共翻訳フォールディングを力プロファイル解析とクライオ電顕で追跡 `機構の解明` `機構の解明` `手法の工夫` |
 
 > この号は AI が論文本文から作成した**レビュー用の下書き**です。数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。
 
-## 1. 抗ファージ防御系QatBCの結晶構造：QatBのN末端がQatC活性部位に挿入され、防御に必須だった
+---
 
-![グラフィカルアブストラクト](ga/PMC13639016.svg)
+## 1｜QatBC（大腸菌 QatABCD）
 
-**Structural and functional insights into QueC-family protein in QatABCD anti-phage system**  
-*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-77369-4) · ライセンス: cc by-nc-nd
+![グラフィカルアブストラクト：Structural and functional insights into QueC-family protein in QatABCD anti-phage system](ga/PMC13639016.svg)
 
-### 3行要約
+### 抗ファージ防御系QatBCの結晶構造：QatBのN末端がQatC活性部位に挿入され、防御に必須だった
+
+*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-77369-4) · ライセンス: cc by-nc-nd  
+原題：Structural and functional insights into QueC-family protein in QatABCD anti-phage system
+
+#### 3行要約
 
 - **背景**：QatABCDは広く分布する抗ファージ防御系で、QueC型タンパク質QatCが特徴的な構成要素だが、作用機構もQatCの機能も不明だった。
 - **やったこと**：QatBCD複合体を共発現で調製し、QatBC複合体のapo型とATP結合型を結晶構造解析した。変異体はファージプラークアッセイで防御能を評価した。
 - **分かったこと**：QatBのN末端ループがQatCの活性部位に挿入される。活性中心、亜鉛結合部位、QatB N末端、QatB-QatC界面の変異はいずれも防御能を下げた。QatDは柔軟に結合する。
 
-### ここが面白い
+#### ここが面白い
 
 **［機構の解明］** QatBのN末端ループがQatCの推定活性部位に挿入され、CBASSのCap9–CdnDと同様の配置をとる。QatBがQatCの基質である可能性を示唆し、ペプチド解析ではQatB N末端のNDG修飾も検出された（修飾効率は低いとみられる）。
 
@@ -55,7 +68,7 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 </details>
 
-### 構造データ
+#### 構造データ
 
 | PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |
 |---|---|---|---|---|---|
@@ -65,7 +78,7 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 - [A0A4Q0WMG2](https://www.uniprot.org/uniprotkb/A0A4Q0WMG2)  Uncharacterized protein — *Escherichia coli* （既存の PDB 構造 2 件）
 - [A0A6N2XJ30](https://www.uniprot.org/uniprotkb/A0A6N2XJ30)  Uncharacterized protein — *Citrobacter amalonaticus* （既存の PDB 構造 1 件）
 
-### 実験メモ
+#### 実験メモ
 
 - **発現系**：大腸菌BL21(DE3)。OD600 0.8で0.2 mM IPTG、18 ℃で12時間誘導
 - **コンストラクト**：N末端His6-SUMO融合（Ulp1切断）。QatBはGly2から始まる天然のN末端を再現
@@ -93,20 +106,22 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 ---
 
-## 2. FlhA(A489E)抑制変異体の結晶構造：Arg-386周辺の塩橋網の組み換えが鞭毛輸送装置の基質切り替えを助ける
+## 2｜FlhAC A489E（サルモネラ）
 
-![グラフィカルアブストラクト](ga/PMC13639345.svg)
+![グラフィカルアブストラクト：Structural basis for substrate specificity switching revealed by the FlhA(A489E) suppressor mutation](ga/PMC13639345.svg)
 
-**Structural basis for substrate specificity switching revealed by the FlhA(A489E) suppressor mutation**  
-*Biophysics and Physicobiology*（2026-01-01） · [論文](https://doi.org/10.2142/biophysico.bppb-v23.0030) · ライセンス: cc by-nc-sa
+### FlhA(A489E)抑制変異体の結晶構造：Arg-386周辺の塩橋網の組み換えが鞭毛輸送装置の基質切り替えを助ける
 
-### 3行要約
+*Biophysics and Physicobiology*（2026-01-01） · [論文](https://doi.org/10.2142/biophysico.bppb-v23.0030) · ライセンス: cc by-nc-sa  
+原題：Structural basis for substrate specificity switching revealed by the FlhA(A489E) suppressor mutation
+
+#### 3行要約
 
 - **背景**：鞭毛のIII型分泌装置はフック完成時に基質特異性を切り替える。FlhB(P270A)の切り替え不全を部分的に回復するFlhA(A489E)の機構は不明だった。
 - **やったこと**：FlhAC(A489E)の結晶構造を半閉型（2.90 Å）と開型（3.28 Å）の2状態で決定し、AlphaFold3によるFlhAC–FlhB複合体予測と運動性・分泌アッセイを組み合わせた。
 - **分かったこと**：A489EはArg-386・Glu-483周辺の塩橋網を組み換え、α2ヘリックス周辺の配置を変える。FlhBのC末端尾部がα2–β2の溝を占めるという予測モデルと合わせ、状態遷移の障壁を下げると考えられる。
 
-### ここが面白い
+#### ここが面白い
 
 **［機構の解明］** 野生型ではArg-386がGlu-483と塩橋を作る。A489Eの半閉型ではArg-386がGlu-489側に引かれてGlu-483から離れ、開型ではGlu-489とGlu-483の両方と塩橋を作る。野生型にない静電ネットワークが現れた。
 
@@ -141,7 +156,7 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 </details>
 
-### 構造データ
+#### 構造データ
 
 | PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |
 |---|---|---|---|---|---|
@@ -150,7 +165,7 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 - [P40729](https://www.uniprot.org/uniprotkb/P40729) flhA Flagellar biosynthesis protein FlhA — *Salmonella typhimurium (strain LT2 / SGSC1412 / ATCC 700720)* （既存の PDB 構造 12 件）
 
-### 実験メモ
+#### 実験メモ
 
 - **発現系**：大腸菌BL21(DE3)、LB培地、30 ℃で一晩培養
 - **コンストラクト**：N末端His-tag付きFlhAC(A489E)（pYI104-SP3）
@@ -178,20 +193,22 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 ---
 
-## 3. ダルナビル耐性HIVプロテアーゼ（14置換）の複合体構造：離れた置換も活性部位の拡張に寄与する
+## 3｜HIV-1プロテアーゼ PRp51
 
-![グラフィカルアブストラクト](ga/PMC13638461.svg)
+![グラフィカルアブストラクト：Distal amino-acid substitutions contribute to HIV protease inhibitor resistance as directly as proximal amino-acid substitutions](ga/PMC13638461.svg)
 
-**Distal amino-acid substitutions contribute to HIV protease inhibitor resistance as directly as proximal amino-acid substitutions**  
-*Scientific Reports*（2026-01-01） · [論文](https://doi.org/10.1038/s41598-026-64620-7) · ライセンス: cc by
+### ダルナビル耐性HIVプロテアーゼ（14置換）の複合体構造：離れた置換も活性部位の拡張に寄与する
 
-### 3行要約
+*Scientific Reports*（2026-01-01） · [論文](https://doi.org/10.1038/s41598-026-64620-7) · ライセンス: cc by  
+原題：Distal amino-acid substitutions contribute to HIV protease inhibitor resistance as directly as proximal amino-acid substitutions
+
+#### 3行要約
 
 - **背景**：耐性置換は活性部位近傍の主要置換と離れた副次置換に分けられるが、離れた置換が阻害剤結合にどう効くかは不明確だった。
 - **やったこと**：ダルナビル耐性株由来の14置換プロテアーゼ（PRp51）とダルナビルの複合体を1.55 Åで結晶構造解析し、GRL142との比較を1500 nsの分子動力学（MD）計算で行った。
 - **分かったこと**：結晶構造では相互作用に大きな差はなかった。MDではダルナビル複合体でフラップが開く集団と活性部位の拡張が大きく、GRL142では小さかった。主要・副次の二分類は単純すぎる可能性がある。
 
-### ここが面白い
+#### ここが面白い
 
 **［創薬・モダリティ］** PRp51はダルナビルに対しKiで大きく低下するが、GRL142では低下が小さい。抗ウイルス活性（EC50）の低下はダルナビルが353倍、GRL142が88倍だった。構造に基づく設計で耐性変異に強い阻害剤を作れる余地を示す。
 
@@ -229,7 +246,7 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 </details>
 
-### 構造データ
+#### 構造データ
 
 | PDB | 手法 | 分解能 | 公開 | 生物種 | リガンド |
 |---|---|---|---|---|---|
@@ -237,7 +254,7 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 - [O38893](https://www.uniprot.org/uniprotkb/O38893) pol HIV-1 retropepsin — *Human immunodeficiency virus type 1* （既存の PDB 構造 1 件）
 
-### 実験メモ
+#### 実験メモ
 
 - **発現系**：大腸菌Rosetta (DE3) pLysS、ZYM-5052系の自己誘導培地、37 ℃で20〜22時間。封入体として回収
 - **精製**：封入体を尿素で洗浄後、ギ酸で変性。逆相クロマトグラフィー（RESOURCE RPC）後に脱塩し、中和バッファーでリフォールド
@@ -267,6 +284,81 @@ Europe PMC に 2026-10-07 に登録されたオープンアクセス論文 33 �
 
 ---
 
-## その他の新着
+## 4｜ホタルルシフェラーゼ（翻訳中）
 
-- [Quasi-continuous cotranslational compaction and folding of a multidomain protein](https://doi.org/10.1038/s41467-026-78090-y) — *Nat Commun*（新しいマップ（EMDB））
+![グラフィカルアブストラクト：Quasi-continuous cotranslational compaction and folding of a multidomain protein](ga/PMC13639035.svg)
+
+### ホタルルシフェラーゼの共翻訳フォールディングを力プロファイル解析とクライオ電顕で追跡
+
+*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-78090-y) · ライセンス: cc by  
+原題：Quasi-continuous cotranslational compaction and folding of a multidomain protein
+
+#### 3行要約
+
+- **背景**：多くのタンパク質はリボソームから出てくる途中で折りたたみ始める（共翻訳フォールディング）。研究は小さな単一ドメインに偏っており、複数ドメインの大きなタンパク質で過程を細かく追った例は少なかった。
+- **やったこと**：550残基のホタルルシフェラーゼを対象に、翻訳停止配列を使う力プロファイル解析（5残基刻み）、停止させたリボソーム–新生鎖複合体（RNC）のクライオ電顕、粗視化モデルとMD、Trigger Factor添加実験を組み合わせた。
+- **分かったこと**：折りたたみは少数の協同的な転移の連続ではなく、中程度の力を生む圧縮・折りたたみが準連続的に続く過程だった。RF-2ドメインの折りたたみが大きな力のピークを作り、Trigger Factorはその中央部とC末端ドメインの合成時に新生鎖と広く相互作用する。
+
+#### ここが面白い
+
+**［機構の解明］** 共翻訳フォールディングは、はっきりした少数の折りたたみ転移の連続ではなく、準連続的な圧縮・折りたたみの連なりだった。RF-2ドメインの折りたたみが突出した大きな力のイベントを生み、低い力の数か所は別々の折りたたみ中間体の形成を示すと考えられる。
+
+<details><summary>根拠（論文本文）</summary>
+
+> The folding process is characterized by a quasi-continuous series of compaction/folding steps that generate intermediate-size pulling forces on the nascent chain, punctuated by a prominent high-force event that represents the folding of the RF-2 domain  
+> — Abstract
+
+> Our analysis uncovers a cotranslational compaction/folding process that is rich in detail and not just a simple succession of a few distinct, cooperative folding transitions.  
+> — Abstract
+
+</details>
+
+**［機構の解明］** 力プロファイルの初期ピークに対応する3つの新生鎖（N=110, 130, 190残基）をクライオ電顕（平均2.3 Å）で見ると、出口トンネル内に大きな折りたたみドメインは見えなかった。初期のピークはトンネル内での安定な部分構造の形成ではなく、リボソームの外での新生鎖の圧縮を表す。
+
+<details><summary>根拠（論文本文）</summary>
+
+> structures were determined at an average resolution of 2.3 Å. For all three constructs, stalled NCs were readily apparent in the ET but with only small compact densities evident near the uL24 loop in the exit port  
+> — Results
+
+> The absence of more extensive folded domains in the ET shows that these early FP peaks are not generated by the formation of stable substructures within the ET, but rather represent compaction of the NC outside the ribosome.  
+> — Results
+
+</details>
+
+**［手法の工夫］** シャペロンTrigger Factorは、RF-2ドメインの中央部とC末端ドメインの初期が合成されるタイミングで新生鎖と広く相互作用する。折りたたみのどの段階でシャペロンが働くかを、力プロファイルの変化として残基解像度で捉えている。
+
+<details><summary>根拠（論文本文）</summary>
+
+> Trigger Factor interacts extensively with the nascent chain when the central part of RF-2 and the early parts of the CTD are synthesized.  
+> — Abstract
+
+</details>
+
+#### 構造データ
+
+原子モデルのない cryo-EM マップ（EMDB）：[EMD-56368](https://www.ebi.ac.uk/emdb/EMD-56368), [EMD-56453](https://www.ebi.ac.uk/emdb/EMD-56453), [EMD-56462](https://www.ebi.ac.uk/emdb/EMD-56462)
+
+#### 実験メモ
+
+- **発現系**：クライオ電顕用はN末端に6xHisタグを付けたFLucをpET19bから、E. coli BL21(DE3)で1 mM IPTG誘導。SecM(3W)の強い翻訳停止配列で新生鎖を停止させた。
+- **コンストラクト**：N=110, 130, 190残基の3つの停止コンストラクト。
+- **精製**：停止させたリボソーム–新生鎖複合体（RNC）を精製。
+- **結晶化／グリッド作製**：Vitrobotでプランジ凍結（ブロット3秒・待機15秒、湿度100%、4°C）。
+- **データ収集・解析**：Krios G3i（300 kV）＋Gatan K3、ピクセルサイズ0.825 Å、総線量40 e–/Å²。CryoSPARC 4.3.0で処理（P-site tRNAを持つ粒子を選別）。
+
+<details><summary>根拠（論文本文）</summary>
+
+> a 6xHis tag was added to the N-terminus of FLuc to facilitate purification of RNCs  
+> — Methods
+
+> expression from pET19b was induced with 1 mM IPTG in E.coli BL21(DE3)  
+> — Methods
+
+> Data were collected on a Krios G3i microscope (Thermo Fisher Scientific, Waltham, Massachusetts, USA) equipped with a Gatan K3 DED at 300 kV with a pixel size of 0.825 Å/pixel, over 40 frames with a total dose of 40 e–/Å2  
+> — Methods
+
+</details>
+
+> 📝 編集者への確認事項：原子モデルのない cryo-EM マップのみ（EMD-56368 ほか）で、PDB 構造はない。主結果は力プロファイル解析とMDで、クライオ電顕は補強。Europe PMC 上の公開日が 2026-01-01 と表示されるが、索引日は 2026-10-07。構造図は出せないため EMDB マップのみの表示になる。
+
+---
