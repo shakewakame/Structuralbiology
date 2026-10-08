@@ -1,0 +1,79 @@
+{
+  "pmcid": "PMC13639345",
+  "rank": 2,
+  "headline": "FlhA(A489E)抑制変異体の結晶構造：Arg-386周辺の塩橋網の組み換えが鞭毛輸送装置の基質切り替えを助ける",
+  "takeaway": "A489EがArg-386の塩橋網を組み換え、FlhAC環の状態遷移を起こしやすくする",
+  "target_label": "FlhAC A489E（サルモネラ）",
+  "summary": {
+    "background": "鞭毛のIII型分泌装置はフック完成時に基質特異性を切り替える。FlhB(P270A)の切り替え不全を部分的に回復するFlhA(A489E)の機構は不明だった。",
+    "approach": "FlhAC(A489E)の結晶構造を半閉型（2.90 Å）と開型（3.28 Å）の2状態で決定し、AlphaFold3によるFlhAC–FlhB複合体予測と運動性・分泌アッセイを組み合わせた。",
+    "findings": "A489EはArg-386・Glu-483周辺の塩橋網を組み換え、α2ヘリックス周辺の配置を変える。FlhBのC末端尾部がα2–β2の溝を占めるという予測モデルと合わせ、状態遷移の障壁を下げると考えられる。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "野生型ではArg-386がGlu-483と塩橋を作る。A489Eの半閉型ではArg-386がGlu-489側に引かれてGlu-483から離れ、開型ではGlu-489とGlu-483の両方と塩橋を作る。野生型にない静電ネットワークが現れた。",
+      "evidence": [
+        {
+          "quote": "Thus, the introduced Glu-489 establishes a new electrostatic interaction with Arg-386, altering the orientation of the Arg-386 side chain and disrupting its original interaction with Glu-483.",
+          "section": "Results"
+        },
+        {
+          "quote": "These interactions generate an alternative electrostatic network that is not observed in the wild-type structure",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "AlphaFold3の5モデルすべてで、FlhBのC末端尾部がFlhA D1ドメインのα2–β2の溝に置かれた。この溝はフィラメント型リングでの隣接サブユニットのリンカー結合部位と重なる。ただし結合は予測であり、実験では示していない。",
+      "evidence": [
+        {
+          "quote": "all five independently generated models consistently positioned FlhBCCT at a groove formed between the α2 helix and β2 strand of the D1 domain of FlhAC",
+          "section": "Results"
+        },
+        {
+          "quote": "the α2–β2 groove overlaps with the binding site for the flexible linker region of FlhAC",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "実験Tips",
+      "text": "Arg-386をAlaに置換した変異体は、FliH・FliIがあれば運動性と分泌が正常だが、FliH・FliIを欠くと両方が阻害された。ATPase複合体が働かない条件でこの塩橋網が重要になることを示唆する。",
+      "evidence": [
+        {
+          "quote": "the flhA(R386A) substitution inhibited both motility (Figure 5A, middle panel) and protein export (Figure 5B, middle panel) in the absence of FliH and FliI.",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "大腸菌BL21(DE3)、LB培地、30 ℃で一晩培養",
+    "construct": "N末端His-tag付きFlhAC(A489E)（pYI104-SP3）",
+    "purification": "HisTrap HP 5 mL、続いてSuperdex 75 10/300 GL。10 mg/mLに濃縮",
+    "sample_prep": "シッティングドロップ蒸気拡散。形態1はPEG 3000・リン酸pH 6.2・グリセロール、形態2はPEG 3000・HEPES pH 7.5・NaCl、いずれも20 ℃",
+    "data_collection": "SPring-8 BL41XU・BL45XU。MOSFLM・AIMLESSで処理し、6AI0と3A5Iを鋳型に分子置換",
+    "evidence": [
+      {
+        "quote": "His-FlhAC(A489E) was purified by affinity chromatography using a HisTrap HP 5 mL column (Cytiva), followed by size-exclusion chromatography on a Superdex 75 10/300 GL column (Cytiva)",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "Form 1 crystals were grown at 20°C using a reservoir solution containing 0.1 M K2HPO4/Na2HPO4 (pH 6.2), 10% (w/v) polyethylene glycol 3000, and 10% (w/v) glycerol.",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "X-ray diffraction data were collected at beamlines BL41XU and BL45XU at SPring-8",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "Initial phases for Form 1 and Form 2 crystals were obtained by molecular replacement using Phaser-MR [20] in Phenix [21] with PDB entries 6AI0 and 3A5I, respectively.",
+        "section": "Materials and methods"
+      }
+    ]
+  },
+  "keywords": ["FlhA", "FlhB", "III型分泌装置", "鞭毛", "AlphaFold3", "抑制変異"],
+  "editor_notes": "FlhBとの相互作用はAlphaFold3予測のみで、実験的には未検証。本文の記載どおり「予測」「考えられる」で書いた。"
+}

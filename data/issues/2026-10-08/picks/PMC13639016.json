@@ -1,0 +1,83 @@
+{
+  "pmcid": "PMC13639016",
+  "rank": 1,
+  "headline": "抗ファージ防御系QatBCの結晶構造：QatBのN末端がQatC活性部位に挿入され、防御に必須だった",
+  "takeaway": "QatBのN末端ループがQueC型酵素QatCの活性部位に入り込み、基質候補となる",
+  "target_label": "QatBC（大腸菌 QatABCD）",
+  "summary": {
+    "background": "QatABCDは広く分布する抗ファージ防御系で、QueC型タンパク質QatCが特徴的な構成要素だが、作用機構もQatCの機能も不明だった。",
+    "approach": "QatBCD複合体を共発現で調製し、QatBC複合体のapo型とATP結合型を結晶構造解析した。変異体はファージプラークアッセイで防御能を評価した。",
+    "findings": "QatBのN末端ループがQatCの活性部位に挿入される。活性中心、亜鉛結合部位、QatB N末端、QatB-QatC界面の変異はいずれも防御能を下げた。QatDは柔軟に結合する。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "QatBのN末端ループがQatCの推定活性部位に挿入され、CBASSのCap9–CdnDと同様の配置をとる。QatBがQatCの基質である可能性を示唆し、ペプチド解析ではQatB N末端のNDG修飾も検出された（修飾効率は低いとみられる）。",
+      "evidence": [
+        {
+          "quote": "The most notable feature of the interaction is that the QatB N-terminal loop is inserted into the putative active site of QatC",
+          "section": "Results"
+        },
+        {
+          "quote": "identified an NDG-modified N-terminal peptide (GTSKAY) from QatB",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "ATP結合型（2.66 Å）ではF235がアデニンとπ–πスタッキングし、SXGXDSモチーフがβ・γリン酸を配位する。CDGの密度はなく、ATPピロホスファターゼ活性も検出できず、QatCの本来の基質は未解明のままだ。",
+      "evidence": [
+        {
+          "quote": "QatC F235 displays a marked conformational change compared with its apo state, to form π-π stacking with the adenine base of the ATP molecule.",
+          "section": "Results"
+        },
+        {
+          "quote": "EcQatC does not exhibit obvious ATP pyrophosphatase activity either in the presence or absence of CDG",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "手法の工夫",
+      "text": "QatBのN末端を天然のまま得るため、Gly2のコドンをUlp1切断部位に直結した。N末端へのHisタグ付加は防御活性を著しく下げることが分かっており、この工夫が必要な理由になる。",
+      "evidence": [
+        {
+          "quote": "we directly linked the codon corresponding to the second glycine residue of QatB to the codon corresponding to the cleavage site of Ulp1",
+          "section": "Methods"
+        },
+        {
+          "quote": "adding an N-terminal His-tag before QatB M1 all severely decreased the anti-phage activity of the Qat system",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "大腸菌BL21(DE3)。OD600 0.8で0.2 mM IPTG、18 ℃で12時間誘導",
+    "construct": "N末端His6-SUMO融合（Ulp1切断）。QatBはGly2から始まる天然のN末端を再現",
+    "purification": "Ni-NTAでUlp1切断後、Superdex 200 increase 10/300 GLでゲルろ過",
+    "sample_prep": "15 mg/mL、シッティングドロップ蒸気拡散、18 ℃。ATP型は1 mM ATP・1 mM CDG・2 mM MgCl2を氷上1時間プレインキュベート",
+    "data_collection": "SSRF BL02U1、0.979 Å、EIGER2 X 9M。AlphaFold2予測モデルで分子置換、PHENIXで精密化",
+    "evidence": [
+      {
+        "quote": "The cells were grown at 37 °C until OD600 nm reached 0.8 and then induced at 18 °C for 12 h.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Both crystal forms of protein complexes were obtained using the sitting-drop vapor diffusion method at 18 °C by mixing 0.8 μL of protein solution with 0.8 μL of reservoir solution.",
+        "section": "Methods"
+      },
+      {
+        "quote": "All diffraction data were collected at the SSRF beamlines BL02U1 using a wavelength of 0.979 Å and a DECTRIS EIGER2 X 9M detector.",
+        "section": "Methods"
+      },
+      {
+        "quote": "The initial model was solved by molecular replacement with a structure predicted by AlphaFold2",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": ["QatABCD", "QueC", "抗ファージ防御", "Cap9", "NDG修飾"],
+  "editor_notes": "本文によれば同時期に別グループもQatBC構造を報告している（本文の引用31, 32）。初構造とは書いていない。QatCの触媒反応は未再構成で、N末端修飾はペプチドレベルのMSのみ。"
+}
