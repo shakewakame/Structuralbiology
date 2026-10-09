@@ -51,7 +51,7 @@ img {{ max-width:100%; height:auto; }}
 .topbar a.brand {{ display:flex; align-items:center; gap:12px; color:#fff; }}
 .topbar .mark {{ width:34px; height:34px; }}
 .topbar .name {{ font-weight:700; font-size:19px; color:#fff; }}
-.topbar .en {{ font-size:11px; letter-spacing:2px; color:#AFC9BE; }}
+.topbar .en {{ font-size:12px; letter-spacing:1px; color:#AFC9BE; }}
 .topbar .spacer {{ flex:1; }}
 .topbar .tag {{ color:#CFE3DB; font-size:13px; }}
 
@@ -270,7 +270,9 @@ def home(summaries: list[dict]) -> str:
                      f'<div class="d">{esc(s["date"])} 号</div>'
                      f'<div class="c">新しい構造 {s["new_total"]} 本</div>'
                      f'<ul>{items}</ul></a>')
-    body = (f'<div class="hero"><h1>{esc(brand.SITE_NAME)}</h1><p>{esc(TAGLINE)}</p></div>'
+    body = (f'<div class="hero"><h1>{esc(brand.SITE_NAME)} '
+            f'<span style="font-size:16px;color:{brand.MUTED};font-weight:400">{esc(brand.SITE_NAME_EN)}</span></h1>'
+            f'<p>{esc(TAGLINE)}</p></div>'
             f'<div class="feed">{"".join(cards)}</div>')
     return page(brand.SITE_NAME, body, depth=0)
 

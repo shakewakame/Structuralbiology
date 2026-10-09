@@ -1,0 +1,48 @@
+name: Deploy FoldFeed site to GitHub Pages
+
+# Rebuild and publish the static site whenever an issue (or the site code)
+# lands on the default branch, and on demand from the Actions tab.
+on:
+  push:
+    branches: [claude/structural-biology-newsletter-arthsz]
+    paths:
+      - "data/issues/**"
+      - "assets/**"
+      - "pipeline/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a newer run supersede an in-flight one; never cancel a running deploy.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build site
+        run: python3 -m pipeline.site   # reads data/issues/*, assets/, writes site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

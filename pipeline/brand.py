@@ -12,8 +12,8 @@ import math
 
 from .common import ROOT
 
-SITE_NAME = "構造生物学デイリー"
-SITE_NAME_EN = "STRUCTURAL BIOLOGY DAILY"
+SITE_NAME = "FoldFeed"
+SITE_NAME_EN = "構造生物学デイリー"  # Japanese descriptor shown under the wordmark
 
 # Core palette.
 INK = "#16324F"        # deep navy — chrome bars, headings
@@ -66,8 +66,8 @@ def logo_mark(x: float, y: float, s: float, bg: str = INK) -> str:
 def logo_svg(height: int = 64, subtitle: bool = True) -> str:
     s = height
     width = int(s * 6.6)
-    sub = (f'<text x="{s * 1.26:.1f}" y="{s * 0.88:.1f}" font-size="{s * 0.15:.1f}" '
-           f'letter-spacing="{s * 0.045:.1f}" fill="{MUTED}">{SITE_NAME_EN} · β</text>') if subtitle else ""
+    sub = (f'<text x="{s * 1.26:.1f}" y="{s * 0.88:.1f}" font-size="{s * 0.16:.1f}" '
+           f'letter-spacing="{s * 0.02:.1f}" fill="{MUTED}">{SITE_NAME_EN} · β</text>') if subtitle else ""
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{s}" viewBox="0 0 {width} {s}" '
             f'font-family="{FONT}">'
             f'{logo_mark(0, 0, s)}'

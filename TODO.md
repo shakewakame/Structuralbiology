@@ -17,7 +17,11 @@
 
 ## Phase 1：MVP
 
-- [ ] 毎日更新の静的サイト（記事ページ・新着一覧）。グラフィカルアブストラクトの PNG 化（SNS 用）
+- [x] 毎日更新の静的サイト（記事ページ・新着一覧、Qiita 風レイアウト）
+- [x] サイト名（FoldFeed）とロゴ（仮）
+- [ ] GitHub Pages を有効化する（リポジトリ Settings → Pages → Source: GitHub Actions）。※公開リポジトリか有料プランが必要
+- [ ] グラフィカルアブストラクトの PNG 化（SNS 用）
+- [ ] 正式版ロゴ（FoldFeed 確定後）
 - [ ] 記事ページへの 3D ビューア（Mol*）の埋め込み
 - [ ] 自動公開への切り替え（`config/editorial.json` の `review_required` を false に）
 - [ ] RSS
