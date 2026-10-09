@@ -22,6 +22,9 @@
 - [x] GitHub Pages で公開（https://shakewakame.github.io/Structuralbiology/ ）。リポジトリは公開、配信元は GitHub Actions
 - [ ] グラフィカルアブストラクトの PNG 化（SNS 用）
 - [ ] 正式版ロゴ（FoldFeed 確定後）
+- [ ] **サイトの見た目をさらに洗練させる**（オーナー希望・2026-10-09）。方向性はオーナーが検討中。
+      候補：余白・タイポグラフィの調整、グラフィカルアブストラクトの帯の二重表示の解消、
+      ダークモード、構造図の表現（カートゥーン風リボン）、トップの導線、カード/配色の磨き込み
 - [ ] 記事ページへの 3D ビューア（Mol*）の埋め込み
 - [ ] 自動公開への切り替え（`config/editorial.json` の `review_required` を false に）
 - [ ] RSS
