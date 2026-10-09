@@ -1,0 +1,80 @@
+{
+  "pmcid": "PMC13642939",
+  "rank": 2,
+  "headline": "ヌクレオソーム末端に結合するKu・DNA-PKの段階的な構造：DNA-PKcsがKuを内側へ押し、DNAを巻き戻す",
+  "takeaway": "DNA-PKcsはKuがヌクレオソームの壁を越えるのを助け、NHEJ開始を可能にする",
+  "target_label": "DNA-PK–ヌクレオソーム複合体",
+  "summary": {
+    "background": "NHEJの開始にはKuとDNA-PKcsが約25〜30 bpの遊離二本鎖DNAを必要とするが、クロマチンではヌクレオソームが障壁になる。DNA-PKcsの役割は不明だった。",
+    "approach": "リンカー長の異なるヌクレオソーム基質で連結反応を測り、Ku単独とDNA-PKのヌクレオソーム複合体をクライオ電顕で複数状態解析した。",
+    "findings": "Kuは約2巻きのヌクレオソームDNAをほどき、Ku70がヒストンと接する。DNA-PKcsはリンカーの短い基質で連結を促し、Kuを内側へ押し込む中間状態も捉えた。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "Ku70のC末端側の領域（ヒストンブリッジ）が、ほどけたH3・H2A面に結合する。この領域を欠いたKuは連結効率が約1/7に落ちた。",
+      "evidence": [
+        {
+          "quote": "The KuΔ521-528-containing reaction displayed only approximately one-seventh of the ligation efficiency observed with KuWT (Fig. 1f)",
+          "section": "Results"
+        },
+        {
+          "quote": "In the N7-Ku structure, we can find that through this ‘histone-bridge’ region in Ku70, Ku is able to outcompete the histone-DNA interactions by stabilizing the exposed histone interfaces.",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "DNA-PKcsはリンカーが短い基質で連結を促進した（N-12で約7倍、N0で約3倍）。N7ではDNA-PKcsが5 bpだけ結合した途中状態と、11 bpが収まった完成状態の2状態が見えた。",
+      "evidence": [
+        {
+          "quote": "Addition of DNA-PKcs increased the ligation efficiency of the N-12 substrate by approximately sevenfold and that of the N0 substrate by approximately threefold",
+          "section": "Results"
+        },
+        {
+          "quote": "In contrast, state 2 shows a fully assembled DNA-PK with an 11 bp DNA-PKcs footprint.",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "手法の工夫",
+      "text": "ヌクレオソームを目印にしてDNAリンカーを精密にモデル化し、N20基質では20 bp中17 bpしか密度に入らなかった。DNA末端が部分的に融解している可能性を示す（著者の解釈）。",
+      "evidence": [
+        {
+          "quote": "However, only 17 bp of the 20 bp linker could be built into the density map with the DNA termini positions right at the location of the DEB helix in an activated DNA-PK",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "KuとDNA-PKcsはHeLa核から精製。LigIV-XRCC4はバキュロウイルス／昆虫細胞で発現。",
+    "construct": "ヌクレオソームはXenopusヒストンとWidom 601配列、リンカー長が異なる基質（N-12, N0, N7, N20）。",
+    "purification": "ストレプトアビジンビーズで複合体を引き下げて溶出し、グルタルアルデヒドで架橋。",
+    "sample_prep": "自作の酸化グラフェン支持膜グリッド、Vitrobot Mark IV 4°C・湿度100%、サンプル3 µLを7分静置後ブロット。",
+    "data_collection": "Titan Krios G3（300 kV）、K3またはFalcon 4i＋Selectris、CryoSPARC v4.6で解析。",
+    "evidence": [
+      {
+        "quote": "Ku and DNA-PKcs were purified from the nuclear pellet of HeLa cells as previously described71,72.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Mono-nucleosomes were reconstituted with Xenopus histones and the 601 DNA45 or 5 s RNA DNA using the Mini Prep Cell (Bio-rad) as described previously74.",
+        "section": "Methods"
+      },
+      {
+        "quote": "For each complex, 3 µL sample were applied and incubated on the grid for 7 min, followed by blotting with a force of 10 for 3 s and plunge-freezing into liquid ethane.",
+        "section": "Methods"
+      },
+      {
+        "quote": "All NS-EM and cryo-EM data were processed using CryoSPARC v4.678.",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": ["DNA-PK", "NHEJ", "ヌクレオソーム", "Ku70/80", "DNA二本鎖切断"],
+  "ligand_label": "ヌクレオソームDNA",
+  "editor_notes": "核のマップ分解能は4〜10 Å程度と低く、ヌクレオソーム側の記述は低分解能に依存する。UniProtの「初構造」表示は種（ヒト以外の遺伝子名）による可能性があり、初構造とは書いていない。"
+}

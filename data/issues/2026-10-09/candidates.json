@@ -1,0 +1,2264 @@
+{
+  "issue_date": "2026-10-09",
+  "index_date": "2026-10-08",
+  "generated_at": "2026-10-09T00:08:53+00:00",
+  "query": "(\"cryo-EM\" OR \"cryoEM\" OR \"cryo-electron microscopy\" OR \"cryo-electron tomography\" OR \"subtomogram\" OR \"crystal structure\" OR \"X-ray crystallography\" OR \"crystallographic\" OR \"NMR structure\" OR \"solution structure\") AND (\"Protein Data Bank\" OR \"PDB\" OR \"wwPDB\" OR \"EMDB\" OR \"accession code\" OR \"accession codes\") AND OPEN_ACCESS:y AND NOT SRC:PPR AND FIRST_IDATE:[2026-10-08 TO 2026-10-08]",
+  "counts": {
+    "hits": 26,
+    "excluded_types": 5,
+    "parsed": 21,
+    "new_structure": 5,
+    "new_structure_ids_unlisted": 0,
+    "new_map_only": 0,
+    "uses_existing": 13,
+    "no_ids": 3
+  },
+  "candidates": [
+    {
+      "pmcid": "PMC13642939",
+      "pmid": "42838959",
+      "doi": "10.1038/s41467-026-77534-9",
+      "title": "DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin",
+      "journal": "Nature Communications",
+      "journal_abbrev": "Nat Commun",
+      "authors": "Lu W, Vogt A, Lees-Miller S, He Y.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "DNA double-strand breaks, one of the most cytotoxic forms of DNA damage, are primarily repaired by non-homologous end joining (NHEJ) in human cells. NHEJ is initiated by the Ku70/80 heterodimer (Ku) and DNA-dependent protein kinase catalytic subunit (DNA-PKcs), followed by factors that bridge and ligate DNA ends. Ku and DNA-PKcs require ~28 base pairs of free duplex DNA, which is often unavailable in chromatin with nucleosomes acting as barriers. The role of DNA-PKcs remains unclear, as previous in vitro studies mainly used naked DNA. Here, in vitro ligation assays show that DNA-PKcs promotes NHEJ on nucleosomes with limited DNA accessibility. Cryo-EM structures of nucleosome-bound Ku and DNA-PKcs reveal that Ku encounters nucleosomal barriers and overcomes them with DNA-PKcs. Distinct structural states support a stepwise model of DNA-PK progressive translocating along nucleosomal DNA, highlighting DNA-PKcs function in chromatin-associated NHEJ in vivo.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9ZMM",
+          "status": "released",
+          "title": "CryoEM structure of Ku heterodimer bound to N7 nucleosome",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.89,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-10",
+          "citation_doi": "10.1038/s41467-026-77534-9",
+          "citation_pmid": null,
+          "citation_title": "DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin",
+          "polymers": [
+            {
+              "description": "DNA (154-mer)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA (154-mer)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Histone H3",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A310TTQ1"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H4",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P62799"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2A",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A1L8FQ56"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 6",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P12956"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 5",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P13010"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZNC",
+          "status": "released",
+          "title": "CryoEM structure of the DNA-PK complex bound to N20 nucleosome",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.93,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-77534-9",
+          "citation_pmid": null,
+          "citation_title": "DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin",
+          "polymers": [
+            {
+              "description": "Histone H3",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A310TTQ1"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H4",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P62799"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2A",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q6AZJ8"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A1L8FQ56"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "DNA (164-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA-dependent protein kinase catalytic subunit",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P78527"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Unknown peptide",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA (164-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 6",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P12956"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA repair protein Ku80",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P13010"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZP0",
+          "status": "released",
+          "title": "CryoEM structure of DNA-PK bound to N0 nucleosome",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 4.11,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-16",
+          "citation_doi": "10.1038/s41467-026-77534-9",
+          "citation_pmid": null,
+          "citation_title": "DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin",
+          "polymers": [
+            {
+              "description": "DNA (147-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Histone H3",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A310TTQ1"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H4",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P62799"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2A",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q6AZJ8"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A8J1LZU9"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "DNA (147-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA-dependent protein kinase catalytic subunit",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P78527"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Unknown peptide",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 6",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P12956"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA repair protein Ku80",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P13010"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZP9",
+          "status": "released",
+          "title": "CryoEM structure of DNA-PK bound to N7 nucleosome, state 1",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.88,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-16",
+          "citation_doi": "10.1038/s41467-026-77534-9",
+          "citation_pmid": null,
+          "citation_title": "DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin",
+          "polymers": [
+            {
+              "description": "Histone H3",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A310TTQ1"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H4",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P84048"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2A",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A974HJ06"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A8J1LZU9"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "DNA (154-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA (154-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 6",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P12956"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 5",
+              "type": "Protein",
+              "uniprot_ids": [
+                "G3R763"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA-dependent protein kinase catalytic subunit",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P78527"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Unknown peptide",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZOB",
+          "status": "released",
+          "title": "CryoEM structure of DNA-PK bound to N7 nucleosome, state 2",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.8,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-15",
+          "citation_doi": "10.1038/s41467-026-77534-9",
+          "citation_pmid": null,
+          "citation_title": "DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin",
+          "polymers": [
+            {
+              "description": "DNA-dependent protein kinase catalytic subunit",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P78527"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Unknown peptide",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "X-ray repair cross-complementing protein 6",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P12956"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA repair protein Ku80",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P13010"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Histone H3",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A310TTQ1"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H4",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P62799"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2A",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q6AZJ8"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "Histone H2B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "A0A1L8FQ56"
+              ],
+              "organisms": [
+                "Xenopus laevis"
+              ]
+            },
+            {
+              "description": "DNA (154-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "DNA (154-MER)",
+              "type": "DNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        }
+      ],
+      "cited_pdb_ids": [
+        "1KX5",
+        "1JEY",
+        "9IGW",
+        "7Z87",
+        "8EZA",
+        "9QCR",
+        "7LT3",
+        "7LTY",
+        "6ZHA"
+      ],
+      "emdb_ids": [
+        "EMD-74422",
+        "EMD-74444",
+        "EMD-74512",
+        "EMD-74524",
+        "EMD-74481"
+      ],
+      "proteins": [
+        {
+          "uniprot": "A0A1L8FQ56",
+          "gene": "LOC121398078",
+          "synonyms": [
+            "LOC108695577",
+            "LOC108703793",
+            "LOC108703794",
+            "LOC108703795",
+            "LOC108703796",
+            "LOC108703797",
+            "LOC108703940",
+            "LOC121398076",
+            "LOC121398079"
+          ],
+          "name": "Histone H2B",
+          "organism": "Xenopus laevis",
+          "prior_pdb_count": 0,
+          "first_structure": true
+        },
+        {
+          "uniprot": "A0A310TTQ1",
+          "gene": "LOC121398065",
+          "synonyms": [
+            "LOC108703785",
+            "LOC121398067"
+          ],
+          "name": "Histone H3",
+          "organism": "Xenopus laevis",
+          "prior_pdb_count": 65,
+          "first_structure": false
+        },
+        {
+          "uniprot": "A0A8J1LZU9",
+          "gene": "LOC108704302",
+          "synonyms": [],
+          "name": "Histone H2B",
+          "organism": "Xenopus laevis",
+          "prior_pdb_count": 5,
+          "first_structure": false
+        },
+        {
+          "uniprot": "G3R763",
+          "gene": "XRCC5",
+          "synonyms": [],
+          "name": "DNA repair protein Ku80",
+          "organism": "Gorilla gorilla gorilla",
+          "prior_pdb_count": 0,
+          "first_structure": true
+        },
+        {
+          "uniprot": "P12956",
+          "gene": "XRCC6",
+          "synonyms": [
+            "G22P1"
+          ],
+          "name": "DNA repair protein Ku70",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 60,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P13010",
+          "gene": "XRCC5",
+          "synonyms": [
+            "G22P2"
+          ],
+          "name": "DNA repair protein Ku80",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 64,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P62799",
+          "gene": null,
+          "synonyms": [],
+          "name": "Histone H4",
+          "organism": "Xenopus laevis",
+          "prior_pdb_count": 409,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P78527",
+          "gene": "PRKDC",
+          "synonyms": [
+            "HYRC",
+            "HYRC1"
+          ],
+          "name": "DNA-dependent protein kinase catalytic subunit",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 47,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P84048",
+          "gene": "His4",
+          "synonyms": [
+            "H4"
+          ],
+          "name": "Histone H4",
+          "organism": "Acrolepiopsis assectella",
+          "prior_pdb_count": 0,
+          "first_structure": true
+        },
+        {
+          "uniprot": "Q6AZJ8",
+          "gene": "LOC494591",
+          "synonyms": [
+            "h2ac14.L",
+            "hist1h2aj",
+            "hist1h2aj.L"
+          ],
+          "name": "Histone H2A",
+          "organism": "Xenopus laevis",
+          "prior_pdb_count": 94,
+          "first_structure": false
+        }
+      ],
+      "score": 85
+    },
+    {
+      "pmcid": "PMC13642953",
+      "pmid": "42838934",
+      "doi": "10.1038/s41467-026-76519-y",
+      "title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+      "journal": "Nature Communications",
+      "journal_abbrev": "Nat Commun",
+      "authors": "Kim K, Li H, Yuan Q, Melville Z, Zalk R, des Georges A, Frank J, Hendrickson W, Marks A, Clarke O.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMalignant hyperthermia (MH) is a pharmacogenetic condition triggered by volatile anesthetics, which activate MH susceptible mutants of ryanodine receptor 1 (RyR1). The precise binding sites and mechanisms of the therapeutic dantrolene and MH triggers have remained unclear. Here, we present structures of RyR1 bound to dantrolene and the MH trigger 4-chloro-m-cresol (4CmC), revealing the dantrolene and 4CmC binding sites in atomic detail. Dantrolene binds stacked with ATP or ADP in the RY12 domain at the corner of the receptor, inducing a conformational change. Functional analyses confirm ATP or ADP is required for dantrolene inhibition, and a single point mutation disrupting this peripheral ATP site abolishes this ATP/ADP-dependent inhibition. Strikingly, in the absence of dantrolene, this site selectively binds two ADP molecules even in the presence of excess ATP, indicating a role in ATP/ADP ratio sensing. Additionally, we identified four 4CmC binding sites, revealing one primary binding site in an amphipathic cavity in the core solenoid, and three auxiliary binding sites in the EF-hand, transmembrane, and RY12 domains. These findings offer insights into the binding modes and mechanisms of MH-linked molecules, and reveal the RY12 domain’s regulatory role as a promiscuous sensor for adenine nucleotides and small ligands.Subject terms: Cryoelectron microscopy, Calcium channels, Permeation and transport",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9ZND",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 complexed with FKBP12.6 and calmodulin in the presence of dantrolene, ATP, 4-chloro-m-cresol, caffeine, and Mg2+",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.09,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P68106"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Calmodulin-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0DP23"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "U1C",
+              "name": "Dantrolene"
+            },
+            {
+              "id": "43M",
+              "name": "4-CHLORO-3-METHYLPHENOL"
+            },
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            },
+            {
+              "id": "CFF",
+              "name": "CAFFEINE"
+            },
+            {
+              "id": "CPS",
+              "name": "3-[(3-CHOLAMIDOPROPYL)DIMETHYLAMMONIO]-1-PROPANESULFONATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZLF",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 complexed with dantrolene and ATP",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.71,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-08",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "U1C",
+              "name": "Dantrolene"
+            },
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZN6",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 complexed with FKBP12.6 and calmodulin in the presence of dantrolene, ADP, 4-chloro-m-cresol, caffeine, and Mg2+",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.58,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P68106"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Calmodulin-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0DP23"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            },
+            {
+              "id": "U1C",
+              "name": "Dantrolene"
+            },
+            {
+              "id": "43M",
+              "name": "4-CHLORO-3-METHYLPHENOL"
+            },
+            {
+              "id": "CFF",
+              "name": "CAFFEINE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZLH",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 complexed with dantrolene and ADP",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.14,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-08",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            },
+            {
+              "id": "U1C",
+              "name": "Dantrolene"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZN7",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 complexed with FKBP12.6 and calmodulin in the presence of ATP, ADP, and Mg2+ (mimicking muscle fatigue)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.23,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P68106"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Calmodulin-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0DP23"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            },
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZKD",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 complexed with ADP and Mg2+ (mimicking muscle fatigue)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.32,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-05",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZN8",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 complexed with FKBP12.6 and calmodulin in the presence of ATP, ADP, and Mg2+ (mimicking physiological conditions)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.57,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Calmodulin-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0DP23"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P68106"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZKC",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 in the presence of ATP, ADP, and Mg2+ (mimicking physiological conditions; unbound and open RY12)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.66,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-05",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZK8",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 complexed with ADP and Mg2+ (mimicking physiological conditions; bound and closed RY12)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.18,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-05",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZN9",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 complexed with FKBP12.6, calmodulin, ATP, 4-chloro-m-cresol, and caffeine",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.77,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P68106"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Calmodulin-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0DP23"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "43M",
+              "name": "4-CHLORO-3-METHYLPHENOL"
+            },
+            {
+              "id": "CFF",
+              "name": "CAFFEINE"
+            },
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZL7",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 complexed with ATP and 4-chloro-m-cresol",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.77,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-08",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "43M",
+              "name": "4-CHLORO-3-METHYLPHENOL"
+            },
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZNA",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 complexed with FKBP12.6, calmodulin, ADP, 4-chloro-m-cresol, caffeine, and Mg2+",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.37,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-12",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P68106"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Calmodulin-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0DP23"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "43M",
+              "name": "4-CHLORO-3-METHYLPHENOL"
+            },
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            },
+            {
+              "id": "PLC",
+              "name": "DIUNDECYL PHOSPHATIDYL CHOLINE"
+            },
+            {
+              "id": "CFF",
+              "name": "CAFFEINE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZLC",
+          "status": "released",
+          "title": "Structure of rabbit RyR1 RY12 domain complexed with ADP and Mg2+",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.52,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-08",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ADP",
+              "name": "ADENOSINE-5'-DIPHOSPHATE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZK9",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 in the presence of dantrolene and Mg2+ (open RY12 conformation)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.09,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-05",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZKA",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 in the presence of ATP, Mg2+, and Ca2+ (open RY12 conformation)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.64,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-05",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZKE",
+          "status": "released",
+          "title": "Structure of RY12 domain of rabbit RyR1 complexed with ARM210 and ATP",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.96,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-05",
+          "citation_doi": "10.1038/s41467-026-76519-y",
+          "citation_pmid": null,
+          "citation_title": "Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene",
+          "polymers": [
+            {
+              "description": "Ryanodine receptor 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P11716"
+              ],
+              "organisms": [
+                "Oryctolagus cuniculus"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            },
+            {
+              "id": "KVR",
+              "name": "4-[(7-methoxy-2,3-dihydro-1,4-benzothiazepin-4(5H)-yl)methyl]benzoic acid"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        }
+      ],
+      "cited_pdb_ids": [],
+      "emdb_ids": [
+        "EMD-74445",
+        "EMD-74402",
+        "EMD-74300",
+        "EMD-74301",
+        "EMD-74401",
+        "EMD-74302",
+        "EMD-74303",
+        "EMD-74304",
+        "EMD-74436",
+        "EMD-74403",
+        "EMD-74305",
+        "EMD-74306",
+        "EMD-74404",
+        "EMD-74307",
+        "EMD-74308",
+        "EMD-74309",
+        "EMD-74437",
+        "EMD-74364",
+        "EMD-74311",
+        "EMD-74314",
+        "EMD-74310",
+        "EMD-74328",
+        "EMD-74350",
+        "EMD-74351",
+        "EMD-74438",
+        "EMD-74362",
+        "EMD-74353",
+        "EMD-74349",
+        "EMD-74348",
+        "EMD-74352",
+        "EMD-74354",
+        "EMD-74355",
+        "EMD-74361",
+        "EMD-74439",
+        "EMD-74394",
+        "EMD-74282",
+        "EMD-74290",
+        "EMD-74392",
+        "EMD-74294",
+        "EMD-74292",
+        "EMD-74293",
+        "EMD-74441",
+        "EMD-74398",
+        "EMD-74295",
+        "EMD-74296",
+        "EMD-74397",
+        "EMD-74297",
+        "EMD-74298",
+        "EMD-74299",
+        "EMD-74356",
+        "EMD-74357",
+        "EMD-74358",
+        "EMD-74359",
+        "EMD-74363",
+        "EMD-74365"
+      ],
+      "proteins": [
+        {
+          "uniprot": "P0DP23",
+          "gene": "CALM1",
+          "synonyms": [
+            "CALM",
+            "CAM",
+            "CAM1"
+          ],
+          "name": "Calmodulin-1",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 335,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P11716",
+          "gene": "RYR1",
+          "synonyms": [],
+          "name": "Ryanodine receptor 1",
+          "organism": "Oryctolagus cuniculus",
+          "prior_pdb_count": 145,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P68106",
+          "gene": "FKBP1B",
+          "synonyms": [
+            "FKBP12.6",
+            "FKBP1L",
+            "FKBP9",
+            "OTK4"
+          ],
+          "name": "Peptidyl-prolyl cis-trans isomerase FKBP1B",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 119,
+          "first_structure": false
+        }
+      ],
+      "score": 65
+    },
+    {
+      "pmcid": "PMC13642346",
+      "pmid": "42838941",
+      "doi": "10.1038/s41467-026-77312-7",
+      "title": "Steric control of signaling bias in the immunometabolic receptor GPR84",
+      "journal": "Nature Communications",
+      "journal_abbrev": "Nat Commun",
+      "authors": "Wang P, Zhang X, Guseinov A, Jenkins L, von Hallerstein C, Colburn J, Ives R, Luscombe V, Marsango S, Oktavia L, Raja A, Greaves D, Biggin P, Milligan G, Zhang C, Tikhonova I, Russell A.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Biased signaling in G protein-coupled receptors offers therapeutic promise, yet rational design of biased ligands remains challenging due to limited mechanistic understanding. Here, we report a molecular basis for controlling signaling bias at the immunometabolic receptor GPR84. We identify three structurally-matched ligands (OX04529, OX04954, and OX04539) with varying steric profiles that exhibit comparable Gi protein activation but markedly different β-arrestin recruitment capacities. A high-resolution cryo-EM structure of GPR84-Gi in complex with OX04529, complemented by molecular dynamics simulations and targeted mutagenesis, reveals that steric interactions between ligand substituents and Leu3366.52 and Phe1875.47 indirectly disrupt a critical polar network involving Tyr3326.48, Asn1043.36 and Asn3627.45 essential for β-arrestin recruitment. Based on these insights, we develop a steric-dependent model that enables rational design of G protein-biased agonists with predictable β-arrestin recruitment profiles. This mechanistic framework provides the means to design biased agonists with customized signaling profiles at GPR84 and potentially other class A GPCRs.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9PT4",
+          "status": "released",
+          "title": "Cryo-EM structure of GPR84-Gi complex bound to OX04529",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.03,
+          "release_date": "2026-07-22",
+          "deposit_date": "2025-07-27",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Cryo-EM structure of GPR84-Gi complex bound to OX04529",
+          "polymers": [
+            {
+              "description": "scFv16",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Mus musculus"
+              ]
+            },
+            {
+              "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P59768"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P62873"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P63096"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "G-protein coupled receptor 84",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q9NQS5"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "A1CKT",
+              "name": "5-[3-[4-chloranyl-3-(trifluoromethyl)phenyl]propyl]-1-oxidanyl-pyridin-3-ol"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "8G05"
+      ],
+      "emdb_ids": [
+        "EMD-71830"
+      ],
+      "proteins": [
+        {
+          "uniprot": "P59768",
+          "gene": "GNG2",
+          "synonyms": [],
+          "name": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 1322,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P62873",
+          "gene": "GNB1",
+          "synonyms": [],
+          "name": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 1332,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P63096",
+          "gene": "GNAI1",
+          "synonyms": [],
+          "name": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 672,
+          "first_structure": false
+        },
+        {
+          "uniprot": "Q9NQS5",
+          "gene": "GPR84",
+          "synonyms": [
+            "EX33"
+          ],
+          "name": "G protein-coupled receptor 84",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 10,
+          "first_structure": false
+        }
+      ],
+      "score": 56
+    },
+    {
+      "pmcid": "PMC13644787",
+      "pmid": "42842685",
+      "doi": "10.1126/sciadv.aei0096",
+      "title": "Atomic structure and dynamics of the mechanosensitive channel MscL from Escherichia coli by cryo-EM and solid-state NMR",
+      "journal": "Science Advances",
+      "journal_abbrev": "Sci Adv",
+      "authors": "Xiao T, Kovinko A, Shi C, Sawczyc H, Qoraj D, Öster C, Sprink T, Ketzel A, Lange S, Kosteletos S, Sun H, Roderer D, Chen S, Lange A.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-08",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Mechanosensitive channels are central to cellular responses to membrane tension, yet the structural basis of their gating remains incompletely understood. Here, we determine the structures of wild-type and Gly22→Ser (G22S) mutants of MscL from Escherichia coli (EcMscL) by cryogenic electron microscopy (cryo-EM) in peptide-based lipid nanodiscs and complement them with solid-state nuclear magnetic resonance (NMR) measurements in liposomes to capture their dynamics in a native-like membrane environment. The cryo-EM structures reveal a closed conformation, whereas analysis of the low-threshold G22S mutant by NMR uncovers widespread conformational changes in both cytoplasmic and periplasmic regions. These data indicate enhanced dynamics and conformational heterogeneity in the mutant, revealing the early transitions from the closed toward the open state. Together, our results establish a synergistic framework integrating cryo-EM and NMR to resolve both structure and dynamics of mechanosensitive channels, and identify lipid-protein interactions as key determinants of MscL gating and mechanosensitivity. Our study further provides a quantitative benchmark for computational investigations of mechanogating and lays the foundation for the rational design of channels with tunable gating kinetics.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9TIU",
+          "status": "released",
+          "title": "cryo-EM structure of wild-type MscL from Escherichia coli in MSP nanodisc",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.68,
+          "release_date": "2026-09-09",
+          "deposit_date": "2025-12-05",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "cryo-EM structure of wild-type MscL from Escherichia coli in MSP nanodisc",
+          "polymers": [
+            {
+              "description": "Large-conductance mechanosensitive channel",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0A742"
+              ],
+              "organisms": [
+                "Escherichia coli"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9TIV",
+          "status": "released",
+          "title": "cryo-EM structure of MscL G22S mutant from Escherichia coli in MSP nanodisc",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.46,
+          "release_date": "2026-09-09",
+          "deposit_date": "2025-12-05",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "cryo-EM structure of MscL G22S mutant from Escherichia coli in MSP nanodisc",
+          "polymers": [
+            {
+              "description": "Large-conductance mechanosensitive channel",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P0A742"
+              ],
+              "organisms": [
+                "Escherichia coli"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "4Y7J"
+      ],
+      "emdb_ids": [
+        "EMD-55970",
+        "EMD-55971"
+      ],
+      "proteins": [
+        {
+          "uniprot": "P0A742",
+          "gene": "mscL",
+          "synonyms": [
+            "yhdC"
+          ],
+          "name": "Large-conductance mechanosensitive channel",
+          "organism": "Escherichia coli (strain K12)",
+          "prior_pdb_count": 5,
+          "first_structure": false
+        }
+      ],
+      "score": 52
+    },
+    {
+      "pmcid": "PMC7619511",
+      "pmid": null,
+      "doi": "10.1126/scitranslmed.aef7084",
+      "title": "Multifunctional antibody responses from a primate Shigella outbreak inform vaccine design",
+      "journal": "Science translational medicine",
+      "journal_abbrev": "Sci Transl Med",
+      "authors": "Gallant R, Savarino P, Pulido S, Gilman M, Lu T, Hayes J, Xerri N, Williams T, Ochoa M, Dietz Z, Peterson E, Scott T, Hartmann F, Baker S, Kaminski R, Sok D, Kruse A, Picking W, Capuano S, Schmidt H.",
+      "pub_date": "2026-09-02",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "There is currently no approved vaccine for Shigella spp., a leading cause of diarrhea with increasing rates of antimicrobial resistance. Shigella vaccine development is complicated in part by an incomplete understanding of the structural and molecular determinants of immunity. To address this, we isolated monoclonal antibodies against candidate Shigella vaccine antigens using samples from a Shigella flexneri outbreak in a nonhuman primate (NHP) research facility. We found that antibodies targeting the Shigella O-antigen can undergo substantial affinity maturation (>10%) to acquire broad cross-reactivity across S. flexneri serotypes. We also found that the virulence-associated type III secretion system (T3SS) proteins IpaD and IpaB elicit moderate T cell and robust antibody responses. T3SS antibodies could either inhibit or enhance bacterial virulence in vitro and differed in vivo depending on their epitope specificity. Collectively, these findings provide insights into protective and deleterious immune responses against Shigella that directly inform vaccine immunogen design.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9ZRT",
+          "status": "released",
+          "title": "Shigella flexneri type III secretion system (T3SS) protein IpaD bound to hemolysis blocking antibody fragment D13r-34",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.3,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-20",
+          "citation_doi": "10.1126/scitranslmed.aef7084",
+          "citation_pmid": "42685149",
+          "citation_title": "Multifunctional antibody responses from a primate Shigella outbreak inform vaccine design.",
+          "polymers": [
+            {
+              "description": "Invasin IpaD",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P18013"
+              ],
+              "organisms": [
+                "Shigella flexneri"
+              ]
+            },
+            {
+              "description": "D13r-34 antibody fragment heavy chain",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Macaca mulatta"
+              ]
+            },
+            {
+              "description": "D13r-34 antibody fragment light chain",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Macaca mulatta"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "9ZRS",
+          "status": "released",
+          "title": "Shigella flexneri type III secretion system (T3SS) protein IpaD bound to hemolysis blocking Fab D02-F2 and hemolysis enhancing Fab D02-E4",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.4,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-12-20",
+          "citation_doi": "10.1126/scitranslmed.aef7084",
+          "citation_pmid": "42685149",
+          "citation_title": "Multifunctional antibody responses from a primate Shigella outbreak inform vaccine design.",
+          "polymers": [
+            {
+              "description": "Invasin IpaD",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P18013"
+              ],
+              "organisms": [
+                "Shigella flexneri"
+              ]
+            },
+            {
+              "description": "D02-F2 antibody fragment heavy chain",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Macaca mulatta"
+              ]
+            },
+            {
+              "description": "D02-F2 antibody fragment light chain",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Macaca mulatta"
+              ]
+            },
+            {
+              "description": "D02-E4 antibody fragment heavy chain",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Macaca mulatta"
+              ]
+            },
+            {
+              "description": "D02-E4 antibody fragment light chain",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Macaca mulatta"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "PDB primary citation matches this paper"
+        }
+      ],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [
+        {
+          "uniprot": "P18013",
+          "gene": "ipaD",
+          "synonyms": [],
+          "name": "Invasin IpaD",
+          "organism": "Shigella flexneri",
+          "prior_pdb_count": 13,
+          "first_structure": false
+        }
+      ],
+      "score": 52
+    },
+    {
+      "pmcid": "PMC13642728",
+      "pmid": null,
+      "doi": "10.3389/fmicb.2026.1895254",
+      "title": "A C39-like protein from methanogenic archaea: structural insights and functional divergence in β-galactose analogue degradation",
+      "journal": "Frontiers in Microbiology",
+      "journal_abbrev": "Front Microbiol",
+      "authors": "Guo L, Wang L, Bai L.",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMethanogenic archaea harbor diverse enzymes that support their survival in extreme environments and play key roles in global carbon cycling. The C39 peptidase family, known for cleaving peptide substrates, now gains functional expansion through A0A126R2S0, a novel enzyme that shares structural homology with C39 peptidases (RMSD: 2.0–2.5 Å) but exhibits glycosidase activity. The enzyme harbors a conserved Q-C-H motif in which the third residue of the canonical catalytic triad is substituted from aspartate to asparagine. Enzymatic assays demonstrate that A0A126R2S0 specifically hydrolyzes β-D-galactose analogs, such as p-nitrophenyl-β-D-galactopyranoside (PNPG, Sub 5), with an activity of 16.15 ± 0.71 μM/h, which is 7.8-fold higher than that toward α-configured analogs. Notably, it shows no detectable activity toward double-glycine peptides or archaeal cell wall polypeptides, distinguishing it from canonical C39 peptidases. Truncation experiments confirm that the C-terminal domain alone is sufficient for this glycosidase activity. Molecular docking and site-directed mutagenesis further implicate Loop 3 (residues D314–D324) as a critical determinant of substrate recognition, with the C316-C322 disulfide bond likely stabilizing its conformation. Collectively, these findings expand the functional repertoire of the C39 peptidase superfamily, suggest an evolutionary connection between peptidases and glycosidases, and establish A0A126R2S0 as a candidate biocatalyst for β-galactoside processing.Keywords: C39-like protein, glycosidase activity, methanogenic archaea, structure and function, β-Galactose analogs",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "6MPZ",
+        "6V9Z",
+        "3K8U",
+        "8Z4H",
+        "8HF4"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13643172",
+      "pmid": "42841232",
+      "doi": "10.1093/nar/gkag955",
+      "title": "A dynamically frustrated allosteric checkpoint consistent with conformational proofreading in CRISPR–Cas9",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-07",
+      "index_date": "2026-10-08",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractCRISPR–Cas9 DNA cleavage requires R-loop extension to activate the histidine–asparagine–histidine (HNH) nuclease domain, yet how heteroduplex maturation gates catalytic commitment remains unclear. Using extensive molecular dynamics simulations across seven experimentally trapped heteroduplex states (6–18 nt), we define a three-stage activation pathway: unlocking, preorganization, and precatalytic gating. At the 18-nt checkpoint, HNH and REC2 regain mobility but do not adopt a fully cleavage-competent orientation; this dynamically frustrated metastate is consistent with a conformational-proofreading model. Here, dynamic frustration is used operationally to describe renewed mobility and weakened directional coupling without commitment to the cleavage-competent state, rather than a formal energetic frustration calculation. Two sensors, Y450 at the sgRNA: DNA hybrid interface and K1200 in the PI domain, respond to distinct maturation milestones, encoding heteroduplex length into domain-specific conformational outputs. Integrating these insights with two deep-learning analyses and deep mutational scanning recovers known high-fidelity positions and prioritizes three unannotated residues for testing. In a cellular cleavage reporter assay, R1210D reproduces the attenuated low-completion phenotype of eSpCas9, identifying it as a candidate for direct specificity testing, while destabilizing L1-linker substitutions increase cleavage efficiency. These results connect atomic-level dynamics to experimentally testable, structure-mechanism-informed engineering hypotheses; direct matched-versus mismatched validation is required to establish effects on discrimination fidelity.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7Z4C",
+        "7Z4E",
+        "7Z4K",
+        "7Z4G",
+        "7Z4H",
+        "7Z4I",
+        "7Z4L"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13642402",
+      "pmid": "42839119",
+      "doi": "10.1007/s10822-026-00954-8",
+      "title": "Are QM/MM models systematically improvable? A case study on carbonic anhydrase binding affinities",
+      "journal": "Journal of Computer-Aided Molecular Design",
+      "journal_abbrev": "J Comput Aided Mol Des",
+      "authors": "Mun H, Ho J.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Hybrid quantum mechanics/molecular mechanics (QM/MM) is the method of choice for modelling large biochemical systems, but their performance depends critically on how they are implemented. This paper examines the sensitivity of QM/MM enzyme-ligand binding energy predictions to key parameters, including QM region size, the incorporation of thermal and solvation effects as well the use of docked poses versus crystal structures. The focus is on carbonic anhydrase which has emerged as an important drug target for a wide variety of pathologies. It is demonstrated that trends in binding affinities are surprisingly insensitive with respect to these parameters. QM/MM geometry optimization of poses obtained from molecular docking enhances predictive utility for yet-to-be synthesized ligands, though outliers arise from structural deviations or non-native interactions. These findings provide practical guidelines for QM/MM applications in carbonic anhydrase and similar metalloenzymes. Graphical Abstract Supplementary InformationThe online version contains supplementary material available at https://doi.org/10.1007/s10822-026-00954-8.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3K34",
+        "5JN7",
+        "8EM3"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13644687",
+      "pmid": "42841903",
+      "doi": "10.1084/jem.20252379",
+      "title": "Biallelic loss-of-function PTPN6 variants lead to inflammatory lung disease and hemolytic anemia",
+      "journal": "The Journal of Experimental Medicine",
+      "journal_abbrev": "J Exp Med",
+      "authors": "Moussavi-Harami S, Zinter M, Motta M, Pannone L, Calligari P, Mignini L, Slavotinek A, Martin P, Sanchez H, Sanchez L, Ragab I, Abram C, Broly M, Abi Ayad Y, Serradj A, Boursier G, Bertoli-Avella A, Sadagopan M, Parvaneh N, Sedighzadeh S, Mirzaei E, Shahrooei M, Hsu A, Holland S, Bocchinfuso G, Stella L, Martinelli S, Reversade B, Tartaglia M, Lowell C, Looney M, Chan A.",
+      "pub_date": "2026-10-07",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Moussavi-Harami et al. report that biallelic loss-of-function variants in PTPN6, encoding the immune-regulatory phosphatase SHP1, cause anemia and fatal lung hyperinflammation in families from diverse ethnic backgrounds.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3PS5"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13645088",
+      "pmid": "42842599",
+      "doi": "10.1371/journal.pone.0359833",
+      "title": "Computational identification of natural CXCR4-binding candidates relevant to endometriosis and ovarian cancer progression",
+      "journal": "PLOS One",
+      "journal_abbrev": "PLoS One",
+      "authors": "Karageçili S, Inan D, Ali N.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Endometriosis and ovarian cancer share invasive, inflammatory, and pro-survival mechanisms in which CXCR4 signaling may play an important role, yet phytochemical modulators of this receptor remain insufficiently characterized. This study addressed that gap by integrating receptor reconstruction, ligand-guided docking, pharmacokinetic and toxicity prediction, pharmacophore mapping, density functional theory, replicated membrane-embedded molecular dynamics, and MM/GBSA analysis. A native human CXCR4 model was generated using SWISS-MODEL with 98.2% template coverage and 100% sequence identity, while the co-crystallized IT1t ligand defined the docking cavity. Eighteen phytochemicals were screened, and naringenin achieved the most favorable predicted docking score (−6.361 kcal/mol), exceeding apigenin (−5.927 kcal/mol) and IT1t (−5.155 kcal/mol). Naringenin formed predicted interactions with Tyr116, Arg188, and Tyr255, showed acceptable drug-likeness, solubility, and gastrointestinal absorption, and displayed a wider HOMO–LUMO gap than apigenin. Two independent 100 ns simulations of the CXCR4 complexes with naringenin, apigenin, and IT1t indicated comparatively consistent structural behavior for naringenin, supported by RMSD, SASA, radius of gyration, hydrogen-bond, PCA, FEL, and DCCM analyses. MM/GBSA estimates were also more favorable for naringenin than apigenin across both replicas. Its predicted LD50 was 2000 mg/kg (toxicity class 4), emphasizing that favorable receptor interactions do not establish safety and require experimental toxicological assessment during further preclinical development. Collectively, naringenin emerged as the most coherent in silico prioritized CXCR4-binding candidate. However, the absence of receptor-binding assays, functional validation, and in vivo confirmation remains a major limitation.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3OE6"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13643700",
+      "pmid": null,
+      "doi": "10.1039/d6ra06433g",
+      "title": "GNPS-assisted identification of bioactive constituents from Scoparia dulcis and their anti-inflammatory mechanisms via network pharmacology and experimental validation",
+      "journal": "RSC Advances",
+      "journal_abbrev": "RSC Adv",
+      "authors": "Pham N, Nguyen T, Duyen N, Le H, Phan T, Huynh Tran Q, Luu P, Kha Q, Loi V, Nguyen D, Lu C, Lai K.",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Scoparia dulcis L. (SD) is an edible medicinal herb traditionally consumed as a cooling beverage in tropical Asia for the management of metabolic and inflammatory disorders; however, its dietary bioactive constituents and anti-inflammatory mechanisms have not yet been fully elucidated. In the present study, the metabolite profile of the aerial parts of SD (ASD) was characterized, and their anti-inflammatory potential was evaluated through an integrated approach incorporating LC-HRMS/MS-based molecular networking, network pharmacology, molecular docking, molecular dynamics simulations, and in vitro validation in macrophages. Untargeted LC-HRMS/MS combined with GNPS feature-based molecular networking enabled the annotation of 184 metabolites in the ASD extract, mainly comprising shikimates and phenylpropanoids (44.0%) and terpenoids (39.7%), with flavonoids constituting the most abundant superclass and including known food bioactives such as β-sitosterol, pentamethoxyflavone, naringin, and catechin. ADMET-based screening prioritized 31 absorbable constituents, while network pharmacology identified 179 inflammation-related targets, with TNF-α, IL6, STAT3, AKT1, and JAK2 emerging as key hubs. Enrichment analysis highlighted the TNF, PI3K–AKT, JAK–STAT, and AGE–RAGE pathways as major signaling routes associated with low-grade diet-related inflammation. Molecular docking and 300 ns molecular dynamics simulations further identified zeorinone as a stable dual binder of TNF-α and IL6, exhibiting the most favorable MM–PBSA binding free energies among the compounds selected for molecular dynamics analysis. Consistent with these computational findings, the ASD extract showed no cytotoxicity in RAW264.7 macrophages at 10–100 µg mL−1 and significantly reduced LPS-induced TNF-α and IL6 secretion at 50–100 µg mL−1, with effects comparable to dexamethasone. Overall, these findings establish SD as a promising source of dietary anti-inflammatory bioactives and provide a chemical and mechanistic basis for its potential development as a functional food ingredient or herbal beverage targeting chronic diet-related inflammation.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "2AZ5",
+        "1ALU"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13642824",
+      "pmid": null,
+      "doi": "10.3389/fbinf.2026.1922523",
+      "title": "Immunoinformatics-based design of a multi-epitope mRNA vaccine candidate targeting the major human-infecting hepatitis E virus genotypes 1–4",
+      "journal": "Frontiers in Bioinformatics",
+      "journal_abbrev": "Front Bioinform",
+      "authors": "Khonza M, Saeed Z, Jabeen Z, Arab W, Kakakhel S, Yamin M, Ghaith M, Javed A, Zohaib A, Abdulal R.",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackgroundHepatitis E virus (HEV) is one of the leading causes of acute and chronic hepatitis among humans across the globe and is linked to severe diseases in immunocompromised individuals and pregnant women. Despite its substantial global burden, only one vaccine is licensed (in China and Pakistan), limiting its global accessibility. Furthermore, no globally approved mRNA vaccine against HEV is currently available, highlighting the need to develop strategies for alternative vaccines.MethodsIn this study, the amino acid sequences of ORF2 capsid proteins representative of HEV genotypes 1–4 were curated, retrieved, and analyzed to generate a consensus sequence. The conserved cytotoxic T lymphocyte (CTL), helper T lymphocyte (HTL), and B-cell epitopes were computationally screened based on their antigenicity, allergenicity, toxicity, IFN-γ induction, and human non-homology. Then, the selected epitopes, seven in total, were assembled into a computational multi-epitope mRNA construct incorporated with β-defensin adjuvant, correct linkers, and regulatory elements [Kozak, tPA, MITD, and globin untranslated regions (UTRs)]. The construct was subsequently subjected to structural modeling, refinement and validation, docked with the TLR1/TLR2 heterodimer, followed by normal mode analysis and a 100-ns molecular dynamics simulation with MM-GBSA binding free-energy estimation, immune simulations, codon optimization, and in silico vaccine construct design.ResultsThe computational analyses predicted that the proposed epitopes possessed a favorable antigenicity (VaxiJen score ≥0.4–1), with non-allergenicity and epitope conservancy (80%–100%) across the analyzed HEV genotypes (1–4), and that the assembled vaccine construct was structurally stable. Protein–protein docking of the vaccine construct candidate with the TLR1/TLR2 heterodimer and normal mode analysis of the docked complex indicated a stable structural interface rather than a confirmation of biological receptor engagement; a subsequent 100-ns molecular dynamics simulation supported a persistent, increasingly hydrogen-bonded interface with a favorable MM-GBSA binding free-energy (−91.96 kcal/mol). Computational immune simulations predicted cellular and humoral immune responses with B- and T-cell interaction activity and cytokine production levels.ConclusionThis study describes a computationally designed multi-epitope mRNA vaccine candidate with predicted immunogenicity and structural stability against the major human-infecting HEV genotypes 1–4. These computational results support the proposed vaccine construct as a promising candidate for further research to assess its immunogenicity; safety and protective efficacy will require experimental validation before its translational potential is verified.Keywords: hepatitis E virus, immunoinformatics, mRNA vaccine, multi-epitope mRNA vaccine, ORF2, reverse vaccinology, vaccine design, viral genotypes",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "2ZTN",
+        "2Z7X"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13645060",
+      "pmid": "42842564",
+      "doi": "10.1371/journal.pone.0359525",
+      "title": "Investigating the anticancer potential of phytochemicals from the mangrove Rhizophora mucronata as inhibitors of lung cancer-associated proteins: Insights from multiscale computational and in silico analyses",
+      "journal": "PLOS One",
+      "journal_abbrev": "PLoS One",
+      "authors": "Mahdi Z, AlmjalawI B, Naimuzzaman M, Hasan M, Kumer A, Al-Alaq F, Al-Dahmoshi H, Rahman F, Khan M, Al-Khafaji N, Al-Yasiri S.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Lung cancer remains the leading cause of cancer-related mortality worldwide, with a five-year survival rate of approximately 20–25% despite advances in targeted therapy and immunotherapy. There is a continuous need for novel, low-toxicity compounds capable of modulating key oncogenic pathways in non-small cell lung cancer (NSCLC). Mangrove ecosystems are rich reservoirs of bioactive phytochemicals, yet the inhibitory potential of compounds from Rhizophora mucronata against validated lung cancer-associated proteins has not been systematically explored using multi-scale computational approaches. This study employed an integrated computational pipeline to evaluate 14 phytochemicals from R. mucronata. Density Functional Theory (DFT) calculations at the B3LYP/6-31G* level were performed to characterize electronic properties of the ligands. Molecular docking studies were conducted using both AutoDock Vina (PyRx) and Schrödinger Glide against the Keap1 Kelch domain (PDB 1X2J) and the YEATS2 YEATS domain (PDB 5XNV). Top-ranked complexes were subjected to 100-ns molecular dynamics (MD) simulations in Desmond, and pharmacokinetic and toxicity profiles were predicted using SwissADME and pkCSM. Among the screened compounds, ligand L10 (cyclohexane-1,2,3,4,5,6-hexaol) exhibited the smallest HOMO–LUMO energy gap (0.36 eV), favorable binding affinities (Glide score of –7.789 kcal/mol against 1X2J), multiple hydrogen-bonding interactions, and stable complex behavior during MD simulations (Cα RMSD < 3 Å). Several other ligands (L02, L05, and L07) also displayed promising profiles. Most compounds complied with Lipinski’s rule of five and showed acceptable predicted ADMET properties. These preliminary findings suggest that Rhizophora mucronate -derived phytochemicals, particularly L10, are promising candidates for further experimental evaluation as modulators of Keap1 and YEATS2 in lung cancer. This study provides a computational framework for prioritizing natural product leads from mangrove species for subsequent in vitro and in vivo validation.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1X2J",
+        "5XNV"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13642915",
+      "pmid": "42838987",
+      "doi": "10.1038/s42004-026-02245-7",
+      "title": "Lipid gating of BK channels and activation mechanism by negatively charged lipids",
+      "journal": "Communications Chemistry",
+      "journal_abbrev": "Commun Chem",
+      "authors": "Mironenko A, de Groot B, Kopec W.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "BK channels are a class of K+ channels that possess an unusually high conductance and are synergistically gated by intracellular Ca2+ and voltage. Despite the significant array of experimental and computational data, many aspects of their function and dynamics remain unclear - such as how ion permeation is halted in the closed state of the channel. Available CryoEM structures obtained in deactivating conditions capture the channel with a wide, unobstructed pore, in contrast to e.g., a helix bundle crossing observed in some K+ channels. Several hypotheses of BK closure were proposed, including selectivity filter and hydrophobic gating. In this work, we expand on the model of hydrophobic gating and focus on the role of lipids. Using atomistic molecular dynamics simulations with applied voltage, we directly investigate the ability of the full-length BK channel in various Cryo-EM states to permeate ions, and propose that lipid entrance into the pore - either with lipid tails or entire lipid molecules - through the membrane-facing fenestrations is a critical determinant of BK conductivity. Furthermore, we elucidate the mechanism of BK activation by negatively charged lipids via a combination of atomistic & coarse-grained simulations, and suggest that they act by a multi-modal mechanism, which encompasses lipid entry reduction, increase of the K+ occupancy of the pore, and stabilization of the channel’s open-state structure - in broad agreement with experimental data.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "5TJ6",
+        "5TJI"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13642902",
+      "pmid": "42838957",
+      "doi": "10.1038/s41467-026-77155-2",
+      "title": "PRMT7 restricts CD8+ T cells expansion via the NF-ΚB pathway",
+      "journal": "Nature Communications",
+      "journal_abbrev": "Nat Commun",
+      "authors": "Srour N, Luo K, Allard D, Xiong Y, Yu Z, Papadopoulos T, Santinon F, Hsieh C, Parent A, Stagg J, Turcotte S, Barsyte-Lovejoy D, Lehoux S, del Rincón S, Jin J, Richard S.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractSuccessful cellular immunotherapy for cancer utilising cytotoxic T lymphocytes (CTL) requires efficient expansion while maintaining effector function. Understanding how CTL expansion and function are regulated during the cell preparation process is thus important. Here, we show that T cell-specific deletion of Prmt7 using CD4-Cre increases CD8+ T cell effector differentiation, cytokine secretion, cytolytic activity and anti-tumor responses. Prmt7 deficiency transcriptionally reprograms CD8+ T cells by activating the NF-κB pathway, boosting proliferation, and facilitating the production of effector molecules such as CD25, CD69 and IFNγ. Mechanistically, PRMT7 associates with RelA and restricts RelA nuclear translocation. In vitro, a self-developed PRMT7-targeting PROTAC degrader, MS54, similarly activates the NF-κB pathway as in Prmt7-deficient CTL. In vivo, adoptive cell transfer of MS54-treated OT-I CTLs improves tumor control in a mouse syngeneic melanoma model. In human CTL, MS54 enhances proliferation, activation markers (CD69, CD137) expression, IFNγ production and cytotoxicity toward melanoma. Our findings thus identify PRMT7 as a negative regulator of CD8+ T cell immunity and highlight MS54 as a potential strategy to improve adoptive T cell therapy.Subject terms: Target validation, Tumour immunology, Immunotherapy, Methylation",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "6OGN"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13645396",
+      "pmid": null,
+      "doi": "10.33696/haematology.6.067",
+      "title": "Repurposing Nilotinib as a Selective P38β Inhibitor in Hematopoietic Malignancies: Clinical Evidence and Mechanistic Insights",
+      "journal": "Journal of clinical haematology",
+      "journal_abbrev": "J Clin Haematol",
+      "authors": "Zhang X, Hsiang J, Nam S, Li H, Yuan Y, Wu X, Hmwe S, Moore R, Rosen S.",
+      "pub_date": "2025-01-01",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackground:Cutaneous T cell lymphoma (CTCL) is an incurable cancer characterized by elevated p38β and p38γ and downregulated tumor-suppressive p38α.Objectives:We aimed to identify selective p38β inhibitors and investigate their mechanisms and therapeutic implications in hematologic malignancies.Methods:A high-throughput screen of Food and Drug Administration (FDA)-approved compounds was conducted to identify p38β inhibitors. In vitro kinase assays, Western blots, scRNA-seq, synergy tests, and mass spectrometry were used. Clinical trial and public datasets were analyzed.Results:Nilotinib was identified as a selective p38β inhibitor (~25-fold over p38α). Its inhibition of p38β led to compensatory activation of p38γ, driving Epithelial-to-Mesenchymal Transition (EMT) and potential toxicities. Combining Nilotinib with p38γ inhibitors (e.g., CSH71 or Paclitaxel) produced synergistic anti-tumor effects in CTCL and leukemia cells. Clinical and FDA Adverse Event Reporting System (FAERS) data revealed higher toxicity rates for Nilotinib in Ph+ CML and off-target effects in non-CML cancers.Conclusion:Nilotinib selectively inhibits p38β but activates p38γ, potentially reducing therapeutic selectivity. Combining it with p38γ inhibitors may enhance efficacy and reduce toxicity across hematologic malignancies.Keywords: Chronic myeloid leukemia, Clinical trials, Cutaneous T cell lymphoma, Nilotinib, Paclitaxel",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3GP0"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13643073",
+      "pmid": null,
+      "doi": "10.3389/fphar.2026.1884338",
+      "title": "Targeting UAP1 with rabeprazole: a novel repurposed therapeutic strategy for multiple myeloma",
+      "journal": "Frontiers in Pharmacology",
+      "journal_abbrev": "Front Pharmacol",
+      "authors": "Cheng L, Cheng H, Hu B, Liu A, Wang X, Zhu Y, Gong L, Liu L.",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBackgroundDespite significant advancements in proteasome inhibitors and immunomodulatory drugs, multiple myeloma (MM) remains largely incurable due to persistent drug resistance and frequent relapse, highlighting an urgent need for novel therapeutic targets.MethodsWe analyzed Multiple Myeloma Research Foundation and GEO datasets to identify genes associated with disease progression, prioritizing UDP-N-acetylglucosamine pyrophosphorylase 1 (UAP1) for functional validation. The impact of UAP1 on MM cell growth was evaluated through both in vitro and in vivo models. Integrated metabolomics and transcriptomics were employed to elucidate the underlying regulatory mechanisms. Furthermore, virtual screening of an FDA-approved drug library was performed to identify potential UAP1 expression suppressor, followed by experimental validation of the lead compound’s efficacy via molecular docking, combination therapy analysis, and gene expression intervention.ResultsUAP1 was found to be overexpressed in MM patients and positively correlated with disease severity. UAP1 knockdown significantly suppressed MM cell proliferation, and promoted apoptosis. Mechanistically, integrated multi-omics analysis revealed that this growth inhibition was driven by the dysregulation of protein biosynthesis, degradation, and amino acid metabolism. Virtual screening identified Rabeprazole (RAB) as a potent expression suppressor candidate. RAB effectively inhibited MM cell growth by downregulating UAP1 expression and exhibited synergistic anti-myeloma effects when combined with the proteasome inhibitor bortezomib. Knockdown and overexpression experiments confirmed that UAP1 is a functional target of RAB.ConclusionOur findings establish UAP1 as a critical driver of MM progression and a promising therapeutic target. Genetic or pharmacological inhibition of UAP1 expression via RAB disrupts essential metabolic pathways, thereby stunting tumor growth. This study provides preclinical evidence for repurposing RAB as a novel UAP1-targeted strategy, offering a potential avenue to sensitize the therapeutic efficacy of bortezomib and improve clinical outcomes for MM patients.Keywords: cancer treatment, multiple myeloma, rabeprazole, target, UAP1",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1VM8"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13643169",
+      "pmid": "42841231",
+      "doi": "10.1093/nar/gkag947",
+      "title": "XPA lactylation is required for UV-induced DNA damage repair",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-07",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractXeroderma pigmentosum group A (XPA) serves as a core nucleotide excision repair (NER) factor essential for the repair process triggered by UV irradiation. Lactylation, a newly identified post-translational modification, plays a key role in tumorigenesis and cancer progression. Herein, we discovered that XPA was lactylated in the DNA-binding domain by the acyl-transferase KAT5. In addition, UV irradiation promoted XPA lactylation, thereby increasing the chromatin recruitment of XPA and NER. However, the mutation of XPA to a lactylation-deficient form impeded XPA chromatin recruitment under UV irradiation, impaired NER, and rendered cancer cells hypersensitive to UV irradiation. Our data demonstrate that the lactylation of XPA plays a crucial role in NER and reveals the link between metabolic reprogramming and DNA damage repair induced by UV irradiation.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "6J44"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13643176",
+      "pmid": "42841233",
+      "doi": "10.1093/nar/gkag959",
+      "title": "Acetylation-independent mechanism for binding of ENL to intrinsically disordered regions in TAF2/6 and SNF5",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-07",
+      "index_date": "2026-10-08",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractEleven-nineteen-leukemia (ENL) is a well-established epigenetic regulator essential for transcription in development and implicated in cancer. Here, we report the molecular mechanisms and functional consequences of the ENL association with components of transcriptional and chromatin remodeling complexes, TAF2, TAF6, and SNF5, and describe ENL intramolecular contacts and autoregulation. We show that the extra-terminal domain of ENL binds in an acetylation-independent manner to the hydrophobic motifs identified in intrinsically disordered regions of TAF2, TAF6, and SNF5. Genomic analysis reveals genome-wide co-occupancy of ENL and TAF2 or SNF5 on active promoters, and proteomic and transcriptomic analyses demonstrate increased tumor-associated correlations of ENL with TAF2, TAF6, and SNF5 and their coordinated co-expression patterns in several types of cancer. Our findings shed light on the mechanistic details by which ENL associates with chromatin cofactors and is autoregulated, paving the way for the development of novel ENL targeted antitumor interventions.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13645374",
+      "pmid": null,
+      "doi": "10.1007/s11263-026-02802-6",
+      "title": "From Unsupervised to Zero-Shot: 3D Domain Adaptation for Cryo-Electron Tomography Segmentation",
+      "journal": "International journal of computer vision",
+      "journal_abbrev": "Int J Comput Vis",
+      "authors": "Li H, Li X, Wang H, Shi J, Chen H, Du B, Barthelemy J, Kihara D, Shen J, Xu M.",
+      "pub_date": "2026-04-07",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractWith the refinement of 3D imaging modality, cryo-electron tomography (cryo-ET) has emerged as a powerful technique for the structural analysis of macromolecular complexes at near-atomic resolution. Recent advancements in volumetric segmentation methods applied to cryo-ET datasets have garnered significant attention within the biomedical sector. However, existing methods rely heavily on manually labeled data, which demands highly specialized expertise, making fully supervised approaches less feasible for cryo-ET images. To address this, a number of unsupervised domain adaptation (UDA) techniques have been developed to improve segmentation network performance using unlabeled data. Nevertheless, directly applying these methods to cryo-ET image segmentation presents two major challenges: 1) the source dataset, usually obtained through simulation, contains a fixed level of noise, while the target dataset, being directly collected from raw-data from the real-world scenario, has unpredictable noise levels; 2) the source data used for training typically consists of known macromolecules, in contrast, the target domain data are often unknown, causing the model to be biased towards those known macromolecules, leading to a domain shift problem. To address such challenges, in this paper, we introduce a voxel-wise unsupervised domain adaptation approach, termed Vox-UDA, specifically for cryo-ET subtomogram segmentation. Vox-UDA incorporates a noise generation module to simulate target-like noises in the source dataset for cross-noise level adaptation, and a denoised pseudo-labeling strategy based on the improved bilateral filter to alleviate the domain shift problem. Additionally, we further consider a scenario that is more in line with the real world, where the target (experimental) dataset might not be accessible during training or has a very small sample size, and we present a voxel-wise zero-shot domain adaptation (ZSDA) approach, named Vox-ZSDA. In Vox-ZSDA, we introduce a self-supervised graph learning strategy to eliminate any dependency on the target data, accompanied by a dynamic graph contrastive learning technique to enhance the model’s sensitivity to macromolecular structures to boost the segmentation performance. More importantly, we construct the first UDA and ZSDA cryo-ET subtomogram segmentation benchmark on three experimental datasets. Extensive experimental results on multiple benchmarks and newly curated real-world datasets demonstrate the superiority of our proposed approach compared to state-of-the-art UDA and ZSDA methods.Keywords: 3D image segmentation, Unsupervised domain adaptation, Zero-shot domain adaptation, Cryo-Electron Tomography, Graph Learning",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13643682",
+      "pmid": null,
+      "doi": "10.3389/fonc.2026.1924010",
+      "title": "Preclinical characterization of S095029, a novel clinical-stage Fc-attenuated NKG2A-blocking antibody for cancer immunotherapy",
+      "journal": "Frontiers in Oncology",
+      "journal_abbrev": "Front Oncol",
+      "authors": "Melander M, Uhlenbrock F, Worsaae A, Hansen R, Mafille J, Andersen D, Knockaert S, Philippon W, Dietrich N, Grandal M, Granau A, Madsen C, Diaz-Herrero A, Melchiore F, Verneau J, Cerqueira S, Bouaziz M, Boucher M, Køllgaard T, Elhmouzi-Younes J, Skartved N, Tonnerre P, Lefebvre C, Blanc V, Lindsted T, Frölich C, Laugel B.",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-08",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Natural killer group 2 family of receptor A (NKG2A) and its ligand human leukocyte antigen-E (HLA-E) are increasingly recognised as an important immune checkpoint restraining lymphocyte populations involved in cancer immunity. Recent clinical studies investigating dual NKG2A/programmed death ligand 1 (PD-L1) blockade versus anti-PD-L1 monotherapy suggest that the combination may be beneficial in immunotherapy-responsive disease settings. To date, clinical safety and efficacy results are only available for a single NKG2A-blocking monoclonal antibody (mAb). Here, we report on the generation and preclinical characterization of a novel NKG2A-blocking agent. The fully human Fc-attenuated immunoglobulin G1 mAb S095029, selected via functional antibody repertoire screening, was tested against benchmark clinical-stage antibodies in in vitro binding and functional NKG2A/HLA-E blockade assays. S095029 bound human NKG2A with a low nanomolar-range affinity and efficiently reversed the inhibitory effects of NKG2A/HLA-E interaction. As a single agent, S095029 enhanced the activation, cytotoxicity, and cytokine secretion of natural killer (NK) and γδ T cells. S095029 improved NK cell antibody-dependent cellular cytotoxicity and other effector functions triggered by Fc-competent mAbs. In vivo investigations in syngeneic mouse models showed that S095029 inhibited tumour growth by harnessing the anti-tumour activity of both NK and CD8+ T cells. Overall, our results support the clinical development of S095029 in immuno-oncology-responsive tumour settings with adequate HLA-E expression. Phase 1b/2 dose escalation studies are currently underway to evaluate S095029 in combination with anti-PD-1 in non-small cell lung cancer and gastric cancer.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    }
+  ]
+}

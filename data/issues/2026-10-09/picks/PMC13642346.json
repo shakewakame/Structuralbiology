@@ -1,0 +1,76 @@
+{
+  "pmcid": "PMC13642346",
+  "rank": 3,
+  "headline": "GPR84–Gi複合体：リガンドのCF3基がLeu336とPhe187を押し、β-アレスチン動員を抑える",
+  "takeaway": "リガンド置換基の立体的な大きさでGPR84のバイアスを設計できる",
+  "target_label": "GPR84–Gi（ヒト）",
+  "summary": {
+    "background": "GPCRのバイアスアゴニストを合理的に設計するには、バイアスの分子機構の理解が足りなかった。GPR84のGタンパク質バイアス型アゴニストの構造は未解析だった。",
+    "approach": "Gタンパク質バイアス型アゴニストOX04529とGPR84–Gi複合体のクライオ電顕構造（3.03 Å）を決め、MD、変異体解析、置換基ライブラリーで検証した。",
+    "findings": "OX04529のCF3基がLeu336とPhe187の配置を変え、極性ネットワークを乱してβ-アレスチン動員を抑える。置換基の体積とβ-アレスチン効力は逆相関した。"
+  },
+  "highlights": [
+    {
+      "tag": "創薬・モダリティ",
+      "text": "OX04529は既知の6-OAUとほぼ同じ姿勢で結合するが、CF3基がTM5/TM6側を向き、Leu336とPhe187の側鎖配置が変わる。既報の他のGPR84–Gi構造では見られない配置だった。",
+      "evidence": [
+        {
+          "quote": "indicated the altered positioning of Phe1875.47 and Leu3366.52 was only produced by OX04529",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "Leu336AlaとPhe187Ala変異は、OX04529によるβ-アレスチン動員を回復させつつ、Gi活性化は保った。この立体障害がバイアスの原因という仮説に実験的な支持を与える。",
+      "evidence": [
+        {
+          "quote": "Remarkably, although as noted earlier, OX04529 was a weak partial agonist at wild type GPR84, this ligand became a potent (Supplementary Table 4), full agonist in promoting interactions with both β-arrestin-1 and β-arrestin-2 in HEK293T cells at Leu3366.52Ala GPR84",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "創薬・モダリティ",
+      "text": "3位の置換基を変えた類縁体ライブラリーで、β-アレスチン-2の最大効力はファンデルワールス体積と負の相関を示した。電子的性質や疎水性は主因ではないと著者は結論する。",
+      "evidence": [
+        {
+          "quote": "this strongly suggests that steric factors, rather than electronic effects or lipophilicity are dominant in determining β-arrestin-2 recruitment and hence the extent of ligand bias.",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "GPR84、DNGαi1、Gβ1γ2をSf9細胞にBac-to-Bacで共発現。",
+    "construct": "GPR84のC末端にNanoBiTのLgBiTを15残基リンカーで融合。Flag/His8タグ付き。",
+    "purification": "LMNG/CHSで可溶化し、Niアフィニティ、抗Flag M1、scFv16を加えてSuperdex 200 Increase。全工程でOX04529を1 µM維持。",
+    "sample_prep": "プラズマ処理した1.2/1.3 UltrAuFoil 300メッシュ、試料3 µL、Vitrobot Mark IV。",
+    "data_collection": "Titan Krios（K3、スーパー解像度）、8,671ムービー、cryoSPARCで解析。",
+    "evidence": [
+      {
+        "quote": "GPR84, DNGαi1 and Gβ1γ2 were co-expressed in Sf9 insect cells using Bac-to-Bac baculovirus expression system.",
+        "section": "Methods"
+      },
+      {
+        "quote": "To enhance complex stability, the NanoBiT tethering strategy was employed by fusing the LgBiT subunit52 to the C-terminus of GPR84 after R387 via a 15-amino acid flexible linker (GSSGGGGSGGGGSSG).",
+        "section": "Methods"
+      },
+      {
+        "quote": "The eluted complex was concentrated using 100 kDa molecular weight cut-off concentrators (Millipore) and mixed with purified scFv16 at a 1.3:1 molar ratio.",
+        "section": "Methods"
+      },
+      {
+        "quote": "3 μl of protein sample was applied to plasma-cleaned 1.2/1.3 UltrAuFoil 300 mesh grids and plunge-frozen in liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific).",
+        "section": "Methods"
+      },
+      {
+        "quote": "A total of 8671 movies were collected for the OX04529-GPR84-Gi complex.",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": ["GPR84", "バイアスアゴニスト", "β-アレスチン", "GPCR", "Gi", "OX04529"],
+  "ligand_label": "OX04529",
+  "editor_notes": "構造は OX04529 結合型の 1 つだけで、置換基の異なる他のリガンド（OX04954 など）との構造はない。それらの効果は MD 計算と変異体解析による推定。3-ヒドロキシピリジン N-オキシド環の向きは密度から一意に決まらないと著者が述べている。"
+}
