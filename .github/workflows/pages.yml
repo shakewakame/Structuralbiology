@@ -33,6 +33,8 @@ jobs:
       - name: Build site
         run: python3 -m pipeline.site   # reads data/issues/*, assets/, writes site/
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true   # turn Pages on automatically on the first successful run
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
