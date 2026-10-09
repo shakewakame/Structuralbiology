@@ -1,0 +1,93 @@
+{
+  "pmcid": "PMC13644787",
+  "rank": 4,
+  "headline": "大腸菌MscLをナノディスクで初めて高分解能に解析：WTもG22Sも閉状態、違いはNMRで見える動態",
+  "takeaway": "クライオ電顕の静的構造とssNMRの動態を組み合わせ、MscLの開口初期の揺らぎを捉えた",
+  "target_label": "大腸菌MscL（WT・G22S）",
+  "summary": {
+    "background": "MscLは膜張力だけで開くモデルチャネルだが、大腸菌のMscLは全長の構造が決まっておらず、脂質膜中の動態も不明だった。",
+    "approach": "WTと低閾値変異体G22Sを、ペプチド（MSP）ナノディスクでクライオ電顕解析し（3.7 / 3.5 Å）、リポソーム中のssNMRで動態を比べた。",
+    "findings": "どちらも口径約2 Åで閉じた構造だった。G22SはNMRで周辺質ループの信号が消え、F78周辺などが摂動し、動態の増大を示した。"
+  },
+  "highlights": [
+    {
+      "tag": "手法の工夫",
+      "text": "大腸菌MscLの全長構造は未報告で、著者はMSPナノディスク中のWTを3.7 Å、G22Sを3.5 Åで決定したと述べる。分解能が低く、モデルは主にAlphaFold3予測を密度に当てはめて作られている。",
+      "evidence": [
+        {
+          "quote": "Here, we present the first high-resolution cryo-EM structure of WT EcMscL in MSP-based nanodiscs (3.7 Å; Fig. 2A).",
+          "section": "Discussion"
+        },
+        {
+          "quote": "Because de novo model building is not feasible due to limited resolution, structural model predicted by AlphaFold3 (fig. S1) (42) was fitted into the electron density map",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "低閾値のG22S変異体でも構造は閉状態のままで、K31–D84の塩橋も保たれた。機能差は静的構造ではなく動態にあることを示唆する。G22Sでは脂質尾部の密度がTM2の疎水ポケット（F83、L86、F90）に見えた。",
+      "evidence": [
+        {
+          "quote": "The preservation of this salt bridge in the G22S mutant indicates minimal conformational changes in the periplasmic region.",
+          "section": "Results"
+        },
+        {
+          "quote": "electron density corresponding to lipid tails was observed surrounding a hydrophobic pocket formed by TM2 in the G22S mutant (Fig. 4C)",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "手法の工夫",
+      "text": "リポソーム中のssNMRを併用し、G22Sでは周辺質ループ（59–61、64–72）の信号が消え、張力センサーとされるF78には新しいピークが現れた。クライオ電顕で見えない動態を補う組み合わせだ。",
+      "evidence": [
+        {
+          "quote": "The most striking feature is the absence of signals from the periplasmic region (residues 59–61 and 64–72) in the G22S mutant, which are clearly observed in the WT (green).",
+          "section": "Results"
+        },
+        {
+          "quote": "new peaks emerge in the G22S spectra (purple), particularly F78, a residue previously identified as a key tension sensor critical for channel gating (58)",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "pET21aベクターで大腸菌BL21(DE3)に発現。NMR用は13C/15N均一標識（M9培地）。",
+    "construct": "全長のWTとG22S変異体。足場はMSP1E3D1（TEV切断可能な7×Hisタグ）。",
+    "purification": null,
+    "sample_prep": "MscL:MSP1E3D1:大腸菌脂質を1:4:240でナノディスクに再構成。グリッドは300メッシュR1.2/1.3金、4 µL（0.4 mg/ml）、Vitrobot 4°C・湿度95%、ブロット2または4秒。",
+    "data_collection": "Titan Krios G3i＋K3、BioQuantumフィルター、cryoSPARC v4.6.2とRelion 5.1で解析。",
+    "evidence": [
+      {
+        "quote": "DNA fragments coding for the WT and G22S mutant E. coli MscL were cloned into a pET21a vector and used to transform E. coli BL21(DE3) cells.",
+        "section": "Methods"
+      },
+      {
+        "quote": "MSP1E3D1 with a tobacco etch virus (TEV) protease–cleavable N-terminal 7×His tag was expressed in E. coli BL21(DE3) transformed with the plasmid pMSP1E3D1",
+        "section": "Methods"
+      },
+      {
+        "quote": "Purified MscL and MSP1E3D1 were mixed with solubilized E. coli total lipid extract, at an estimated molar ratio of 1:4:240 of MscL:MSP1D1E3:lipid and incubated for 1 hour at room temperature with gentle agitation.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Grids were prepared using a Vitrobot Mark IV (Thermo Fisher Scientific) operated at 4°C and 95% relative humidity.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Cryo-EM data for WT MscL were acquired on a Titan Krios G3i (Thermo Fisher Scientific) transmission electron microscope operated at 300 kV equipped with a K3 Summit direct electron detector and a BioQuantum energy filter (Gatan).",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "MscL",
+    "機械受容チャネル",
+    "ナノディスク",
+    "固体NMR",
+    "G22S"
+  ],
+  "editor_notes": "「初の高分解能構造」は著者の記述（Discussion）に基づく。PL・CTD は密度が弱くモデルから外れている。WT/G22S の 3.7 / 3.5 Å は PDB 値と一致。lab_notes の purification は主要工程が packet で確認できなかったため null。"
+}

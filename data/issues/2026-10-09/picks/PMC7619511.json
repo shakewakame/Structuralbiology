@@ -1,0 +1,49 @@
+{
+  "pmcid": "PMC7619511",
+  "rank": 5,
+  "headline": "赤痢菌IpaDと抗体の複合体構造：溶血を抑える抗体と高める抗体はエピトープが違う",
+  "takeaway": "IpaDの結合部位の違いが、抗体が毒性を抑えるか高めるかを分ける",
+  "target_label": "赤痢菌IpaD–抗体Fab",
+  "summary": {
+    "background": "赤痢菌には承認ワクチンがなく、防御に働く抗体と有害に働く抗体を分ける構造的な根拠が足りなかった。",
+    "approach": "サルの赤痢集団感染の検体からIpaD・IpaBなどに対するmAbを単離し、IpaDとFabの2つの複合体をクライオ電顕で解析した。",
+    "findings": "溶血を抑えるD13r.34とD02-F2は遠位ドメインに、溶血を高めるD02-E4はN末端ドメインに結合した。エピトープ変異体で結合の消失を確認した。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "IpaDへの結合部位が機能を分ける。溶血を抑えるD13r.34とD02-F2は遠位ドメインに、溶血を高めるD02-E4はN末端ドメインのα1とα2に結合する。D02-F2とD02-E4は既報のIpaD抗体が認識しない領域に結合する。",
+      "evidence": [
+        {
+          "quote": "In contrast, the hemolysis enhancing mAb D02-E4 associated closely with what we call the N-terminal domain epitope, at α1 and α2",
+          "section": "Results"
+        },
+        {
+          "quote": "In contrast, D02-F2 and D02-E4 bound regions of IpaD not recognized by previously reported IpaD mAbs (51, 54).",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "創薬・モダリティ",
+      "text": "エピトープ内に変異を入れたIpaDで結合が消えることを確認した。著者は、有害な抗体応答だけを除き防御的な応答を残すIpaD抗原を設計できる可能性を挙げるが、予備的な結果と位置づけている。",
+      "evidence": [
+        {
+          "quote": "our preliminary epitope-specific IpaD mutagenesis suggests that rational design of IpaD variants may enable selective ablation of disease-enhancing antibody responses while preserving those that lead to inhibition of hemolysis",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": null,
+    "construct": null,
+    "purification": null,
+    "sample_prep": null,
+    "data_collection": null,
+    "evidence": []
+  },
+  "keywords": ["IpaD", "赤痢菌", "III型分泌装置", "抗体", "ワクチン", "クライオ電顕"],
+  "ligand_label": "Fab（D13r.34、D02-F2、D02-E4）",
+  "editor_notes": "クライオ電顕の方法（グリッド作製・収集条件）は補足資料にあり、本文 packet には無いため lab_notes は全て null。IpaB の構造決定は不成功と著者が述べている。構造は 2 つ（IpaD–D13r.34、IpaD–D02-F2–D02-E4）。"
+}
