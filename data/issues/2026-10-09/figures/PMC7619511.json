@@ -1,0 +1,19 @@
+{
+ "pdb_id": "9ZRT",
+ "legend": [
+  {
+   "color": "#3C5A8C",
+   "label": "ipaD"
+  },
+  {
+   "color": "#C9A04B",
+   "label": "D13r-34 antibody fragment heavy chain"
+  },
+  {
+   "color": "#5F9296",
+   "label": "D13r-34 antibody fragment light chain"
+  }
+ ],
+ "ligand": false,
+ "ligand_color": "#D4452B"
+}

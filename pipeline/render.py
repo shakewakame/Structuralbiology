@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import html
+import json
 import re
 import sys
 import unicodedata
@@ -16,8 +17,7 @@ from .schema import LAB_NOTE_FIELDS
 
 SITE_NAME = brand.SITE_NAME
 FONT = brand.FONT
-INK, MUTED, PANEL, ACCENT = brand.INK, brand.MUTED, brand.PANEL, brand.EMERALD
-W, H = 1200, 630
+W, H = 1200, 560
 
 METHOD_JA = {
     "X-RAY DIFFRACTION": "X線結晶構造解析",
@@ -126,72 +126,35 @@ def _placeholder(cand: dict, s: dict | None) -> tuple[str, str]:
     return "PDB ID は論文の補足資料に記載", "（座標を自動取得できないため構造図なし）"
 
 
-def graphical_abstract(cand: dict, pick: dict, issue_date: str, theme: brand.Theme | None = None) -> str:
-    """Brand bar, the paper's own title, and the structure — nothing else (facts live in the page margin)."""
+def structure_figure(cand: dict, pick: dict, theme: brand.Theme | None = None) -> tuple[str, dict]:
+    """The protein and nothing else. Returns (svg, info); info holds the PDB ID and the colour key
+    ([{"color", "label"}] per polymer entity, plus whether the ligand dots are drawn) for the page to print."""
     th = theme or brand.THEMES[brand.DEFAULT_THEME]
-    bar, pad = 52, 24
-    title = cand["title"]
-    rw = W - 2 * pad
-    for size in (30, 28, 26, 24):
-        tl = wrap(title, size, rw, 2)
-        if tl and not tl[-1].endswith("…"):
-            break
-    else:
-        size, tl = 22, wrap(title, 22, rw, 3)
-    meta_y = bar + 32
-    title_y = meta_y + 14 + size
-    title_bottom = title_y + (len(tl) - 1) * size * 1.28
-    px, py = pad, int(title_bottom + 18)
-    pw, ph = rw, H - py - 22
-
     s = pick_structure(cand, pick)
-    body, legend, pdb_note = "", [], ""
+    body, legend = "", []
     if s:
         coords = pdb.coordinates(s["pdb_id"])
         if coords:
             lig_ids = {l["id"] for l in s.get("ligands") or []}
             genes = {p["uniprot"]: p["gene"] for p in cand.get("proteins", []) if p.get("gene")}
-            body, legend = structure_svg.render(coords, lig_ids, px, py, pw, ph - 34, genes,
-                                                margin=22, entity_colors=list(th.entities),
-                                                ligand_color=th.ligand)
+            body, legend = structure_svg.render(coords, lig_ids, 0, 0, W, H, genes, margin=34,
+                                                entity_colors=list(th.entities), ligand_color=th.ligand)
             if pick.get("legend_labels"):
                 legend = [(col, lab) for (col, _), lab in zip(legend, pick["legend_labels"])]
-            if len(legend) < 2:  # a single colour needs no key
-                legend = []
-            pdb_note = f"PDB {s['pdb_id']}"
+    ground = th.paper
     if not body:
+        ground = th.soft
         msg, sub = _placeholder(cand, s)
-        body = "".join(text_block([t], px + pw / 2, py + ph / 2 + dy, size_, th.muted, wt)
+        body = "".join(text_block([t], W / 2, H / 2 + dy, size_, th.muted, wt)
                        .replace("<text ", '<text text-anchor="middle" ', 1)
-                       for t, dy, size_, wt in ((msg, -10, 26, 600), (sub, 30, 18, 400)) if t)
-
-    leg, lx, ly = [], px + 22, py + ph - 18
-    for col, desc in legend[:3]:
-        label = wrap(desc, 15, 250, 1)[0] if desc else ""
-        leg.append(f'<rect x="{lx:.0f}" y="{ly - 11}" width="12" height="12" rx="6" fill="{col}"/>'
-                   f'<text x="{lx + 18:.0f}" y="{ly}" font-size="15" fill="{th.ink2}">{esc(label)}</text>')
-        lx += 18 + sum(char_width(c) for c in label) * 15 + 26
-    if s and s.get("ligands") and body and pdb_note:
-        leg.append(f'<circle cx="{lx + 6:.0f}" cy="{ly - 5}" r="6" fill="{th.ligand}" '
-                   f'stroke="{structure_svg._shade(th.ligand, 0.45)}"/>'
-                   f'<text x="{lx + 18:.0f}" y="{ly}" font-size="15" fill="{th.ink2}">リガンド</text>')
-    note = (f'<text x="{px + pw - 22}" y="{ly}" font-size="14" fill="{th.muted}" text-anchor="end">{esc(pdb_note)}</text>'
-            if pdb_note else "")
-
-    head = (f'<rect width="{W}" height="{bar}" fill="{th.bar}"/>'
-            f'{brand.logo_mark(24, 8, 36, bg=th.ink2, back=th.loop_back, front=th.loop_front, dot=th.ligand)}'
-            f'<text x="72" y="33" font-size="21" font-weight="700" fill="{th.bar_text}">{esc(brand.SITE_NAME)}</text>'
-            f'<text x="{72 + 21 * 5.6:.0f}" y="33" font-size="12" letter-spacing="2" fill="{th.bar_muted}">'
-            f'{esc(brand.SITE_NAME_EN)}</text>'
-            f'<text x="{W - 24}" y="33" font-size="16" fill="{th.bar_muted}" text-anchor="end">{esc(issue_date)}</text>')
-    journal = f"{cand['journal'] or cand['journal_abbrev']}  ·  {cand['pub_date']}"
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
-            f'font-family="{FONT}">'
-            f'<rect width="{W}" height="{H}" fill="{th.paper}"/>{head}'
-            f'{text_block([journal], pad, meta_y, 15, th.muted)}'
-            f'{text_block(tl, pad, title_y, size, th.ink, 700, 1.28)}'
-            f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="14" fill="{th.soft}"/>'
-            f'{body}{"".join(leg)}{note}</svg>\n')
+                       for t, dy, size_, wt in ((msg, -10, 28, 600), (sub, 34, 19, 400)) if t)
+    svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+           f'font-family="{FONT}"><rect width="{W}" height="{H}" fill="{ground}"/>{body}</svg>\n')
+    info = {"pdb_id": s["pdb_id"] if s else None,
+            "legend": [{"color": col, "label": lab} for col, lab in legend] if len(legend) > 1 else [],
+            "ligand": bool(s and s.get("ligands") and "<circle" in body),
+            "ligand_color": th.ligand}
+    return svg, info
 
 
 # ---------- issue page ----------
@@ -234,21 +197,25 @@ def quote_block(evidence: list) -> list[str]:
     return out + ["</details>", ""]
 
 
-def article_md(cand: dict, pick: dict, n: int) -> list[str]:
+def article_md(cand: dict, pick: dict, n: int, info: dict | None = None) -> list[str]:
     doi = f"https://doi.org/{cand['doi']}" if cand.get("doi") else f"https://europepmc.org/article/PMC/{cand['pmcid']}"
     s = pick["summary"]
+    key = ""
+    if info and info.get("legend"):
+        key = f"色（順に）：{' / '.join(x['label'] for x in info['legend'])}" + ("・赤の点はリガンド" if info.get("ligand") else "")
     out = [f"## {n}｜{pick['target_label']}", "",
-           f"![グラフィカルアブストラクト：{cand['title']}](ga/{cand['pmcid']}.svg)", "",
-           f"### {pick['headline']}", "",
-           f"*{cand['journal']}*（{cand['pub_date']}） · [論文]({doi}) · ライセンス: {cand.get('license') or '不明'}  ",
-           f"原題：{cand['title']}", "",
-           "#### 3行要約", "",
-           f"- **背景**：{s['background']}",
-           f"- **やったこと**：{s['approach']}",
-           f"- **分かったこと**：{s['findings']}", "",
-           "#### ここが面白い", ""]
+           f"### {cand['title']}", "",
+           f"*{cand['journal']}*（{cand['pub_date']}） · [論文]({doi}) · ライセンス: {cand.get('license') or '不明'}", "",
+           f"![構造図：{pick['target_label']}](figures/{cand['pmcid']}.svg)", ""]
+    if key:
+        out += [f"<sub>{key}</sub>", ""]
+    out += [f"**{pick['headline']}**", "",
+            f"- **背景**：{s['background']}",
+            f"- **やったこと**：{s['approach']}",
+            f"- **分かったこと**：{s['findings']}", "",
+            "#### 読みどころ", ""]
     for h in pick["highlights"]:
-        out += [f"**［{h['tag']}］** {h['text']}", ""] + quote_block(h.get("evidence", []))
+        out += [h["text"], ""] + quote_block(h.get("evidence", []))
     out += ["#### 構造データ", ""] + structure_table(cand) + protein_lines(cand)
     notes = pick.get("lab_notes") or {}
     filled = [(LAB_NOTE_FIELDS[k], notes[k]) for k in LAB_NOTE_FIELDS if notes.get(k)]
@@ -267,12 +234,11 @@ def contents_table(picks: list[tuple[dict, dict]]) -> list[str]:
         method = method_line(cand)
         if pick.get("method_label") and not any(x["status"] == "released" for x in cand["own_structures"]):
             method = pick["method_label"]
-        tags = " ".join(f"`{h['tag']}`" for h in pick["highlights"])
-        rows.append(f"| {n} | {pick['target_label']} | {method} | {pick['headline']} {tags} |")
+        rows.append(f"| {n} | {pick['target_label']} | {method} | {pick['headline']} |")
     return rows + [""]
 
 
-def issue_md(meta: dict, picks: list[tuple[dict, dict]]) -> str:
+def issue_md(meta: dict, picks: list[tuple[dict, dict]], infos: dict | None = None) -> str:
     c = meta["counts"]
     new_total = c["new_structure"] + c.get("new_structure_ids_unlisted", 0) + c.get("new_map_only", 0)
     picked = {p["pmcid"] for _, p in picks}
@@ -287,7 +253,7 @@ def issue_md(meta: dict, picks: list[tuple[dict, dict]]) -> str:
     out += ["> この号は AI が論文本文から作成した**レビュー用の下書き**です。"
             "数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。", "", "---", ""]
     for n, (cand, pick) in enumerate(picks, 1):
-        out += article_md(cand, pick, n)
+        out += article_md(cand, pick, n, (infos or {}).get(cand["pmcid"]))
     if rest:
         out += ["## 記事にしていない新しい構造", ""]
         for x in rest:
@@ -312,11 +278,16 @@ def main(argv=None) -> int:
         pick = read_json(path)
         picks.append((cands[pick["pmcid"]], pick))
     picks.sort(key=lambda cp: cp[1].get("rank", 99))
-    (d / "ga").mkdir(exist_ok=True)
+    fig_dir = d / "figures"
+    fig_dir.mkdir(exist_ok=True)
+    infos = {}
     for cand, pick in picks:
-        (d / "ga" / f"{cand['pmcid']}.svg").write_text(graphical_abstract(cand, pick, meta["issue_date"]),
+        svg, info = structure_figure(cand, pick)
+        (fig_dir / f"{cand['pmcid']}.svg").write_text(svg, encoding="utf-8")
+        (fig_dir / f"{cand['pmcid']}.json").write_text(json.dumps(info, ensure_ascii=False, indent=1) + "\n",
                                                        encoding="utf-8")
-    (d / "README.md").write_text(issue_md(meta, picks), encoding="utf-8")
+        infos[cand["pmcid"]] = info
+    (d / "README.md").write_text(issue_md(meta, picks, infos), encoding="utf-8")
     print(f"Rendered {len(picks)} articles to {d / 'README.md'}")
     return 0
 

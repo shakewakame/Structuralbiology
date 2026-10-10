@@ -2,7 +2,7 @@
 
 No image generation is involved. The backbone comes from the deposited mmCIF file
 (alpha-carbon / phosphorus positions), the secondary structure from its own
-_struct_conf / _struct_sheet_range records: helices are drawn as rounded tubes,
+_struct_conf / _struct_sheet_range records: helices are drawn as shaded cylinders,
 strands as arrows, loops as thin tubes and nucleic acids as a thin tube,
 coloured by entity and shaded by depth, with the ligands of interest as dots.
 """
@@ -180,6 +180,70 @@ def _elements(res: list[dict]) -> list[tuple[str, int, int]]:
     return [tuple(g) for g in merged]
 
 
+def _split_straight(pts: list[tuple], tol: float) -> list[tuple[int, int]]:
+    """Index ranges (first, last) of near-straight runs of an axis polyline (Douglas-Peucker)."""
+    def worst(a, b):
+        ax, ay, az = pts[a]
+        d = (pts[b][0] - ax, pts[b][1] - ay, pts[b][2] - az)
+        dd = sum(c * c for c in d) or 1e-9
+        best, at = 0.0, a
+        for i in range(a + 1, b):
+            v = (pts[i][0] - ax, pts[i][1] - ay, pts[i][2] - az)
+            u = max(0.0, min(1.0, sum(v[c] * d[c] for c in range(3)) / dd))
+            dist = math.dist(v, tuple(u * d[c] for c in range(3)))
+            if dist > best:
+                best, at = dist, i
+        return best, at
+
+    out: list[tuple[int, int]] = []
+    stack = [(0, len(pts) - 1)]
+    while stack:
+        a, b = stack.pop()
+        dist, at = worst(a, b)
+        if dist > tol and b - a > 3:
+            stack += [(a, at), (at, b)]
+        else:
+            out.append((a, b))
+    return sorted(out)
+
+
+def _cylinder(p0: tuple, p1: tuple, scale: float, radius: float, col: str, uid: int,
+              sx) -> str:
+    """A shaded cylinder from p0 to p1 (projected 3D, Å), lit from the upper left."""
+    length3 = math.dist(p0, p1)
+    if length3 < 1e-6:
+        return ""
+    d3 = [(p1[c] - p0[c]) / length3 for c in range(3)]
+    a, b = sx(p0), sx(p1)
+    length = math.dist(a, b)
+    if length < 0.5:
+        return ""
+    ux, uy = (b[0] - a[0]) / length, (b[1] - a[1]) / length
+    nx, ny = -uy, ux
+    if nx + ny > 0:  # make +n face the light (up and to the left)
+        nx, ny = -nx, -ny
+    m = max(0.6, radius * abs(d3[2]))  # semi-minor axis of the end caps
+    ang = math.degrees(math.atan2(uy, ux))
+    edge = _shade(col, 0.35)
+    lit, dark = _mix(col, 0.38), _shade(col, 0.28)
+    mx, my = (a[0] + b[0]) / 2, (a[1] + b[1]) / 2
+    gid = f"c{uid}"
+    grad = (f'<linearGradient id="{gid}" gradientUnits="userSpaceOnUse" '
+            f'x1="{mx + nx * radius:.1f}" y1="{my + ny * radius:.1f}" '
+            f'x2="{mx - nx * radius:.1f}" y2="{my - ny * radius:.1f}">'
+            f'<stop offset="0" stop-color="{lit}"/><stop offset="0.35" stop-color="{col}"/>'
+            f'<stop offset="1" stop-color="{dark}"/></linearGradient>')
+    p = lambda pt, s: f"{pt[0] + nx * radius * s:.1f},{pt[1] + ny * radius * s:.1f}"
+    body = (f'M{p(a, 1)} L{p(b, 1)} A{m:.1f},{radius:.1f} {ang:.1f} 0 0 {p(b, -1)} '
+            f'L{p(a, -1)} A{m:.1f},{radius:.1f} {ang:.1f} 0 0 {p(a, 1)} Z')
+    near = b if p1[2] >= p0[2] else a
+    cap = (f'<ellipse cx="{near[0]:.1f}" cy="{near[1]:.1f}" rx="{m:.1f}" ry="{radius:.1f}" '
+           f'transform="rotate({ang:.1f} {near[0]:.1f} {near[1]:.1f})" fill="{_mix(col, 0.3)}" '
+           f'stroke="{edge}" stroke-width="0.9"/>')
+    return (f'<defs>{grad}</defs><path d="{body}" fill="url(#{gid})" stroke="{edge}" '
+            f'stroke-width="1" stroke-linejoin="round"/>{cap}')
+
+
 def _points(pts: list[tuple[float, float]]) -> str:
     return " ".join(f"{a:.1f},{b:.1f}" for a, b in pts)
 
@@ -288,13 +352,14 @@ def render(cif_gz: bytes, ligand_ids: set[str], x0: float, y0: float, w: float, 
             entity_order.append(chain_entity[k])
     color = {e: palette[i % len(palette)] for i, e in enumerate(entity_order)}
 
-    tube = max(4.0, min(17.0, 2.2 * scale))   # helix tube diameter in px
+    tube = max(4.5, min(20.0, 2.7 * scale))   # helix cylinder diameter in px
     coil_w = max(1.4, 0.36 * tube)
     nuc_w = max(2.0, 0.5 * tube)
     arrow_hw = 0.5 * tube
     edge = 1.2 if tube > 8 else 0.8             # outline width
 
     parts: list[tuple[float, str]] = []         # (depth, svg) painted far to near
+    uid = 0
 
     for k, v in runs3:
         base = color[chain_entity[k]]
@@ -305,16 +370,15 @@ def render(cif_gz: bytes, ligand_ids: set[str], x0: float, y0: float, w: float, 
                     lo, hi = max(a, i - 1), min(b, i + 2)
                     n = hi - lo + 1
                     win.append(tuple(sum(v[j]["q"][c] for j in range(lo, hi + 1)) / n for c in range(3)))
-                path = _spline(win, 2)
-                z = sum(q[2] for q in path) / len(path)
-                col = tint(base, z)
-                sp = [sx(q) for q in path]
-                pl = _points(sp)
-                hl = _points([(px - 0.17 * tube, py - 0.2 * tube) for px, py in sp])
-                parts.append((z, f'<g stroke-linecap="round" stroke-linejoin="round" fill="none">'
-                                 f'<polyline points="{pl}" stroke="{_shade(col, 0.3)}" stroke-width="{tube + 2 * edge:.1f}"/>'
-                                 f'<polyline points="{pl}" stroke="{col}" stroke-width="{tube:.1f}"/>'
-                                 f'<polyline points="{hl}" stroke="{_mix(col, 0.5)}" stroke-width="{0.26 * tube:.1f}"/></g>'))
+                for s0, s1 in _split_straight(win, 2.2):
+                    p0, p1 = win[s0], win[s1]
+                    ln = math.dist(p0, p1) or 1.0
+                    ext = [0.9 * (p1[c] - p0[c]) / ln for c in range(3)]  # reach the helix ends
+                    q0 = tuple(p0[c] - ext[c] for c in range(3))
+                    q1 = tuple(p1[c] + ext[c] for c in range(3))
+                    z = (q0[2] + q1[2]) / 2
+                    uid += 1
+                    parts.append((z, _cylinder(q0, q1, scale, tube / 2, tint(base, z), uid, sx)))
             elif kind == "E":
                 path = _spline([r["q"] for r in v[a:b + 1]], SUBDIV)
                 z = sum(q[2] for q in path) / len(path)

@@ -28,7 +28,7 @@ LIMITS = {
 EXAMPLE = {
     "pmcid": "PMC00000000",
     "rank": 1,
-    "headline": "見出し：何の構造が出て、何が分かったか（60字以内）。グラフィカルアブストラクトの直後に出る",
+    "headline": "見出し：何の構造が出て、何が分かったか（60字以内）。構造図の直後に太字のリードとして出る",
     "target_label": "標的の短い表記（例：RyR1（ウサギ骨格筋））",
     "summary": {
         "background": "背景：何が分かっていなかったか",
@@ -49,7 +49,7 @@ EXAMPLE = {
     },
     "keywords": ["RyR1", "スタチン"],
     "editor_notes": "確信が持てない点や、編集者に確認してほしい点（任意）",
-    # Optional overrides for the graphical abstract:
+    # Optional overrides for the structure figure and the page margin:
     "ga_pdb_id": "構造図に使う PDB ID（省略時は分解能が最も高い自前の構造）",
     "method_label": "手法・分解能の表示（PDB 情報がないときだけ。例：クライオ電顕・2.8 Å）",
     "ligand_label": "結合分子の表示（略号より分かりやすい名前。例：オラパリブ、タラゾパリブ）",

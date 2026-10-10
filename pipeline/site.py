@@ -84,7 +84,9 @@ img {{ max-width:100%; height:auto; }}
 .card h2 {{ font-size:23px; line-height:1.45; color:var(--ink); margin:2px 0 14px;
             font-weight:800; scroll-margin-top:20px; }}
 .ga {{ display:block; width:100%; border:1px solid var(--hair); border-radius:12px; margin:6px 0 6px; }}
-.ga-cap {{ text-align:center; color:var(--muted); font-size:12.5px; margin:0 0 20px; }}
+.key {{ display:flex; flex-wrap:wrap; gap:6px 18px; color:var(--muted); font-size:12.5px; margin:0 0 6px; }}
+.key i {{ display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }}
+.headline {{ font-size:18px; font-weight:700; color:var(--ink); line-height:1.6; margin:18px 0 8px; }}
 .meta {{ font-size:13.5px; color:var(--muted); margin:0 0 20px; }}
 .meta a {{ color:var(--emerald-dark); }}
 
@@ -166,7 +168,7 @@ def quote_html(evidence: list) -> str:
     rows = "".join(f'<blockquote>{esc(e["quote"])}'
                    f'<span class="src">— {esc(e.get("section", ""))}</span></blockquote>'
                    for e in evidence)
-    return f'<details><summary>根拠（論文本文）</summary>{rows}</details>'
+    return f'<div class="evidence">{rows}</div>'
 
 
 def struct_html(cand: dict) -> str:
@@ -200,6 +202,23 @@ def struct_html(cand: dict) -> str:
     return table + plist
 
 
+def figure_html(cand: dict, date: str) -> str:
+    """The protein figure (figures/<PMCID>.svg) with its colour key; older issues have ga/ instead."""
+    pm = esc(cand["pmcid"])
+    fig_dir = ISSUES_DIR / date / "figures"
+    if not (fig_dir / f"{cand['pmcid']}.svg").exists():
+        return f'<img class="ga" src="../ga/{date}/{pm}.svg" alt="グラフィカルアブストラクト">'
+    key = ""
+    info_path = fig_dir / f"{cand['pmcid']}.json"
+    if info_path.exists():
+        info = read_json(info_path)
+        items = [f'<span><i style="background:{esc(x["color"])}"></i>{esc(x["label"])}</span>' for x in info.get("legend", [])]
+        if info.get("ligand"):
+            items.append(f'<span><i style="background:{esc(info["ligand_color"])}"></i>リガンド</span>')
+        key = f'<p class="key">{"".join(items)}</p>' if items else ""
+    return f'<img class="ga" src="../figures/{date}/{pm}.svg" alt="構造図">{key}'
+
+
 def article_html(cand: dict, pick: dict, date: str, n: int) -> str:
     anchor = slug(f"{n}-{pick['target_label']}")
     s = pick["summary"]
@@ -207,8 +226,7 @@ def article_html(cand: dict, pick: dict, date: str, n: int) -> str:
                f'<li><span class="k">背景</span>{esc(s["background"])}</li>'
                f'<li><span class="k">やったこと</span>{esc(s["approach"])}</li>'
                f'<li><span class="k">分かったこと</span>{esc(s["findings"])}</li></ul>')
-    hls = "".join(f'<div class="hl"><span class="chip">{esc(h["tag"])}</span>'
-                  f'<p>{esc(h["text"])}</p>{quote_html(h.get("evidence", []))}</div>'
+    hls = "".join(f'<div class="hl"><p>{esc(h["text"])}</p>{quote_html(h.get("evidence", []))}</div>'
                   for h in pick["highlights"])
     notes = pick.get("lab_notes") or {}
     from .schema import LAB_NOTE_FIELDS
@@ -220,13 +238,13 @@ def article_html(cand: dict, pick: dict, date: str, n: int) -> str:
     lic = esc(cand.get("license") or "不明")
     return (f'<article class="card">'
             f'<p class="kicker">#{n} · {esc(pick["target_label"])}</p>'
-            f'<h2 id="{anchor}">{esc(pick["headline"])}</h2>'
-            f'<img class="ga" src="../ga/{date}/{esc(cand["pmcid"])}.svg" alt="グラフィカルアブストラクト">'
-            f'<p class="ga-cap">グラフィカルアブストラクト（原題：{esc(cand["title"])}）</p>'
+            f'<h2 id="{anchor}">{esc(cand["title"])}</h2>'
             f'<p class="meta"><a href="{doi_url(cand)}">{esc(cand["journal"] or cand["journal_abbrev"])}'
             f'（{esc(cand["pub_date"])}）</a> · ライセンス: {lic}</p>'
-            f'<h3>3行要約</h3>{summary}'
-            f'<h3>ここが面白い</h3>{hls}'
+            f'{figure_html(cand, date)}'
+            f'<p class="headline">{esc(pick["headline"])}</p>'
+            f'{summary}'
+            f'<h3>読みどころ</h3>{hls}'
             f'<h3>構造データ</h3>{struct_html(cand)}'
             f'{labnotes}'
             f'</article>')
@@ -293,9 +311,10 @@ def build() -> int:
     for date in issues:
         html_text, summary = issue_page(date)
         (SITE_DIR / "issues" / f"{date}.html").write_text(html_text, encoding="utf-8")
-        ga_src = ISSUES_DIR / date / "ga"
-        if ga_src.exists():
-            shutil.copytree(ga_src, SITE_DIR / "ga" / date)
+        for folder in ("figures", "ga"):
+            src = ISSUES_DIR / date / folder
+            if src.exists():
+                shutil.copytree(src, SITE_DIR / folder / date)
         summaries.append(summary)
     (SITE_DIR / "index.html").write_text(home(summaries), encoding="utf-8")
     print(f"built site/ with {len(issues)} issue(s): {', '.join(issues)}")

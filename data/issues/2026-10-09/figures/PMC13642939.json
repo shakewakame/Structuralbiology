@@ -1,0 +1,47 @@
+{
+ "pdb_id": "9ZOB",
+ "legend": [
+  {
+   "color": "#3C5A8C",
+   "label": "PRKDC"
+  },
+  {
+   "color": "#C9A04B",
+   "label": "Unknown peptide"
+  },
+  {
+   "color": "#5F9296",
+   "label": "XRCC6"
+  },
+  {
+   "color": "#A5707A",
+   "label": "XRCC5"
+  },
+  {
+   "color": "#7C8AA8",
+   "label": "LOC121398065"
+  },
+  {
+   "color": "#8A9A5B",
+   "label": "Histone H4"
+  },
+  {
+   "color": "#9C7B55",
+   "label": "LOC494591"
+  },
+  {
+   "color": "#6E6E8E",
+   "label": "LOC121398078"
+  },
+  {
+   "color": "#3C5A8C",
+   "label": "DNA (154-MER)"
+  },
+  {
+   "color": "#C9A04B",
+   "label": "DNA (154-MER)"
+  }
+ ],
+ "ligand": false,
+ "ligand_color": "#D4452B"
+}

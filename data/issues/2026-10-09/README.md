@@ -6,11 +6,11 @@
 
 | # | 標的 | 手法・分解能 | 見出し |
 |---|---|---|---|
-| 1 | RyR1（ウサギ骨格筋） | クライオ電顕・2.14–3.18 Å（16 構造） | RyR1のRY12ドメインにダントロレンがATP/ADPと積み重なって結合する：ADPセンサーの可能性 `新しい結合部位` `機構の解明` `新しい結合部位` |
-| 2 | DNA-PK–ヌクレオソーム複合体 | クライオ電顕・3.80–4.11 Å（5 構造） | ヌクレオソーム末端に結合するKu・DNA-PKの段階的な構造：DNA-PKcsがKuを内側へ押し、DNAを巻き戻す `機構の解明` `機構の解明` `手法の工夫` |
-| 3 | GPR84–Gi（ヒト） | クライオ電顕・3.03 Å | GPR84–Gi複合体：リガンドのCF3基がLeu336とPhe187を押し、β-アレスチン動員を抑える `創薬・モダリティ` `機構の解明` `創薬・モダリティ` |
-| 4 | 大腸菌MscL（WT・G22S） | クライオ電顕・3.46–3.68 Å（2 構造） | 大腸菌MscLをナノディスクで初めて高分解能に解析：WTもG22Sも閉状態、違いはNMRで見える動態 `手法の工夫` `機構の解明` `手法の工夫` |
-| 5 | 赤痢菌IpaD–抗体Fab | クライオ電顕・3.30–3.40 Å（2 構造） | 赤痢菌IpaDと抗体の複合体構造：溶血を抑える抗体と高める抗体はエピトープが違う `機構の解明` `創薬・モダリティ` |
+| 1 | RyR1（ウサギ骨格筋） | クライオ電顕・2.14–3.18 Å（16 構造） | RyR1のRY12ドメインにダントロレンがATP/ADPと積み重なって結合する：ADPセンサーの可能性 |
+| 2 | DNA-PK–ヌクレオソーム複合体 | クライオ電顕・3.80–4.11 Å（5 構造） | ヌクレオソーム末端に結合するKu・DNA-PKの段階的な構造：DNA-PKcsがKuを内側へ押し、DNAを巻き戻す |
+| 3 | GPR84–Gi（ヒト） | クライオ電顕・3.03 Å | GPR84–Gi複合体：リガンドのCF3基がLeu336とPhe187を押し、β-アレスチン動員を抑える |
+| 4 | 大腸菌MscL（WT・G22S） | クライオ電顕・3.46–3.68 Å（2 構造） | 大腸菌MscLをナノディスクで初めて高分解能に解析：WTもG22Sも閉状態、違いはNMRで見える動態 |
+| 5 | 赤痢菌IpaD–抗体Fab | クライオ電顕・3.30–3.40 Å（2 構造） | 赤痢菌IpaDと抗体の複合体構造：溶血を抑える抗体と高める抗体はエピトープが違う |
 
 > この号は AI が論文本文から作成した**レビュー用の下書き**です。数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。
 
@@ -18,22 +18,21 @@
 
 ## 1｜RyR1（ウサギ骨格筋）
 
-![グラフィカルアブストラクト：Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene](ga/PMC13642953.svg)
+### Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene
 
-### RyR1のRY12ドメインにダントロレンがATP/ADPと積み重なって結合する：ADPセンサーの可能性
+*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-76519-y) · ライセンス: cc by-nc-nd
 
-*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-76519-y) · ライセンス: cc by-nc-nd  
-原題：Structural identification of the RY12 domain of RyR1 as an ADP sensor and the target of the malignant hyperthermia therapeutic dantrolene
+![構造図：RyR1（ウサギ骨格筋）](figures/PMC13642953.svg)
 
-#### 3行要約
+**RyR1のRY12ドメインにダントロレンがATP/ADPと積み重なって結合する：ADPセンサーの可能性**
 
 - **背景**：悪性高熱症の唯一の治療薬ダントロレンと誘発物質4CmCについて、RyR1上の結合部位と作用機構は不明だった。
 - **やったこと**：RyR1–calstabin2–CaM複合体を、ダントロレン、ATP/ADP、4CmCなどの条件で解析した。RY12の局所精密化で2.4〜2.8 Åを得て、単一チャネル記録で検証した。
 - **分かったこと**：ダントロレンはRY12の裂け目でATPまたはADPと積み重なって結合する。ダントロレンがなくてもADP 2分子が結合する。4CmCは4か所に結合した。
 
-#### ここが面白い
+#### 読みどころ
 
-**［新しい結合部位］** ダントロレンはRY12ドメインのクランプ内で、W996がヒダントイン部分、W882がヌクレオチドのアデニンと積み重なる三元複合体として結合する。ヌクレオチドがないとダントロレンの結合もRY12の閉じも見えなかった。
+ダントロレンはRY12ドメインのクランプ内で、W996がヒダントイン部分、W882がヌクレオチドのアデニンと積み重なる三元複合体として結合する。ヌクレオチドがないとダントロレンの結合もRY12の閉じも見えなかった。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -45,7 +44,7 @@
 
 </details>
 
-**［機構の解明］** ATP:ADP比が6:1の条件でも、RY12にはMg2+で架橋された2分子のADPが結合し、ATPは見えなかった。著者はRY12がATP:ADP比のセンサーとして働く可能性を挙げる。機能の実証は今後の課題とされている。
+ATP:ADP比が6:1の条件でも、RY12にはMg2+で架橋された2分子のADPが結合し、ATPは見えなかった。著者はRY12がATP:ADP比のセンサーとして働く可能性を挙げる。機能の実証は今後の課題とされている。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -57,7 +56,7 @@
 
 </details>
 
-**［新しい結合部位］** MH誘発物質4CmCはコアソレノイド中心の隠れたポケットでQ4020と直接相互作用する。溶媒から入る経路がなく、リガンド結合にはドメインの構造変化が必要と考えられる。補助的な結合部位も3つ見つかった。
+MH誘発物質4CmCはコアソレノイド中心の隠れたポケットでQ4020と直接相互作用する。溶媒から入る経路がなく、リガンド結合にはドメインの構造変化が必要と考えられる。補助的な結合部位も3つ見つかった。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -124,22 +123,23 @@
 
 ## 2｜DNA-PK–ヌクレオソーム複合体
 
-![グラフィカルアブストラクト：DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin](ga/PMC13642939.svg)
+### DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin
 
-### ヌクレオソーム末端に結合するKu・DNA-PKの段階的な構造：DNA-PKcsがKuを内側へ押し、DNAを巻き戻す
+*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-77534-9) · ライセンス: cc by
 
-*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-77534-9) · ライセンス: cc by  
-原題：DNA-PK driven nucleosome unwrapping enables NHEJ in chromatin
+![構造図：DNA-PK–ヌクレオソーム複合体](figures/PMC13642939.svg)
 
-#### 3行要約
+<sub>色（順に）：PRKDC / Unknown peptide / XRCC6 / XRCC5 / LOC121398065 / Histone H4 / LOC494591 / LOC121398078 / DNA (154-MER) / DNA (154-MER)</sub>
+
+**ヌクレオソーム末端に結合するKu・DNA-PKの段階的な構造：DNA-PKcsがKuを内側へ押し、DNAを巻き戻す**
 
 - **背景**：NHEJの開始にはKuとDNA-PKcsが約25〜30 bpの遊離二本鎖DNAを必要とするが、クロマチンではヌクレオソームが障壁になる。DNA-PKcsの役割は不明だった。
 - **やったこと**：リンカー長の異なるヌクレオソーム基質で連結反応を測り、Ku単独とDNA-PKのヌクレオソーム複合体をクライオ電顕で複数状態解析した。
 - **分かったこと**：Kuは約2巻きのヌクレオソームDNAをほどき、Ku70がヒストンと接する。DNA-PKcsはリンカーの短い基質で連結を促し、Kuを内側へ押し込む中間状態も捉えた。
 
-#### ここが面白い
+#### 読みどころ
 
-**［機構の解明］** Ku70のC末端側の領域（ヒストンブリッジ）が、ほどけたH3・H2A面に結合する。この領域を欠いたKuは連結効率が約1/7に落ちた。
+Ku70のC末端側の領域（ヒストンブリッジ）が、ほどけたH3・H2A面に結合する。この領域を欠いたKuは連結効率が約1/7に落ちた。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -151,7 +151,7 @@
 
 </details>
 
-**［機構の解明］** DNA-PKcsはリンカーが短い基質で連結を促進した（N-12で約7倍、N0で約3倍）。N7ではDNA-PKcsが5 bpだけ結合した途中状態と、11 bpが収まった完成状態の2状態が見えた。
+DNA-PKcsはリンカーが短い基質で連結を促進した（N-12で約7倍、N0で約3倍）。N7ではDNA-PKcsが5 bpだけ結合した途中状態と、11 bpが収まった完成状態の2状態が見えた。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -163,7 +163,7 @@
 
 </details>
 
-**［手法の工夫］** ヌクレオソームを目印にしてDNAリンカーを精密にモデル化し、N20基質では20 bp中17 bpしか密度に入らなかった。DNA末端が部分的に融解している可能性を示す（著者の解釈）。
+ヌクレオソームを目印にしてDNAリンカーを精密にモデル化し、N20基質では20 bp中17 bpしか密度に入らなかった。DNA末端が部分的に融解している可能性を示す（著者の解釈）。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -223,22 +223,23 @@
 
 ## 3｜GPR84–Gi（ヒト）
 
-![グラフィカルアブストラクト：Steric control of signaling bias in the immunometabolic receptor GPR84](ga/PMC13642346.svg)
+### Steric control of signaling bias in the immunometabolic receptor GPR84
 
-### GPR84–Gi複合体：リガンドのCF3基がLeu336とPhe187を押し、β-アレスチン動員を抑える
+*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-77312-7) · ライセンス: cc by
 
-*Nature Communications*（2026-01-01） · [論文](https://doi.org/10.1038/s41467-026-77312-7) · ライセンス: cc by  
-原題：Steric control of signaling bias in the immunometabolic receptor GPR84
+![構造図：GPR84–Gi（ヒト）](figures/PMC13642346.svg)
 
-#### 3行要約
+<sub>色（順に）：GPR84 / GNAI1 / GNB1 / GNG2 / scFv16・赤の点はリガンド</sub>
+
+**GPR84–Gi複合体：リガンドのCF3基がLeu336とPhe187を押し、β-アレスチン動員を抑える**
 
 - **背景**：GPCRのバイアスアゴニストを合理的に設計するには、バイアスの分子機構の理解が足りなかった。GPR84のGタンパク質バイアス型アゴニストの構造は未解析だった。
 - **やったこと**：Gタンパク質バイアス型アゴニストOX04529とGPR84–Gi複合体のクライオ電顕構造（3.03 Å）を決め、MD、変異体解析、置換基ライブラリーで検証した。
 - **分かったこと**：OX04529のCF3基がLeu336とPhe187の配置を変え、極性ネットワークを乱してβ-アレスチン動員を抑える。置換基の体積とβ-アレスチン効力は逆相関した。
 
-#### ここが面白い
+#### 読みどころ
 
-**［創薬・モダリティ］** OX04529は既知の6-OAUとほぼ同じ姿勢で結合するが、CF3基がTM5/TM6側を向き、Leu336とPhe187の側鎖配置が変わる。既報の他のGPR84–Gi構造では見られない配置だった。
+OX04529は既知の6-OAUとほぼ同じ姿勢で結合するが、CF3基がTM5/TM6側を向き、Leu336とPhe187の側鎖配置が変わる。既報の他のGPR84–Gi構造では見られない配置だった。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -247,7 +248,7 @@
 
 </details>
 
-**［機構の解明］** Leu336AlaとPhe187Ala変異は、OX04529によるβ-アレスチン動員を回復させつつ、Gi活性化は保った。この立体障害がバイアスの原因という仮説に実験的な支持を与える。
+Leu336AlaとPhe187Ala変異は、OX04529によるβ-アレスチン動員を回復させつつ、Gi活性化は保った。この立体障害がバイアスの原因という仮説に実験的な支持を与える。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -256,7 +257,7 @@
 
 </details>
 
-**［創薬・モダリティ］** 3位の置換基を変えた類縁体ライブラリーで、β-アレスチン-2の最大効力はファンデルワールス体積と負の相関を示した。電子的性質や疎水性は主因ではないと著者は結論する。
+3位の置換基を変えた類縁体ライブラリーで、β-アレスチン-2の最大効力はファンデルワールス体積と負の相関を示した。電子的性質や疎水性は主因ではないと著者は結論する。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -309,22 +310,21 @@
 
 ## 4｜大腸菌MscL（WT・G22S）
 
-![グラフィカルアブストラクト：Atomic structure and dynamics of the mechanosensitive channel MscL from Escherichia coli by cryo-EM and solid-state NMR](ga/PMC13644787.svg)
+### Atomic structure and dynamics of the mechanosensitive channel MscL from Escherichia coli by cryo-EM and solid-state NMR
 
-### 大腸菌MscLをナノディスクで初めて高分解能に解析：WTもG22Sも閉状態、違いはNMRで見える動態
+*Science Advances*（2026-10-09） · [論文](https://doi.org/10.1126/sciadv.aei0096) · ライセンス: cc by-nc
 
-*Science Advances*（2026-10-09） · [論文](https://doi.org/10.1126/sciadv.aei0096) · ライセンス: cc by-nc  
-原題：Atomic structure and dynamics of the mechanosensitive channel MscL from Escherichia coli by cryo-EM and solid-state NMR
+![構造図：大腸菌MscL（WT・G22S）](figures/PMC13644787.svg)
 
-#### 3行要約
+**大腸菌MscLをナノディスクで初めて高分解能に解析：WTもG22Sも閉状態、違いはNMRで見える動態**
 
 - **背景**：MscLは膜張力だけで開くモデルチャネルだが、大腸菌のMscLは全長の構造が決まっておらず、脂質膜中の動態も不明だった。
 - **やったこと**：WTと低閾値変異体G22Sを、ペプチド（MSP）ナノディスクでクライオ電顕解析し（3.7 / 3.5 Å）、リポソーム中のssNMRで動態を比べた。
 - **分かったこと**：どちらも口径約2 Åで閉じた構造だった。G22SはNMRで周辺質ループの信号が消え、F78周辺などが摂動し、動態の増大を示した。
 
-#### ここが面白い
+#### 読みどころ
 
-**［手法の工夫］** 大腸菌MscLの全長構造は未報告で、著者はMSPナノディスク中のWTを3.7 Å、G22Sを3.5 Åで決定したと述べる。分解能が低く、モデルは主にAlphaFold3予測を密度に当てはめて作られている。
+大腸菌MscLの全長構造は未報告で、著者はMSPナノディスク中のWTを3.7 Å、G22Sを3.5 Åで決定したと述べる。分解能が低く、モデルは主にAlphaFold3予測を密度に当てはめて作られている。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -336,7 +336,7 @@
 
 </details>
 
-**［機構の解明］** 低閾値のG22S変異体でも構造は閉状態のままで、K31–D84の塩橋も保たれた。機能差は静的構造ではなく動態にあることを示唆する。G22Sでは脂質尾部の密度がTM2の疎水ポケット（F83、L86、F90）に見えた。
+低閾値のG22S変異体でも構造は閉状態のままで、K31–D84の塩橋も保たれた。機能差は静的構造ではなく動態にあることを示唆する。G22Sでは脂質尾部の密度がTM2の疎水ポケット（F83、L86、F90）に見えた。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -348,7 +348,7 @@
 
 </details>
 
-**［手法の工夫］** リポソーム中のssNMRを併用し、G22Sでは周辺質ループ（59–61、64–72）の信号が消え、張力センサーとされるF78には新しいピークが現れた。クライオ電顕で見えない動態を補う組み合わせだ。
+リポソーム中のssNMRを併用し、G22Sでは周辺質ループ（59–61、64–72）の信号が消え、張力センサーとされるF78には新しいピークが現れた。クライオ電顕で見えない動態を補う組み合わせだ。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -401,22 +401,23 @@
 
 ## 5｜赤痢菌IpaD–抗体Fab
 
-![グラフィカルアブストラクト：Multifunctional antibody responses from a primate Shigella outbreak inform vaccine design](ga/PMC7619511.svg)
+### Multifunctional antibody responses from a primate Shigella outbreak inform vaccine design
 
-### 赤痢菌IpaDと抗体の複合体構造：溶血を抑える抗体と高める抗体はエピトープが違う
+*Science translational medicine*（2026-09-02） · [論文](https://doi.org/10.1126/scitranslmed.aef7084) · ライセンス: cc by
 
-*Science translational medicine*（2026-09-02） · [論文](https://doi.org/10.1126/scitranslmed.aef7084) · ライセンス: cc by  
-原題：Multifunctional antibody responses from a primate Shigella outbreak inform vaccine design
+![構造図：赤痢菌IpaD–抗体Fab](figures/PMC7619511.svg)
 
-#### 3行要約
+<sub>色（順に）：ipaD / D13r-34 antibody fragment heavy chain / D13r-34 antibody fragment light chain</sub>
+
+**赤痢菌IpaDと抗体の複合体構造：溶血を抑える抗体と高める抗体はエピトープが違う**
 
 - **背景**：赤痢菌には承認ワクチンがなく、防御に働く抗体と有害に働く抗体を分ける構造的な根拠が足りなかった。
 - **やったこと**：サルの赤痢集団感染の検体からIpaD・IpaBなどに対するmAbを単離し、IpaDとFabの2つの複合体をクライオ電顕で解析した。
 - **分かったこと**：溶血を抑えるD13r.34とD02-F2は遠位ドメインに、溶血を高めるD02-E4はN末端ドメインに結合した。エピトープ変異体で結合の消失を確認した。
 
-#### ここが面白い
+#### 読みどころ
 
-**［機構の解明］** IpaDへの結合部位が機能を分ける。溶血を抑えるD13r.34とD02-F2は遠位ドメインに、溶血を高めるD02-E4はN末端ドメインのα1とα2に結合する。D02-F2とD02-E4は既報のIpaD抗体が認識しない領域に結合する。
+IpaDへの結合部位が機能を分ける。溶血を抑えるD13r.34とD02-F2は遠位ドメインに、溶血を高めるD02-E4はN末端ドメインのα1とα2に結合する。D02-F2とD02-E4は既報のIpaD抗体が認識しない領域に結合する。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -428,7 +429,7 @@
 
 </details>
 
-**［創薬・モダリティ］** エピトープ内に変異を入れたIpaDで結合が消えることを確認した。著者は、有害な抗体応答だけを除き防御的な応答を残すIpaD抗原を設計できる可能性を挙げるが、予備的な結果と位置づけている。
+エピトープ内に変異を入れたIpaDで結合が消えることを確認した。著者は、有害な抗体応答だけを除き防御的な応答を残すIpaD抗原を設計できる可能性を挙げるが、予備的な結果と位置づけている。
 
 <details><summary>根拠（論文本文）</summary>
 

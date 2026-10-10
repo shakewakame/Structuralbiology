@@ -6,10 +6,10 @@
 
 | # | 標的 | 手法・分解能 | 見出し |
 |---|---|---|---|
-| 1 | ヒトPARP2–HPF1／ヌクレオソーム | クライオ電顕・全体 2.8 Å | PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた `機構の解明` `創薬・モダリティ` `実験Tips` |
-| 2 | SpNanR（肺炎球菌） | X線結晶構造解析・2.01–2.99 Å（4 構造） | 肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む `初構造` `機構の解明` `機構の解明` |
-| 3 | LbCas12a Lid2変異体 | PDB 公開待ち | ニッカーゼ型LbCas12a変異体のクライオ電顕構造：RuvCのLidがループ化し二本鎖切断が一本鎖切断に `機構の解明` `新しい結合部位` `手法の工夫` |
-| 4 | 大腸菌NNT（PntA/PntB） | クライオ電顕・2.74–3.85 Å（9 構造） | 大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる `機構の解明` `創薬・モダリティ` `手法の工夫` |
+| 1 | ヒトPARP2–HPF1／ヌクレオソーム | クライオ電顕・全体 2.8 Å | PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた |
+| 2 | SpNanR（肺炎球菌） | X線結晶構造解析・2.01–2.99 Å（4 構造） | 肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む |
+| 3 | LbCas12a Lid2変異体 | PDB 公開待ち | ニッカーゼ型LbCas12a変異体のクライオ電顕構造：RuvCのLidがループ化し二本鎖切断が一本鎖切断に |
+| 4 | 大腸菌NNT（PntA/PntB） | クライオ電顕・2.74–3.85 Å（9 構造） | 大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる |
 
 > この号は AI が論文本文から作成した**レビュー用の下書き**です。数値・ID・リガンドは PDB / UniProt から取得し、AI の記述には本文からの引用を付けています。
 
@@ -17,22 +17,21 @@
 
 ## 1｜ヒトPARP2–HPF1／ヌクレオソーム
 
-![グラフィカルアブストラクト：Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping](ga/PMC13635751.svg)
+### Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping
 
-### PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた
+*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag939) · ライセンス: cc by
 
-*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag939) · ライセンス: cc by  
-原題：Structural basis of PARP2 recognition of nucleosomal DNA breaks and inhibitor trapping
+![構造図：ヒトPARP2–HPF1／ヌクレオソーム](figures/PMC13635751.svg)
 
-#### 3行要約
+**PARP2がヌクレオソーム内のDNA切断を認識する構造と、PARP阻害剤による変化をクライオ電顕で捉えた**
 
 - **背景**：一本鎖切断（SSB）は最も頻繁なDNA損傷だが、クロマチンの制約された形の中でPARP2がそれをどう認識するかは分かっていなかった。
 - **やったこと**：SHL +5.3に一本鎖切断を入れたヌクレオソームとPARP2・HPF1の複合体をクライオ電顕で解析（全体2.8 Å）。オラパリブなど阻害剤3種の存在下でも構造を決めた。
 - **分かったこと**：WGRドメインが切断部位を、HDとHPF1が反対側のDNAジャイアを掴む多価結合を形成。阻害剤はDNA結合側の界面を安定化する一方、触媒モジュールを動的にし、DNAの非対称なほどけを促した。
 
-#### ここが面白い
+#### 読みどころ
 
-**［機構の解明］** WGRドメインが上側のDNAジャイアで切断を認識し、HDのArg296とHPF1の塩基性残基が下側のジャイアに接触。ヌクレオソームDNAの2周分をまたぐ結合が、裸のDNA（Kd 653 nM）よりヌクレオソーム上の切断（Kd 約55 nM）を強く好む理由を説明する。
+WGRドメインが上側のDNAジャイアで切断を認識し、HDのArg296とHPF1の塩基性残基が下側のジャイアに接触。ヌクレオソームDNAの2周分をまたぐ結合が、裸のDNA（Kd 653 nM）よりヌクレオソーム上の切断（Kd 約55 nM）を強く好む理由を説明する。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -44,7 +43,7 @@
 
 </details>
 
-**［創薬・モダリティ］** オラパリブ・タラゾパリブ・EB-47はいずれもWGRの揺らぎを抑えてWGR–HD界面を安定化し、ART–HPF1触媒モジュールはむしろ動的になった。DNA結合面が固まることが、阻害剤によるPARP2のクロマチン上への「捕捉」の構造的な説明になりうる。阻害剤はDNAの非対称なほどけも促した。
+オラパリブ・タラゾパリブ・EB-47はいずれもWGRの揺らぎを抑えてWGR–HD界面を安定化し、ART–HPF1触媒モジュールはむしろ動的になった。DNA結合面が固まることが、阻害剤によるPARP2のクロマチン上への「捕捉」の構造的な説明になりうる。阻害剤はDNAの非対称なほどけも促した。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -56,7 +55,7 @@
 
 </details>
 
-**［実験Tips］** 当初は複合体がグリッド上（空気–水界面）で壊れて見えなかった。ヌクレオソームのacidic patchに結合するscFv（PL2-6抗体由来）で安定化し、凝集しやすいN末端の天然変性領域を除いたPARP2（90–583）を使うことで構造決定に成功した。
+当初は複合体がグリッド上（空気–水界面）で壊れて見えなかった。ヌクレオソームのacidic patchに結合するscFv（PL2-6抗体由来）で安定化し、凝集しやすいN末端の天然変性領域を除いたPARP2（90–583）を使うことで構造決定に成功した。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -102,22 +101,21 @@
 
 ## 2｜SpNanR（肺炎球菌）
 
-![グラフィカルアブストラクト：Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae](ga/PMC13635753.svg)
+### Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae
 
-### 肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む
+*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag953) · ライセンス: cc by
 
-*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag953) · ライセンス: cc by  
-原題：Mechanism of NanR transcriptional activation of sialic acid metabolism in Streptococcus pneumoniae
+![構造図：SpNanR（肺炎球菌）](figures/PMC13635753.svg)
 
-#### 3行要約
+**肺炎球菌の転写因子NanRの全長構造：代謝物が四量体を橋渡しし、アルギニン対がDNAを読む**
 
 - **背景**：肺炎球菌はシアル酸を感知してnan・siaAオペロンを活性化するが、RpiR型転写因子NanRによる活性化の分子機構は分かっていなかった。
 - **やったこと**：エフェクター探索（DSF・ITC）、超遠心・native MS・SAXSによる会合状態の解析に加え、apo、エフェクター結合型、DNA複合体のX線結晶構造を決定した。
 - **分かったこと**：N-アセチルマンノサミン-6-リン酸（ManNAc-6-P）が二量体–四量体平衡を四量体側へ2000倍以上傾ける一方、DNAへの親和性は変えない。DNA結合ドメインが異性化酵素ドメインと構造的に連動しないためと説明できる。
 
-#### ここが面白い
+#### 読みどころ
 
-**［初構造］** RpiRファミリー転写因子で、エフェクターなし（apo）とDNA複合体の全長構造は初めて。これまで全長のRpiR構造は2例しかなく、いずれもこの2状態ではなかった。
+RpiRファミリー転写因子で、エフェクターなし（apo）とDNA複合体の全長構造は初めて。これまで全長のRpiR構造は2例しかなく、いずれもこの2状態ではなかった。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -126,7 +124,7 @@
 
 </details>
 
-**［機構の解明］** ManNAc-6-Pは1分子で3つのプロトマーにまたがって結合し（リン酸基はSer135・Ser179・Ser181・Thr184、糖部分はArg148・Tyr229と隣の二量体のAsp160）、界面を組み替えずに四量体を「橋渡し」して安定化する。R148A変異体はエフェクターがあっても二量体のまま。
+ManNAc-6-Pは1分子で3つのプロトマーにまたがって結合し（リン酸基はSer135・Ser179・Ser181・Thr184、糖部分はArg148・Tyr229と隣の二量体のAsp160）、界面を組み替えずに四量体を「橋渡し」して安定化する。R148A変異体はエフェクターがあっても二量体のまま。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -138,7 +136,7 @@
 
 </details>
 
-**［機構の解明］** 各サブユニットのArg67がDNAの副溝に入り込み、2つのグアニジノ基が約3.6 Åの距離でπスタックする珍しい配置をとる。塩基との直接の接触は少なく、TpAステップでの副溝の歪みを読む「間接読み取り」で配列特異性を出していると考えられる。
+各サブユニットのArg67がDNAの副溝に入り込み、2つのグアニジノ基が約3.6 Åの距離でπスタックする珍しい配置をとる。塩基との直接の接触は少なく、TpAステップでの副溝の歪みを読む「間接読み取り」で配列特異性を出していると考えられる。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -195,22 +193,21 @@
 
 ## 3｜LbCas12a Lid2変異体
 
-![グラフィカルアブストラクト：Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype](ga/PMC13635745.svg)
+### Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype
 
-### ニッカーゼ型LbCas12a変異体のクライオ電顕構造：RuvCのLidがループ化し二本鎖切断が一本鎖切断に
+*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag934) · ライセンス: cc by
 
-*Nucleic Acids Research*（2026-10-05） · [論文](https://doi.org/10.1093/nar/gkag934) · ライセンス: cc by  
-原題：Size and sequence variation of the Lid of the Cas12a nuclease domain results in a nickase phenotype
+![構造図：LbCas12a Lid2変異体](figures/PMC13635745.svg)
 
-#### 3行要約
+**ニッカーゼ型LbCas12a変異体のクライオ電顕構造：RuvCのLidがループ化し二本鎖切断が一本鎖切断に**
 
 - **背景**：Cas12aは1つのRuvC活性部位で非標的鎖と標的鎖を順に切り、二本鎖切断を作る。片方の鎖だけ切るニッカーゼはゲノム編集の精度向上に役立つが、Lid構造がこの切り替えをどう制御するかは不明だった。
 - **やったこと**：大腸菌でGFP/RFPレポーターを使うin vivoスクリーニングでLbCas12aのLid領域変異体を探索。得られたLid2変異体をガイドRNA・標的DNAと複合体にし、クライオ電顕で2.5 Å構造を決定した。
 - **分かったこと**：Lid2ではαヘリックス状のLidがループに置き換わり、非標的鎖はRuvC活性部位に保持されるが、標的鎖切断に必要な構造変化が妨げられる。結果として非標的鎖だけを切るニッカーゼになる。
 
-#### ここが面白い
+#### 読みどころ
 
-**［機構の解明］** 野生型LbCas12aではαヘリックス状のLidがガイド–標的ヘテロ二重鎖やブリッジヘリックスと接触して開いた状態を保つ。Lid2ではこの接触が失われ、REC2ドメインのW355が外側へ約3.4 Å動く。Lid–REC2–TNBドメイン間のアロステリックな連携が崩れ、標的鎖の活性部位への装填が妨げられる。
+野生型LbCas12aではαヘリックス状のLidがガイド–標的ヘテロ二重鎖やブリッジヘリックスと接触して開いた状態を保つ。Lid2ではこの接触が失われ、REC2ドメインのW355が外側へ約3.4 Å動く。Lid–REC2–TNBドメイン間のアロステリックな連携が崩れ、標的鎖の活性部位への装填が妨げられる。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -222,7 +219,7 @@
 
 </details>
 
-**［新しい結合部位］** 野生型の結晶構造にはなかった一本鎖DNA（非標的鎖）の密度が、Lid2のRuvC活性部位に見えた。切断されるリン酸がマグネシウム2個（D832・E925・D1172が配位）とともに切断可能な位置にあり、Sanger配列解析で決めたPAMの14塩基下流という切断位置と一致する。変異したYCSSモチーフのY930が糖部分と疎水結合して非標的鎖をつなぎとめる。
+野生型の結晶構造にはなかった一本鎖DNA（非標的鎖）の密度が、Lid2のRuvC活性部位に見えた。切断されるリン酸がマグネシウム2個（D832・E925・D1172が配位）とともに切断可能な位置にあり、Sanger配列解析で決めたPAMの14塩基下流という切断位置と一致する。変異したYCSSモチーフのY930が糖部分と疎水結合して非標的鎖をつなぎとめる。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -234,7 +231,7 @@
 
 </details>
 
-**［手法の工夫］** 狙った点変異（Lid1）だけでなく、設計が思いつかないような解も拾えたのがこのスクリーニングの強み。12アミノ酸のLidコアが全く別の4アミノ酸ペプチド（YCSS、8残基の欠失を伴う）に置き換わったLid2が偶然得られた。順序立った設計では見落とすタイプの変異だと著者は述べる。
+狙った点変異（Lid1）だけでなく、設計が思いつかないような解も拾えたのがこのスクリーニングの強み。12アミノ酸のLidコアが全く別の4アミノ酸ペプチド（YCSS、8残基の欠失を伴う）に置き換わったLid2が偶然得られた。順序立った設計では見落とすタイプの変異だと著者は述べる。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -282,22 +279,23 @@
 
 ## 4｜大腸菌NNT（PntA/PntB）
 
-![グラフィカルアブストラクト：Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli](ga/PMC13635403.svg)
+### Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli
 
-### 大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる
+*iScience*（2026-09-24） · [論文](https://doi.org/10.1016/j.isci.2026.117657) · ライセンス: cc by
 
-*iScience*（2026-09-24） · [論文](https://doi.org/10.1016/j.isci.2026.117657) · ライセンス: cc by  
-原題：Structures of multiple states of the nicotinamide nucleotide transhydrogenase from Escherichia coli
+![構造図：大腸菌NNT（PntA/PntB）](figures/PMC13635403.svg)
 
-#### 3行要約
+<sub>色（順に）：pntA / pntB・赤の点はリガンド</sub>
+
+**大腸菌トランスヒドロゲナーゼ全長の多状態構造：基質結合でdIIIが膜から外れ、プロトン通路が切り替わる**
 
 - **背景**：NNTはNADHからNADP+へのヒドリド転移をプロトン輸送と共役させ、大腸菌ではNADPHの約4割を供給する。全長の大腸菌酵素の構造と状態変化は分かっていなかった。
 - **やったこと**：αとβサブユニットを逆順に融合した一本鎖変異体も作り、apo、NADP+/NAD+、NADPH/NADP+、NADPH単独、阻害剤パルミトイルCoA存在下の構造をクライオ電顕で解析した。
 - **分かったこと**：apoでは2つのdIIIが膜ドメインdIIに下向きに張り付き、通路に栓をする。NADP(H)が結合するとdIIIが外れて向きを変え、通路は細胞質側に開いてペリプラズム側が閉じる。パルミトイルCoAはapoに近い状態で固定する。
 
-#### ここが面白い
+#### 読みどころ
 
-**［機構の解明］** dIIIの着脱がプロトン通路の開閉と連動する。さらに外れた2つのdIIIは同時には(dI)2と組まず、片方だけが上向きで寄り添う。二量体の左右で交互にヒドリド転移が進むという触媒サイクルのモデルを提示した。
+dIIIの着脱がプロトン通路の開閉と連動する。さらに外れた2つのdIIIは同時には(dI)2と組まず、片方だけが上向きで寄り添う。二量体の左右で交互にヒドリド転移が進むという触媒サイクルのモデルを提示した。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -309,7 +307,7 @@
 
 </details>
 
-**［創薬・モダリティ］** 阻害剤パルミトイルCoAはdIIIのNADP(H)結合ポケットに入り込み（アデニンのN6がAsp450と水素結合）、dIIIを下向き・膜付着のapo様状態に固定する。生化学で知られていた競合阻害の構造的な根拠になる。
+阻害剤パルミトイルCoAはdIIIのNADP(H)結合ポケットに入り込み（アデニンのN6がAsp450と水素結合）、dIIIを下向き・膜付着のapo様状態に固定する。生化学で知られていた競合阻害の構造的な根拠になる。
 
 <details><summary>根拠（論文本文）</summary>
 
@@ -321,7 +319,7 @@
 
 </details>
 
-**［手法の工夫］** 柔軟で見えにくいdIを捉えるため、βのC末端とαのN末端を原生生物Paratrimastix pyriformis由来のリンカーでつないだ一本鎖変異体を設計。活性は野生型の約1/3を保ち、apoでdIまで含めてモデル化できた。著者はリンカーが動きを制約しうる点も注意している。
+柔軟で見えにくいdIを捉えるため、βのC末端とαのN末端を原生生物Paratrimastix pyriformis由来のリンカーでつないだ一本鎖変異体を設計。活性は野生型の約1/3を保ち、apoでdIまで含めてモデル化できた。著者はリンカーが動きを制約しうる点も注意している。
 
 <details><summary>根拠（論文本文）</summary>
 

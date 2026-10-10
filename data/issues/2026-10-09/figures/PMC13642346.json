@@ -1,0 +1,27 @@
+{
+ "pdb_id": "9PT4",
+ "legend": [
+  {
+   "color": "#3C5A8C",
+   "label": "GPR84"
+  },
+  {
+   "color": "#C9A04B",
+   "label": "GNAI1"
+  },
+  {
+   "color": "#5F9296",
+   "label": "GNB1"
+  },
+  {
+   "color": "#A5707A",
+   "label": "GNG2"
+  },
+  {
+   "color": "#7C8AA8",
+   "label": "scFv16"
+  }
+ ],
+ "ligand": true,
+ "ligand_color": "#D4452B"
+}
