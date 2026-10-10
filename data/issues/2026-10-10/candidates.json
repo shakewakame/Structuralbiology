@@ -1,0 +1,2229 @@
+{
+  "issue_date": "2026-10-10",
+  "index_date": "2026-10-09",
+  "generated_at": "2026-10-10T00:08:48+00:00",
+  "query": "(\"cryo-EM\" OR \"cryoEM\" OR \"cryo-electron microscopy\" OR \"cryo-electron tomography\" OR \"subtomogram\" OR \"crystal structure\" OR \"X-ray crystallography\" OR \"crystallographic\" OR \"NMR structure\" OR \"solution structure\") AND (\"Protein Data Bank\" OR \"PDB\" OR \"wwPDB\" OR \"EMDB\" OR \"accession code\" OR \"accession codes\") AND OPEN_ACCESS:y AND NOT SRC:PPR AND FIRST_IDATE:[2026-10-09 TO 2026-10-09]",
+  "counts": {
+    "hits": 63,
+    "excluded_types": 2,
+    "parsed": 61,
+    "new_structure": 5,
+    "new_structure_ids_unlisted": 1,
+    "new_map_only": 0,
+    "uses_existing": 25,
+    "no_ids": 30
+  },
+  "candidates": [
+    {
+      "pmcid": "PMC13648224",
+      "pmid": null,
+      "doi": "10.1021/acs.biochem.6c00508",
+      "title": "Structural and Enzymatic Basis for Impaired Deacylation of N‑Acyl‑N‑Methyl Lysine Residues",
+      "journal": "Biochemistry",
+      "journal_abbrev": "Biochemistry",
+      "authors": "Hilscher S, Böttcher P, Friedrich F, Pannek M, Baselious F, Meleshin M, Einsle O, Barinka C, Steegborn C, Sippl W, Jung M, Schutkowski M, Schiene-Fischer C.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractPosttranslational lysine acetylation and methylation are generally considered mutually exclusive modifications of the ε-amino group. The recent discovery of N-acetyl-N-methyl lysine (KAcMe) on histone H4 showed that both marks can coexist on the same lysine side chain, raising the question of whether this dual modification is enzymatically reversible. Here, we synthesized model peptides containing N-acyl lysine or N-acyl-N-methyl lysine residues and tested their processing by Zn2+-dependent HDACs and NAD+-dependent sirtuins. While the corresponding unmethylated substrates were deacylated by the expected enzymes, KAcMe-containing peptides were not detectably deacetylated by either enzyme family. N-methylation also blocked HDAC8/11-mediated demyristoylation and SIRT5-mediated desuccinylation, whereas SIRT2 and SIRT6 retained weak demyristoylase activity toward N-myristoyl-N-methyl lysine. X-ray crystal structures of sirtuin–peptide complexes, supported by inhibition studies and molecular docking, reveal that N-methylation disrupts productive substrate positioning and misaligns the scissile amide bond for catalysis. These findings suggest that KAcMe is resistant to canonical lysine deacetylases and may represent a persistent chromatin-associated modification.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "30KD",
+          "status": "released",
+          "title": "Crystal structure of human SIRT2 in complex with KMyrMe peptide",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 1.45,
+          "release_date": "2026-09-30",
+          "deposit_date": "2026-04-30",
+          "citation_doi": "10.1021/acs.biochem.6c00508",
+          "citation_pmid": null,
+          "citation_title": "Enzymatic deacylation of dually modified lysine residues",
+          "polymers": [
+            {
+              "description": "KMyrMe peptide",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "NAD-dependent protein deacetylase sirtuin-2",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q8IXJ6"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "BTB",
+              "name": "2-[BIS-(2-HYDROXY-ETHYL)-AMINO]-2-HYDROXYMETHYL-PROPANE-1,3-DIOL"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "30KE",
+          "status": "released",
+          "title": "Crystal structure of human SIRT2 in complex with KMyrMe peptide and NAD+",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.8,
+          "release_date": "2026-09-30",
+          "deposit_date": "2026-04-30",
+          "citation_doi": "10.1021/acs.biochem.6c00508",
+          "citation_pmid": null,
+          "citation_title": "To Be Published",
+          "polymers": [
+            {
+              "description": "KMyrMe peptide",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "NAD-dependent protein deacetylase sirtuin-2",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q8IXJ6"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "NAD",
+              "name": "NICOTINAMIDE-ADENINE-DINUCLEOTIDE"
+            }
+          ],
+          "evidence": "PDB primary citation matches this paper"
+        },
+        {
+          "pdb_id": "30KU",
+          "status": "unreleased",
+          "evidence": "cited by the paper but not yet released (on hold until publication)"
+        }
+      ],
+      "cited_pdb_ids": [
+        "4UTV",
+        "9FDR",
+        "4Y6L",
+        "2V5W",
+        "4UTN"
+      ],
+      "emdb_ids": [],
+      "proteins": [
+        {
+          "uniprot": "Q8IXJ6",
+          "gene": "SIRT2",
+          "synonyms": [
+            "SIR2L",
+            "SIR2L2"
+          ],
+          "name": "NAD-dependent protein deacetylase sirtuin-2",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 79,
+          "first_structure": false
+        }
+      ],
+      "score": 63
+    },
+    {
+      "pmcid": "PMC13646271",
+      "pmid": "42844279",
+      "doi": "10.1038/s41467-026-77639-1",
+      "title": "Structural insights into a dual-substrate O-methyltransferase reveal the enzymatic mechanism of parallel paeonol biosynthesis",
+      "journal": "Nature Communications",
+      "journal_abbrev": "Nat Commun",
+      "authors": "Zhang X, Song J, Wang Y, Lu P, Yuan Q, Xiong X, Yu S, Yuan J, Hu Y, Guo J, Zhang Y, Huang W.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Paeonol, the medicinal indicator component of the traditional Chinese medicine ‘Mudanpi’, has an incompletely elucidated biosynthetic pathway, particularly its post-modification steps. Specifically, the post-modification processes involve 4′-O-methylation and 2′-hydroxylation, thus the formation can occur either sequentially or in parallel. Here, using integrated transcriptomic and metabolomic analyses, we identify a key dual-substrate 4′-O-methyltransferase, PoOMT1, in Paeonia ostii. In vitro assays demonstrate that PoOMT1 exhibits high affinity, catalytic efficiency, and strict regioselectivity toward two paeonol precursors: 4′-hydroxyacetophenone and 2′,4′-dihydroxyacetophenone. Heterologous expression in tobacco and silencing in P. ostii of PoOMT1 further confirm its role in paeonol biosynthesis, supporting a parallel pathway. Structural analysis of the PoOMT1 ternary complex, combined with mutagenesis studies, uncover a His-Asn-Gln catalytic triad essential for the 4′-O-methylation, and reveal a T-shaped substrate binding pocket. This pocket operates through dual-anchor and steric constraint mechanisms, which provide the structural basis for strict regioselectivity toward the 4′-OH group and facilitate the parallel biosynthetic pathway. Moreover, the divergent catalytic profiles of ten PoOMT1 homologs that recognize the same substrates further corroborate the proposed catalytic mechanism. Our work elucidates the molecular basis of 4′-O-methylation and parallel biosynthetic pathway of paeonol, and lays a foundation for the complete elucidation of its pathway.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9WAZ",
+          "status": "released",
+          "title": "O-methyltransferase PoOMT1/SAH",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.03,
+          "release_date": "2026-06-24",
+          "deposit_date": "2025-08-13",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Functional and structural characterization of an O-methyltransferase involved in the paralled biosynthesis of paeonol in tree peony",
+          "polymers": [
+            {
+              "description": "O-methyltransferase PoOMT1",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Paeonia ostii"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "SAH",
+              "name": "S-ADENOSYL-L-HOMOCYSTEINE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9WBA",
+          "status": "released",
+          "title": "O-methyltransferase PoOMT1/SAH/4'-hydroxyacetophenone",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 1.83,
+          "release_date": "2026-08-26",
+          "deposit_date": "2025-08-13",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Functional and structural characterization of an O-methyltransferase involved in the paralled biosynthesis of paeonol in tree peony",
+          "polymers": [
+            {
+              "description": "O-methyltransferase PoOMT1",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Paeonia ostii"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "SAH",
+              "name": "S-ADENOSYL-L-HOMOCYSTEINE"
+            },
+            {
+              "id": "AC6",
+              "name": "P-HYDROXYACETOPHENONE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9WB6",
+          "status": "released",
+          "title": "O-methyltransferase PoOMT1/SAH/2',4'-dihydroxyacetophenone",
+          "method": "X-RAY DIFFRACTION",
+          "resolution": 2.28,
+          "release_date": "2026-06-24",
+          "deposit_date": "2025-08-13",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Functional and structural characterization of an O-methyltransferase involved in the paralled biosynthesis of paeonol in tree peony",
+          "polymers": [
+            {
+              "description": "O-methyltransferase PoOMT1",
+              "type": "Protein",
+              "uniprot_ids": [],
+              "organisms": [
+                "Paeonia ostii"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "SAH",
+              "name": "S-ADENOSYL-L-HOMOCYSTEINE"
+            },
+            {
+              "id": "A1EVU",
+              "name": "1-[2,4-bis(oxidanyl)phenyl]ethanone"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "6CIG",
+        "5ICC",
+        "1KYW",
+        "6NEG",
+        "8BIC",
+        "7WH9",
+        "6OMT"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 63
+    },
+    {
+      "pmcid": "PMC13646831",
+      "pmid": "42847245",
+      "doi": "10.1093/nar/gkag941",
+      "title": "Establishing the molecular basis for MDA5 mutation-linked autoimmunity",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMelanoma differentiation-associated protein 5 (MDA5), a member of the RIG-I-like receptor family, is a cytoplasmic sensor essential for innate antiviral immunity. MDA5 distinguishes viral RNA from host RNA in part through its ATP hydrolysis activity, which promotes filament turnover on shorter endogenous double-stranded RNAs (dsRNAs). Here, we show that the gain-of-function T331I disease-linked mutation within the ATP-binding pocket disrupts this balance, resulting in constitutive interferon signaling. Through a combination of cryo-electron microscopy (cryoEM), biochemical assays, and cellular analyses, we reveal the extensive network of interactions that precisely position ATP for catalysis in the wild-type MDA5 ATP-binding pocket and also demonstrate that the T331I mutation impairs ATPase activity, thereby stabilizing MDA5–dsRNA complexes and leading to aberrant immune activation. These findings elucidate how MDA5 ATPase activity regulates antiviral specificity and prevents autoimmunity by controlling filament stability and downstream signaling, offering a mechanistic molecular explanation for disease pathogenesis.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9Y4J",
+          "status": "released",
+          "title": "CryoEM Structure of human MDA5 with dsRNA (one protein subunit on dsRNA)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.81,
+          "release_date": "2026-09-09",
+          "deposit_date": "2025-09-03",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Unraveling the molecular basis for MDA5 T331I disease-linked mutation",
+          "polymers": [
+            {
+              "description": "RNA 13mer",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "in vitro transcription vector pT7-Fluc(deltai)"
+              ]
+            },
+            {
+              "description": "RNA 13mer",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "in vitro transcription vector pT7-Fluc(deltai)"
+              ]
+            },
+            {
+              "description": "Interferon-induced helicase C domain-containing protein 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q9BYX4"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ANP",
+              "name": "PHOSPHOAMINOPHOSPHONIC ACID-ADENYLATE ESTER"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9Y4L",
+          "status": "released",
+          "title": "CryoEM Structure of human MDA5 in complex with dsRNA (two protein subunits on dsRNA)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.96,
+          "release_date": "2026-09-09",
+          "deposit_date": "2025-09-03",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Unraveling the molecular basis for MDA5 T331I disease-linked mutation",
+          "polymers": [
+            {
+              "description": "RNA (30-MER)",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "in vitro transcription vector pT7-Fluc(deltai)"
+              ]
+            },
+            {
+              "description": "RNA (30-MER)",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "in vitro transcription vector pT7-Fluc(deltai)"
+              ]
+            },
+            {
+              "description": "Interferon-induced helicase C domain-containing protein 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q9BYX4"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ANP",
+              "name": "PHOSPHOAMINOPHOSPHONIC ACID-ADENYLATE ESTER"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9Q60",
+          "status": "released",
+          "title": "CryoEM Structure of human MDA5 disease-linked mutant T331I with dsRNA (one protein subunit on dsRNA)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.12,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-08-21",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Unraveling the molecular basis for MDA5 T331I disease-linked mutation",
+          "polymers": [
+            {
+              "description": "RNA-13mer",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "RNA-13mer",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "Interferon-induced helicase C domain-containing protein 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q9BYX4"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9Q5W",
+          "status": "released",
+          "title": "CryoEM Structure of human MDA5 T331I mutant in complex with dsRNA",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.21,
+          "release_date": "2026-09-16",
+          "deposit_date": "2025-08-21",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Unraveling the molecular basis for MDA5 T331I disease-linked mutation",
+          "polymers": [
+            {
+              "description": "RNA (29-MER)",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "RNA (29-MER)",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "synthetic construct"
+              ]
+            },
+            {
+              "description": "Interferon-induced helicase C domain-containing protein 1",
+              "type": "Protein",
+              "uniprot_ids": [
+                "Q9BYX4"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "ATP",
+              "name": "ADENOSINE-5'-TRIPHOSPHATE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [],
+      "emdb_ids": [
+        "EMD-72484",
+        "EMD-72485",
+        "EMD-72284",
+        "EMD-72244",
+        "EMD-72243",
+        "EMD-72285"
+      ],
+      "proteins": [
+        {
+          "uniprot": "Q9BYX4",
+          "gene": "IFIH1",
+          "synonyms": [
+            "MDA5",
+            "RH116"
+          ],
+          "name": "Interferon-induced helicase C domain-containing protein 1",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 9,
+          "first_structure": false
+        }
+      ],
+      "score": 59
+    },
+    {
+      "pmcid": "PMC13648278",
+      "pmid": null,
+      "doi": "10.1038/s44511-026-00002-y",
+      "title": "Structural basis for Mg²⁺–glycine synergy in the tandem glycine riboswitch revealed by cryo-EM",
+      "journal": "Npj Structural Biology",
+      "journal_abbrev": null,
+      "authors": "Jespersen N, Prajapati J, Singhal A, Sanbonmatsu K.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Riboswitches are non-coding RNA sequences that control cellular processes through ligand binding. Conformational heterogeneity is fundamental to riboswitch functionality, yet this same attribute makes structural characterization of these mRNA elements challenging. Here, we use cryo-electron microscopy to characterize different structural populations of the glycine riboswitch tandem aptamers, and molecular dynamics simulations to support the observed ligand orientation in the holo state. We find that Mg2+ enables formation of the fully folded “walking man” conformation, which consists of a rigidified core and two dynamic helices, but is insufficient on its own to make this the dominant state. In Mg²⁺ conditions alone, approximately one-third of the picked particles are fully folded, whereas two thirds adopt distinct, partially folded states. Glycine interactions further stabilize the fully folded conformation, doubling the relative population of fully folded particles by stabilizing a conserved inter-aptamer Hoogsteen base pair, enabling our capture of a 2.9 Å-resolution structure for this RNA-only system. The population data show that glycine and Mg²⁺ operate synergistically: glycine enhances Mg²⁺ localization, while Mg2+ drives glycine recruitment. Our findings indicate that cryo-electron microscopy offers a promising avenue to characterize RNA folding ensembles.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "9N3I",
+          "status": "released",
+          "title": "Vibrio cholerae Glycine Riboswitch - glycine bound at 2.9A resolution",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.86,
+          "release_date": "2026-07-29",
+          "deposit_date": "2025-01-31",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Vibrio cholerae Glycine Riboswitch - glycine bound at 2.9A resolution",
+          "polymers": [
+            {
+              "description": "Glycine Riboswitch",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Vibrio cholerae"
+              ]
+            }
+          ],
+          "ligands": [
+            {
+              "id": "GLY",
+              "name": "GLYCINE"
+            }
+          ],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "9N3J",
+          "status": "released",
+          "title": "Vibrio cholerae Glycine Riboswitch - Apo at 3.3A resolution",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.27,
+          "release_date": "2026-08-05",
+          "deposit_date": "2025-01-31",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Vibrio cholerae Glycine Riboswitch - Apo at 3.3A resolution",
+          "polymers": [
+            {
+              "description": "Glycine Riboswitch",
+              "type": "RNA",
+              "uniprot_ids": [],
+              "organisms": [
+                "Vibrio cholerae"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "6WLT",
+        "3P49",
+        "6WLU"
+      ],
+      "emdb_ids": [
+        "EMD-48851",
+        "EMD-48852"
+      ],
+      "proteins": [],
+      "score": 57
+    },
+    {
+      "pmcid": "PMC13648974",
+      "pmid": null,
+      "doi": "10.1371/journal.ppat.1014545.r004",
+      "title": "Receptor-induced activation of MERS-CoV spike revealed by time-course cryo-EM",
+      "journal": "PLOS Pathogens",
+      "journal_abbrev": "PLoS Pathog",
+      "authors": "Wang Y, Pan X, Jiang Y, Liu Z, Qiu Y, Chen Z, Sun L.",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe Middle East respiratory syndrome coronavirus (MERS-CoV) initiates infection by engaging its host receptor dipeptidyl peptidase 4 (DPP4), which activates the viral spike (S) glycoprotein. However, how receptor binding is structurally coupled to membrane fusion has remained unclear. Here, using cryo–electron microscopy, we determined structures of MERS-CoV spike-DPP4 complexes at defined incubation times, capturing a series of conformational states spanning prefusion, receptor-bound, and postfusion conformations. These structures reveal that receptor-binding domain (RBD) opening progressively weakens S1-S2 interactions, while DPP4 binding may induce conformational drift and loosening of the S2 fusion core. These structural changes might destabilize spike trimers, promote S1 dissociation, and prime the fusion machinery. Compared with the SARS-CoV-2 spike, the MERS-CoV spike exhibits greater conformational plasticity, consistent with a lower threshold for receptor-induced fusion. In addition, the postfusion S2 structure suggests that the HR2 upstream linker may function as a conformational switch during six-helix bundle assembly. Together, these findings outline a structural pathway. for receptor-induced activation of the MERS-CoV spike and provide a structural framework for the development of antiviral strategies targeting dynamic fusion intermediates.",
+      "kind": "new_structure",
+      "own_structures": [
+        {
+          "pdb_id": "22FY",
+          "status": "released",
+          "title": "Structure of MERS-CoV S protein with 3down-RBDs",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.24,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-09",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Structure of MERS-CoV spike with 3down-RBD",
+          "polymers": [
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Middle East respiratory syndrome-related coronavirus"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "22DX",
+          "status": "released",
+          "title": "Cryo-EM structure of MERS-CoV S protein bound with receptor DPP4 in the conformation 1 (1 up RBD and 1 DPP4 bound).",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.29,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-07",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Cryo-EM structure of MERS-CoV S protein bound with receptor DPP4 in the conformation 1 (1 up RBD and 1 DPP4 bound)",
+          "polymers": [
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012)"
+              ]
+            },
+            {
+              "description": "Dipeptidyl peptidase 4 membrane form",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P27487"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "22DY",
+          "status": "released",
+          "title": "Local structure of MERS-CoV S protein bound with receptor DPP4 in the conformation 2 (2 up RBD and 2 DPP4 bound)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.35,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-07",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Cryo-EM structure of MERS-CoV S protein bound with receptor DPP4 in the conformation2(2 up RBD and 2 DPP4 bound)",
+          "polymers": [
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012)"
+              ]
+            },
+            {
+              "description": "Dipeptidyl peptidase 4 membrane form",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P27487"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "22DZ",
+          "status": "released",
+          "title": "Local structure of MERS-CoV RBD protein bound with receptor DPP4 in the conformation 2 (2 up RBD and 2 DPP4 bound)",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.01,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-07",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Local structure of MERS-CoV RBD protein bound with receptor DPP4 in the conformation 2 (2 up RBD and 2 DPP4 bound)",
+          "polymers": [
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012)"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "22EA",
+          "status": "released",
+          "title": "Cryo-EM structure of MERS-CoV S protein bound with receptor DPP4 in the conformation 3 (3 up RBD and 3 DPP4 bound).",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.44,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-07",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Cryo-EM structure of MERS-CoV S protein bound with receptor DPP4 in the conformation 3 (3 up RBD and 3 DPP4 bound).",
+          "polymers": [
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012)"
+              ]
+            },
+            {
+              "description": "Dipeptidyl peptidase 4 membrane form",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P27487"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "22EB",
+          "status": "released",
+          "title": "MERS-CoV RBD in complex with receptor DPP4",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 2.88,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-07",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Structure of MERS-CoV RBD  in complex with receptor DPP4.",
+          "polymers": [
+            {
+              "description": "Dipeptidyl peptidase 4 membrane form",
+              "type": "Protein",
+              "uniprot_ids": [
+                "P27487"
+              ],
+              "organisms": [
+                "Homo sapiens"
+              ]
+            },
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Middle East respiratory syndrome-related coronavirus"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        },
+        {
+          "pdb_id": "22EC",
+          "status": "released",
+          "title": "Post-fusion structure of MERS-CoV spike glycoprotein",
+          "method": "ELECTRON MICROSCOPY",
+          "resolution": 3.23,
+          "release_date": "2026-09-02",
+          "deposit_date": "2026-01-07",
+          "citation_doi": null,
+          "citation_pmid": null,
+          "citation_title": "Post-fusion structure of MERS-CoV spike glycoprotein",
+          "polymers": [
+            {
+              "description": "Spike glycoprotein",
+              "type": "Protein",
+              "uniprot_ids": [
+                "K9N5Q8"
+              ],
+              "organisms": [
+                "Betacoronavirus England 1"
+              ]
+            }
+          ],
+          "ligands": [],
+          "evidence": "entry without a published citation, listed in the deposition statement"
+        }
+      ],
+      "cited_pdb_ids": [
+        "6M3W",
+        "8FDW",
+        "6B3O"
+      ],
+      "emdb_ids": [
+        "EMD-68252",
+        "EMD-68188",
+        "EMD-68189",
+        "EMD-68190",
+        "EMD-68191",
+        "EMD-68192",
+        "EMD-68193"
+      ],
+      "proteins": [
+        {
+          "uniprot": "K9N5Q8",
+          "gene": "S",
+          "synonyms": [],
+          "name": "Spike glycoprotein",
+          "organism": "Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012)",
+          "prior_pdb_count": 64,
+          "first_structure": false
+        },
+        {
+          "uniprot": "P27487",
+          "gene": "DPP4",
+          "synonyms": [
+            "ADCP2",
+            "CD26"
+          ],
+          "name": "Dipeptidyl peptidase 4",
+          "organism": "Homo sapiens",
+          "prior_pdb_count": 116,
+          "first_structure": false
+        }
+      ],
+      "score": 55
+    },
+    {
+      "pmcid": "PMC13648238",
+      "pmid": null,
+      "doi": "10.1021/acs.biochem.6c00116",
+      "title": "Characterization of Regioisomeric Conjugates Arising from Pixantrone at AP Sites in DNA",
+      "journal": "Biochemistry",
+      "journal_abbrev": "Biochemistry",
+      "authors": "Fu Y, Terrell J, Kellum A, Pallan P, Galindo-Murillo R, Rizzo C, Egli M, Stone M.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Alkylation at N7 of guanine leads to formation of abasic (AP) sites in DNA. These equilibrate between α and β anomers and form conjugates with 6,9-bis­[(2-aminoethyl)­amino]­benzo­[g]­isoquinoline-5,10-dione (Pixantrone, PIX). NMR revealed that these conjugates formed as regioisomeric Schiff base products R a and R b arising from the nonequivalent PIX C6 and C9 2-aminoethyl side chains. In dsDNA formation of R a was favored. In ssDNA, both products formed equally. Structures of reduced R a and R b conjugates from molecular dynamics calculations restrained by 1H NOESY data in 5′-d­(C1A2G3A4C5T6 X 7A8G9A10C11T12)-3′:5′-d­(A13G14T15C16T17C18A19G20T21C22T23G24)-3′, X = reduced PIX-AP site conjugate, showed that both regioisomers intercalated on the 3′ side of base pair T6/A19, displacing C18 into the major groove, with R a less intercalated than R b. The preferential formation of R a vs R b in dsDNA and deeper intercalation of R b may be explained by the differential ability of the asymmetric PIX N2 nitrogen in R a vs R b to hydrogen bond with the exocyclic N 4-amine of the cytosine displaced into the major groove. MD simulations in dsDNA with R a and R b reduced PIX AP site conjugates revealed that for both, the isoquinoline first reoriented within the minor groove. The complementary cytosine rotated toward the major groove, allowing intercalation of the R a and R b conjugates. Binding energy analyses yielded values of −108.1 (±9.7) kcal/mol and −102.2 (±8.3) kcal/mol for the intercalated R a and R b conjugates, respectively. A crystal structure in the Dickerson-Drew Dodecamer at 2.5 Å resolution revealed looped-out PIX stacking with PIX from a neighboring duplex.",
+      "kind": "new_structure_ids_unlisted",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7U38"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 40
+    },
+    {
+      "pmcid": "PMC13646716",
+      "pmid": "42844887",
+      "doi": "10.1002/mbo3.70430",
+      "title": "Aspergillus niger as a New Endophytic Fungus From Deverra tortuosa: Phytochemical Profile, Molecular Docking, Antimicrobial, Antibiofilm, Antioxidant, and Anticancer Activities",
+      "journal": "MicrobiologyOpen",
+      "journal_abbrev": "Microbiologyopen",
+      "authors": "Selim S, Hashem A, Abdelaziz A, Sharaf M, Al‐Mijalli S, Aladhadh M, Abdallah E, Alruhaili M, Gattan H, Kashmiry A, Aufy M.",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACTEndophytic fungi are recognized as rich sources of bioactive secondary metabolites with promising pharmaceutical applications. In this study, five endophytic fungal isolates were obtained from Deverra tortuosa and evaluated for antimicrobial activity for the first time. Among them, isolate AA1 showed the highest antimicrobial potential and was identified as Aspergillus niger (GenBank accession no. PX273401.1) through morphological and molecular analyses. Phytochemical analysis revealed high levels of flavonoids (496.5 µg/mL), tannins (260.7 µg/mL), phenolics (214.93 µg/mL), and alkaloids (26.45 µg/mL). GC–MS profiling detected several bioactive metabolites, with hexadecenoic acid, docosene, octadecanol, isochiapin B, octadecenoic acid, and octacosanol as major constituents. The fungal extract exhibited potent antibacterial activity against Staphylococcus aureus, Klebsiella pneumoniae, and Bacillus cereus, each with a minimum inhibitory concentration (MIC) of 62.5 µg/mL. It also inhibited biofilm formation by 26.9:55.1% at ½ MIC and demonstrated notable antioxidant activity, with half maximal inhibitory concentration (IC50) values of 167.6 µg/mL (DPPH) and 137.8 µg/mL (ABTS). Cytotoxicity assays confirmed relatively low toxicity toward normal Wi‐38 and Vero cell lines, while significant antiproliferative activity was observed against MCF‐7 and HepG2 cancer cells, with IC50 values of 78.7 and 29.5 µg/mL, respectively, indicating favorable selectivity. Molecular docking supported these biological activities, identifying hexadecenoic acid as the strongest ligand against DNA gyrase subunit B (GyrB) and estrogen receptor alpha (ERα), while isochiapin B also showed strong affinity toward ERα. These findings demonstrate that A. niger from D. tortuosa is a promising source of multifunctional bioactive metabolites with antimicrobial, antioxidant, and anticancer potential for future pharmaceutical applications.Keywords: antibiofilm, antimicrobial, antioxidant, Aspergillus, bioactive compounds, Deverra tortuosa, endophytes",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3G7B",
+        "3ERT"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646121",
+      "pmid": null,
+      "doi": "10.3389/fimmu.2026.1915205",
+      "title": "Biparatopic targeting of CD38 using CD38-specific trimeric antibody recruiters improves cytotoxicity against multiple myeloma",
+      "journal": "Frontiers in Immunology",
+      "journal_abbrev": "Front Immunol",
+      "authors": "Risch H, Gebhardt A, Hagen N, Duttmann A, Dannenberg M, Kämereit S, Ahrens R, Al-Bazaz M, Riecken K, Fehse B, Weisel K, Bannas P, Koch-Nolte F, Pape L, Hambach J.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractRationaleAntibody recruiters are an innovative class of immunotherapeutics, comprising a tumor-binding module and an antibody-binding module to redirect endogenous antibodies toward target cells. Recruited antibodies can then induce Fc-dependent effector functions to lyse tumor cells. The clinical success of CD38-directed monoclonal antibodies daratumumab and isatuximab has established CD38 as a validated target for the treatment of multiple myeloma (MM). Since daratumumab treatment can result in antigen loss or mutation of the binding site, novel immunotherapeutics should explore different binding mechanisms for maximum efficacy. Here, we report the generation of CD38-specific trimeric antibody recruiters (CD38-STARs) using nanobodies, single variable immunoglobulin domains isolated from camelid heavy-chain antibodies.MethodsWe genetically fused two different CD38-specific nanobodies against distinct CD38 epitopes to a human immunoglobulin κ light chain-specific nanobody to generate two CD38-STARs (E2-E3-STAR and E3-E2-STAR) with biparatopic antigen-binding modules. We analyzed their CD38 binding characteristics and the capacity for simultaneous engagement of CD38 and IgG, IgM, or IgA. We evaluated the induction of complement-dependent cytotoxicity (CDC) against various CD38-expressing tumor cell lines in vitro and against primary MM patient cells ex vivo, comparing the CD38-STARs with monoparatopic bispecific antibody recruiters (BARs).ResultsBoth CD38-STARs engaged CD38 by simultaneously binding two epitopes that are distinct from the epitope bound by daratumumab, resulting in improved avidity compared to monoparatopic CD38-specific BARs. CD38-STARs demonstrated concurrent binding to CD38 and human IgG, IgM, or IgA. CD38-STARs induced higher CDC against various CD38-expressing tumor cell lines in vitro compared to monoparatopic BARs or daratumumab. Ex vivo, CD38-STARs mediated significant CDC induction against primary myeloma cells, whereas monoparatopic BARs failed to achieve significant killing.ConclusionBiparatopic targeting of CD38 using CD38-STARs represents a promising strategy for the treatment of MM, including the rare cases in which daratumumab fails to bind due to CD38 mutations.Keywords: antibody recruiting molecules, avidity, biparatopic, bispecific engagers, CD38, complement-dependent cytotoxicity, multiple myeloma, nanobodies",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "4CMH"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13648321",
+      "pmid": null,
+      "doi": "10.1002/pro.70810",
+      "title": "Crowder‐specific modulation of hepatitis C virus NS3/4A protease activity and local structural dynamics",
+      "journal": "Protein Science : A Publication of the Protein Society",
+      "journal_abbrev": "Protein Sci",
+      "authors": "Lobka M, Trylska J.",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMacromolecular crowding modulates enzyme behavior in crowder‐ and protein‐specific ways, yet its impact on viral proteases, which are often key therapeutic targets, remains unclear. Here, we investigated the hepatitis C virus NS3/4A protease under increasing concentrations of polyethylene glycols (PEGs), ficoll, dextran, and lysozyme using fluorescence‐based assays to examine enzyme kinetics, local Trp environments, thermal stability, and rotational restriction of the fluorescent probe in the surrounding medium. PEGs reduced catalytic activity while leaving substrate binding either unaffected or slightly enhanced. These effects were accompanied by a moderate tryptophan fluorescence spectral narrowing, consistent with reduced heterogeneity in local conformational environments. In contrast, ficoll enhanced catalytic efficiency despite stronger fluorescence quenching, indicating local structural changes that favored catalysis. Dextran and lysozyme inhibited protease activity through distinct kinetic patterns, likely reflecting differences in their size, shape, and chemical properties. Thermal analysis revealed crowder‐specific local structural changes in NS3/4A without global unfolding up to 65°C, with differences in local stability and flexibility corroborating the observed kinetic effects. Changes in the rotational restriction of the fluorescent probe further indicated that generalized restriction of molecular motion alone could not explain the effects of crowding on NS3/4A. These findings demonstrate that macromolecular crowding modulates NS3/4A catalysis through crowder‐specific effects on local structure.Keywords: enzyme kinetics, fluorescence spectroscopy, hepatitis C virus, macromolecular crowders, NS3/4A protease, protein stability",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "4JMY"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646711",
+      "pmid": "42844965",
+      "doi": "10.1111/tpj.71152",
+      "title": "Cytochrome P450 enzymes in the phenylpropanoid pathway: CYP73 and CYP98 candidate genes in Chara braunii, Anthoceros agrestis, Marchantia polymorpha and Physcomitrium patens",
+      "journal": "The Plant Journal",
+      "journal_abbrev": "Plant J",
+      "authors": "Aggarwal‐Kentrath C, Petersen M.",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SUMMARYCYP73 and CYP98 are two cytochrome P450 monooxygenase families present in bryophytes and tracheophytes, and they play key roles in the formation of phenolic compounds containing a caffeic acid moiety and more complex phenolic compounds. CYP73 encodes the second enzyme in the core phenylpropanoid pathway and is the first enzyme family in this pathway so far exclusively found in land plants and not in any water‐living sister clades, like the streptophyte algae. That makes CYP73 a prime candidate for investigations into necessary adaptations during terrestrialization. This study aims to support our knowledge on the evolution of this pathway by characterizing the enzymes translated from (putative) CYP73 genes from the bryophytes Anthoceros agrestis, Marchantia polymorpha, and Physcomitrium patens and CYP98 genes from Marchantia polymorpha and Physcomitrium patens. Furthermore, this insight into the function of bryophyte CYP73 informed a more specific search for potential CYP73 candidates in the streptophyte alga Chara braunii. The possibility that land plant CYP73 activity originated in streptophyte algae would be greatly supported if rudimentary CYP73 activity could be found in native Chara candidate genes or induced by slight mutations in inactive Chara enzymes. However, no such mutation led to product formation by enzymes encoded by Chara braunii candidate genes. The bryophyte CYP98 enzymes prefer 4‐coumaroyl amides as substrates, though 4‐coumaroyl esters are generally the common substrates of tracheophyte CYP98 enzymes. This shows a major difference in functionality. Thus, this study provides a comparative characterization of CYP genes from model bryophytes that are canonically associated with phenylpropanoid metabolism.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "6VBY"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646824",
+      "pmid": "42847243",
+      "doi": "10.1093/nar/gkag958",
+      "title": "Deleting the 2B domain of mycobacterial UvrD1 unmasks a latent helicase activity in vitro but effaces UvrD1 activity in nucleotide excision repair in vivo",
+      "journal": "Nucleic Acids Research",
+      "journal_abbrev": "Nucleic Acids Res",
+      "authors": "",
+      "pub_date": "2026-10-08",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMycobacterial UvrD1 is a DNA-dependent ATPase motor that participates as a monomer in nucleotide excision repair (NER). UvrD1 per se is a feeble helicase and its helicase activity is not required for NER. UvrD1, like other superfamily-1 ATPases, consists of 1A and 2A domains that engage ATP•Mg2+. The 2A domain is punctuated by an inserted 2B domain that has been proposed to either couple ATP hydrolysis to duplex unwinding or function as an autoinhibitor of unwinding that is overcome by homodimerization. Here, we designed and characterized UvrD1-∆2B, in which the entire 2B domain is internally deleted, that enabled an evaluation of the role of the 2B domain in UvrD1 function. Removal of the 2B domain elicited a gain of helicase activity, thereby implicating the 2B domain as an impediment to UvrD1’s latent duplex unwinding capacity. We report that (i) UvrD1-∆2B is unable to fulfill UvrD1’s role in NER; (ii) a merodiploid uvrD1+ uvrD1-∆2B strain is as defective in NER as a ∆uvrD1 strain; and (iii) inducible overexpression of uvrD1-∆2B in wild-type cells slows growth. The latter two effects of UvrD1-∆2B are eliminated by an ATPase/helicase-inactivating mutation. We surmise that unbridled UvrD1 helicase activity is detrimental to mycobacterial physiology.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "9DES",
+        "9DGY"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13648233",
+      "pmid": null,
+      "doi": "10.1021/acs.biochem.6c00503",
+      "title": "Enzyme Catalysis: The Effective Molarity for Fragments of Enzyme-Bound Whole Substrates or Active-Site Amino Acid Side Chains",
+      "journal": "Biochemistry",
+      "journal_abbrev": "Biochemistry",
+      "authors": "",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractTruncating an accessory fragment from the substrate or substituting an active-site side chain in the enzyme catalyst generally results in a decrease in k cat/K m for the catalyzed reaction, and the activity lost may sometimes be recovered in third-order reactions of the substrate or enzyme fragments. The effective molarity (EM) for a fragment truncated from the substrate or for a substituted active-site side chain at the transition state for the whole enzyme-catalyzed reaction is equal to k cat/K m (M–1 s–1) for the wild-type enzyme-catalyzed reaction divided by the rate constant (M–2 s–1) for the third-order enzyme-catalyzed reaction of the substrate or enzyme pieces. These EMs are the predicted concentration of the deleted substrate or enzyme piece in the third-order reaction required to give the reaction velocity observed for the wild-type enzyme-catalyzed reaction. The EMs determined for a variety of enzymatic reactions range from 4 to 109 M. These variations are interpreted using a model that assumes an ≈6 kcal/mol advantage for the reaction of whole species that arises from the larger entropic barrier to the higher-order reactions of enzyme or substrate fragments. Interactions that specifically stabilize or destabilize the transition states for enzyme-catalyzed reactions of the fragments also affect the EM. Large EMs are observed when fragment binding to the enzyme is impaired, and small EMs result when the fragment complex is stabilized by interactions between second-shell active-site side chain(s). The reported EM values are largely entropically controlled, consistent with a high degree of structural organization at the active sites for the wild-type and variant enzymes.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1NEY",
+        "1DQX",
+        "6E90",
+        "1WPQ"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646700",
+      "pmid": "42844975",
+      "doi": "10.1155/prm/7424265",
+      "title": "Exploratory Antinociceptive and Anti‐Inflammatory Effects of Dittrichia viscosa Extracts: HPLC‐PDA Fingerprinting, Preliminary Acute Tolerability, ADMET Prediction, and Docking‐Based Prioritization",
+      "journal": "Pain Research & Management",
+      "journal_abbrev": "Pain Res Manag",
+      "authors": "Tlemcani S, Khibech O, Lahkimi A, Essadek A, Lai C, Hmamou A, Idrissi A, Aichouch M, Elrherabi A, Bouhrim M, Bekkari H.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe present exploratory study examined a hydroethanolic extract (HEE) and an ethyl‐acetate‐derived fraction operationally termed the polyphenolic fraction (PF) of Dittrichia viscosa by combining HPLC‐PDA fingerprinting, acute nociception and inflammation models, a 72‐h acute oral tolerability screen of HEE, and in silico prioritization. The HPLC‐PDA fingerprint of HEE contained 31 peaks. Because the available analytical record did not support validated absolute quantification, platform‐exported values are reported only as relative chromatographic abundance. The larger peaks included p‐coumaric acid (7.20%), caffeic acid (5.11%), a putative caffeic acid‐O‐hexoside dimer (4.55%), a putative isorhamnetin‐O‐hexoside (3.57%), a putative hydroxybenzoic acid hexoside (3.25%), and apigenin (3.23%); six annotations were standard‐supported, whereas the remaining assignments were putative. In rats (n = 5/group), every treatment‐control comparison in the writhing and formalin models was significant in the summary‐statistic Dunnett reanalysis (adjusted p < 0.0001). PF at 100 mg/kg produced 59.5% writhing inhibition and mean differences versus vehicle of −38.46 s (95% CI −40.42 to −36.50) and −23.00 s (95% CI −24.45 to −21.55) in the early and late formalin phases, respectively. In the carrageenan model, significant differences occurred mainly at 6 h; PF at 100 mg/kg differed from vehicle by −0.24 cm (95% CI −0.34 to −0.14; adjusted p = 0.0002). Percentage inhibition values are descriptive. No mortality or overt clinical signs were observed after HEE doses up to 4000 mg/kg during 72 h, which constitutes preliminary acute tolerability evidence for HEE only. Predicted ADMET outputs and AutoDock Vina scores prioritized candidate ligands but do not establish exposure, safety, target inhibition, or causal contribution to the extract‐level effects. These exploratory findings support further preclinical investigation, subject to chemical confirmation, raw‐data‐based longitudinal statistics, direct target assays, and guideline‐compliant safety studies.Keywords: antinociceptive activity, carrageenan, Dittrichia viscosa, exploratory animal study, formalin test, HPLC-PDA fingerprinting, inflammation, molecular docking",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "4NOS"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647877",
+      "pmid": null,
+      "doi": "10.1021/acsomega.6c07005",
+      "title": "Genesis of Dolomite and Diagenetic-Pore Evolution Model of High-Quality Reservoirs in the Third Member of the Middle Triassic Leikoupo Formation, Northwestern Sichuan Basin",
+      "journal": "ACS Omega",
+      "journal_abbrev": "ACS Omega",
+      "authors": "Wu X, Huo F, Huang H, Xi Z, Huang Y, Jiang H, Li Y, Wang X, Wang Z, Li K, Guo R, Hu Y.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Recent exploration has achieved significant breakthroughs in dolomite reservoirs within the third member of the Middle Triassic Leikoupo Formation (T2l3) in the northwestern Sichuan Basin. However, limited understanding persists about the sources of dolomitizing fluids, dolomite genesis, and diagenetic-porosity evolution, hindering research on high-quality reservoir formation. This study integrates petrographic, geochemical (C–O–Sr isotopes, major and trace elements, rare earth elements), and cathodoluminescence analyses to clarify the origins of diagenetic fluids and formation mechanisms of various dolomite types in T2l3 and establishes a diagenetic-porosity evolution model for high-quality reservoirs. The results indicate that (1) the T2l3 dolostones in the northwestern Sichuan Basin can be classified into four types: Mud-microcrystalline dolostone (D1), algal dolostone (D2), grain-dominated dolostone (D3), and crystalline dolostone (D4). (2) The δ13C values and 87Sr/86Sr ratios of the four dolostone types generally fall within the ranges of coeval seawater, and their Z values are approximately 130. Their rare-earth element distribution patterns are also broadly comparable to those of contemporaneous seawater, showing relative enrichment in light rare-earth elements and depletion in heavy rare-earth elements. These characteristics suggest that the dolomitizing fluids of the four dolostone types were derived predominantly from highly saline, concentrated coeval seawater. (3) D1 formed at temperatures of approximately 33–41 °C. Its relatively high Sr, Na, and Fe contents and δ18O values, together with relatively low Mn contents and dolomite ordering, suggest that D1 was formed by evaporative dolomitization in a near-surface, oxidizing environment during the penecontemporaneous stage. D2 and D3 formed at approximately 43–56 °C and are characterized by moderate dolomite ordering, negatively shifted δ18O values, and generally low Fe and Mn contents. These features indicate that they were formed mainly through reflux dolomitization under shallow-burial conditions. D4 formed at approximately 61–76 °C. Its elevated Fe and Mn contents and higher degree of dolomite ordering are consistent with increasing burial depth, whereas its relatively low Sr and Na contents and δ18O values collectively suggest formation or substantial modification through burial dolomitization under intermediate- to deep-burial conditions. (4) The diagenetic-pore evolution of the high-quality reservoirs was controlled by multiple constructive and destructive diagenetic processes. Penecontemporaneous dissolution generated the initial pore system, whereas cementation and compaction during shallow burial caused substantial reservoir densification. During intermediate to deep burial, burial-related dissolution represented the principal constructive process responsible for secondary pore regeneration. The ultimate development of high-quality reservoirs depended on late-stage dissolution exceeding the destructive effects of earlier diagenesis, together with the pore-preserving effect of hydrocarbon charging. These findings provide new insights into the genesis of dolostones and the formation mechanisms of high-quality carbonate reservoirs and offer a geological basis for future hydrocarbon exploration and development in the T2l3 of the northwestern Sichuan Basin.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "13CV"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13648270",
+      "pmid": null,
+      "doi": "10.1021/acsnano.6c07706",
+      "title": "Inositol Hexakisphosphate Promotes Open Pore State in HIV Capsid Protein Lattice by Reconfiguring Subunit Contacts",
+      "journal": "ACS Nano",
+      "journal_abbrev": "ACS Nano",
+      "authors": "Knelissen Y, Escrig J, Macke A, Sudhakar S, Domínguez-Zotes S, Maity S, Mateu M, Perilla J, Roos W, Valbuena A.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "The mature human immunodeficiency virus (HIV-1) capsid is composed of approximately 250 capsid protein hexamers, each containing a central pore delimited by a β-hairpin and an α-helix from each monomer. The cellular metabolite inositol hexakisphosphate (IP6) binds this pore and modulates translocation of nucleoside triphosphates into the capsid, where they fuel reverse transcription of the viral genome. However, the mechanism by which IP6 modulates the pore conformation is poorly understood. Averaged structural models of the HIV-1 capsid protein lattice have shed some light on this mechanism but lack information on the dynamic behavior of individual hexamers that could provide deeper mechanistic insights. Here we visualized in real time by high-speed atomic force microscopy the asynchronous motions of individual hexamer pores in the presence or absence of IP6, identifying dynamic transitions between two major states. Quantitative analysis enabled estimation of the IP6-induced pore conformations and populations. Constant-pH molecular dynamics simulations further reveal that IP6 induces contact rewiring at the pore entrance, stabilizing the open state through coordinated rearrangement of intersubunit interactions. Consistently, mechanical fatigue assays show that IP6 markedly enhances the resistance of the capsid lattice to mechanical fatigue, revealing its role as a mechanically stabilized nanomaterial. Together, these results establish IP6 as a proviral regulator that couples nanoscale pore dynamics, intersubunit contact reconfiguration, and mechanical resilience of the HIV-1 capsid, providing a unified mechanistic framework for its role in viral replication.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3J3Y",
+        "6BHT",
+        "6B2J",
+        "6B2I",
+        "6ES8"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647419",
+      "pmid": "42851857",
+      "doi": "10.1021/acsomega.6c00564",
+      "title": "Interactions between Tick-Borne Encephalitis Virus Nonstructural Protein 1 and Blood–Brain Barrier Tight Junction Proteins: Potential Clues to Strain-Specific Neuropathogenicity",
+      "journal": "ACS Omega",
+      "journal_abbrev": "ACS Omega",
+      "authors": "Chaopreecha J, Liburd J, Khalid S, Ntsimango S, Jones I, Tomlinson J, Goonawardane N.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractTick-borne encephalitis virus (TBEV) invades the central nervous system (CNS) through strain-specific mechanisms that remain poorly understood. For mosquito-borne orthoflaviviruses such as dengue and yellow fever viruses, the nonstructural protein 1 (NS1) has been shown to disrupt endothelial barrier integrity by targeting tight junction proteins (TJPs), facilitating viral neuroinvasion. However, comparable mechanisms in TBEVs remain largely unexplored. Here, we investigated the potential interaction of NS1 from high (Hypr)- and low (Vs)-pathogenic TBEV strains with different blood–brain barrier (BBB) TJPs, using AlphaFold3 (AF3) multimer modeling and in vitro binding assays. AF3 modeling suggested that NS1 from the highly pathogenic strain may interact with multiple TJPs, including junctional adhesion molecule A (JAM-A), a key component of the paracellular barrier. In contrast, the low-pathogenic Vs showed a more restricted interaction profile. Experimental validation using recombinant NS1 proteins revealed strain-specific binding profiles: Hypr NS1 displayed high-affinity, saturable direct binding to immobilized JAM-A (KD,app = 0.81 nM), whereas Vs NS1 showed no binding. Immunofluorescence assays on human lung epithelial (A549) and BBB (hCMEC/D3) cells further demonstrated colocalization between Hypr NS1 and JAM-A, supporting a potential interaction. No direct binding to ZO-1, a barrier scaffold lacking an extracellular domain, was observed for either strain. This differential interaction profile may be modulated by 22 amino acids localized to the Wing and β-Ladder domains within NS1, which distinguish Hypr from Vs. Notably, despite its limited interactions with the investigated TJPs, the Vs strain is associated with slow-progressive infections that can culminate in chronic neurological disease. This highlights the need for further studies into noncanonical pathways of neuroinvasion.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "4OIG",
+        "5GS6",
+        "5K6K"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647279",
+      "pmid": "42847772",
+      "doi": "10.1093/bib/bbag555",
+      "title": "MHCXGraph: a graph-based approach to detecting T-cell receptor cross-reactivity",
+      "journal": "Briefings in Bioinformatics",
+      "journal_abbrev": "Brief Bioinform",
+      "authors": "",
+      "pub_date": "2026-09-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe T-cell receptor (TCR) recognition of multiple peptides presented by the major histocompatibility complex (MHC) is a key natural phenomenon, enabling the T-cell repertoire to respond to a broad array of antigens. Despite its importance to the immune response, T-cell cross-reactivity poses a major challenge for the development of novel T cell–based therapies. In this study, we present MHCXGraph, a graph-based computational approach for identifying conserved and immunologically relevant regions across multiple structures of peptides bound to MHC molecules (pMHC). Our approach provides three operational modes: Multiple, Pairwise, and Screening, with user-defined parameters, allowing flexible configuration according to specific scientific needs while delivering fully interpretable results through user-friendly interfaces. We evaluated MHCXGraph across several case studies, including peptides bound to classical MHC Class I, MHC Class II, unbound human leukocyte antigen (HLA) alleles, and pMHCs containing noncanonical amino acids, demonstrating its ability to capture conserved structural determinants beyond sequence similarity. By integrating structural information with efficient graph-based analysis, MHCXGraph addresses key limitations of sequence-based methods while maintaining computational scalability. Collectively, these results indicate that MHCXGraph can be readily integrated into computational pipelines for T-cell cross-reactivity discovery, especially in the context of pMHC engager design and T cell–based vaccine development.Keywords: T-cell receptors, MHC, cross-reactivity, graph theory",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "6CPL",
+        "6CPO"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13648236",
+      "pmid": null,
+      "doi": "10.1021/acs.biochem.6c00443",
+      "title": "Molecular Determinants of Ligand Selectivity in Diverse Ionotropic Glutamate Receptors",
+      "journal": "Biochemistry",
+      "journal_abbrev": "Biochemistry",
+      "authors": "",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractIonotropic glutamate receptors (iGluRs) mediate rapid signals between neurons by binding extracellular neurotransmitters and conducting ionic current across the cell membrane. Animal iGluRs can be divided into clades of phylogenetically related receptors, only some of which are present in mammals. Despite their name, many receptors are selectively activated by ligands other than glutamate, and despite high-resolution structural data on most mammalian iGluRs, the molecular basis for ligand selectivity in most clades is not clear. We questioned whether closely related iGluRs within phylogenetic clades share similar ligand selectivity profiles by testing several receptors from bilaterians, cnidarians, a placozoan, and a ctenophore, and by probing the molecular basis of ligand selectivity in iGluRs from different clades with site-directed mutagenesis. We identified glutamate-, glycine-, and GABA-gated channels from both the AKDF clade and the Epsilon clade, and a selectively aspartate-gated channel from the Epsilon clade. We show that in some cases, even very closely related channels from within the same clade and from the same animal species have diverged functionally, leading to channels gated by different agonists. Although we find special roles in ligand selectivity for glycine, threonine, and leucine residues in the “αF-GST” and “β10/αI-LE” motifs (mammalian AMPA receptor nomenclature), our results in diverse iGluRs warn that the effects of mutations, and thus the roles of these residues, are not always easy to predict.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1FTJ"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13645794",
+      "pmid": "42844321",
+      "doi": "10.1038/s42003-026-10806-8",
+      "title": "Molecular basis for the regulation of the SUMOylation activity of the Smc5/6 complex by Esc2",
+      "journal": "Communications Biology",
+      "journal_abbrev": "Commun Biol",
+      "authors": "Borràs-Gas H, Solé-Soler R, do Aido-Machado R, Matas M, Williamson M, Varejão N, Torres-Rosell J, Reverter D.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractPost-translational modification by SUMO regulates a wide array of cellular processes. Despite the large number of SUMOylated substrates, only a limited set of SUMO E3 ligases have been identified, raising important questions about how substrate specificity is achieved. In budding yeast, the nuclear protein Esc2 functions as a cofactor in the SUMO pathway through its interaction with the E2 enzyme Ubc9. Esc2 is relevant under conditions of replicative stress, promoting the removal of recombination intermediates during DNA replication. This role has been largely attributed to its ability to enhance the SUMO E3 ligase activity of Nse2, a subunit of the Smc5/6 complex. Here, we uncover the molecular mechanism underlying Esc2-mediated stimulation of Nse2-dependent SUMOylation by identifying a direct interaction between the C-terminal SUMO-interacting motif of Nse2 and the Esc2 SLD2 domain. These coordinated interactions facilitate the formation of a productive E3-E2~SUMO complex and promote efficient SUMO transfer to substrates such as Sgs1 and Top3, thereby enhancing the processing of recombination intermediates and contributing to genome integrity.Subject terms: Ligases, Sumoylation",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7P47"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647286",
+      "pmid": "42847777",
+      "doi": "10.1093/bib/bbag551",
+      "title": "PEARL: novel protein targets recommendation model via heterogeneous graph representation learning",
+      "journal": "Briefings in Bioinformatics",
+      "journal_abbrev": "Brief Bioinform",
+      "authors": "",
+      "pub_date": "2026-09-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "case reports",
+        "case-report"
+      ],
+      "abstract": "AbstractPeptide drug repurposing depends on identifying likely protein targets for a query peptide across a large candidate space, yet most existing peptide–protein interaction models are optimized for isolated pairwise classification rather than target prioritization. Here, we present PEARL, a recommendation-oriented heterogeneous graph learning framework for peptide target recommendation. PEARL represents peptides and proteins as distinct node types connected by known peptide-protein associations and multi-view peptide similarity, and combines graph-based representation learning with similarity-aware score refinement to rank candidate targets for a query peptide. On the UMPPI benchmark, PEARL achieved mean area under the receiver operating characteristic curve (AUC), area under the precision–recall curve (AUPR), and Matthews correlation coefficient values of 0.868, 0.855, and 0.571 in five-fold cross-validation, outperforming the strongest baseline, HGT-PepPI, by 4.4, 4.8, and 7.0 percentage points, respectively. Under clustered cold-start evaluation, PEARL delivered the best overall AUC across the novel-protein, novel-peptide, and novel-pair settings, indicating robust generalization under increasing sequence dissimilarity. PEARL also remained the top performer on two independent test sets, reaching an AUC of 0.863 on Test167 and 0.871 on Test1440. Additional analyses showed that PEARL can be effectively calibrated and that its learned latent space groups functionally related targets beyond simple sequence identity. In a case study of the unseen therapeutic peptide CIGB-814, PEARL ranked SPSB2 as the top candidate target. Docking and molecular dynamics simulations supported a stable binding mode, and surface plasmon resonance further confirmed direct binding with an apparent KD of 5.538 μM. Together, these results support PEARL as a scalable computational framework for peptide target recommendation and peptide drug repurposing.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "9RV5"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13645745",
+      "pmid": "42844257",
+      "doi": "10.1038/s41467-026-77195-8",
+      "title": "Phosphorylation-dependent control of transcription factor activity regulates temporal patterning of cortical cell fate specification",
+      "journal": "Nature Communications",
+      "journal_abbrev": "Nat Commun",
+      "authors": "Mahesh A, Dwivedi A, Wang X, Sadhukhan S, Amairy D, Pekel H, Şensoy Ö, Larsen M, Tiwari V.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe development of the cerebral cortex requires precise temporal control of transcription factor (TF) activity to coordinate neuronal and glial lineage transitions. However, the molecular mechanisms coupling signaling dynamics to TF function remain unclear. Here, we combine proteomic, phosphoproteomic, and multi-omic analyses of the developing mouse cortex to define phosphorylation as a key post translational mechanism governing cortical cell fate decisions. Across the neurogenic to gliogenic transition, we identify a global remodeling of the phosphoproteome, including extensive phosphorylation of distinct TFs that is linked to their developmental-stage and cell-type-specific gene regulatory activity. Among these, Hmgn3 and Nfib emerge as pivotal regulators acting in sequential developmental phases. Phosphorylation of Hmgn3 at S78 enhances its chromatin association and activation of progenitor related genes, promoting progenitor proliferation. In contrast, phosphorylation of Nfib at S265 strengthens DNA binding at distal enhancers, driving axonogenesis and neuronal maturation. In utero perturbations with wild-type and phospho-mutant TFs combined with single-cell transcriptomic analyses reveal corresponding shifts in cell-type proportions. Our findings establish site-specific phosphorylation as a molecular timer that orchestrates TF activity to control the temporal patterning of cortical fate specification and ensure the precise assembly of cortical circuits.Subject terms: Developmental biology, Neuroscience, Computational biology and bioinformatics",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "9D3M",
+        "9QKY"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647936",
+      "pmid": null,
+      "doi": "10.1021/acsomega.6c01271",
+      "title": "SNU523 Inhibits Pancreatic Cancer through the Dual Suppression of STAT3 and MEK Signaling Pathways",
+      "journal": "ACS Omega",
+      "journal_abbrev": "ACS Omega",
+      "authors": "Kim S, Wang W, Oh E, Roh E, Cho Y, Han S, Kang H.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Pancreatic cancer represents one of the most lethal cancers, characterized by poor survival rates and persistent therapeutic resistance. In this study, we investigated the anticancer potential and underlying mechanism of SNU523 (8-O-demethyl-9,11-didechloropestalone), a compound isolated from the marine-derived fungus Pestalotiopsis neglecta. SNU523 exhibited potent antiproliferative effects, reduced colony formation in PDAC cells, and suppressed tumor growth in a xenograft model. SNU523 demonstrated dual inhibitory activity against the STAT3 and MEK signaling pathways, suggesting the potential for overcoming therapeutic resistance driven by the inverse interplay between these cascades. This dual suppression may be attributed to its modulatory effects on the epidermal growth factor receptor (EGFR) protein and mRNA levels. Taken together, these findings suggest that SNU523 represents a highly promising candidate for targeted therapy against pancreatic cancer, and it merits extensive investigation in both preclinical and clinical settings.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "3ORN"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646660",
+      "pmid": "42844903",
+      "doi": "10.1002/cmdc.70509",
+      "title": "Scaffold Hopping Provides Liver X Receptor Agonist With Preference for the β Subtype",
+      "journal": "Chemmedchem",
+      "journal_abbrev": "ChemMedChem",
+      "authors": "Kärcher A, Motel F, Lillich F, Kaiser A, Proschak E, Heitel P.",
+      "pub_date": "2026-10-07",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe liver X receptor is a promising target for diseases with dysregulated cholesterol levels. In addition to enhanced reverse cholesterol transport, however, LXR activation induces hepatic lipogenesis. Since the subtype LXRα is dominant in the liver, one strategy to overcome this is the development of LXRβ‐selective agonists. We optimized the reported compound 2 with efficacy‐based preference for LXRβ by scaffold hopping to enhance potency and selectivity. Among the four different scaffolds, which were obtained from computer‐assisted design and subsequent synthesis, compound 7 emerged as the most promising scaffold. The spiro[indan‐1,4′‐piperidine] scaffold of 7 demonstrated superior pharmacokinetic and pharmacodynamic properties, warranting its further investigation towards a pharmacological tool compound.Keywords: drug design, drug discovery, functional selectivity, medicinal chemistry, spiro compounds",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "5HJS",
+        "5HJP"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647275",
+      "pmid": "42847774",
+      "doi": "10.1093/bib/bbag542",
+      "title": "Surf2Spot: a surface-informed geometry-aware model for predicting partner-independent binder and nanobody design hotspots",
+      "journal": "Briefings in Bioinformatics",
+      "journal_abbrev": "Brief Bioinform",
+      "authors": "",
+      "pub_date": "2026-09-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractProtein–protein interactions (PPIs) and nanobody–antigen interactions (NAIs) play essential roles in cellular function, yet potential hotspot prediction remains challenging. We present Surf2Spot, a deep learning framework that integrates sequence embeddings, structural features, and protein surface properties to predicts surface regions with a high propensity to contain PPI hotspot residues. Unlike complex-prediction approaches that require predefined binding partners, Surf2Spot identifies interaction-prone regions directly from target sequences or predicted monomeric structures, enabling partner-independent hotspot prediction. By jointly modeling structural and physicochemical determinants, Surf2Spot achieves strong hotspot prediction performance on curated PPI and NAI datasets, outperforming existing methods in terms of F1-scores and the area under the precision-recall curve (AUPRC). Case studies on NbPDS1 and VdPDA1 demonstrate that Surf2Spot can identify putative hotspot residues within functional domains that are enriched in experimentally validated binder designs. For the tested targets, Surf2Spot-guided designs (with RFdiffusion and BindCraft) yielded a four-fold increase in successful design throughput and enhanced binding affinities compared to baseline strategies in a target-dependent manner. These results establish Surf2Spot as a powerful tool for hotspot discovery and rational protein engineering.Keywords: surface-centric graph, dynamic graph CNN, hotspot prediction, binder design, nanobody design",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1SVD"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646870",
+      "pmid": "42844983",
+      "doi": "10.1002/ardp.70359",
+      "title": "Synergistic Cytotoxicity of Cafestol and Kahweol With Doxorubicin in Breast Cancer Cells Involves TNF‑α Targeting and NF‑κB Downregulation",
+      "journal": "Archiv Der Pharmazie",
+      "journal_abbrev": "Arch Pharm (Weinheim)",
+      "authors": "Souza L, Novaes F, Passos C, de Amorim Í, Nicolau‐Neto P, Rodrigues J, Teixeira A, Ferreira C, dos Santos N, Camargo P, Bispo M, Lima C, Pires B, da Fonseca A, Rezende C, Fialho E, Mencalha A.",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACTBreast cancer (BC) is the most common cancer in women worldwide. Natural compounds have been studied to improve chemotherapy efficiency. Cafestol and kahweol (C&K) are diterpenes from coffee lipid fraction, with potential anticancer activity, whose effects and association with chemotherapeutic drug doxorubicin in BC cells are still unknown. Here, we evaluated the synergistic cytotoxic effects of the C&K with doxorubicin and their molecular mechanisms in BC cells. Cell viability was assessed by the MTT assay. Flow cytometry was used to analyze apoptosis, cell cycle, and NF‐κB levels. The microarray assay was performed to identify altered signaling pathways, and molecular docking was utilized to predict the interaction between C&K and TNF‐α. In addition, TCGA data were explored to evaluate the clinical association between the expression of C&K‐regulated genes and TNF‐α/NF‐κB pathway genes. C&K was cytotoxic and increased the doxorubicin cytotoxicity, augmented the sub‐G0/G1 phase, downregulated TNF‐α/NF‐κB pathway, decreased NF‐κB protein levels, and showed affinity for TNF‐α by molecular docking. Moreover, considering the C&K‐modulated genes, BLOC1S1 acted as a protective factor for BC, and these genes were negatively correlated with TNF‐α/NF‐κB genes. Our data suggest that C&K have cytotoxic properties by inhibiting TNF‐α/NF‐κB pathway and interacting synergistically with doxorubicin in BC cells.Keywords: breast cancer, coffee, diterpenes, NF‐κB, TNF‐α",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "2AZ5"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647939",
+      "pmid": null,
+      "doi": "10.1021/acsomega.6c07653",
+      "title": "Synthesis, SAR Analysis, and Antifungal Potency against Plant Pathogenic Fungi of New Azidopyrazoles",
+      "journal": "ACS Omega",
+      "journal_abbrev": "ACS Omega",
+      "authors": "Canseco-González D, Sánchez-Fernández R, Navarro-Cerón E, Olivares-Sánchez S, Viviano-Posadas A, Dorazco-González A, Parra-Unda R, López-Armenta G, Orjuela A, Alí-Torres J.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "The development of potent synthetic antifungal agents for plants is an ongoing challenge of modern chemistry that impacts biological, medicinal and environmental sciences. Herein, a concise Structure–Activity Relationship (SAR) model involving seven synthetic azidopyrazoles toward three pathogens of agricultural products and ornamental plants: Fusarium oxysporum, Rhizoctonia sp., and Alternaria alternata is described. The set of azidopyrazoles 1–7 includes a central fragment of 3-azido-1H-pyrazole substitutes in different positions of the ring (5-substituted, R = H, 1; R = −CH3, 2; R = –Ph, 3; R = –PhOCH3, 5; 4-substituted, R = –Ph, 4; R = –(4-Cl-Ph), 6) and 3-substituted 5-azido-1H-pyrazole (R = thiophene, 7) which are prepared via a high-yielding (>85%), one-step synthesis from commercial cheap aminopyrazoles. Compounds 3 and 7 showed the greatest inhibition with IC50 values of 26.52 ± 1.14 and 26.75 ± 1.36 μg/mL for F. oxysporum; 18.63 ± 1.08 and 14.39 ± 1.09 μg/mL for Rhizoctonia sp.; and 15.53 ± 1.14 and 21.02 ± 1.37 μg/mL for A. alternata. SAR analysis revealed that aryl substitution at C5 increased markedly the antifungal potency. In contrast, unsubstituted and alkyl-substituted pyrazoles (1, 2) had low activity. Combining 3 with Ag-nanoparticles (NPs) doubled its efficacy only against Rhizoctonia sp. (AgNPs, 10 nm, 100 ng/mL). From IC50 = 18.63 ± 1.08 to 9.65 ± 1.38 μg/mL). Molecular docking with MEP36 supported these results: compound 3 had the highest binding affinity (−6.8 kcal/mol) due to π–alkyl interaction with Val274 residue. Furthermore, root mean square deviation analyses confirmed the tight binding mode.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "7QFY"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646916",
+      "pmid": null,
+      "doi": "10.1039/d6ra07024h",
+      "title": "Synthesis, characterization, X-ray diffraction, in silico studies and in vitro biological evaluation of acylthiourea-derived thiazole-2-imines",
+      "journal": "RSC Advances",
+      "journal_abbrev": "RSC Adv",
+      "authors": "Kangara E, Singh T, Khoza P, Naidu D, Mkwananzi N, Senzani S, Oyeneyin O, Fernandes M, Van Zyl W, Tukulula M.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractA series of thiazole-2-imines (1a–1f) with unsubstituted aryl groups or aryl groups bearing methyl, methoxy, fluoro, or nitro substituents was designed using selected structural features of thiamine as inspiration. The compounds were synthesized from monosubstituted acylthioureas and para-substituted phenacyl bromides in 82–95% yields. Various spectroscopic techniques and high-resolution mass spectrometric analysis confirmed product formation. Single-crystal X-ray diffraction of the methyl/methyl, fluoro/fluoro, and nitro/fluoro-substituted derivatives established the Z-configured scaffold. Density functional theory (DFT) calculations supported the observed experimental geometries. Flexophore analysis indicated low-to-moderate similarity to thiamine, with the nitro/fluoro-substituted derivative yielding the highest score (41%). Docking of hypothetical pyrophosphorylated derivatives and the parent thiazole-2-imines suggested that these compounds could be accommodated within selected binding pockets of thiamine-dependent enzymes and TB- or HIV-related proteins. However, these predictions do not establish antimetabolite activity or specific molecular targets. In silico absorption, distribution, metabolism, excretion, and toxicity profiling predicted no Lipinski violations, low metabolic liability, and at least 74% oral absorption. In vitro evaluation against Mycobacterium tuberculosis H37Rv showed modest antimycobacterial activity, with MIC90 values ranging from 125 to 250 µM. The nitro/fluoro substituted derivative (1f) showed the strongest anti-HIV activity (IC50 = 75.86 µM) and the most favourable HIV-specific selectivity index, followed by the methyl/methyl-substituted derivative (1b).",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1NI4",
+        "3MOS",
+        "3RIM",
+        "8OTM",
+        "7BVF",
+        "1REV",
+        "4MBS"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646371",
+      "pmid": "42844726",
+      "doi": "10.1111/cbdd.70415",
+      "title": "Targeting a Leukemia‐Relevant Protein–Protein Interface: N‐Aryl Anthranilic Acids as Disruptors of the c‐Myb–CBP/p300 KIX Interaction",
+      "journal": "Chemical Biology & Drug Design",
+      "journal_abbrev": "Chem Biol Drug Des",
+      "authors": "Alfassam H, Kamel E, Othman S, Alharbi H, Rudayni H, Allam A, Lamsabhi A.",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACTThe interaction between c‐Myb and the CBP/p300 KIX domain is a key transcriptional event in acute myeloid leukemia (AML) and represents an attractive target for small‐molecule intervention. In this study, we applied an integrated computational–experimental strategy to identify new N‐aryl anthranilic acid disruptors of the c‐Myb–KIX protein–protein interaction. A scaffold‐focused library of 3656 N‐aryl anthranilic acid derivatives was filtered, docked to the c‐Myb‐binding groove of KIX (PDB 2AGH), and the top hits were further evaluated by MD simulations, MM/PBSA, FEL, and ADMET analyses. This workflow prioritized four hits (C1–C4) for experimental testing. Computational analyses showed that all four compounds remained bound within the α1/α3 Myb‐facing groove, but differed markedly in their predicted effects on the c‐Myb–KIX interface. Among them, C3 emerged as the strongest predicted disruptor, whereas C1 was predicted to stabilize the complex. The ΔΔGPPI analysis further showed that C3 produced the largest destabilizing effect on the c‐Myb–KIX interface (+4.57 kcal/mol), followed by C2 (+2.30 kcal/mol) and C4 (+1.40 kcal/mol), whereas C1 stabilized the complex (−6.47 kcal/mol). These predictions were validated by microscale thermophoresis (MST). The binary c‐Myb–KIX interaction showed an apparent K d of 26.71 ± 0.54 μM, and the compounds inhibited complex formation with IC50 values of 99.6 ± 20.5 μM (C1), 54.7 ± 22.1 μM (C2), 16.5 ± 0.8 μM (C3), and 27.2 ± 2.7 μM (C4). Notably, C3 outperformed the reference inhibitor Naphthol AS‐E phosphate (28.8 ± 3.1 μM). Overall, these findings identify C3 as a promising lead and establish N‐aryl anthranilic acids as a tractable scaffold for targeting the c‐Myb–CBP/p300 KIX interaction.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "2AGH"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13645612",
+      "pmid": null,
+      "doi": "10.3389/fphar.2026.1895729",
+      "title": "Targeting the AcrAB-TolC efflux pump by small molecules selectively addressing the outer membrane factor TolC",
+      "journal": "Frontiers in Pharmacology",
+      "journal_abbrev": "Front Pharmacol",
+      "authors": "Veliks J, Cruz C, Szal T, Madre M, Leite I, Paunina L, Lewe P, Hinz M, Witt S, Tammela P, Jirgensons A, Windshügel B.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "BackgroundGram-negative bacteria express several efflux pump complexes extruding a broad spectrum of antibiotics. The major efflux pump in E. coli is the AcrAB-TolC complex that expels a broad spectrum of antibiotics from the bacterium, resulting in impaired efficacy of these drugs. Therefore, the inhibition of efflux pump function is an attractive approach to restore the susceptibility of Gram-negative bacteria for antibiotics.MethodsA virtual screening campaign was utilized to identify potential TolC binders. Virtual hits were investigated using a functional efflux assay, followed by synergy tests with piperacillin and determination of the intrinsic antibacterial potential. Bindings studies with individual efflux pump proteins were carried out. Synthetic chemistry was applied to improve the efficacy of the compound. Microbiological and biophysical tests were used to characterize the compounds with respect to synergistic activity with antibiotics and efflux pump binding.ResultsWe identified a small molecule interfering with efflux pump function, showing synergistic activity with piperacillin and binding to TolC which was further optimized at various positions. The most promising compounds revealed TolC-selective binding and shifted the minimum inhibitory concentration of piperacillin and levofloxacin at low micromolar concentrations.ConclusionOur study provides evidence that TolC may represent a valid target for the development of an antibiotic adjuvant.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1TQQ",
+        "1EK9"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13647951",
+      "pmid": null,
+      "doi": "10.1021/acsomega.6c05930",
+      "title": "The PTPN1/N2 Peptide Inhibitor Achieves Potent, Long-Acting Glycemic Control and Weight-Loss Dual Efficacy in Mice",
+      "journal": "ACS Omega",
+      "journal_abbrev": "ACS Omega",
+      "authors": "Shi Y, Yang X, Meng F, Feenstra A, Chen J, Gu Z, Gao X, Yao W, Dong G, Gong L, Wu H, Zhang C, Gu Y.",
+      "pub_date": "2026-10-09",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Type 2 diabetes mellitus and obesity are closely linked metabolic disorders driven by insulin and leptin resistance. Current long-acting therapies capable of addressing both conditions are dominated by incretin-based agents, which primarily achieve efficacy through appetite suppression and are frequently associated with tolerability limitations and metabolic rebound after treatment discontinuation. Alternative strategies that correct underlying signaling defects without suppressing food intake remain lacking. Protein tyrosine phosphatases PTPN1 and PTPN2 act as coordinated intracellular negative regulators of insulin and leptin signaling by dephosphorylating key molecules within the IRS-AKT and JAK2-STAT3 pathways. Although genetic studies have established these phosphatases as attractive therapeutic targets, translation has been hindered by the absence of long-acting inhibitors with robust in vivo efficacy. Here we report the rational design of Y5, a chemically engineered BimBH3-derived peptide analogue that functions as a dual inhibitor of PTPN1 and PTPN2. Fatty-acid conjugation and hapten modification confer high enzymatic potency, enhanced proteolytic stability, strong albumin binding, and prolonged half-life and systemic exposure. Y5 restores cellular insulin and leptin signaling in vitro, leading to coordinated activation of IRS-1, AKT, and STAT3 under resistant conditions. In diabetic db/db mice, Y5 once-weekly administration induces sustained glycemic control, improves glucose tolerance, and reduces circulating insulin levels, consistent with enhanced insulin sensitivity. In DIO mice, Y5 induces pronounced and sustained weight loss while preserving food intake, demonstrating a potential mechanism distinct from incretin-based therapies. Y5 selectively reduces adiposity, improves hepatic steatosis, and is well tolerated across dosing regimens. These findings establish long-acting dual inhibition of PTPN1 and PTPN2 as a mechanistically distinct therapeutic strategy for T2DM and obesity. By reversing hormone resistance rather than suppressing appetite, Y5 defines an alternative paradigm for achieving long-acting glycemic control and weight loss in vivo.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "9CYO",
+        "7UAD"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13646499",
+      "pmid": "42843975",
+      "doi": "10.26508/lsa.202603885",
+      "title": "The ROCK1 PHC1 domain mediates recruitment to Rho activity zones and contractility signaling",
+      "journal": "Life Science Alliance",
+      "journal_abbrev": "Life Sci Alliance",
+      "authors": "Dehmelt L.",
+      "pub_date": "2026-10-06",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Gierse et al show that ROCK1’s PHC1 domain is recruited to elevated cortical Rho activity, that it cooperates with the Rho-binding domain, and that it participates in cell contraction signaling.",
+      "kind": "uses_existing",
+      "own_structures": [],
+      "cited_pdb_ids": [
+        "1S1C"
+      ],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 5
+    },
+    {
+      "pmcid": "PMC13648549",
+      "pmid": null,
+      "doi": "10.64898/2026.09.25.754496",
+      "title": "A Dynamics-Informed Machine Learning Framework for Inhibitor Optimization Against Quickly Evolving Targets to Avoid Resistance",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACT Drug resistance often emerges through mutations that reshape protein conformational ensembles, allowing inhibitor potency to be altered without directly disrupting protein-ligand contacts. Consequently, the molecular mechanisms underlying these effects remain difficult to identify, hindering the design of inhibitors with durable potency against rapidly evolving drug targets. To address this challenge, we developed ROBUST, a physics-informed machine learning framework that integrates experimental measurements, molecular dynamics simulations, and interpretable statistical modeling to identify energetic determinants of inhibitor potency. Using HIV-1 protease as a stringent model system for drug resistance, we determined 157 new inhibition constants and integrated them with prior measurements to establish a comprehensive experimental dataset of 364 protease-inhibitor pairs. Analysis of the corresponding molecular dynamics simulations revealed a compact network of energetic interactions that quantitatively explains how resistance mutations and inhibitor modifications jointly reshape molecular recognition and inhibitor potency across the multidimensional resistance landscape. Models constructed from these energetic signatures predicted binding free energies with high accuracy (RMSE < 1 kcal mol −1 ) and successfully generalized to unseen darunavir analogs. Importantly, ROBUST accurately prioritized unseen analogs based on their potency across the variant set, demonstrating its utility for identifying compounds with improved resistance profiles. Together, these results uncover the energetic principles through which resistance mutations and inhibitor modifications alter potency and establish ROBUST as a mechanistically interpretable framework for translating these insights into resistance-aware inhibitor optimization against rapidly evolving drug targets.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648687",
+      "pmid": null,
+      "doi": "10.64898/2026.09.30.755723",
+      "title": "A bacteriophage split DNA polymerase incorporates a sliding clamp-derived processivity subunit",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACT Viruses that infect bacteria, termed bacteriophages or phages, typically encode their own DNA replication machinery that rapidly generates many copies of the phage genomic DNA in an infected cell. Nucleus-forming phages of the chimallivirus family possess a distinctive repertoire of predicted DNA replication proteins, with two proteins annotated as DNA polymerases plus a DnaB-like replicative helicase, but lacking an identified primase or sliding clamp protein. Here, we demonstrate that in the Pseudomonas aeruginosa -infecting chimallivirus PhiKZ, the core DNA polymerase comprises a stable 1:1 complex of two DNA polymerase subunits, termed DNAP N and DNAP C . A 2.1 Å resolution cryoelectron microscopy structure of this core complex reveals homology to other phage and bacterial B-family DNA polymerases. Next, we identify a direct but transient interaction between the core DNA polymerase complex and a third protein termed Rhc, which possesses an N-terminal RNase H domain and a C-terminal domain related to DNA sliding clamp proteins. Cryoelectron microscopy structures of a stabilized DNA polymerase-Rhc complex, and of this complex bound to a primer-template DNA, reveal a single Rhc subunit that cooperates with the DNA polymerase thumb domain to bind double-stranded DNA emerging from the DNA polymerase active site. While the Rhc RNase H domain is not resolved in our structures, this domain is situated such that it could degrade RNA associated with an incoming template DNA strand. In vitro primer-extension assays show that Rhc strongly boosts DNA polymerase activity, and that this boost relies on the Rhc-DNA polymerase interface we observe in our structures. Overall, our findings reveal a distinctive chimallivirus-specific DNA replication machine with an integrated DNA-binding subunit related to sliding clamp proteins, and a flexibly-linked RNase H domain.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648698",
+      "pmid": null,
+      "doi": "10.64898/2026.10.01.755736",
+      "title": "A bifunctional RNase H protein supports DNA replication and transcription in nucleus-forming Chimalliviridae phages",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-02",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Abstract Jumbo bacteriophages of the Chimalliviridae family replicate their genomes within a proteinaceous phage nucleus that spatially segregates viral DNA replication and transcription from translation. While the phage nucleus protects viral DNA from host defenses, it also imposes unique constraints on genome replication and gene expression. Here we identify the phage-encoded protein Rhc (RNase H-clamp) as a central mediator of genome transactions within the phage nucleus. Using the Escherichia coli infecting bacteriophage Goslar, we show that Rhc functions as an essential component of a non-canonical three-subunit DNA polymerase complex composed of DNAPN, DNAPC, and Rhc. Rhc physically interacts with the DNAPC subunit, and both the catalytic activity of Rhc’s N-terminal RNase H domain and its C-terminal sliding clamp-derived DNA binding domain are required for genome replication, nuclear maturation, and productive infection. Further, Goslar Rhc also supports transcription within the phage nucleus through a function that is separable from its DNA replication function. Rhc depletion results in reduced transcription of a subset of late genes, in a pattern that suggests a role for Rhc in resolving R-loops. Imaging and cryo-electron tomography reveal that loss of Rhc arrests phage development at a nascent nuclear stage, uncoupling nuclear assembly from maturation. Together, these findings identify Rhc as a multifunctional nuclear factor that mediates both DNA replication and transcription in nucleus-forming jumbo phages, revealing how viruses repurpose a conserved enzymatic activity to coordinate gene expression within a compartmentalized replication environment.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648534",
+      "pmid": null,
+      "doi": "10.64898/2026.09.27.754746",
+      "title": "A dedicated motif in human polymerase gamma enables DNA synthesis through replication roadblocks",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-28",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMitochondrial DNA (mtDNA) maintenance is essential for cellular homeostasis, and defects in mtDNA replication are linked to a broad spectrum of mitochondrial diseases. During replication, DNA polymerase γ (Polγ) must traverse duplex junctions and stable secondary structures, yet how the human enzyme overcomes these barriers remains incompletely understood. Here, cryo-electron microscopy structures of Polγ bound to forked DNA, G-quadruplex (G4)-containing DNA and DNA bound to mitochondrial single-stranded DNA-binding protein (mtSSB) reveal a common template-entry path along the catcher domain across distinct substrate and active-site configurations. Within this domain, an arginine-rich helix containing R1026, R1030 and R1034 constitutes a Template Stabilising Motif (TSM). Biochemical reconstitution and DNA-binding experiments show that disrupting the TSM selectively impairs strand displacement, RNA-DNA hybrid displacement and synthesis through G4-forming sequences, while largely preserving synthesis on unstructured templates. Single-molecule optical-tweezers experiments further show that mechanical destabilisation of the fork partially restores mutant strand-displacement activity, whereas force or mtSSB restores primer-extension kinetics on ssDNA templates. Together, these findings establish the role of the TSM in maintaining productive template engagement and identify template stabilisation as a common mechanism enabling Polγ to traverse structurally diverse barriers in mtDNA.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648409",
+      "pmid": null,
+      "doi": "10.64898/2026.09.24.754278",
+      "title": "Antibodies targeting a conserved cryptic epitope at the influenza hemagglutinin head-stem interface via distinct binding modes",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-03",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACT Influenza A virus continues to pose pandemic threats, as demonstrated by the recent global spread of highly pathogenic H5N1 strains. Consequently, the development and characterization of vaccines targeting zoonotic influenza subtypes have become a major focus of the field. In this study, we characterize two broadly reactive antibodies previously isolated from H5N1 vaccinees. Although they have distinct immunoglobulin germline gene usage and binding modes, cryo-EM analysis shows that both antibodies share a highly conserved cryptic epitope at the interface of the hemagglutinin (HA) head and stem domains. The antigenicity of this epitope is influenced by natural amino acid variation at residue 293 of HA subunit 1, and its access is facilitated by acid-induced conformational change of HA. Nevertheless, both antibodies are non-neutralizing and possess only marginal protective efficacy against seasonal and H5N1 viruses in vivo , thus representing suboptimal vaccine responses. Overall, our findings expand the interactions of cross-reactive antibodies with an under-characterized HA epitope and provide insights for next-generation influenza vaccine design.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648552",
+      "pmid": null,
+      "doi": "10.64898/2026.09.25.754468",
+      "title": "Asymmetric assembly of congested contiguous stereocenters via photobiocatalytic three-component radical coupling",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-28",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Despite rapid advances in new-to-nature biocatalysis, trimolecular enzymatic reactions that generate previously inaccessible molecular entities, particularly those bearing well-defined, congested stereochemical dyads, remain exceedingly rare. Here, we report a novel diastereo- and enantioselective photobiocatalytic three-component radical coupling unknown in both organic chemistry and enzymology, enabled by cooperative catalysis employing an evolved pyridoxal biocatalyst and a transition-metal photosensitizer. Directed evolution using high-throughput photobiocatalysis furnished two threonine aldolase variants, enabling the stereoselective assembly of contiguous tri- and tetrasubstituted stereocenters as well as vicinal tetrasubstituted stereocenters, which were long regarded as a challenging goal for stereoselective radical chemistry and asymmetric catalysis. Furthermore, a variety of radical precursors, including α-iodoesters, α-iodoamides, α-iodoketones, and α-iodonitriles, could be transformed into structurally diverse, densely substituted non-canonical amino acid derivatives via C–H functionalization with excellent stereocontrol. Leveraging the broad substrate compatibility of engineered pyridoxal biocatalysts, combinatorial biocatalysis was achieved by simultaneously varying all three coupling partners, delivering products with a 98% success rate. Collectively, this diversity-generating multicomponent photobiocatalytic radical coupling afforded a powerful strategy for addressing long-standing challenges in asymmetric catalysis while enabling access to valuable stereochemically complex small molecules with applications in medicinal chemistry.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648533",
+      "pmid": null,
+      "doi": "10.64898/2026.09.25.754469",
+      "title": "Chemical proteomics reveals post-translational remodeling of endosomal pathways during macrophage activation",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractMacrophages are central regulators of innate immunity, yet the post-translational mechanisms that enable rapid inflammatory responses remain incompletely understood. Here, we integrated transcriptomics, unenriched proteomics, phosphoproteomics, metabolomics, and cysteine reactivity profiling to comprehensively characterize primary human macrophages following Toll-like receptor and Stimulator of Interferon Genes (STING) activation. This approach revealed substantial discordance between transcript- and protein-level changes, as well as extensive post-translational remodeling. Differentially reactive cysteines were enriched in proteins involved in small-GTPase signaling, vesicular trafficking, and the endo-lysosomal system. Reactivity changes in two subunits of the endosomal mRNA-transport FERRY complex nominated it as a candidate target of inflammation-associated post-translational regulation. Biochemical and imaging analyses established FERRY complex assembly and early endosomal localization in primary human macrophages and identified DISC1 as a previously unrecognized FERRY-associated protein. This work provides a comprehensive resource of biochemical and post-translational remodeling during macrophage activation and implicates endosome-associated mRNA transport in innate immune regulation.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648615",
+      "pmid": null,
+      "doi": "10.64898/2026.09.28.754937",
+      "title": "Cytokine-induced nuclear translocation of STAT1 via a non-transferable NLS",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-29",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACTThe targeting function of nuclear localization signals (NLSs) is generally considered independent of a protein’s native sequence or fold and is readily transferable to heterologous cargos. Contrary to this paradigm, rapid nuclear translocation of phosphorylated STAT1 (pSTAT1) following cytokine stimulation requires importin β, Ran–GTP, and the importin α5 isoform, which recognizes a non-transferable NLS. Here, we present cryo-EM structures of pSTAT1 bound to importin α5, revealing an asymmetric 2:1 complex that diverges from canonical NLS-mediated cargo recognition. Importin α5 occupies the DNA-binding groove of the pSTAT1 dimer, with a single STAT1 N-terminal domain positioning the C-terminal Armadillo repeats 9–10 (S1B domain) orthogonal to the DNA-binding interface. This interface is also targeted by the Ebola virus protein VP24, an antagonist of interferon signaling. We further show that Ran–GTP alone is insufficient to trigger nuclear release of pSTAT1, which additionally requires the exportin CAS. A cryo-EM reconstruction of the CAS–Ran–GTP–α5 complex, supported by in vitro competition assays, demonstrates that CAS and pSTAT1 are mutually exclusive ligands for importin α5. Together, these findings define the molecular choreography of cytokine-induced STAT1 nuclear translocation and release, establishing a general paradigm for STAT family signaling.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648660",
+      "pmid": null,
+      "doi": "10.64898/2026.09.28.755224",
+      "title": "De novo minibinders targeting RH5 achieve nanomolar inhibition of blood-stage malaria replication",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-29",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Abstract Malaria kills ∼600,000 people annually despite recently deployed vaccines. The parasite’s blood-stage invasion of erythrocytes, driven by the essential, non-redundant interaction between Plasmodium falciparum RH5 and erythrocyte basigin, remains a leading therapeutic target. Here, we designed de novo mini-proteins (“minibinders”) to occlude this interface. From ∼1,500 computationally generated designs, we synthesized 18 candidates ranging from 9.3 to 16.9 kDa which were easily expressed in E. coli as soluble, well-folded proteins. Of these, 7 minibinders blocked blood-stage replication of P. falciparum asexual stage parasites with greater potency than ≈300nM IC 50 . Three potent candidate minibinders, mb-5, mb-7, and mb-21, were confirmed to bind RH5 via SPR and BLI and block the merozoite-to-ring transition in stage-synchronized parasite progression assays, with CryoEM of minibinder-RH5 complex confirming the predicted binding at RH5-basigin interface. Although pharmacological challenges remain, our data demonstrate that potent inhibitors of parasite growth, rivaling existing antimalarials, can be designed rather than discovered via extensive screening. Our data highlight the potential for artificial intelligence to change the development landscape of new antimalarial therapies.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648556",
+      "pmid": null,
+      "doi": "10.64898/2026.09.27.754867",
+      "title": "Deep-learning-based design of an orthogonal self-labeling protein from K-Ras(G12C)",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-29",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractSelf-labeling protein (SLP) tags enable versatile labeling of proteins in live cells, yet only two SLPs are commonly used, limiting multiplexing. Here, we repurposed the oncoprotein K-Ras(G12C) and its covalent inhibitors to create a third, orthogonal SLP system. We used a deep-learning-based approach to radically redesign the sequence of K-Ras(G12C) while preserving its covalent-inhibitor binding pocket. Our top design, LUCI-tag, is a 19 kDa, monomeric, thermostable SLP that rapidly and covalently reacts with commercially available K-Ras(G12C) inhibitors bearing diverse payloads. Unlike existing SLPs, LUCI-tag exhibited payload-agnostic labeling kinetics, outperforming HaloTag7 and SNAP-tag for a negatively charged payload. X-ray crystal structures of drug-bound and drug-free LUCI-tag showed the design was structurally accurate and contained a preorganized inhibitor-binding pocket that could explain its rapid labeling kinetics. Proteomics and cell-signaling experiments confirmed LUCI-tag is biologically inert. LUCI-tag enabled rapid, wash-free, live-cell imaging and simultaneous three-color multiplexed experiments with HaloTag7 and SNAP-tag. This work establishes LUCI-tag as an immediately useful orthogonal SLP and demonstrates that covalent drug–target pairs can be repurposed into a broadly applicable platform for protein labeling.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648732",
+      "pmid": null,
+      "doi": "10.64898/2026.10.01.756032",
+      "title": "Glycation proteomics identifies creatine kinase as a mediator of the effects of methylglyoxal on mitochondrial permeability transition",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-02",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractOpening of the mitochondrial permeability transition (PT) pore is an important step in necrotic cell death in various pathologic conditions such as ischemia-reperfusion injury. Methylglyoxal (MGO) is a byproduct of glycolysis that covalently modifies proteins (i.e., glycation) and is widely regarded as toxic (glycative stress), contributing to the pathology of diabetes. Paradoxically, MGO has been shown to inhibit PT pore opening, but the mechanism of this effect is poorly understood. Herein we show that glycation is elevated in various cardioprotective scenarios. Furthermore, building on a serendipitous finding of the ability of phosphate to block MGO’s effect on the PT pore, we used proteomics to map potential sites mediating this effect. From this analysis, mitochondrial creatine kinase (CK) emerged as a phosphate-sensitive MGO target with links to the PT pore. Although MGO inhibited CK activity, this did not appear to be important for its effect on the PT pore. Rather, MGO modified sites on CK that are important for its membrane binding, which likely mediates the combined effects of MGO and phosphate on the PT pore. Furthermore, a consensus sequence for MGO modifications in mitochondria is reported.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648661",
+      "pmid": null,
+      "doi": "10.64898/2026.09.30.755370",
+      "title": "High-resolution measurement of ERK activation state reveals determinants of BRAF regulation and drug sensitivity",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SummaryHigh-resolution measurements of pathway activity make it possible to characterize how signaling responds to changing cellular conditions, to evaluate pathway-targeted inhibitors, and to dissect how sequence variation shapes signaling output. Here, we describe a sequencing-based assay that uses engineered, phospho-state-selective affinity reagents to quantify ERK activation state as a high-resolution, ratiometric readout of RAS/ERK MAPK pathway activity. Profiling ∼1,600 BRAF variants at basal and elevated RAS-GTP levels allowed us to assign activity scores to somatic cancer and germline RASopathy variants and to distinguish residues that stabilize autoinhibition from those required for active dimer formation. We identified a large class of dominant negative variants that suppress signaling below endogenous levels through enhanced RAS engagement and an inability to form productive RAF dimers. Measuring the intracellular potency of the RAF inhibitor LXH254 against ∼1,000 variants in parallel revealed hinge and activation-loop positions conferring resistance and showed that disrupting the BRAF-MEK interface is broadly sensitizing.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648347",
+      "pmid": null,
+      "doi": "10.64898/2026.09.22.753556",
+      "title": "MCT6 is an intestinal Lac-Phe exporter required for metformin-associated weight loss",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-28",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SummaryMetabolites are increasingly recognized as circulating molecules that regulate physiology, yet the mechanisms that couple intracellular production to organism-wide action remain poorly defined. Using the anorexigenic metabolite Lac-Phe as a tractable system, we identify the orphan transporter MCT6 (SLC16A5) as a physiologic intestinal Lac-Phe exporter. This mechanism controls the extent to which intracellularly synthesized Lac-Phe acquires systemic activity. MCT6 transports Lac-Phe, mediates its cellular efflux, and is required for maintaining its blood levels in mice following strong glycolytic stimuli. Both global and intestinal epithelial-specific deletion of MCT6 confers resistance to metformin-associated weight loss on a high-fat diet. Bypassing the transport defect with exogenous Lac-Phe normalizes the body weight phenotype of MCT6-KO mice. Together, these data connect MCT6 to metformin pharmacology and intestinal lactate metabolism, and more generally underscore the importance of transporter-mediated release in the conversion of an intracellular metabolic state into a circulating metabolite effector.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648438",
+      "pmid": null,
+      "doi": "10.64898/2026.09.24.754241",
+      "title": "MHC restriction is structurally encoded by the T cell receptor germline",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-29",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SummaryMHC restriction — the requirement for αβ T cell receptors (TCRs) to recognize Major Histocompatibility Complex (MHC) molecules when presenting peptide antigens — is a pillar of adaptive immunity. Here, we provide direct structural evidence for TCR germline-encoded recognition of MHC molecules irrespective of antigenic peptide. We engineered “germline-like” TCRs to eliminate CDR3 specificity for peptide, and a molecular clamping strategy to trap ultra-low-affinity complexes with peptide-MHC for cryo-EM. We find that germline-like TCR/pMHC docking modes are identical to wild-type T cell receptors with intact CDR3 loops, across distinct peptide antigens and MHC alleles. Analysis of human TCR repertoires reveals enrichment of specific V genes and Vα-Vβ pairing patterns associated with HLA-A*02 contexts. Thus, the TCR germline encodes the blueprint for MHC restriction, providing a sequence-based framework that could inform computational and AI-driven prediction of TCR specificity.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648279",
+      "pmid": null,
+      "doi": "10.1038/s44511-026-00001-z",
+      "title": "Mechanism of activation of an ancestral TEC kinase by PIP3",
+      "journal": "Npj Structural Biology",
+      "journal_abbrev": null,
+      "authors": "Krötenheerdt E, Piëch L, von Raußendorf F, Reinhardt R, Nataraj R, Wedige N, Nyvall H, Walsh E, Burke J, Leonard T.",
+      "pub_date": "2026-01-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe TEC kinases are a family of five paralogous mammalian genes that play crucial roles in cell growth, proliferation, and differentiation, particularly in immune cells. The recruitment and activation of the TEC kinases depend on the generation of the lipid second messenger, PIP3, in the plasma membrane. However, the mechanisms by which PIP3 activates the TEC kinases are not well understood. By studying an ancestral TEC kinase from the choanoflagellate Monosiga brevicollis, we have elucidated an evolutionarily conserved mechanism for the activation of the TEC kinases by PIP3. We demonstrate that PIP3, but not PIP2, relieves autoinhibition by displacing the PH domain of MbTEC from a conserved intramolecular interaction with its kinase domain. We also show that a conserved polyproline motif within MbTEC promotes its activation in a kinase-intrinsic mechanism. Finally, we show that the PH domain is sufficient to restore autoinhibition in a constitutively active mutant of MbTEC. Our findings reveal that PIP3 is necessary but not sufficient for MbTEC activation.Subject terms: Cell biology, Molecular biology",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648608",
+      "pmid": null,
+      "doi": "10.64898/2026.09.28.753909",
+      "title": "MgATP/MgADP-dependent conformational dynamics and intrinsically disordered regions of vascular K ATP channels revealed by cryoEM",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-29",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACT Vascular smooth muscle K ATP channels, composed of the pore-forming Kir6.1 and regulatory SUR2B subunits, control vascular tone, dysfunction of which causes systemic disease. Vascular K ATP is regulated by Mg-nucleotides, but the underlying structural mechanism has remained elusive. Here, we determined cryoEM structures of these channels in the presence of MgATP and MgADP. Two key structures captured, one showing the SUR2B-nucleotide binding domains (NBDs) separated and one showing the SUR2B-NBDs dimerized, reveal conformation-specific organization of intrinsically disordered regions (IDRs) found in both Kir6.1 and SUR2B. In the NBD-separated conformation, the Kir6.1-N terminal IDR (KNt) sits within the central cleft of SUR2B’s ABC-core. In the NBD-dimerized conformation, KNt is excluded from the central cleft and instead forms contacts with an ED domain comprising 15 consecutive glutamate and aspartate residues within a SUR2B IDR, the N1-T2 linker connecting NBD1 (N1) to transmembrane domain 2 (T2). Moreover, within the N1-T2 linker a regulatory helix seen between the two NBDs in the NBD-separated conformation moves to outside the dimerized NBDs, interacting with the C-terminal residues unique to SUR2B, in the NBD-dimerized conformation. MD simulations further reveal that transient but frequent interactions mediated by the IDRs may facilitate Mg-nucleotide dependent conformational switch in vascular K ATP channels.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648727",
+      "pmid": null,
+      "doi": "10.64898/2026.09.30.755740",
+      "title": "Molecular Determinants of G Protein Subtype-Specific Coupling to the Angiotensin II Type 1 Receptor",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACTMany G protein-coupled receptors (GPCRs) are capable of activating multiple heterotrimeric G protein subtypes. The angiotensin II type 1 receptor (AT1R) couples to both Gq and Gi family members, and the two families mediate distinct aspects of the effects of angiotensin II (AngII) on blood pressure and fluid balance. Previous work has pointed to fundamental differences in the strength and ligand-dependence of Gq versus Gi activation by AT1R. Here we resolve key aspects of the mechanisms underlying these subtype-specific patterns of G protein coupling to AT1R. Using cellular biosensors, we show that AT1R activates Gq more efficaciously than Gi. Leveraging mini-G proteins, engineered versions of Gα subunits that diverge only in the C-terminal α5 helix, we identify four residues dispersed throughout the α5 helix that are sufficient to account for these differences. We employ radioligand binding to demonstrate that subtype-specific differences originate at the level of allosteric coupling between ligand and transducer binding, and we use Systematic Protein Affinity Strength Modulation biosensors to show that Gq-specific residues in the α5 helix increase affinity for AngII-activated AT1R. We provide evidence that the α5 helix residue with the greatest effect on coupling makes interactions with AT1R intracellular loop 3 that were not resolved in a previously reported AT1R-Gq cryo-electron microscopy structure. These findings enhance our understanding of how AT1R differentially activates Gq and Gi and may ultimately guide pharmacological approaches to modulate certain G proteins downstream of AT1R and other GPCRs.SIGNIFICANCE STATEMENTThis study identifies four residues within the Gα C-terminal α5 helix that govern subtype-specific patterns of Gq and Gi coupling to the angiotensin II type 1 receptor. Our findings demonstrate that allosteric coupling dictates the differential activation patterns of these two G heterotrimeric proteins, advancing our understanding of transducer selectivity and guiding the development of targeted subtype-selective therapeutics.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648484",
+      "pmid": null,
+      "doi": "10.64898/2026.09.27.753811",
+      "title": "Molecular determinants of ligand recognition and efficacy in the TRPM3 voltage sensor-like domain",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-30",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractTransient receptor potential melastatin 3 (TRPM3) is a calcium-permeable ion channel implicated in chronic pain and developmental and epileptic encephalopathies. The voltage sensor-like domain (VSLD) is a major site of pharmacological modulation, but the molecular determinants of ligand recognition and efficacy remain incompletely understood. Here we combine cryo-electron microscopy, molecular dynamics simulations, mutagenesis, and medicinal chemistry to investigate the interactions of TRPM3 with the inhibitors isosakuranetin, maprotiline, and diclofenac. We show that structurally diverse ligands occupy a common VSLD cavity but engage distinct interaction networks. Functional and computational analyses identify ligand-specific residue dependencies and support a halogen bond between diclofenac and D947 that contributes to inhibitor potency. Furthermore, esterification or amidation of the diclofenac carboxylate converts inhibition into potentiation, and mutagenesis and molecular dynamics simulations support partially overlapping VSLD configurations associated with these opposing effects. Together, these findings establish the TRPM3 VSLD as an adaptable allosteric pocket in which ligand-specific interactions shape recognition, potency, and efficacy.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648650",
+      "pmid": null,
+      "doi": "10.64898/2026.09.29.755428",
+      "title": "Pan-Coronavirus Protease Engagement and Differentiated Pharmacology of Antiviral Candidate CMX990",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACT COVID-19 highlighted the need for antivirals that can be rapidly deployed against both current and future coronavirus threats. CMX990 is a clinical stage coronavirus main protease (M pro ) inhibitor bearing a unique trifluoromethoxymethyl ketone warhead. Here, we broadly evaluate its pan-coronavirus target engagement, antiviral breadth, and pharmacologic differentiation. Across a reporter panel of 24 M pro enzymes spanning alpha-, beta-, delta-, and gamma-coronaviruses, CMX990 retained robust potent activity, including against nirmatrelvir-resistant SARS-CoV-2 variants. In direct comparison, nirmatrelvir and ensitrelvir showed diminished potency against non-SARS-CoV-2 coronaviruses. Live-virus assays corroborated this breadth, with potent, selective activity against SARS-CoV-2, SARS-CoV-1, MERS-CoV, and additional human coronaviruses. Structural studies revealed a conserved covalent binding mode centered on the catalytic Cys of coronavirus M pro . In serial-passage studies, resistance emerged only after approximately twice as many serial passages under CMX990 selection as under nirmatrelvir selection, without selecting for the canonical nirmatrelvir-resistance substitution E166V. Extracellular washout experiments revealed superior persistence of antiviral activity relative to nirmatrelvir, consistent with durable target engagement. In a murine SARS-CoV-2 infection model, once-daily CMX990 protected against weight loss and reduced lung viral titers to near baseline levels. Collectively, these findings identify CMX990 as a structurally and functionally validated pan-coronavirus protease inhibitor supporting its potential as a pandemic-ready antiviral candidate.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648738",
+      "pmid": null,
+      "doi": "10.64898/2026.09.29.755535",
+      "title": "Proteasomal surveillance of exposed cysteines",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-30",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "ABSTRACTCysteine residues are critical for both the catalytic activity and structural stability of many proteins, yet their high chemical reactivity threatens proteome integrity. Whether cells have specialized mechanisms to recognize and eliminate proteins with aberrant or exposed cysteines is unknown. By systematically analyzing the stability of thousands of cysteine-containing peptides, here we identify two complementary surveillance mechanisms targeting proteins with exposed cysteine residues. First, a set of E3 ubiquitin ligases – including AMBRA1, TRPC4AP, FBXO3, and FBXO21 – detects double cysteines and targets proteins for ubiquitin-dependent proteasomal degradation. Second, the PSMD14/Rpn11 subunit of the 26S proteasome recognizes exposed cysteines in a ubiquitin-independent manner. Both pathways function in quality control to clear misfolded proteins exposing cysteine residues, including zinc finger-containing proteins. Mutational escape from the ubiquitin-independent pathway through dysregulation of ornithine decarboxylase or FOS levels is responsible for two human diseases, Bachmann-Bupp Syndrome and osteoblastoma, respectively. Our findings reveal conserved mechanisms for degrading proteins with exposed cysteines and uncover an alternative mode of substrate recognition by the 26S proteasome.Short SummaryCysteine exposure acts as a conserved degradation signal that triggers two modes of turnover by the 26S proteasome: ubiquitin-dependent and direct, ubiquitin-independent degradation. These findings demonstrate the importance of maintaining cysteine homeostasis and reveal an alternative mode of proteasomal degradation.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648702",
+      "pmid": null,
+      "doi": "10.64898/2026.10.01.755937",
+      "title": "Protective near-germline antibodies to malaria elicited by RTS,S/AS01 E vaccination in African infants",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-04",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Abstract Malaria is a leading cause of childhood mortality, yet infant immune responses to vaccination remain poorly understood. Here, we characterize 88 monoclonal antibodies (mAbs) directed against the Plasmodium falciparum circumsporozoite protein cloned from African infants immunized with the RTS,S/AS01 E malaria vaccine, identifying potent antiparasitic mAbs exhibiting molecular features resembling those observed in adults and minimal somatic hypermutation. Importantly, germline-reverted variants of four mAbs inducing sterile protection in vivo maintained high binding affinity and Fab-dependent parasite killing. Structural analyses revealed that a few amino acid replacements drive homotypic helical assemblies, fine-tuning parasite inhibition and protective efficacy. Thus, despite maturational constraints of early life, infants can generate potent antimalarial antibodies in a near-germline configuration, informing next-generation vaccine development for this vulnerable group.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648843",
+      "pmid": null,
+      "doi": "10.21203/rs.3.rs-10582165/v1",
+      "title": "Protonation- and substrate-regulated dimer opening couples brain-type creatine kinase to vesicular and actin-remodeling membranes",
+      "journal": "Research Square",
+      "journal_abbrev": "Res Sq",
+      "authors": "",
+      "pub_date": "2026-09-30",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractBrain-type creatine kinase (CK-BB) buffers local ATP demand through reversible phosphotransfer between ATP and phosphocreatine, yet how this soluble metabolic enzyme couples to dynamic membrane compartments remains unclear. Here, we integrate immunofluorescence microscopy, DEER spectroscopy, hydrogen-deuterium exchange and native mass spectrometry, DEER- and AlphaFold-guided modeling, and long-timescale molecular dynamics to define the acid- and substrate-regulated conformational landscape of human CK-BB. Acidification redistributes endogenous and recombinant CK-BB from a diffuse cytosolic pool to punctate vesicular structures and membrane ruffles. DEER and modeling reveal a spatially asymmetric dimer in which the convex surface remains comparatively restrained, whereas the concave catalytic-regulatory surface samples pH- and substrate-dependent conformational intermediates. We identify progressive dimer opening as a novel regulatory mechanism by which acidic pH and substrate binding increase dynamics across the convex surface and NTD–NTD interface and sensitize the His191/Ser199 module to graded pH-dependent exchange. Substrate binding buffers acid-induced deprotection while preserving localized dynamics near this regulatory interface. Together, these data support a model in which protonation and substrate occupancy generate membrane-competent CK-BB conformations, coupling local ATP regeneration to curved vesicular and actin-remodeling membranes.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648685",
+      "pmid": null,
+      "doi": "10.64898/2026.10.01.756128",
+      "title": "Red states modulate energy localization between the antenna and trap in PSI",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-04",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractThe core antenna of the photosystem I (PSI) complex of oxygenic photosynthesis operates at near perfect quantum efficiency, making it one of the most efficient energy conversation devices in nature. The presence of low energy or red chlorophylls (chls) is nearly universal in this core antenna, and these red chls are known to extend the light harvesting capacity and control the rate of energy migration in PSI. Surprisingly, the significance of the structural position of the red chls in PSI remains unknown. In this study, we introduced mutations that generate specific red sites in the PSI core antenna, consistent with those observed in natural species. Using CryoEM, we characterized the structural changes at these red sites. Using transient absorption spectroscopy, we measured the effects of red chlorophyll at specific sites on energy transfer and trapping in PSI to identify their functional significance. While one site funneled energy to the reaction center, the other slowed equilibration in the antenna. These opposing effects indicate different functions are associated with the different red chlorophyll location, reconciling previous seemingly incompatible suggestions as to their functional role.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648718",
+      "pmid": null,
+      "doi": "10.64898/2026.09.30.755772",
+      "title": "Serum IgM crosslinks hepatitis B subviral particles into supramolecular immune complexes",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractHepatitis B virus (HBV)-infected cells release hepatitis B surface antigen (HBsAg)-rich subviral particles (SVPs) in large excess over infectious virions. SVPs bind antibodies against HBsAg (anti-HBs), including neutralizing antibodies, but the physical products of antibody capture in human blood are uncharacterized. Here we used cryo-electron tomography (cryo-ET) to image HBsAg-enriched serum from a patient with severe acute Hepatitis B and observed three-dimensional assemblies of intact IgM-SVP immune complexes. These associations persisted at a lower particle density and were validated by a spatial-randomization null model. Subtomogram averaging and single-particle cryo-electron microscopy (cryo-EM) identified three serum IgM Fc-core assemblies, IgM-J-CD5L, IgM-J and IgM-J-SC, with cryo-EM maps reaching 2.8 Å resolution. Mapping these Fc core assemblies into tomograms revealed full-length IgM engaging individual SVPs through several Fab arms and bridging neighboring particles into immune complex networks containing multiple IgM molecules and SVPs. Thus, serum IgM uses multivalent Fab interactions to crosslink HBsAg-rich SVPs into supramolecular immune complexes. This observation extends the SVP decoy model from passive antibody sequestration to higher-order particle organization.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648709",
+      "pmid": null,
+      "doi": "10.64898/2026.09.30.755801",
+      "title": "Structural basis of phosphatidylserine enhancement of Gas6 ligand-induced Axl activation",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc-nd",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "SUMMARYTAMs (Tyro3, Axl, and MerTK) are receptor tyrosine kinases with primary roles in apoptotic clearance and immune suppression. In apoptosis, bridging complexes form between TAM receptors on phagocytic cells and TAM ligands bound to phosphatidylserine exposed on the surface of dying cells, but how these complexes form or why lipid is required for receptor activation is poorly understood. We present the first structures of a complete TAM receptor (Axl) and ligand (Gas6) 2:2 bridging complex with and without lipid, which suggest that the lipid functions to stabilize and promote active complexes. We also observe a stable 1:1 complex, presumed to be inactive, and provide evidence that these complexes are conversely able to form higher-order oligomers. We propose a mechanism for how lipids promote TAM receptor activation, providing a structural and biochemical basis for developing therapies that selectively target the lipid-dependent, immunosuppressive arm of TAM signaling exploited by tumors.GRAPHICAL ABSTRACT",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648546",
+      "pmid": null,
+      "doi": "10.64898/2026.09.28.753211",
+      "title": "Symmetry Breaking under Vectorial Perturbations in Macromolecular X-ray Crystallography",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-29",
+      "index_date": "2026-10-09",
+      "license": "cc by-nc",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractProteins are molecular machines whose dynamics govern their function. Using time-resolved crystallography, the basis of protein mechanics can be uncovered by physical perturbation on protein crystals. Perturbations are often vector fields that, in crystals, break symmetry. Lacking existing tools for analyzing symmetry breaking, we built open-source software to do so. We applied this method to three time-resolved crystallography experiments and analyzed the effect of vectorial perturbations on macromolecular crystal structure. We demonstrate that our method can handle symmetry reduction in all 65 Sohncke space groups.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648588",
+      "pmid": null,
+      "doi": "10.64898/2026.09.29.755321",
+      "title": "Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Abstract Mechanistic understanding of viral protein-protein interactions enables global health security and pandemic preparedness, yet experimental characterisation remains difficult, costly, and often restricted to specialised laboratories. Here, we describe an in silico campaign using AlphaFold2 and AlphaFold-Multimer to predict monomers and dimer structures within 2,812 viral proteomes from 23 viral families relevant to human health. We report high-confidence predicted structures of 5,279 hetero-, and 2,749 homo-dimers. Structural clustering of interfaces reduces the set fivefold to 1,598 consolidated by form and function, of which 471 (29.5%) lacked detectable similarity to experimentally determined interfaces in the PDB. These clusters yielded two notable findings: new data on vaccinology-relevant glycoproteins, and accurate prediction of the specificity and cleavage-site recognition of viral proteases, which are targets for anti-viral development. Viral monomers and high-confidence dimers are available for interactive browsing in the Pandemic Preparedness Portal of the AlphaFold Database ( https://alphafold.ebi.ac.uk/ ), and the full dataset is available for bulk download.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648352",
+      "pmid": null,
+      "doi": "10.64898/2026.08.17.745233",
+      "title": "TM6SF2 is a cholesterol-bound homomultimeric ER membrane protein that binds ApoB and is required for bulk lipidation of VLDL",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-09-28",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Abstract A missense variant in TM6SF2 (transmembrane 6 superfamily member 2, TM6SF2 E167K ) is a major risk factor for steatotic liver disease 1 , while protecting against coronary artery disease 2 . TM6SF2 is a polytopic resident protein of the smooth endoplasmic reticulum (ER) and ER-Golgi intermediate compartment that promotes lipidation of hepatic ApoB-containing lipoproteins before secretion into the circulation. Here, we used cryo-electron microscopy (cryo-EM) to determine the structures of TM6SF2 and TM6SF2 E167K . TM6SF2 comprises 10 transmembrane helices that bind a single cholesterol molecule within a transmembrane cavity. The protein assembles into homodimers and homotetramers that interact with ApoB. Structural and biochemical analyses show that the E167K substitution reduces cholesterol binding and ApoB interaction without disrupting overall protein structure. Expression of wild-type, but not mutant, TM6SF2 restores hepatic triglyceride secretion in TM6SF2-deficient hepatocytes. Together, these findings establish the structural framework for the bulk lipidation step in hepatic lipoprotein biogenesis, the principal pathway for hepatic triglyceride and cholesterol export into the circulation.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648680",
+      "pmid": null,
+      "doi": "10.64898/2026.09.30.755716",
+      "title": "Taccalonolide AJ uncouples tubulin GTP hydrolysis from microtubule depolymerization",
+      "journal": "bioRxiv",
+      "journal_abbrev": "bioRxiv",
+      "authors": "",
+      "pub_date": "2026-10-01",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "Abstract Microtubules are dynamic polymers of tubulin subunits that are vital for a variety of eukaryotic cell functions, including intracellular trafficking and cell division. Microtubule-targeting drugs are among the oldest and most widely used chemotherapeutics. Despite their extensive use, the development and optimization of these drugs is hindered by our limited understanding of the molecular impacts on microtubules. Recent high-resolution structures have begun to explain how paclitaxel (Taxol) stabilizes microtubules: it reverses the hydrolysis-driven lateral strain at the microtubule seam and induces an expanded, GTP-like conformational state that promotes polymerization. In this work, we demonstrate that the microtubule-targeting natural product taccalonolide AJ (taccaAJ) stabilizes microtubules in a manner completely distinct from paclitaxel. Using cryo-EM, we show that taccaAJ stabilizes a compacted, post-GTP hydrolysis state, which is usually prone to depolymerization. In vitro assays show that taccaAJ-stabilized microtubules are more rigid than paclitaxel-stabilized microtubules, and reconstituted dynamics with taccaAJ exhibit increased rescue close to the plus-end. Finally, we use fluorescent biosensors for the compacted tubulin conformation to confirm that taccaAJ-stabilized microtubules in cells are compacted yet stable against depolymerization. We propose that taccaAJ preferentially binds a GDP lattice, promotes lateral interactions between protofilaments, and thus creates a rigid, stable microtubule in a compacted, post-GTP hydrolysis state.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    },
+    {
+      "pmcid": "PMC13648864",
+      "pmid": null,
+      "doi": "10.21203/rs.3.rs-10628538/v1",
+      "title": "µ-Opioid receptors negatively regulate striatal dopamine D1 receptor signaling through heteromerization",
+      "journal": "Research Square",
+      "journal_abbrev": "Res Sq",
+      "authors": "",
+      "pub_date": "2026-09-30",
+      "index_date": "2026-10-09",
+      "license": "cc by",
+      "pub_types": [
+        "research-article",
+        "journal article"
+      ],
+      "abstract": "AbstractIntegrating biophysical, computational, in situ, and in vivo approaches with selective heteromer-disrupting transmembrane peptides, this study demonstrates that µ-opioid receptors (MORs) and dopamine D1 receptors (D1Rs) assemble into functional heteromers. Furthermore, real-time in vivo fiber photometry using a genetically encoded cAMP biosensor directly demonstrates that MORs regulate striatal D1Rs via heteromerization in the intact mouse brain. Our findings support a tetrameric structure composed of Gi-coupled MOR and Gs-coupled D1R homodimers, which enables both canonical Gi-Gs antagonistic interaction at the level of adenylyl cyclase and receptor-level cross-antagonism, by which MOR agonists and antagonists counteract D1R agonist-induced signaling. Located predominantly within striosomal GABAergic projection neurons, MOR–D1R heteromers constitute mechanistically defined signaling units that integrate dopaminergic and opioid neurotransmission governing motor control and reward processing. Collectively, these findings establish MOR–D1R heteromers as a previously unrecognized therapeutic target for the treatment of opioid withdrawal-associated restlessness and restless legs syndrome.",
+      "kind": "no_ids",
+      "own_structures": [],
+      "cited_pdb_ids": [],
+      "emdb_ids": [],
+      "proteins": [],
+      "score": 0
+    }
+  ]
+}

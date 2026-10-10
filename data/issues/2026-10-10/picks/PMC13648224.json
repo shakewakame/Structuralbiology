@@ -1,0 +1,82 @@
+{
+  "pmcid": "PMC13648224",
+  "rank": 4,
+  "headline": "N-アシル-N-メチルリジンは脱アシル化酵素に外されない：SIRT2・SIRT5の結晶構造",
+  "target_label": "SIRT2／SIRT5（ペプチド複合体）",
+  "summary": {
+    "background": "ヒストンH4で見つかったN-アセチル-N-メチルリジン（KAcMe）が、HDACやサーチュインで除去できるかは不明だった。",
+    "approach": "KAcMeなどのモデルペプチドを合成し、HDAC1–11とSIRT1–6で脱アシル化を調べ、SIRT2・SIRT5とペプチドの結晶構造を決めた。",
+    "findings": "KAcMeはどの酵素にも検出可能な脱アセチル化を受けなかった。N-メチル化は基質の位置を乱し、切断されるアミド結合が触媒に不適な向きになる。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "N-メチル基が加わると、試したサーチュインはH4K5のアセチル基もスクシニル基も外せなかった。N-メチル化はアミド結合の切断そのものを妨げる。",
+      "evidence": [
+        {
+          "quote": "Using peptides 4 and 8 methylated additionally to the respective acylation showed that neither deacetylation of H4K5AcMe (4) nor desuccinylation of H4K5SucMe (8) could be achieved by any tested sirtuin",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "zSIRT5–KSucMe複合体（2.8 Å）では、リジンNεとV221の相互作用が失われ、三級アミドのカルボニル酸素がNAD+の結合ポケットから約145°背を向ける。NAD+のリボースC1′を攻撃できる向きではない。",
+      "evidence": [
+        {
+          "quote": "The carbonyl oxygen of the tertiary amide bond of KSucMe is turned by about 145° away from the NAD+ binding pocket",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "SIRT2–ミリストイル-N-メチルリジンペプチド複合体（1.45 Å）ではアミド結合がcis型をとる。NAD+を浸漬した構造（2.80 Å）ではtrans型に変わり、Zn結合ドメインの閉じに伴う立体障害が原因と著者は考える。SIRT2は600倍遅いながら反応できる。",
+      "evidence": [
+        {
+          "quote": "Notably, the myristoyl amide bond of KMyrMe switches from cis to trans in the NAD+-bound structure.",
+          "section": "Results"
+        },
+        {
+          "quote": "The additional methylation of the myristoyl-lysine caused about a 600-fold reduction of the demyristoylation rate of SIRT2",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "SIRT2はHis10タグ付きで発現を1 mM IPTGで誘導し、20 °Cで16時間培養。",
+    "construct": "ヒトSIRT2の56–356残基。",
+    "purification": "TEVでタグを除去し、HisTrapの素通り画分をSuperdex S75でゲル濾過。",
+    "sample_prep": "SIRT2–ペプチド結晶にNAD+を6時間浸漬してNAD+複合体を得た。",
+    "data_collection": "ESRFのID30A-3（MASSIF-3）とID23-2で測定、autoPROCとAimlessで処理。",
+    "evidence": [
+      {
+        "quote": "Protein expression of His10-tagged SIRT2 was induced with 1 mM IPTG, followed by incubation for 16 h at 20 °C.",
+        "section": "Methods"
+      },
+      {
+        "quote": "The His10-Tag was cleaved via TEV protease in lysis buffer",
+        "section": "Methods"
+      },
+      {
+        "quote": "Crystals were incubated in this solution for 6 h, then cryoprotected with the reservoir solution supplemented with 10% (v/v) DMSO",
+        "section": "Methods"
+      },
+      {
+        "quote": "The data sets were processed with autoPROC and scaled using Aimless.",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "SIRT2",
+    "SIRT5",
+    "N-アセチル-N-メチルリジン",
+    "HDAC",
+    "ヒストンH4"
+  ],
+  "ga_pdb_id": "30KD",
+  "ligand_label": "ミリストイル-N-メチルリジンペプチド",
+  "editor_notes": "30KU（zSIRT5–KSucMe）は未公開のため図には使えない。HDACについての結論は活性測定とAlphaFold2モデルへのドッキングによる推定で、HDACの結晶構造はない。本文の誤植らしき表記（Suc/Acの取り違え）は触れていない。ligand_label は仮。"
+}
