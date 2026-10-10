@@ -1,0 +1,90 @@
+{
+  "pmcid": "PMC13648238",
+  "rank": 6,
+  "headline": "ピキサントロンはDNAの脱塩基部位と位置異性体を作る：NMR構造で2種ともインターカレート",
+  "target_label": "ピキサントロン–AP部位DNA",
+  "summary": {
+    "background": "抗がん剤ピキサントロン（PIX）は非対称な構造のため、DNAの脱塩基（AP）部位と2種の位置異性体を作ると予想されたが、特徴づけがなかった。",
+    "approach": "還元型PIX–AP部位コンジュゲートを含む12量体二本鎖をNMRで解析し、NOE拘束付きMDで構造を求めた。ドデカマーの結晶構造（2.5 Å）も解いた。",
+    "findings": "二本鎖DNAではR a:R b＝6:4で、どちらも3′側にインターカレートし対向するシトシンをメジャー溝へ押し出す。R bの方が深く入る。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "一本鎖ではR aとR bが1:1で生成するが、二本鎖では0 °Cで約1.8:1とR aが優勢で、Tm以上の60 °Cでは約1.1:1に戻る。著者は対向するシトシンとの水素結合が関与する速度論的な説明を「確定した機構ではなく妥当な解釈」とする。",
+      "evidence": [
+        {
+          "quote": "Significantly, in ssDNA containing an AP site, where the complementary cytosine C18 is absent, both regioisomers R a and R b form in equal proportions.",
+          "section": "Discussion"
+        },
+        {
+          "quote": "This represents one possible interpretation based on NMR-derived structural evidence and should be viewed as a plausible explanation rather than a definitive mechanistic conclusion.",
+          "section": "Discussion"
+        }
+      ]
+    },
+    {
+      "tag": "創薬・モダリティ",
+      "text": "還元型PIX–AP部位コンジュゲートは、AP部位を模すTHF入り二本鎖（Tm 37.2 °C）より10.4 °C安定化したが、無修飾二本鎖（58.8 °C）よりは11.2 °C低い。AP部位を完全には修復できない。",
+      "evidence": [
+        {
+          "quote": "The T m of the unmodified duplex 5′-d",
+          "section": "Results"
+        },
+        {
+          "quote": "This resulted in a 10.4 °C increase in the T m",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "新しい結合部位",
+      "text": "結晶構造ではPIXはインターカレートせず、隣の二本鎖のPIXと積み重なって外側に反転していた。NMR溶液構造の挿入型と異なる。",
+      "evidence": [
+        {
+          "quote": "the pixantrone (PIX) moieties do not intercalate into the DNA as traditionally expected; instead, they are flipped relative to one another in an extrahelical orientation",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": null,
+    "construct": "ウラシル入りの12量体をUDGで処理してAP部位化し、ピキサントロンとNaBH3CNで還元型コンジュゲートを作製。",
+    "purification": "逆相HPLC（C18）後、相補鎖とアニールしてヒドロキシアパタイトで精製し、Sephadex G-25で脱塩。",
+    "sample_prep": "NMRは300 µM二本鎖、100 mM NaCl、10 mM NaH2PO4（pH 7.0）。結晶は1 mM DNAでハンギングドロップ蒸気拡散。",
+    "data_collection": "NMRは900 MHz、NOESY 250 ms、288 K。X線はAPSのLS-CAT 21-ID-Dで測定し、Br-SADで位相決定。",
+    "evidence": [
+      {
+        "quote": "Escherichia coli uracil-DNA glycosylase (UDG; EC 3.2.2.3; New England Biolabs; Ipswich, MA) (0.25 units/μL) was added to the uracil-containing dodecamer",
+        "section": "Materials and Methods"
+      },
+      {
+        "quote": "The duplex dodecamer containing the reduced PIX-AP site conjugate was passed over a hydroxyapatite (HAP) column",
+        "section": "Materials and Methods"
+      },
+      {
+        "quote": "The concentrations of dodecamer duplexes were 300 μM.",
+        "section": "Materials and Methods"
+      },
+      {
+        "quote": "The hanging drop vapor diffusion technique was used.",
+        "section": "Materials and Methods"
+      },
+      {
+        "quote": "The structure was phased by Br-SAD using Phenix Autosol",
+        "section": "Materials and Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "ピキサントロン",
+    "脱塩基部位",
+    "NMR",
+    "インターカレーション",
+    "DNA損傷"
+  ],
+  "method_label": "NMR＋拘束MD、結晶 2.5 Å",
+  "ligand_label": "ピキサントロン（PIX）",
+  "editor_notes": "PDB/UniProt の情報がなく（ID は補足資料のみ）、図は PDB 情報なしで出る。NMR構造の座標の登録は本文から確認できない。結晶構造は PDB 7U38 と本文にあるが、候補データには載っていない。単一ドデカマー配列での結果で、結晶とNMRで挿入様式が異なる。Tm の記述で『安定化』の対象（THF入り二本鎖）に注意。ランクは手法・薬物-DNA相互作用として最後に置いた。"
+}

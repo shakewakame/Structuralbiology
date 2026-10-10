@@ -1,0 +1,91 @@
+{
+  "pmcid": "PMC13646831",
+  "rank": 1,
+  "headline": "MDA5 T331Iは短いdsRNA上で安定なフィラメントを作る：ATP結合ポケットの乱れをクライオ電顕で可視化",
+  "target_label": "MDA5（IFIH1）–dsRNA",
+  "summary": {
+    "background": "自己免疫疾患に関連するMDA5変異T331Iが、なぜ恒常的なインターフェロン応答を起こすのか分子機構が不明だった。",
+    "approach": "野生型（AMPPNP）とT331I（ATP）が112 bp dsRNA上に作る短いフィラメントのクライオ電顕構造（2.81〜3.21 Å）、ATPase測定、レポーター解析を行った。",
+    "findings": "T331IはATPase活性を失い、ATPの配置が乱れ、短いdsRNAでも安定なフィラメントを形成して30 bpのRNAでもシグナルを出す。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "T331IはポリI:Cの存在下でもATPase活性が検出されなかった。野生型のフィラメントはATPを加えると速やかに解離するが、T331Iの短いフィラメントはATP存在下でも安定だった。",
+      "evidence": [
+        {
+          "quote": "However, the T331I mutant displayed no detectable ATPase activity in the presence of poly (I:C)",
+          "section": "Results"
+        },
+        {
+          "quote": "In contrast, the short filaments formed by T331I on dsRNA112 were stable even in the presence of ATP, and no evidence of filament disassembly was observed",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "野生型ではArg309とArg337がATPのアデニン塩基を挟むが、T331IではATPが外側にずれてこのスタッキングが崩れ、P-ループとγリン酸の極性接触も失われる。DECHモチーフと水分子の連携も外れ、加水分解の障害と整合する。",
+      "evidence": [
+        {
+          "quote": "in the T331I mutant this stacking geometry is disrupted due to an outward shift of the ATP, resulting in altered positioning of Arg337",
+          "section": "Results"
+        },
+        {
+          "quote": "the single water molecule identified in the mutant structure is no longer associated with Asp443 and Glu444 of the DECH motif",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "T331Iのフィラメントはサブユニット間のねじれ角がほぼ一定（約71.5°）で、野生型は79.8〜82.3°とばらつく。サブユニット間の界面も野生型より424 Å²大きく、フィラメントが硬く安定化していると解釈される。",
+      "evidence": [
+        {
+          "quote": "the monomer–monomer interface area between the two subunits is 1264 Å² in the DiT331I/dsRNA complex, which is 424 Å² larger than that of the DiMDA5/dsRNA complex",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "CARD欠失MDA5とT331Iを大腸菌Rosetta (DE3)で0.2 mM IPTG、16 °C・16時間誘導。",
+    "construct": "N末端297残基（CARD）を除いたヒトMDA5をpET-SUMOにクローン。",
+    "purification": "Ni、SUMOプロテアーゼ、ヘパリンHP、Superdex 200 (16/600)。",
+    "sample_prep": "5 µMタンパク質と0.2 µMの112 bp dsRNAを2 mM AMPPNPまたはATP存在下、4 °Cで一晩インキュベート。QuantiFoil UltraAu R2/2に4 µL、Vitrobotで凍結。",
+    "data_collection": "Titan Krios（K3）で野生型5,640枚、T331I 5,990枚、cryoSPARC v4.0。",
+    "evidence": [
+      {
+        "quote": "while both MDA5 (∆CARDs) and the MDA5 T331I mutant were grown at 16°C for 16 h after isopropyl β-D-1-thiogalactopyranoside (IPTG) induction",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "The N-terminal 297 residues were removed from both protein constructs to reconstitute wild-type MDA5/dsRNA112 or T331I/dsRNA112 complexes.",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "The protein was further purified by ion exchange with HiTrap Heparin HP column (GE Healthcare) and by size exclusion with HiLoad Superdex 200 (16/600) columns (GE Healthcare).",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "The protein–dsRNA complexes were first assembled by the incubation of 5 µM proteins and 0.2 µM dsRNAs at 4°C overnight",
+        "section": "Materials and methods"
+      },
+      {
+        "quote": "For MDA5/dsRNA112/AMPPNP complex, 5640 micrographs were collected.",
+        "section": "Materials and methods"
+      }
+    ]
+  },
+  "keywords": [
+    "MDA5",
+    "IFIH1",
+    "dsRNA",
+    "ATPase",
+    "Singleton-Merten症候群",
+    "自然免疫"
+  ],
+  "ga_pdb_id": "9Y4J",
+  "ligand_label": "AMPPNP",
+  "editor_notes": "T331I側の構造はATP結合で、野生型はAMPPNP結合。条件が異なる点は比較の注意点（著者はATP/AMPPNPで同様のねじれ角を報告）。9Q60・9Q5W のリガンドは ATP と登録されている。Tetra複合体のマップは EMDB のみで PDB の座標は Di・Mono。"
+}

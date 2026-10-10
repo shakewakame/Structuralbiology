@@ -1,0 +1,86 @@
+{
+  "pmcid": "PMC13646271",
+  "rank": 5,
+  "headline": "ボタンの根の4′-O-メチル基転移酵素PoOMT1：T字型ポケットが2基質を受け入れる",
+  "target_label": "PoOMT1（Paeonia ostii）",
+  "summary": {
+    "background": "牡丹皮の指標成分ペオノールの生合成後半（4′-O-メチル化と2′-水酸化）を担う酵素は未同定で、構造も機構も不明だった。",
+    "approach": "トランスクリプトームとメタボロームからPoOMT1を同定し、SAH複合体と基質2種との三者複合体の結晶構造（1.83〜2.28 Å）、変異体解析で調べた。",
+    "findings": "His262-Asn263-Gln324の触媒三残基と、二重アンカーおよび立体制約を持つT字型ポケットが4′-OHへの位置選択性と2基質の受容を説明する。"
+  },
+  "highlights": [
+    {
+      "tag": "機構の解明",
+      "text": "植物のI型OMTに保存されたHis-Asp-Glu三残基のAspとGluが、PoOMT1ではAsn263とGln324に置換されている。H262A・N263Aは活性を消失し、Q324Eは活性を2倍以上に高めた。",
+      "evidence": [
+        {
+          "quote": "Mutations H262A, N263A, and N263D completely abolished catalytic activity toward substrate 2.",
+          "section": "Results and discussion"
+        },
+        {
+          "quote": "whereas the Q324E mutation enhanced activity over 2-fold",
+          "section": "Results and discussion"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "基質のアセチル基はLeu120・Leu126・Asn121に、4′-OHはHis262・Asn263に固定される（二重アンカー）。2′-OHはポケットと相互作用せず、2基質の触媒効率が近い理由になる。",
+      "evidence": [
+        {
+          "quote": "PoOMT1 thus employs a dual-anchor mechanism that stabilizes both the acetyl group and the 4’-hydroxyl group of the substrates.",
+          "section": "Results and discussion"
+        },
+        {
+          "quote": "consistent with similar catalytic efficiencies toward substrates 1 and 2",
+          "section": "Results and discussion"
+        }
+      ]
+    },
+    {
+      "tag": "手法の工夫",
+      "text": "Region D（L117・F312・L315）をTrpに置換すると、2′-OHを持つ基質2への活性だけが消え、基質1への活性は保たれた。ポケットの形から基質選択を設計できることを示す。",
+      "evidence": [
+        {
+          "quote": "Mutating L117, F312, and L315 in region D to bulkier tryptophan abolished activity toward substrate 2 but largely preserved activity toward substrate 1",
+          "section": "Results and discussion"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "大腸菌Rosetta (DE3)で0.4 mM IPTG、18 °C・18時間。",
+    "construct": "pET28a(+)-SUMO-OMT。Ulp1でSUMOタグを除去。",
+    "purification": "Ni-NTA、Ulp1処理後に再度Ni-NTA、Superdex 75。10.0 mg/mLに濃縮。",
+    "sample_prep": "タンパク質10.0 mg/mLに5 mM SAH（と5 mM基質）を氷上30分混合し、シッティングドロップ蒸気拡散、18 °C。",
+    "data_collection": "SSRFのBL18U1、XDSで処理、AlphaFold2モデルで分子置換。",
+    "evidence": [
+      {
+        "quote": "Protein expression was induced with 0.4 mM isopropyl β-D-1-thiogalactopyranoside, followed by incubation at 18 °C for 18 h.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Eluted proteins were digested with Ubl-specific protease 1(Ulp1) at 4 °C for 8 h to remove SUMO tag.",
+        "section": "Methods"
+      },
+      {
+        "quote": "purified PoOMT1 protein (10.0 mg/mL) was incubated with 5 mM SAH or 5 mM SAH and 5 mM of either substrate 1 or 2 on ice for 30 min prior to crystallization.",
+        "section": "Methods"
+      },
+      {
+        "quote": "The predicted structure of PoOMT1 by Alphafold254 was used as the searching model.",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "PoOMT1",
+    "O-メチル基転移酵素",
+    "ペオノール",
+    "ボタン",
+    "生合成"
+  ],
+  "ga_pdb_id": "9WBA",
+  "ligand_label": "SAH＋4′-ヒドロキシアセトフェノン",
+  "editor_notes": "UniProt 未対応のため標的情報は PDB のみ。ga_pdb_id=9WBA は基質1との三者複合体（9WB6 は基質2）。論文は「構造が未知」と述べるが「初構造」とは明言していないので初構造扱いにしていない。本文に基質番号の欠落（Metabolomics 節）がある。 溶液中は二量体（ゲル濾過で約70 kDa）だが結晶中は単量体という点は記事から省いた。"
+}

@@ -1,0 +1,83 @@
+{
+  "pmcid": "PMC13648278",
+  "rank": 3,
+  "headline": "グリシンリボスイッチ：Mg²⁺とグリシンが協調して全体の折り畳みを安定化する（RNAのみで2.9 Å）",
+  "target_label": "グリシンリボスイッチ（コレラ菌）",
+  "summary": {
+    "background": "リボスイッチは構造の不均一性が機能に不可欠だが、RNAは不均一性のため高分解能の構造解析が難しい。",
+    "approach": "コレラ菌タンデムアプタマーをリガンドなし、Mg²⁺のみ、Mg²⁺＋グリシンの3条件でクライオ電顕にかけ、MDで補強した。",
+    "findings": "全体が折り畳まれた「walking man」型の集団は、Mg²⁺のみで約1/3、グリシン追加で約2/3になる。両リガンドは協調的に結合する。"
+  },
+  "highlights": [
+    {
+      "tag": "手法の工夫",
+      "text": "粒子をサイズで絞らずに拾い、3条件それぞれで10個の構造にヘテロジニアス精製して、折り畳み状態の集団比を比較した。リガンドの添加で集団が移る様子を直接見られる。",
+      "evidence": [
+        {
+          "quote": "By picking particles without stringent size restrictions, we were able to generate a comparative ensemble of maps for each condition.",
+          "section": "Introduction"
+        },
+        {
+          "quote": "When glycine and magnesium are both present, approximately two thirds of all particles are fully folded",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "グリシン結合部位の2つのMg²⁺は、グリシン非存在下で密度が消えるか大きく弱まる。2つのアプタマーはHoogsteen塩基対（U77–A206）を介して安定化の経路でつながって見える。",
+      "evidence": [
+        {
+          "quote": "It is notable that the magnesium density within the glycine binding pocket is either absent (as in Apt-II) or significantly diminished (as in Apt-I) in the absence of glycine (Fig. 5C), even though the magnesium concentration is held constant.",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "新しい結合部位",
+      "text": "2.9 Å密度ではグリシンの向きを一意に決められず、MDとメタダイナミクスで検討した。アミノ基がA68・A175のリン酸側を向く配置が支持され、従来の結晶構造と異なる向きだった。",
+      "evidence": [
+        {
+          "quote": "Although the 2.9 Å structure generated here is of insufficient resolution to confidently orient a small glycine ligand, our data are more consistent with an alternate arrangement where the nitrogen group points towards the adjacent phosphate from residue A175",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "in vitroでT7 RNAポリメラーゼ転写（AmpliScribe T7）、RNAClean XPビーズで精製。",
+    "construct": "コレラ菌のタンデムアプタマー（発現プラットフォームなし）。Kappel et al. (2020) の構築に基づく。",
+    "purification": "5回分の調製を合わせ、2.5 mg/mlに濃縮。",
+    "sample_prep": "1.2 mg/mlのRNAを95 °Cで変性後に氷冷し、MgCl₂（とグリシン）を加えて37 °C・30分。Quantifoil R1.2/1.3 金グリッド、Vitrobot Mark IV。",
+    "data_collection": "Titan Krios G3i（K3）、0.823 Å/px、cryoSPARC v4.6.0。",
+    "evidence": [
+      {
+        "quote": "The RNA was prepared through in vitro T7 RNA polymerase transcription using an AmpliScribe T7 High Yield Transcription Kit",
+        "section": "Methods"
+      },
+      {
+        "quote": "Five separate preparations of RNA were combined and concentrated using a vacuum concentrator to generate the final 2.5 mg/ml sample.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Either MgCl2 or MgCl2 and glycine were added to respective samples, and all three RNA solutions were then incubated at 37 oC for 30 min.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Data were collected with a pixel size of 0.823 Å on a Titan Krios G3i (Thermo Fisher Scientific) operated at 300 kV using a Gatan K3 BioQuantum direct electron detector.",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "リボスイッチ",
+    "グリシン",
+    "Mg²⁺",
+    "RNA構造",
+    "クライオ電顕",
+    "コンフォメーションのアンサンブル"
+  ],
+  "ga_pdb_id": "9N3I",
+  "ligand_label": "グリシン＋Mg²⁺",
+  "editor_notes": "グリシンの向きは密度だけでは決まらず MD による支持。著者は in vitro で細胞内の混雑や転写共役の折り畳みを再現していないと述べている。9N3J は Mg²⁺のみ（3.3 Å、グリシンなし）。集団比は粒子分類に依存し、約41%は同定できないクラス。"
+}

@@ -1,0 +1,95 @@
+{
+  "pmcid": "PMC13648974",
+  "rank": 2,
+  "headline": "MERS-CoVスパイクを受容体DPP4と1〜120時間インキュベートし、活性化の経路を連続スナップショットで捉えた",
+  "target_label": "MERS-CoVスパイク–DPP4",
+  "summary": {
+    "background": "MERS-CoVの受容体DPP4への結合が、どう膜融合につながるのかは、SARS-CoV-2に比べて理解が遅れていた。",
+    "approach": "野生型スパイク外部ドメインと可溶性DPP4を25 °Cで1、24、72、120時間混合し、各時点をクライオ電顕で解析した。",
+    "findings": "RBDが開くほどS1–S2界面が弱まり、3-up状態は不安定でS1が解離する。72時間以降の融合後S2を3.23 Åで解いた。"
+  },
+  "highlights": [
+    {
+      "tag": "手法の工夫",
+      "text": "反応時間を変えた試料を並べるだけで、受容体結合後の状態の分布が時間とともに移る様子を捉えた。24時間では1-up約25%・2-up約40%・3-up約28%、72時間では3-upは検出されず融合後型が約24%になった。",
+      "evidence": [
+        {
+          "quote": "To examine spike conformations at different incubation times, cryo-EM data were collected after 1 h, 24 h, 72 h, and 120 h of incubation.",
+          "section": "Results"
+        },
+        {
+          "quote": "The 3-up state was no longer detected.",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "機構の解明",
+      "text": "3-down状態に比べ3-up状態ではS1とS2の埋もれ表面積が6518.3 Å²から5293.8 Å²に減る。S2コアのHR1-CH領域も2つのDPP4が結合すると4.2 Å外側にずれ、SARS-CoV-2にはこの動きがほとんどない。",
+      "evidence": [
+        {
+          "quote": "By contrast, the 3-up state exhibits a smaller buried interface (5293.8 Å²) (Fig 2B)",
+          "section": "Results"
+        },
+        {
+          "quote": "the HR1-CH region was displaced by 4.2 Å relative to the 3-down conformation",
+          "section": "Results"
+        }
+      ]
+    },
+    {
+      "tag": "創薬・モダリティ",
+      "text": "融合後S2（3.23 Å）では、HR2の上流リンカーがSD3とのβシートを離れ、隣のプロトマーの溝に沿う伸びた構造に再編される。著者は広域の融合阻害剤や中和抗体の標的候補とするが、これは構造からの推測である。",
+      "evidence": [
+        {
+          "quote": "In the pre-fusion state, a β-strand from this linker forms a β-sheet with the SD3 domain, stabilizing it in a folded conformation adjacent to SD3.",
+          "section": "Results"
+        },
+        {
+          "quote": "These observations suggest that stabilizing the prefusion conformation of the HR2 upstream linker, or preventing its rearrangement, may interfere with membrane fusion",
+          "section": "Results"
+        }
+      ]
+    }
+  ],
+  "lab_notes": {
+    "expression": "HEK293Fにポリエチレンイミンで一過性発現、72時間後に上清を回収。",
+    "construct": "MERS-CoVスパイク外部ドメイン（残基1–1,291）、N末gp67シグナル、C末T4フィブリチンと6×His。",
+    "purification": "Ni-Sepharose、Superose 6 Increase 10/300（20 mM Tris、200 mM NaCl、pH 8.0）。",
+    "sample_prep": "スパイク0.7 mg/mLとDPP4 1.5 mg/mLをモル比1:1.1で25 °C、所定時間インキュベート。グリッドに3 µL、Vitrobot IV。",
+    "data_collection": "Titan Krios G4（Falcon 4i、Selectris）、RelionとcryoSPARC v4.4.1。",
+    "evidence": [
+      {
+        "quote": "The plasmid was transfected into HEK293F cells by polyethylenimine, supernatant was harvested after 72h",
+        "section": "Methods"
+      },
+      {
+        "quote": "The gene encoding the ectodomain of the MERS-CoV spike (UniProt: K9N5Q8, residues 1–1,291) was synthesized",
+        "section": "Methods"
+      },
+      {
+        "quote": "The target protein was further purified by Superose 6 Increase 10/300 column (GE Healthcare) in 20 mM Tris, 200 mM NaCl, pH 8.0 buffer",
+        "section": "Methods"
+      },
+      {
+        "quote": "MERS-CoV spike was diluted to 0.7 mg/mL and mixed with 1.5 mg/mL DPP4 at a molar ratio of 1:1.1 (S trimer/DPP4), and incubated for 24 h at 25°C.",
+        "section": "Methods"
+      },
+      {
+        "quote": "Cryo-EM data for MERS S-DPP4 were automatically collected using EPU software on a Titan Krios G4 microscope at 300 kV.",
+        "section": "Methods"
+      }
+    ]
+  },
+  "keywords": [
+    "MERS-CoV",
+    "スパイク",
+    "DPP4",
+    "膜融合",
+    "融合後構造",
+    "時間経過"
+  ],
+  "ga_pdb_id": "22EC",
+  "ligand_label": "DPP4（受容体）",
+  "editor_notes": "著者は、構造は離散的なスナップショットで、反応が実際の侵入より遥かに遅い（可溶性タンパク質、25 °C、膜・プロテアーゼなし）in vitro の条件下のものと明記している。SARS-CoV-2より活性化が遅いという比較は他論文の条件との定性的比較。DPP4ダイマーによるトリマー間架橋は推測。ga_pdb_id=22EC は融合後S2で、DPP4を含まない。DPP4との複合体を示すには 22EA（3-up）も候補。"
+}
