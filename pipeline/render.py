@@ -126,91 +126,72 @@ def _placeholder(cand: dict, s: dict | None) -> tuple[str, str]:
     return "PDB ID は論文の補足資料に記載", "（座標を自動取得できないため構造図なし）"
 
 
-def graphical_abstract(cand: dict, pick: dict, issue_date: str) -> str:
-    bar = 56
-    px, py, pw, ph = 24, bar + 20, 600, H - bar - 44
+def graphical_abstract(cand: dict, pick: dict, issue_date: str, theme: brand.Theme | None = None) -> str:
+    """Brand bar, the paper's own title, and the structure — nothing else (facts live in the page margin)."""
+    th = theme or brand.THEMES[brand.DEFAULT_THEME]
+    bar, pad = 52, 24
+    title = cand["title"]
+    rw = W - 2 * pad
+    for size in (30, 28, 26, 24):
+        tl = wrap(title, size, rw, 2)
+        if tl and not tl[-1].endswith("…"):
+            break
+    else:
+        size, tl = 22, wrap(title, 22, rw, 3)
+    meta_y = bar + 32
+    title_y = meta_y + 14 + size
+    title_bottom = title_y + (len(tl) - 1) * size * 1.28
+    px, py = pad, int(title_bottom + 18)
+    pw, ph = rw, H - py - 22
+
     s = pick_structure(cand, pick)
-    body, legend, caption = "", [], ""
+    body, legend, pdb_note = "", [], ""
     if s:
         coords = pdb.coordinates(s["pdb_id"])
         if coords:
             lig_ids = {l["id"] for l in s.get("ligands") or []}
             genes = {p["uniprot"]: p["gene"] for p in cand.get("proteins", []) if p.get("gene")}
-            body, legend = structure_svg.render(coords, lig_ids, px, py + 8, pw, ph - 80, genes)
+            body, legend = structure_svg.render(coords, lig_ids, px, py, pw, ph - 34, genes,
+                                                margin=22, entity_colors=list(th.entities),
+                                                ligand_color=th.ligand)
             if pick.get("legend_labels"):
                 legend = [(col, lab) for (col, _), lab in zip(legend, pick["legend_labels"])]
             if len(legend) < 2:  # a single colour needs no key
                 legend = []
-            res = f" {s['resolution']:.2f} Å" if s.get("resolution") else ""
-            caption = f"PDB {s['pdb_id']} · {method_ja(s['method'])}{res}"
+            pdb_note = f"PDB {s['pdb_id']}"
     if not body:
         msg, sub = _placeholder(cand, s)
-        body = "".join(text_block([t], px + pw / 2, py + ph / 2 + dy, size, MUTED, wt)
+        body = "".join(text_block([t], px + pw / 2, py + ph / 2 + dy, size_, th.muted, wt)
                        .replace("<text ", '<text text-anchor="middle" ', 1)
-                       for t, dy, size, wt in ((msg, -10, 26, 600), (sub, 30, 18, 400)) if t)
+                       for t, dy, size_, wt in ((msg, -10, 26, 600), (sub, 30, 18, 400)) if t)
 
-    leg = []
-    lx, ly = px + 20, py + ph - 46
-    for i, (col, desc) in enumerate(legend[:3]):
-        label = wrap(desc, 15, 170, 1)[0] if desc else ""
-        x = lx + i * 190
-        leg.append(f'<rect x="{x}" y="{ly - 11}" width="12" height="12" rx="2" fill="{col}"/>'
-                   f'<text x="{x + 18}" y="{ly}" font-size="15" fill="{MUTED}">{esc(label)}</text>')
-    if s and s.get("ligands") and caption:
-        x = lx + min(len(legend), 3) * 190
-        if x < px + pw - 120:
-            leg.append(f'<circle cx="{x + 6}" cy="{ly - 5}" r="6" fill="{ACCENT}"/>'
-                       f'<text x="{x + 18}" y="{ly}" font-size="15" fill="{MUTED}">リガンド</text>')
-    cap = f'<text x="{lx}" y="{py + ph - 18}" font-size="15" fill="{MUTED}">{esc(caption)}</text>' if caption else ""
+    leg, lx, ly = [], px + 22, py + ph - 18
+    for col, desc in legend[:3]:
+        label = wrap(desc, 15, 250, 1)[0] if desc else ""
+        leg.append(f'<rect x="{lx:.0f}" y="{ly - 11}" width="12" height="12" rx="6" fill="{col}"/>'
+                   f'<text x="{lx + 18:.0f}" y="{ly}" font-size="15" fill="{th.ink2}">{esc(label)}</text>')
+        lx += 18 + sum(char_width(c) for c in label) * 15 + 26
+    if s and s.get("ligands") and body and pdb_note:
+        leg.append(f'<circle cx="{lx + 6:.0f}" cy="{ly - 5}" r="6" fill="{th.ligand}" '
+                   f'stroke="{structure_svg._shade(th.ligand, 0.45)}"/>'
+                   f'<text x="{lx + 18:.0f}" y="{ly}" font-size="15" fill="{th.ink2}">リガンド</text>')
+    note = (f'<text x="{px + pw - 22}" y="{ly}" font-size="14" fill="{th.muted}" text-anchor="end">{esc(pdb_note)}</text>'
+            if pdb_note else "")
 
-    # Brand bar.
-    head = (f'<rect width="{W}" height="{bar}" fill="{INK}"/>'
-            f'{brand.logo_mark(24, 10, 36, bg="#33456E")}'
-            f'<text x="72" y="36" font-size="21" font-weight="700" fill="#FFFFFF">{esc(brand.SITE_NAME)}</text>'
-            f'<text x="{72 + 21 * 9 + 10}" y="36" font-size="12" letter-spacing="2" fill="#AFC0DD">'
-            f'{esc(brand.SITE_NAME_EN)} · β</text>'
-            f'<text x="{W - 24}" y="36" font-size="17" fill="#D5DDEB" text-anchor="end">{esc(issue_date)}</text>')
-
-    # Right column: journal, the paper's own title, then the facts.
-    rx, rw = 664, 512
-    method = method_line(cand)
-    if pick.get("method_label") and not any(x["status"] == "released" for x in cand["own_structures"]):
-        method = pick["method_label"]
-    rows = [("標的", pick["target_label"]), ("手法・分解能", method),
-            ("結合分子", pick.get("ligand_label") or ligand_line(cand))]
-    row_lines = [wrap(v, 19, rw, 2) for _, v in rows]
-    rows_h = sum(22 + len(v) * 19 * 1.3 + 12 for v in row_lines)
-    tags_y = H - 60
-    title_top = bar + 66
-    title = cand["title"]
-    for size in (32, 29, 26, 23, 21):
-        tl = wrap(title, size, rw, 8)
-        title_h = len(tl) * size * 1.28
-        if title_top + title_h + 40 + rows_h <= tags_y - 10:
-            break
-    right = [text_block([f"{cand['journal'] or cand['journal_abbrev']}  ·  {cand['pub_date']}"],
-                        rx, bar + 44, 16, MUTED),
-             text_block(tl, rx, title_top + size * 0.95, size, INK, 700, 1.28)]
-    rule_y = title_top + title_h + 6
-    right.append(f'<line x1="{rx}" y1="{rule_y:.1f}" x2="{rx + 56}" y2="{rule_y:.1f}" stroke="{ACCENT}" stroke-width="3"/>')
-    y = title_top + title_h + 40
-    for (label, _), vl in zip(rows, row_lines):
-        right.append(text_block([label], rx, y, 14, MUTED))
-        right.append(text_block(vl, rx, y + 24, 19, INK, 500, 1.3))
-        y += 22 + len(vl) * 19 * 1.3 + 12
-    cx = rx
-    for h in pick["highlights"][:3]:
-        tag = h["tag"]
-        tw = sum(char_width(c) for c in tag) * 16 + 24
-        right.append(f'<rect x="{cx}" y="{tags_y}" width="{tw:.0f}" height="30" rx="15" fill="{INK}"/>'
-                     f'<text x="{cx + 12}" y="{tags_y + 21}" font-size="16" fill="#FFFFFF">{esc(tag)}</text>')
-        cx += tw + 10
-
+    head = (f'<rect width="{W}" height="{bar}" fill="{th.bar}"/>'
+            f'{brand.logo_mark(24, 8, 36, bg=th.ink2, back=th.loop_back, front=th.loop_front, dot=th.ligand)}'
+            f'<text x="72" y="33" font-size="21" font-weight="700" fill="{th.bar_text}">{esc(brand.SITE_NAME)}</text>'
+            f'<text x="{72 + 21 * 5.6:.0f}" y="33" font-size="12" letter-spacing="2" fill="{th.bar_muted}">'
+            f'{esc(brand.SITE_NAME_EN)}</text>'
+            f'<text x="{W - 24}" y="33" font-size="16" fill="{th.bar_muted}" text-anchor="end">{esc(issue_date)}</text>')
+    journal = f"{cand['journal'] or cand['journal_abbrev']}  ·  {cand['pub_date']}"
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
             f'font-family="{FONT}">'
-            f'<rect width="{W}" height="{H}" fill="#FFFFFF"/>{head}'
-            f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="18" fill="{PANEL}"/>'
-            f'{body}{"".join(leg)}{cap}{"".join(right)}</svg>\n')
+            f'<rect width="{W}" height="{H}" fill="{th.paper}"/>{head}'
+            f'{text_block([journal], pad, meta_y, 15, th.muted)}'
+            f'{text_block(tl, pad, title_y, size, th.ink, 700, 1.28)}'
+            f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="14" fill="{th.soft}"/>'
+            f'{body}{"".join(leg)}{note}</svg>\n')
 
 
 # ---------- issue page ----------
